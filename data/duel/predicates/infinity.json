@@ -1,0 +1,21 @@
+{
+	"condition": "minecraft:any_of",
+	"terms": [
+	  {
+		"condition": "minecraft:entity_properties",
+		"entity": "this",
+		"predicate": {
+		  "type": "minecraft:player",
+		  "nbt": "{Tags:[\"hurt\",\"infinity\"]}"
+		}
+	  },
+	  {
+		"condition": "minecraft:entity_properties",
+		"entity": "this",
+		"predicate": {
+			"type": "minecraft:player",
+		  "nbt": "{Tags:[\"attack\",\"infinity\"]}"
+		}
+	  }
+	]
+}
