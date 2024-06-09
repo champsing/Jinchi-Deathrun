@@ -16,7 +16,7 @@ title @s times 10 40 10
 title @a title ["",{"text":"陣地","bold":true,"color":"gold"},{"text":"大逃殺","bold":true,"color":"red"}]
 #---記分板---
 scoreboard objectives setdisplay sidebar list
-scoreboard objectives setdisplay belowName health
+scoreboard objectives setdisplay below_name health
 scoreboard objectives setdisplay list 
 scoreboard players reset @a
 scoreboard players set 遊戲時間 list 0
