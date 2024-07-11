@@ -1,5 +1,7 @@
+# 開始遊戲：分配分數、生成地圖、確認地圖
+
 #---效果---
-clear @a 
+clear @a
 effect clear @a
 effect give @a hunger 3 255 true
 effect give @a resistance 3 200 true

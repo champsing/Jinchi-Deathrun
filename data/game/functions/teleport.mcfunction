@@ -1,3 +1,4 @@
+# 傳送：隨機與一名隊友互換位置
 tp @s[team=red,tag=!Rking] @e[tag=spawn,team=red_edit,sort=nearest,limit=1]
 tp @s[team=blue,tag=!Bking] @e[tag=spawn,team=blue_edit,sort=nearest,limit=1]
 tp @s[team=red,tag=Rking] @e[tag=kingspawn,team=red_edit,sort=nearest,limit=1]

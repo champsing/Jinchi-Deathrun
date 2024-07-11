@@ -12,7 +12,7 @@ gamerule doMobLoot true
 gamerule doMobSpawning false
 gamerule doPatrolSpawning false
 gamerule doTileDrops false
-gamerule doTraderSpawning 
+gamerule doTraderSpawning false
 gamerule doWardenSpawning false
 gamerule doWeatherCycle false
 gamerule keepInventory true
@@ -59,6 +59,12 @@ scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add join trigger "中途加入"
 scoreboard objectives add score dummy "分數"
 scoreboard objectives add team_score dummy "團隊分數"
+scoreboard objectives add x dummy "X"
+scoreboard objectives add y dummy "Y"
+scoreboard objectives add z dummy "Z"
+scoreboard objectives add border_x dummy "X邊界"
+scoreboard objectives add border_y dummy "Y邊界"
+scoreboard objectives add border_z dummy "Z邊界"
 
 scoreboard objectives add death deathCount "死亡數"
 scoreboard objectives add kill playerKillCount "殺人數"
