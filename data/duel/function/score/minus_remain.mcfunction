@@ -1,3 +1,5 @@
+# 減分餘數：選隨機一個人減餘數
+
 tag @r[tag=minus_score,tag=!minus_score_remain] add minus_score_remain_pick
 tag @a[tag=minus_score_remain_pick] add minus_score_remain
 

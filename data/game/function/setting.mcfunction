@@ -15,18 +15,18 @@ execute as @a at @s run playsound block.ender_chest.open ambient @s ~ ~ ~
 title @s times 10 40 10
 title @a title ["",{"text":"陣地","bold":true,"color":"gold"},{"text":"大逃殺","bold":true,"color":"red"}]
 #---記分板---
-scoreboard objectives setdisplay sidebar list
+scoreboard objectives setdisplay sidebar gameinfo
 scoreboard objectives setdisplay below_name health
-scoreboard objectives setdisplay list 
+scoreboard objectives setdisplay gameinfo success_duel
 scoreboard players reset @a
-scoreboard players set 遊戲時間 list 0
-scoreboard players set 藍隊分數 list 0
-scoreboard players set 紅隊分數 list 0
+scoreboard players set 遊戲時間 gameinfo 0
+scoreboard players set 藍隊分數 gameinfo 0
+scoreboard players set 紅隊分數 gameinfo 0
 
 #---傳送---
 
 #---準備---
-scoreboard players set 準備時間 list2 2400
+scoreboard players set 準備時間 systeminfo 2400
 bossbar set prepare players @a
-scoreboard players operation 初始分數 list2 = 初始分數 menu
+scoreboard players operation 初始分數 systeminfo = 初始分數 menu
 function game:emerald
