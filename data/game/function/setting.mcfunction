@@ -14,10 +14,12 @@ effect give @a invisibility 9 0 true
 execute as @a at @s run playsound block.ender_chest.open ambient @s ~ ~ ~
 title @s times 10 40 10
 title @a title ["",{"text":"陣地","bold":true,"color":"gold"},{"text":"大逃殺","bold":true,"color":"red"}]
+title @a subtitle ["",{"text":"遊戲開始","bold":true,"color":"green"}]
+
 #---記分板---
 scoreboard objectives setdisplay sidebar gameinfo
 scoreboard objectives setdisplay below_name health
-scoreboard objectives setdisplay gameinfo success_duel
+scoreboard objectives setdisplay list success_duel
 scoreboard players reset @a
 scoreboard players set 遊戲時間 gameinfo 0
 scoreboard players set 藍隊分數 gameinfo 0
