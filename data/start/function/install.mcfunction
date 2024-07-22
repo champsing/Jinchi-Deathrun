@@ -70,11 +70,9 @@ scoreboard objectives add stamina dummy "體力"
 scoreboard objectives add stamina_max dummy "最大體力"
 
 scoreboard objectives add death deathCount "死亡數"
-scoreboard objectives add kill playerKillCount "殺人數"
-scoreboard objectives add top_kill dummy
-scoreboard objectives add top_death dummy
-scoreboard objectives add total_death deathCount
-scoreboard objectives add total_kill playerKillCount
+scoreboard objectives add top_duel dummy
+scoreboard objectives add top_score dummy
+scoreboard objectives add total_duel dummy "總對決數"
 
 scoreboard objectives add item used:carrot_on_a_stick
 scoreboard objectives add base dummy

@@ -18,12 +18,11 @@ title @a subtitle ["",{"text":"遊戲開始","bold":true,"color":"green"}]
 
 #---記分板---
 scoreboard objectives setdisplay sidebar gameinfo
-scoreboard objectives setdisplay below_name health
-scoreboard objectives setdisplay list success_duel
+scoreboard objectives setdisplay below_name total_duel
 scoreboard players reset @a
 scoreboard players set 遊戲時間 gameinfo 0
-scoreboard players set 藍隊分數 gameinfo 0
-scoreboard players set 紅隊分數 gameinfo 0
+scoreboard players set 藍隊分數 gameinfo 1000
+scoreboard players set 紅隊分數 gameinfo 1000
 
 #---傳送---
 

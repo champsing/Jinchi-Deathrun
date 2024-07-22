@@ -3,7 +3,7 @@
     "terms": [
         {
             "condition": "reference",
-            "name": "stamina:speed_run"
+            "name": "stamina:adrenaline"
         },
         {
             "condition": "reference",
