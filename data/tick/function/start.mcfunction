@@ -29,10 +29,7 @@ scoreboard players remove @e[scores={base=1..}] base 1
 execute at @e[scores={base=0}] if block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~10 ~ iron_block
 
 #---體力---
-execute as @a[team=!spec] if predicate stamina:consume run function stamina:consume
-execute as @a[team=!spec] if predicate stamina:food run function stamina:food
-execute as @a[scores={stamina_bow=1..}] at @s run function stamina:bow
-execute as @a[scores={stamina_crossbow=1..}] at @s run function stamina:bow
+execute as @a[team=!spec] if predicate stamina:is_running_mode run function stamina:consume
 execute as @a[team=!spec,scores={stamina=..85}] unless score @s stamina = @s stamina_attack run function stamina:attack
 execute as @a[team=!spec,scores={stamina=..39}] run function stamina:effect
 scoreboard players set @a[scores={stamina=101..}] stamina 100

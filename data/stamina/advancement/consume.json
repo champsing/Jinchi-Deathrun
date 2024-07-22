@@ -1,7 +1,15 @@
 {
 	"criteria": {
-		"hurt": {
-			"trigger": "minecraft:player_hurt_entity"
+		"run": {
+			"trigger": "tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "reference",
+						"name": "stamina:is_running_mode"
+					}
+				]
+			}
 		}
 	},
 	"rewards": {
