@@ -35,7 +35,6 @@ execute as @a[team=!spec,scores={stamina=..39}] run function stamina:effect
 #---任務---
 execute if score 任務倒數 systeminfo matches 1.. run function event:tick
 
-
 #---結算---
 execute if score 紅隊分數 gameinfo >= 目標分數 menu run function game:end/red
 execute if score 藍隊分數 gameinfo >= 目標分數 menu run function game:end/blue
