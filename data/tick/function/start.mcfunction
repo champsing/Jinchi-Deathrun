@@ -30,9 +30,7 @@ execute at @e[scores={base=0}] if block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~10 ~ iro
 
 #---體力---
 execute as @a[team=!spec] if predicate stamina:is_running_mode run function stamina:consume
-execute as @a[team=!spec,scores={stamina=..85}] unless score @s stamina = @s stamina_attack run function stamina:attack
 execute as @a[team=!spec,scores={stamina=..39}] run function stamina:effect
-scoreboard players set @a[scores={stamina=101..}] stamina 100
 
 #---任務---
 execute if score 任務倒數 systeminfo matches 1.. run function event:tick
