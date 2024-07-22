@@ -1,0 +1,15 @@
+{
+    "criteria": { 
+        "use_item": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                 "item": {
+                     "predicates": {
+                        "minecraft:custom_data": {"slowness": "all"}
+                    }
+                }
+            }
+        }
+    },
+    "rewards": { "function": "items:slowness_all" }
+}

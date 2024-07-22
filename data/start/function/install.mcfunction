@@ -68,6 +68,7 @@ scoreboard objectives add nearby dummy "鄰近隊友數"
 scoreboard objectives add grouped dummy "小隊隊友數"
 scoreboard objectives add stamina dummy "體力"
 scoreboard objectives add stamina_max dummy "最大體力"
+scoreboard objectives add item_cd dummy "道具冷卻"
 
 scoreboard objectives add death deathCount "死亡數"
 scoreboard objectives add top_duel dummy

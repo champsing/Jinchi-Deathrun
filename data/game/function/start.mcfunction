@@ -11,6 +11,7 @@ effect give @a night_vision infinite 0 true
 #---通知---
 title @a title {"text":"START","bold":true,"color":"gold"}
 
+#---排程函數---
 schedule function game:time 1s
 schedule function stamina:regain 10s
 schedule function event:start 600s
