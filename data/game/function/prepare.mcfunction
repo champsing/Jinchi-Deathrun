@@ -1,5 +1,5 @@
 #---設定---
-scoreboard players set 倒數 systeminfo 5
+scoreboard players set 倒數 system 5
 schedule function game:count 1s
 schedule function game:start 6s
 gamemode survival @a[team=!spec]
@@ -14,4 +14,4 @@ tp @a[team=spec] @e[tag=middle,limit=1]
 
 #---分數---
 execute as @a[team=!spec] store result score @s score run clear @s emerald
-scoreboard players operation 十倍 systeminfo *= @a score
+scoreboard players operation 十倍 system *= @a score

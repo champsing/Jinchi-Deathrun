@@ -54,7 +54,7 @@ bossbar set prepare color purple
 
 scoreboard objectives add menu dummy ["",{"text":"陣地","bold":true,"color":"gold"},{"text":"大逃殺","bold":true,"color":"red"}]
 scoreboard objectives add gameinfo dummy {"text":"分數表","bold":true,"color":"gold"}
-scoreboard objectives add systeminfo dummy "隱藏資訊"
+scoreboard objectives add system dummy "隱藏資訊"
 scoreboard objectives add join trigger "中途加入"
 scoreboard objectives add score dummy "分數"
 scoreboard objectives add team_score dummy "團隊分數"
@@ -79,6 +79,6 @@ scoreboard objectives add total_kill playerKillCount
 scoreboard objectives add item used:carrot_on_a_stick
 scoreboard objectives add base dummy
 
-scoreboard players set 一半 systeminfo 2
-scoreboard players set 一百 systeminfo 100
-scoreboard players set 十倍 systeminfo 10
+scoreboard players set 一半 system 2
+scoreboard players set 一百 system 100
+scoreboard players set 十倍 system 10

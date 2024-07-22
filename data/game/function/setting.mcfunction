@@ -26,7 +26,7 @@ scoreboard players set 紅隊分數 gameinfo 0
 #---傳送---
 
 #---準備---
-scoreboard players set 準備時間 systeminfo 2400
+scoreboard players set 準備時間 system 2400
 bossbar set prepare players @a
-scoreboard players operation 初始分數 systeminfo = 初始分數 menu
+scoreboard players operation 初始分數 system = 初始分數 menu
 function game:emerald
