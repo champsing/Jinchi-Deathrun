@@ -9,7 +9,6 @@ execute if score 目標分數 menu matches -1001 run scoreboard players set 目�
 execute if score 目標分數 menu matches 999 run scoreboard players set 目標分數 menu 5000
 
 execute if score 目標分數 menu matches -1 run scoreboard players display numberformat 目標分數 menu fixed {"text": "無限","color": "dark_red","bold": true}
-execute if score 目標分數 menu matches -1 run tellraw @s ["",{"text": ">> ","color": "gold"},{"text":"時間無限制時，。"}]
-
+execute if score 目標分數 menu matches -1 run tellraw @s ["",{"text": ">> ","color": "gold"},{"text":"目標分數無限制時，時間結束時較高分的一方獲勝。若平手時，一旦有一方領先便立即獲勝。"}]
 
 data modify block ~ ~ ~ front_text.messages[2] set value '{"score":{"name":"目標分數","objective":"menu"},"bold":true,"clickEvent":{"action":"run_command","value":"playsound entity.player.attack.sweep ambient @s"}}'
