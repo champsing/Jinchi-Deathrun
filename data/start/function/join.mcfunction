@@ -1,4 +1,4 @@
-#加入遊戲
+# 加入遊戲
 effect clear @s
 effect give @s resistance infinite 100 true
 effect give @s saturation infinite 0 true
