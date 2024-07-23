@@ -5,11 +5,11 @@
             "conditions": {
                  "item": {
                      "predicates": {
-                        "minecraft:custom_data": {"slowness": "single"}
+                        "minecraft:custom_data": {"freeze": "single"}
                     }
                 }
             }
         }
     },
-    "rewards": { "function": "items:slowness_single" }
+    "rewards": { "function": "items:freeze_single" }
 }
