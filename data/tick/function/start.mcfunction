@@ -3,12 +3,13 @@ execute as @a[team=!spec,tag=infinity] run title @s actionbar [{"text":"個人�
 
 #---準備時間---
 execute if score 準備時間 system matches 1.. store result bossbar prepare value run scoreboard players remove 準備時間 system 1
-execute if score 準備時間 system matches 0 run function game:prepare
+execute if score 準備時間 system matches 0 run function game:prepare/countdown
 
 #---開始---
-execute as @a[team=!spec] at @s if score 倒數 system matches 0..5 run function game:teleport
+execute as @a[team=!spec] at @s if score 倒數 system matches 0..5 run function game:prepare/teleport
 execute as @a[tag=!start] run function start:spectate
 execute as @a[team=spec] at @s if entity @s[y=-120,dy=40] run tp @s @e[tag=middle,limit=1]
+execute as @a[scores={death=1}] at @s if entity @e[type=area_effect_cloud,tag=lobby,limit=1,distance=..0.1] run function game:death
 execute if score 勝負已分 system matches 0 as @a[team=!spec] at @s run function game:border
 execute as @a[scores={join=1..}] run function game:join
 

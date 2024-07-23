@@ -1,3 +1,4 @@
+advancement revoke @s only settings:query/target
 execute unless predicate settings:is_sneaking run scoreboard players add 目標分數 menu 1000
 execute if predicate settings:is_sneaking run scoreboard players remove 目標分數 menu 1000
 
