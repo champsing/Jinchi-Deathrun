@@ -1,4 +1,4 @@
-#無敵陣地
+# 無敵陣地
 advancement revoke @s only items:invulnerable_base
 execute if score @s item_cd matches 1.. run return fail
 scoreboard players set @s item_cd 5

@@ -1,4 +1,4 @@
-#解除無效狀態
+# 解除無效狀態
 advancement revoke @s only items:clear_invalid
 execute if score @s item_cd matches 1.. run return fail
 scoreboard players set @s item_cd 5

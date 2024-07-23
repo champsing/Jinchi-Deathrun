@@ -9,7 +9,7 @@ scoreboard players set 餘數 score 50
 scoreboard players operation 加分 score /= @s grouped
 scoreboard players operation @a[tag=add_score] score += 加分 score
 scoreboard players operation 餘數 score %= @s grouped
-#有餘數
+#---有餘數---
 execute if score 餘數 score matches 1.. run function duel:score/add_remain
 
 tag @a[tag=add_score_remain] remove add_score_remain
