@@ -1,6 +1,7 @@
 # 結束遊戲：勝方確定才執行
 
 effect give @a resistance infinite 150 true
+scoreboard players set 勝負已分 system 1
 
 # -----------------------------------------
 # 紅隊分數: 紅隊分數 gameinfo
