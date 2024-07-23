@@ -1,16 +1,16 @@
 {
 	"criteria": {
 		"requirement": {
-		  "trigger": "minecraft:player_hurt_entity",
+		  "trigger": "minecraft:player_interacted_with_entity",
 		  "conditions": {
 			"entity": {
 			  "type": "minecraft:interaction",
-			  "nbt": "{Tags:[\"team\",\"settings\"]}"
+			  "nbt": "{Tags:[\"target_interact\"]}"
 			}
 		  }
 		}
 	  },
 	"rewards": {
-		"function": "settings:team"
+		"function": "settings:target"
 	}
 }

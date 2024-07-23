@@ -5,12 +5,12 @@
 		  "conditions": {
 			"entity": {
 			  "type": "minecraft:interaction",
-			  "nbt": "{Tags:[\"target\",\"settings\"]}"
+			  "nbt": "{Tags:[\"initial_interact\"]}"
 			}
 		  }
 		}
 	  },
 	"rewards": {
-		"function": "settings:target"
+		"function": "settings:initial"
 	}
 }

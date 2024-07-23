@@ -5,12 +5,12 @@
 		  "conditions": {
 			"entity": {
 			  "type": "minecraft:interaction",
-			  "nbt": "{Tags:[\"time\",\"settings\"]}"
+			  "nbt": "{Tags:[\"target_interact\"]}"
 			}
 		  }
 		}
 	  },
 	"rewards": {
-		"function": "settings:time"
+		"function": "settings:target"
 	}
 }

@@ -5,12 +5,12 @@
 		  "conditions": {
 			"entity": {
 			  "type": "minecraft:interaction",
-			  "nbt": "{Tags:[\"team\",\"settings\"]}"
+			  "nbt": "{Tags:[\"time_interact\"]}"
 			}
 		  }
 		}
 	  },
 	"rewards": {
-		"function": "settings:modify/team"
+		"function": "settings:time"
 	}
 }
