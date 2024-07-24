@@ -14,4 +14,4 @@ title @a title {"text":"START","bold":true,"color":"gold"}
 #---排程函數---
 schedule function game:time 1s
 schedule function stamina:regain 10s
-schedule function event:start 600s
+# schedule function event:start 600s

@@ -18,9 +18,6 @@ execute as @a[team=red] at @s store result score @s nearby if entity @a[team=red
 execute as @a[team=blue] at @s store result score @s nearby if entity @a[team=blue,distance=..5]
 execute as @a[team=!spec] unless score @s nearby = @s grouped run function game:teaming
 
-#---道具---
-execute as @a[scores={item=1..}] at @s run function item:use
-
 #---陣地---
 execute as @a[team=red] at @s if entity @e[team=red,tag=base,distance=..1] run function base:infinity
 execute as @a[team=blue] at @s if entity @e[team=blue,tag=base,distance=..1] run function base:infinity
@@ -32,7 +29,7 @@ execute as @a[team=!spec] if predicate stamina:is_running_mode run function stam
 execute as @a[team=!spec,scores={stamina=..39}] run function stamina:effect
 
 #---任務---
-execute if score 任務倒數 system matches 1.. run function event:tick
+# execute if score 任務倒數 system matches 1.. run function event:tick
 
 #---結算---
 execute if score 紅隊分數 gameinfo >= 目標分數 menu run function game:end/red
