@@ -1,3 +1,3 @@
 #---偵測殺人---
-execute if entity @e[type=area_effect_cloud,tag=start_mode] run function kill:success
+execute if entity @e[type=marker,tag=start] run function kill:success
 advancement revoke @s only kill:check
