@@ -26,8 +26,6 @@ execute as @a[team=red] at @s if entity @e[team=red,tag=base,distance=..1] run f
 execute as @a[team=blue] at @s if entity @e[team=blue,tag=base,distance=..1] run function base:infinity
 execute as @a[team=red] at @s unless entity @e[team=red,tag=base,distance=..1] run tag @s remove infinity
 execute as @a[team=blue] at @s unless entity @e[team=blue,tag=base,distance=..1] run tag @s remove infinity
-scoreboard players remove @e[scores={base=1..}] base 1
-execute at @e[scores={base=0}] if block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~10 ~ iron_block
 
 #---體力---
 execute as @a[team=!spec] if predicate stamina:is_running_mode run function stamina:consume
