@@ -6,4 +6,6 @@ execute if entity @s[tag = !invalid] run return run tellraw @s ["",{"text":">> "
 
 clear @s[tag = invalid] nether_star[custom_data={"invalid": false}] 1
 tag @s remove invalid
-tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"解除無效狀態道具","color":"gold"}]
+tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"你已解除"},{"text":"無效狀態","color":"gold"}]
+
+# tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"解除無效狀態道具","color":"gold"}]
