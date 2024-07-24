@@ -1,6 +1,8 @@
+# 按下 tellraw [此處] 後發生的事
+
 forceload add ~ ~
 setworldspawn ~ ~ ~
-execute align xyz run summon area_effect_cloud ~0.5 ~ ~0.5 {Duration:2147483647,Tags:["lobby","edit_mode"]}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby","edit"]}
 function start:lobby
 function start:install
 

@@ -23,24 +23,16 @@ gamerule spawnRadius 0
 
 team add red "紅隊"
 team add blue "藍隊"
-team add red_edit
-team add blue_edit
 team add spec "觀戰"
 team add gold
 team modify red color red
 team modify blue color blue
-team modify red_edit color red
-team modify blue_edit color blue
 team modify spec color gray
 team modify gold color gold
 team modify red seeFriendlyInvisibles true
 team modify blue seeFriendlyInvisibles true
 team modify red friendlyFire false
 team modify blue friendlyFire false
-team join red_edit 紅隊分數
-team join blue_edit 藍隊分數
-team join red_edit 紅隊人數
-team join blue_edit 藍隊人數
 team join gold 遊戲時間
 team join gold 目標分數
 team join gold 玩家人數
@@ -82,3 +74,6 @@ scoreboard objectives add base dummy
 scoreboard players set 一半 system 2
 scoreboard players set 一百 system 100
 scoreboard players set 十倍 system 10
+
+#---隨機生成貨櫃系統資料包也要 install---
+# (指令)
