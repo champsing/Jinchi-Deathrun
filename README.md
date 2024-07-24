@@ -171,7 +171,7 @@
 <!-- LICENSE -->
 ## 使用許可
 
-本專案使用 MIT License 作為使用許可。請查看 `LICENSE.txt` 閱讀完整使用許可內容。
+本專案使用 MIT License 作為使用許可。請查看 `LICENSE` 閱讀完整使用許可內容。
 
 <p align="right">(<a href="#readme-top">回上方</a>)</p>
 
