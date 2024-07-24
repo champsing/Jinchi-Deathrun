@@ -14,4 +14,4 @@ function game:prepare/teleport
 
 #---分數---
 execute as @a[team=!spec] store result score @s score run clear @s emerald
-scoreboard players operation 十倍 system *= @a score
+scoreboard players operation @a score *= 十倍 system
