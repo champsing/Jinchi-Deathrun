@@ -1,5 +1,5 @@
 ---
-name: "額外提問 \U0001F680"
+name: "額外提問 \U00002753"
 about: 提一個點子
 labels: enhancement
 
