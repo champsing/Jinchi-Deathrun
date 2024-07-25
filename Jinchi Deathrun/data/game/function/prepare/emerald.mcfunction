@@ -29,8 +29,7 @@ scoreboard players operation 初始分數綠寶石 system = 初始分數 menu
 
 
 #---執行macro用aec---
-# UUID 47cc9d0c-b481-4f45-9776-8c941f618d53
-# https://www.soltoder.com/mc-uuid-converter/#1204591884,-1266593979,-1753838444,526486867
+# UUID "47cc9d0c-b481-4f45-9776-8c941f618d53" https://www.soltoder.com/mc-uuid-converter/#1204591884,-1266593979,-1753838444,526486867
 summon minecraft:area_effect_cloud ~ ~ ~ {UUID:[I;1204591884,-1266593979,-1753838444,526486867],Duration:80,Age:0}
 execute store result entity 47cc9d0c-b481-4f45-9776-8c941f618d53 DurationOnUse int 1.0 run scoreboard players operation 初始分數綠寶石 system /= 十倍 system
 
@@ -42,4 +41,4 @@ scoreboard players set 準備時間 system 2400
 bossbar set prepare players @a
 scoreboard players operation 初始分數 system = 初始分數 menu
 function game:prepare/emerald_macro with entity 47cc9d0c-b481-4f45-9776-8c941f618d53 Score 
-schedule function game:prepare/tell_emerald 5s
+schedule function game:prepare/emerald_instruction 5s
