@@ -83,7 +83,7 @@
               "components": {
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
-                  "glowing": "all"
+                  "glowing": "single"
                 },
                 "minecraft:food": {
                   "nutrition": 1,
@@ -181,6 +181,52 @@
               "function": "set_name",
               "name": [
                 {
+                  "text": "§b§l全體凍結"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7使用後全體敵隊玩家無法移動10秒。"
+                },
+                {
+                  "text": "§c敵方全體玩家皆處於凍結狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "freeze": "all"
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 999999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:packed_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
                   "text": "§b§l無效狀態"
                 }
               ]
@@ -202,7 +248,7 @@
               "components": {
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
-                  "freeze": "all"
+                  "invalid": true
                 },
                 "minecraft:food": {
                   "nutrition": 1,
@@ -260,6 +306,230 @@
             }
           ]
         },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:packed_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l解除無效狀態"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7原地解除無效狀態。"
+                },
+                {
+                  "text": "§c自身不處於無效狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "invalid": false
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 999999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:packed_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l無效狀態"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7隨機傳送一個隊友過來。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "convention": true
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 999999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:packed_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§lc互換"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7與隨機一個隊友互換位置。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "freeze": "all"
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 999999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:packed_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l無敵陣地"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7己方陣地20秒無法攻陣。"
+                },
+                {
+                  "text": "§c己方陣地處於無敵狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "invulnerable_base": true
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 999999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:packed_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l解除詛咒"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7消除所有負面狀態效果。"
+                },
+                {
+                  "text": "§c自身沒有緩速、發光、凍結任一效果時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "clear_curse": true
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 999999
+                }
+              }
+            }
+          ]
+        }
       ]
     }
   ]
