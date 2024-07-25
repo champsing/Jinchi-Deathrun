@@ -11,5 +11,5 @@
             }
         }
     },
-    "rewards": { "function": "items:freeze_all" }
+    "rewards": { "function": "items:freeze/all" }
 }

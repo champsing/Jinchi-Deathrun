@@ -11,5 +11,5 @@
             }
         }
     },
-    "rewards": { "function": "items:freeze_single" }
+    "rewards": { "function": "items:freeze/single" }
 }
