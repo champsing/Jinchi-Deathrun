@@ -5,11 +5,11 @@
             "conditions": {
                  "item": {
                      "predicates": {
-                        "minecraft:custom_data": {"speed": true}
+                        "minecraft:custom_data": {"dash": true}
                     }
                 }
             }
         }
     },
-    "rewards": { "function": "items:speed" }
+    "rewards": { "function": "items:dash" }
 }
