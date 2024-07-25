@@ -1,3 +1,4 @@
+title @a times 1s 4s 1s
 title @a title {"text":"遊戲結束","bold":true,"color":"blue"}
 title @a subtitle {"text":"藍隊獲勝","bold":true,"color":"blue"}
 team modify blue prefix {"text":"[勝利者]","color":"blue"}
