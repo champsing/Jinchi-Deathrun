@@ -19,18 +19,18 @@ summon minecraft:interaction ~ ~ ~ {UUID:[I;425328237,-865777023,-2064810230,-71
 # 時間限制
 # time_title "b716f343-abcd-4c43-8fc5-b17805863015" https://www.soltoder.com/mc-uuid-converter/#-1223232701,-1412608957,-1882869384,92680213
 # time_value "53099724-2dd2-420b-aa3c-ec979d866df9" https://www.soltoder.com/mc-uuid-converter/#1393137444,768754187,-1438847849,-1652134407
-# time_interact "cac7bae0-cc58-414b-a07c-156a894b27f6" https://www.soltoder.com/mc-uuid-converter/#-892880160,-866631349,-1602480790,-1991563274
+# time_interact "de2e4a39-a2a3-4ce8-9b73-900859a00d42" https://www.soltoder.com/mc-uuid-converter/#-567391687,-1566356248,-1686925304,1503661378
 summon minecraft:text_display ~ ~ ~ {UUID:[I;-1223232701,-1412608957,-1882869384,92680213],Tags:["settings"],text:'{"text":"時間限制","color": "green"}',Rotation:[270f,0f]}
 summon minecraft:text_display ~ ~ ~ {UUID:[I;1393137444,768754187,-1438847849,-1652134407],Tags:["settings"],text:'{"score":{"name":"時間限制","objective":"menu"}}',Rotation:[270f,0f]}
-summon minecraft:interaction ~ ~ ~ {UUID:[I;-892880160,-866631349,-1602480790,-1991563274],Tags:["settings"],Rotation:[270f,0f]}
+summon minecraft:interaction ~ ~ ~ {UUID:[I;-567391687,-1566356248,-1686925304,1503661378],Tags:["settings"],Rotation:[270f,0f]}
 
 # 隨機分隊 
 # team_title "20029a29-015c-4119-88a7-8cdb5784d99a" https://www.soltoder.com/mc-uuid-converter/#537041449,22823193,-2002285349,1468324250
 # team_instruct "5b6c9e02-4e4b-44bc-b240-fd419e21d0df" https://www.soltoder.com/mc-uuid-converter/#1533844994,1313555644,-1304363711,-1641951009
-# team_interact "de2e4a39-a2a3-4ce8-9b73-900859a00d42" https://www.soltoder.com/mc-uuid-converter/#-567391687,-1566356248,-1686925304,1503661378
+# team_interact "cac7bae0-cc58-414b-a07c-156a894b27f6" https://www.soltoder.com/mc-uuid-converter/#-892880160,-866631349,-1602480790,-1991563274
 summon minecraft:text_display ~ ~ ~ {UUID:[I;537041449,22823193,-2002285349,1468324250],Tags:["settings"],text:'[{"text":"隨機","bold":true,"color":"red"},{"text":"分隊","bold":true,"color":"blue"}]',Rotation:[270f,0f]}
 summon minecraft:text_display ~ ~ ~ {UUID:[I;1533844994,1313555644,-1304363711,-1641951009],Tags:["settings"],text:'{"text":"左鍵分隊"}',Rotation:[270f,0f]}
-summon minecraft:interaction ~ ~ ~ {UUID:[I;-567391687,-1566356248,-1686925304,1503661378],Tags:["settings"],Rotation:[270f,0f]}
+summon minecraft:interaction ~ ~ ~ {UUID:[I;-892880160,-866631349,-1602480790,-1991563274],Tags:["settings"],Rotation:[270f,0f]}
 
 # 加入旁觀
 # spec_title "53ee349f-11ee-4c32-a7fc-a6aacd558b8e" https://www.soltoder.com/mc-uuid-converter/#1408119967,300829746,-1476614486,-850031730
