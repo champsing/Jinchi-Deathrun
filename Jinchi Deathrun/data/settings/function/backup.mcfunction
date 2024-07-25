@@ -29,7 +29,7 @@ summon minecraft:interaction ~ ~ ~ {UUID:[I;-892880160,-866631349,-1602480790,-1
 # team_instruct "5b6c9e02-4e4b-44bc-b240-fd419e21d0df" https://www.soltoder.com/mc-uuid-converter/#1533844994,1313555644,-1304363711,-1641951009
 # team_interact "de2e4a39-a2a3-4ce8-9b73-900859a00d42" https://www.soltoder.com/mc-uuid-converter/#-567391687,-1566356248,-1686925304,1503661378
 summon minecraft:text_display ~ ~ ~ {UUID:[I;537041449,22823193,-2002285349,1468324250],Tags:["settings"],text:'[{"text":"隨機","bold":true,"color":"red"},{"text":"分隊","bold":true,"color":"blue"}]',Rotation:[270f,0f]}
-summon minecraft:text_display ~ ~ ~ {UUID:[I;1533844994,1313555644,-1304363711,-1641951009],Tags:["settings"],text:'{"text":"右鍵分隊"}',Rotation:[270f,0f]}
+summon minecraft:text_display ~ ~ ~ {UUID:[I;1533844994,1313555644,-1304363711,-1641951009],Tags:["settings"],text:'{"text":"左鍵分隊"}',Rotation:[270f,0f]}
 summon minecraft:interaction ~ ~ ~ {UUID:[I;-567391687,-1566356248,-1686925304,1503661378],Tags:["settings"],Rotation:[270f,0f]}
 
 # 加入旁觀
@@ -37,5 +37,5 @@ summon minecraft:interaction ~ ~ ~ {UUID:[I;-567391687,-1566356248,-1686925304,1
 # spec_instruct "80ef652a-0cec-42fa-8b62-dfef28bb5702" https://www.soltoder.com/mc-uuid-converter/#-2131794646,216810234,-1956454417,683366146
 # spec_interact "0ad7e3cf-eb6f-4c8b-b044-dde49d24d5cf" https://www.soltoder.com/mc-uuid-converter/#181920719,-345027445,-1337664028,-1658530353
 summon minecraft:text_display ~ ~ ~ {UUID:[I;1408119967,300829746,-1476614486,-850031730],Tags:["settings"],text:'{"text":"加入旁觀","bold":true,"color": "#c6c6c6"}',Rotation:[270f,0f]}
-summon minecraft:text_display ~ ~ ~ {UUID:[I;-2131794646,216810234,-1956454417,683366146],Tags:["settings"],text:'{"text":"左鍵旁觀，右鍵離開","color": "#c6c6c6"}',Rotation:[270f,0f]}
+summon minecraft:text_display ~ ~ ~ {UUID:[I;-2131794646,216810234,-1956454417,683366146],Tags:["settings"],text:'{"text":"左鍵旁觀，右鍵離開"}',Rotation:[270f,0f]}
 summon minecraft:interaction ~ ~ ~ {UUID:[I;181920719,-345027445,-1337664028,-1658530353],Tags:["settings"],Rotation:[270f,0f]}

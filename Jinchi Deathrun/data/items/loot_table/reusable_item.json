@@ -1,181 +1,266 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:glowstone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
                 {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:glowstone",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                          "function": "set_name",
-                          "name": [
-                            {
-                              "text": "§b§l全體發光"
-                            }
-                          ]
-                        },
-                        {
-                          "function": "set_lore",
-                          "lore": [
-                            {"text":"§7所有敵隊玩家發光10秒。"},
-                            {"text":"§c敵方全體玩家皆處於發光狀態時不得使用。"}
-                          ],
-                          "mode": "append"
-                        },
-                        {
-                          "function": "set_components",
-                          "components": {
-                            "minecraft:max_stack_size": 1,
-                            "minecraft:custom_data": {
-                                "glowing": "all"
-                              },
-                            "minecraft:food": {
-                              "nutrition": 1,
-                              "saturation": 1,
-                              "can_always_eat": true,
-                              "eat_seconds": 999999
-                            }
-                          }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:glowstone_dust",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                          "function": "set_name",
-                          "name": [
-                            {
-                              "text": "§b§l單人發光"
-                            }
-                          ]
-                        },
-                        {
-                          "function": "set_lore",
-                          "lore": [
-                            {"text":"§7隨機一位敵隊玩家發光10秒。"},
-                            {"text":"§c敵方全體玩家皆處於發光狀態時不得使用。"}
-                          ],
-                          "mode": "append"
-                        },
-                        {
-                          "function": "set_components",
-                          "components": {
-                            "minecraft:max_stack_size": 1,
-                            "minecraft:custom_data": {
-                                "glowing": "all"
-                              },
-                            "minecraft:food": {
-                              "nutrition": 1,
-                              "saturation": 1,
-                              "can_always_eat": true,
-                              "eat_seconds": 999999
-                            }
-                          }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:trident",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                          "function": "set_lore",
-                          "lore": [
-                            {"text":"§7一把三叉戟，耐久度為1。"},
-                            {"text":"§7可用於遠程攻擊其他玩家發動對戰。"}
-                          ],
-                          "mode": "append"
-                        },
-                        {
-                          "function": "set_damage",
-                          "damage": 0
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:soul_sand",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                              {
-                                "text": "§b§l單人發光"
-                              }
-                            ]
-                          },
-                        {
-                          "function": "set_lore",
-                          "lore": [
-                            {"text":"§7所有敵隊玩家定格5秒。"},
-                            {"text":"§c敵方全體玩家皆處於發光狀態時不得使用。"}
-                          ],
-                          "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                              "minecraft:max_stack_size": 1,
-                              "minecraft:custom_data": {
-                                  "freeze": "all"
-                                },
-                              "minecraft:food": {
-                                "nutrition": 1,
-                                "saturation": 1,
-                                "can_always_eat": true,
-                                "eat_seconds": 999999
-                              }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:ice",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                          "function": "set_lore",
-                          "lore": [
-                            {"text":"§7所有敵隊玩家無法移動 5秒。"},
-                            {"text":"§c敵方全體玩家皆處於凍結狀態時不得使用。"}
-                          ],
-                          "mode": "append"
-                        },
-                        {
-                          "function": "set_damage",
-                          "damage": 0
-                        }
-                    ]
+                  "text": "§b§l全體發光"
                 }
-            ]
-        }
-    ]
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7所有敵隊玩家發光10秒。"
+                },
+                {
+                  "text": "§c敵方全體玩家皆處於發光狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "glowing": "all"
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 999999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:glowstone_dust",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l單人發光"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7隨機一位敵隊玩家發光10秒。"
+                },
+                {
+                  "text": "§c敵方全體玩家皆處於發光狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "glowing": "all"
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 999999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7一把三叉戟，耐久度為1。"
+                },
+                {
+                  "text": "§7可用於遠程攻擊其他玩家發動對戰。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_damage",
+              "damage": 0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:packed_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l單人凍結"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7使用後5秒內攻擊的單一敵隊玩家無法移動10秒。"
+                },
+                {
+                  "text": "§c敵方全體玩家皆處於凍結狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "freeze": "single"
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 999999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:packed_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l無效狀態"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7強制進入無效狀態。"
+                },
+                {
+                  "text": "§c自身處於無效狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "freeze": "all"
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 999999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:packed_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§ld狂奔"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7獲得加速II 30秒。"
+                },
+                {
+                  "text": "§c自身處於狂奔狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "dash": true
+                },
+                "minecraft:food": {
+                  "nutrition": 1,
+                  "saturation": 1,
+                  "can_always_eat": true,
+                  "eat_seconds": 999999
+                }
+              }
+            }
+          ]
+        },
+      ]
+    }
+  ]
 }
