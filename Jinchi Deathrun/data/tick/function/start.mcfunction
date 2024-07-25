@@ -13,6 +13,10 @@ execute as @a[scores={death=1}] at @s if entity @e[type=marker,tag=lobby,limit=1
 execute if score 勝負已分 system matches 0 as @a[team=!spec] at @s run function game:border
 execute as @a[scores={join=1..}] run function game:join
 
+#---道具---
+#---檢查單人凍結---
+execute as @a[scores={check_for_freeze=1}] at @s run function items:freeze/check_frozen
+
 #---合體---
 execute as @a[team=red] at @s store result score @s nearby if entity @a[team=red,distance=..5]
 execute as @a[team=blue] at @s store result score @s nearby if entity @a[team=blue,distance=..5]
