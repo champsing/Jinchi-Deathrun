@@ -38,7 +38,7 @@
   <p align="center">
     Minecraft 塔防型團戰PVP 《陣地大逃殺》資料包的指令倉儲
     <br />
-    <a href="https://github.com/champsing/Jinchi-Deathrun"><strong>了解如何安裝 »</strong></a>
+    <a href="#安裝教學"><strong>了解如何安裝 »</strong></a>
     <br />
     <br />
     <a href="https://github.com/champsing/Jinchi-Deathrun">查看演示</a>
@@ -56,8 +56,7 @@
   <summary>目錄</summary>
   <ol>
     <li><a href="#關於本地圖">關於本地圖</a></li>
-    <li><a href="#規則教學">規則教學</a></li>
-    <li><a href="#設定教學">設定教學</a></li>
+    <li><a href="#使用教學">使用教學</a></li>
     <li>
       <a href="#安裝教學">安裝教學</a>
       <ul>
@@ -78,28 +77,32 @@
 
 <!-- [![Product Name Screen Shot]][product-screenshot] -->
 
-《陣地大逃殺》是一款塔防型團戰PVP遊戲。遊戲開始時雙方會獲得一定分數
+遊戲參考：《今際之國的闖關者》 梅花K-分數爭奪戰
+
+遊戲版本： **1.21**
+
+建議人數：3~100人
+
+遊戲時間：15分鐘～2小時/場，自訂
+
+地圖載點：點此
+
+《陣地大逃殺》是一款塔防型團戰PVP遊戲。遊戲開始時雙方會獲得一定分數，是每位隊員各自的個人分數加總；遊戲期間雙方必須尋找對方玩家進行對戰、攻擊對方陣地，或是尋找場上的道具贏得分數，或為自己增加優勢。率先達到事先設定的目標分數，或遊戲結束時分數較高的一方獲得勝利。
 
 
 <p align="right">(<a href="#readme-top">回上方</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
-## 規則教學
+## 使用教學
+### 規則教學
 
 [《陣地大逃殺》玩法教學](https://docs.google.com/document/d/13DN1XVfx8GLBMqpHVgBwiKtkdb5Y66AMiOXcsnJQLxI/edit#heading=h.csa3qtth73)
 
-<p align="right">(<a href="#readme-top">回上方</a>)</p>
-
-
-
 <!-- ROADMAP -->
-## 設定教學
+### 設定教學
 
-<!-- - [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature -->
+[《陣地大逃殺》設定教學]()
 
 <p align="right">(<a href="#readme-top">回上方</a>)</p>
 
@@ -116,14 +119,18 @@
 
 ### 安裝步驟
 
+1. 將兩個資料包複製到 `.minecraft\saves\<你的地圖檔資料夾>\datapacks` 資料夾。
+2. 重登遊戲，並在遊戲內輸入 `/reload`，出現提示即代表安裝成功。
+
 > [!NOTE]
-> 請 __**務必 一定要**__ 兩個資料包都裝進世界存檔的`datapacks`資料夾
+> 請 __**務必 一定要**__ 兩個資料包都裝進世界存檔的`datapacks`資料夾！
+
+### 更新
+
+1. 將新的兩個資料包依照上述步驟複製到 `datapacks` 資料夾
+2. 重登遊戲，並在遊戲內輸入 `/reload`，出現提示即代表更新安裝成功。
 
 <p align="right">(<a href="#readme-top">回上方</a>)</p>
-
-
-
-
 
 
 <!-- CONTRIBUTING -->
