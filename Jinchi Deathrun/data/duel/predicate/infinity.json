@@ -6,15 +6,15 @@
 		"entity": "this",
 		"predicate": {
 		  "type": "minecraft:player",
-		  "nbt": "{Tags:[\"hurt\",\"infinity\"]}"
+		  "nbt": "{Tags:[\"infinity\"]}"
 		}
 	  },
 	  {
 		"condition": "minecraft:entity_properties",
-		"entity": "this",
+		"entity": "attacking_player",
 		"predicate": {
 			"type": "minecraft:player",
-		  "nbt": "{Tags:[\"attack\",\"infinity\"]}"
+		  "nbt": "{Tags:[\"infinity\"]}"
 		}
 	  }
 	]

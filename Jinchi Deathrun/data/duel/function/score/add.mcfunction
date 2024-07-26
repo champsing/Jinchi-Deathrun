@@ -8,7 +8,7 @@ execute if entity @s[team=blue] run tag @a[team=blue,distance=..5] add add_score
 scoreboard players set 加分 score 50
 scoreboard players set 餘數 score 50
 
-#---2以上才除，0跟1不需要---
+#---2以上才除，void跟1不需要---
 execute if score @s grouped matches 2.. run scoreboard players operation 加分 score /= @s grouped
 execute if score @s grouped matches 2.. run scoreboard players operation 餘數 score %= @s grouped
 execute if score @s grouped matches 2.. if score 餘數 score matches 1.. run function duel:score/add_remain
