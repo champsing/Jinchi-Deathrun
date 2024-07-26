@@ -25,10 +25,12 @@ execute as @a[team=!spec] at @s if entity @e[tag = base, distance = ..5] run sco
 execute as @a[team=!spec] unless score @s nearby = @s grouped run function game:teaming
 
 #---陣地---
-execute as @a[team=red] at @s if entity @e[team=red,tag=base,distance=..1] run function base:infinity
-execute as @a[team=blue] at @s if entity @e[team=blue,tag=base,distance=..1] run function base:infinity
-execute as @a[team=red] at @s unless entity @e[team=red,tag=base,distance=..1] run tag @s remove infinity
-execute as @a[team=blue] at @s unless entity @e[team=blue,tag=base,distance=..1] run tag @s remove infinity
+#---陣地最遠距離與本體的歐幾里得距離為3根號2，大概是4.23，取整數5---
+#---在陣地半徑5格球體內具有無敵，解除無效狀態---
+execute as @a[team=red] at @s if entity @e[tag=red,tag=base,distance=..5] run function base:infinity
+execute as @a[team=blue] at @s if entity @e[tag=blue,tag=base,distance=..5] run function base:infinity
+execute as @a[team=red] at @s unless entity @e[tag=red,tag=base,distance=..5] run tag @s remove infinity
+execute as @a[team=blue] at @s unless entity @e[tag=blue,tag=base,distance=..5] run tag @s remove infinity
 
 #---體力---
 execute as @a[team=!spec] if predicate stamina:is_running_mode run function stamina:consume
