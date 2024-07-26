@@ -20,6 +20,8 @@ execute as @a[scores={check_for_freeze=1}] at @s run function items:freeze/check
 #---合體---
 execute as @a[team=red] at @s store result score @s nearby if entity @a[team=red,distance=..5]
 execute as @a[team=blue] at @s store result score @s nearby if entity @a[team=blue,distance=..5]
+#---陣地(無論顏色)內不允許合體，不然1000分會被平分---
+execute as @a[team=!spec] at @s if entity @e[tag = base, distance = ..5] run scoreboard players reset @s nearby
 execute as @a[team=!spec] unless score @s nearby = @s grouped run function game:teaming
 
 #---陣地---
