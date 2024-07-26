@@ -43,5 +43,5 @@ summon minecraft:interaction ~ ~ ~ {UUID:[I;181920719,-345027445,-1337664028,-16
 # 陣地發光
 # red_base_glowing "37bc80d5-09af-420f-a95a-7bc162ca2216" https://www.soltoder.com/mc-uuid-converter/#935100629,162480655,-1453687871,1657414166
 # blue_base_glowing "f340c881-7ebd-4c46-8ca7-2aa7a5301005" https://www.soltoder.com/mc-uuid-converter/#-213858175,2126335046,-1935201625,-1523576827
-execute at @e[tag = base, tag = blue] run summon minecraft:block_display ~ ~2 ~ {block_state:{Name:"minecraft:smooth_quartz"},UUID:[I;935100629,162480655,-1453687871,1657414166],Glowing:1b}
-execute at @e[tag = base, tag = red] run summon minecraft:block_display ~ ~2 ~ {block_state:{Name:"minecraft:smooth_quartz"},UUID:[I;-213858175,2126335046,-1935201625,-1523576827],Glowing:1b}
+execute at @e[tag = base, tag = red] run summon minecraft:block_display ~ ~2 ~ {block_state:{Name:"minecraft:smooth_quartz"},UUID:[I;935100629,162480655,-1453687871,1657414166],Glowing:1b}
+execute at @e[tag = base, tag = blue] run summon minecraft:block_display ~ ~2 ~ {block_state:{Name:"minecraft:smooth_quartz"},UUID:[I;-213858175,2126335046,-1935201625,-1523576827],Glowing:1b}
