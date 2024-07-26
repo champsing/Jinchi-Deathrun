@@ -1,5 +1,7 @@
 scoreboard players set @s[scores={stamina=..-1}] stamina 0
 
+execute if predicate stamina:stamina_under_30 run effect clear @s speed
+
 effect give @s[scores={stamina=30..39}] mining_fatigue 1 0 true
 effect give @s[scores={stamina=20..29}] mining_fatigue 1 1 true
 effect give @s[scores={stamina=10..19}] mining_fatigue 1 2 true

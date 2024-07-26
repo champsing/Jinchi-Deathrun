@@ -5,5 +5,5 @@ execute if predicate items:speed_2 run return run tellraw @s ["",{"text":">> ","
 
 scoreboard players set @s item_cd 5
 clear @s nether_star[custom_data={"dash": true}] 1
-effect give @s speed 30 2 true
+effect give @s speed 30 1 true
 tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"狂奔道具","color":"gold"},{"text":" 獲得加速II效果"},{"text":"30秒","color":"gold"}]
