@@ -40,5 +40,5 @@ function game:prepare/teleport
 scoreboard players set 準備時間 system 2400
 bossbar set prepare players @a
 scoreboard players operation 初始分數 system = 初始分數 menu
-function game:prepare/emerald_macro with entity 47cc9d0c-b481-4f45-9776-8c941f618d53 Score 
+function game:prepare/emerald_macro with entity 47cc9d0c-b481-4f45-9776-8c941f618d53 DurationOnUse
 schedule function game:prepare/emerald_instruction 5s
