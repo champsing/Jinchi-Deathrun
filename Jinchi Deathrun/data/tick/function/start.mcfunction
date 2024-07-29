@@ -37,7 +37,7 @@ execute as @a[team=blue,tag=infinity] at @s unless entity @e[tag=blue,tag=base,d
 
 #---體力---
 execute as @a[team=!spec] if predicate stamina:is_running_mode run function stamina:consume
-execute as @a[team=!spec] if predicate stamina:adrenaline run effect give @s speed 16 0 true
+execute as @a[team=!spec] if predicate stamina:adrenaline run effect give @s speed 1 0 true
 execute as @a[team=!spec,scores={stamina=..39}] run function stamina:effect
 
 #---任務---
