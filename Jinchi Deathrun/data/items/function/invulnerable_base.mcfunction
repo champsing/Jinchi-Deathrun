@@ -8,8 +8,6 @@ scoreboard players set @s item_cd 5
 clear @s nether_star[custom_data={"invulnerable_base": true}] 1
 execute if entity @s[team=blue] run data modify entity @e[tag=base,tag=blue,limit=1] Invulnerable set value 1b
 execute if entity @s[team=red] run data modify entity @e[tag=base,tag=red,limit=1] Invulnerable set value 1b
-execute if entity @s[team=red] run scoreboard players add @e[tag=base,tag=red] base 600
-execute if entity @s[team=blue] run scoreboard players add @e[tag=base,tag=blue] base 600
 #---下2上5---
 execute if entity @s[team=red] at @e[tag=base,tag=red] run fill ~ ~-2 ~ ~ ~5 ~ bedrock
 execute if entity @s[team=blue] at @e[tag=base,tag=blue] run fill ~ ~ ~ ~ ~5 ~ bedrock

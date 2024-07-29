@@ -37,10 +37,10 @@ team join gold 遊戲時間
 team join gold 目標分數
 team join gold 玩家人數
 
-bossbar add time "遊戲時間"
+bossbar add countdown [{"text":"剩餘時間： "},{"score":{"name": "剩餘時間","objective": "gameinfo"}},{"text":"秒"}]
 bossbar add event "事件時間"
 bossbar add prepare "準備時間"
-bossbar set time color yellow
+bossbar set countdown color yellow
 bossbar set event color red
 bossbar set prepare color purple
 
@@ -62,7 +62,9 @@ scoreboard objectives add grouped dummy "小隊隊友數"
 scoreboard objectives add stamina dummy "體力"
 scoreboard objectives add stamina_max dummy "最大體力"
 scoreboard objectives add item_cd dummy "道具冷卻"
-scoreboard objectives add check_for_freeze dummy "檢查被單人凍結"
+scoreboard objectives add check_for_frozen dummy "檢查被單人凍結"
+scoreboard objectives add check_for_freeze dummy "檢查單人凍結"
+scoreboard objectives add frozen dummy "凍結剩餘時間"
 
 scoreboard objectives add death deathCount "死亡數"
 scoreboard objectives add top_duel dummy
@@ -70,7 +72,6 @@ scoreboard objectives add top_score dummy
 scoreboard objectives add total_duel dummy "總對決數"
 
 scoreboard objectives add item used:carrot_on_a_stick
-scoreboard objectives add base dummy
 
 scoreboard players set 一半 system 2
 scoreboard players set 一百 system 100

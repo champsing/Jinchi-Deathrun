@@ -28,7 +28,7 @@ team remove gold
 team modify red color red
 team modify blue color blue
 
-bossbar remove time
+bossbar remove countdown
 bossbar remove event
 bossbar remove prepare
 
