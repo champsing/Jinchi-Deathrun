@@ -1,5 +1,5 @@
-execute as @a[team=!spec] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"score"}},{"text":"    團隊分數: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"team_score"}}]
-execute as @a[team=!spec,tag=infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"text":"無限","bold":true,"color":"#871ea7"},{"score":{"name":"@s","objective":"score"}}]
+execute as @a[team=!spec,tag=!infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"score"}}]
+execute as @a[team=!spec,tag=infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"text":"無限 ","bold":true,"color":"#871ea7"},{"score":{"name":"@s","objective":"score"},"color":"gray", "bold": false, "strikethrough": true}]
 
 #---準備時間---
 execute if score 準備時間 system matches 1.. store result bossbar prepare value run scoreboard players remove 準備時間 system 1
