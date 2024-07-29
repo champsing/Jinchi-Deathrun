@@ -7,7 +7,7 @@ schedule function game:start 6s
 gamemode adventure @a[team=!spec]
 gamemode spectator @a[team=spec]
 bossbar set prepare players
-bossbar set time players @a
+bossbar set countdown players @a
 
 #---傳送---
 function game:prepare/teleport
