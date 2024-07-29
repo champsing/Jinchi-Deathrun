@@ -12,7 +12,7 @@ effect give @a night_vision infinite 0 true
 title @a title {"text":"START","bold":true,"color":"gold"}
 
 #---給大家大跑棒棒
-give @s breeze_rod[custom_data= {"adrenaline": true}, item_name= '{"text":"§c§l快跑","italic": false}', lore= ['{"text":"§7在主手時可獲得加速I效果。","italic": false}','{"text":"§c體力低於 30% 時不得使用。","italic": false}']]
+give @s breeze_rod[custom_data= {"adrenaline": true}, item_name= '{"text":"§c§l腎上腺素","italic": false}', lore= ['{"text":"§7在主手時可獲得加速I效果。","italic": false}','{"text":"§c體力低於 30% 時不得使用。","italic": false}']]
 
 #---排程函數---
 schedule function game:time 1s
