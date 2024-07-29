@@ -3,7 +3,7 @@
 # at: Server
 
 #---時間到一律結束檢查凍結---
-scoreboard players reset @a[scores={check_for_freeze=1}] check_for_freeze
+scoreboard players reset @a[scores={check_for_freeze=0}] check_for_freeze
 
 #---@s 沒有成功凍結人---
 execute unless entity @s[tag = success_freeze_person] run tellraw @s ["",{"text":">> ","color":"gold"},{"text": "你沒有在5秒內攻擊人，道具已失效","color": "red"}]

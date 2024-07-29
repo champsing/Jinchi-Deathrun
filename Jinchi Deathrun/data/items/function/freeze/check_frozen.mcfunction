@@ -1,18 +1,15 @@
 # 檢查凍結資格
-# ticked, condition: @a[scores={check_for_freeze=1}] exists.
-# @s: @a[scores={check_for_freeze=1}]
-# at: @a[scores={check_for_freeze=1}]
+# ticked, condition: @a[tag = check_for_frozen] exists.
+# @s: @a[tag = check_for_frozen]
+# at: @a[tag = check_for_frozen]
 
 #---面前玩家已被凍結--
 execute if entity @s[tag = frozen] on attacker run return run tellraw @s ["",{"text":">> ","color":"gold"},{"text": "該玩家已被凍結","color": "red"}]
 
 function items:freeze/freeze
 
-#---排程解除凍結---
-schedule function items:freeze/restore_from_frozen 10s
-
 #---成功了就可以結束檢查凍結---
-scoreboard players reset @a[scores={check_for_freeze=1}] check_for_freeze
+tag @s[tag = check_for_frozen] remove check_for_frozen
 
 execute on attacker run tag @s add success_freeze_person
 

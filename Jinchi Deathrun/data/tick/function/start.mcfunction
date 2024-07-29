@@ -15,7 +15,10 @@ execute as @a[scores={join=1..}] run function game:join
 
 #---道具---
 #---檢查單人凍結---
-execute as @a[scores={check_for_freeze=1}] at @s run function items:freeze/check_frozen
+execute as @a[scores={check_for_freeze=0}] run function items:freeze/await_5_seconds
+execute as @a[tag = check_for_freeze] at @s run function items:freeze/check_frozen
+#---排程解除凍結---
+execute as @a[tag = frozen] if score @s frozen matches 0 run function items:freeze/restore_from_frozen
 
 #---合體---
 execute as @a[team=red] at @s store result score @s nearby if entity @a[team=red,distance=..5]

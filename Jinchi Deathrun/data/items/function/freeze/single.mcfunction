@@ -22,7 +22,7 @@ clear @s nether_star[custom_data={"freeze": "single"}] 1
 # 2. target處在凍結狀態 => check_frozen會return
 
 #---單人的凍結過程到items:freeze/check_frozen (tick)裡面去執行---
-execute on target run scoreboard players set @s check_for_freeze 1
+execute on target run tag @s add check_for_frozen
 
 #---5秒後檢查有沒有凍結到人---
-schedule function items:freeze/await_5_seconds 5s
+scoreboard players add @s check_for_freeze 100
