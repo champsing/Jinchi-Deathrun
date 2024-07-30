@@ -4,6 +4,8 @@
 tag @e[type=marker,tag=lobby] add start
 tag @a add start
 
+execute at @n[tag = base, tag = red] run spawnpoint @a[team = red] ~ ~ ~
+execute at @n[tag = base, tag = blue] run spawnpoint @a[team = blue] ~ ~ ~
 setblock ~ ~ ~ air
 team join spec @a[team=]
 time set 1000
