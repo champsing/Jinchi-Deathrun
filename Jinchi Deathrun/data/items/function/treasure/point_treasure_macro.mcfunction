@@ -1,0 +1,1 @@
+$item modify entity @n[tag = $(point)_point] contents items:point_item_$(point)
