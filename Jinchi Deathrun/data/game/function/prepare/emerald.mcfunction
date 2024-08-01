@@ -2,7 +2,7 @@
 
 #---設定---
 tag @e[type=marker,tag=lobby] add start
-tag @a add start
+tag @a add playing
 
 execute at @n[tag = base, tag = red] run spawnpoint @a[team = red] ~ ~ ~
 execute at @n[tag = base, tag = blue] run spawnpoint @a[team = blue] ~ ~ ~

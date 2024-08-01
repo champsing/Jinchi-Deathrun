@@ -8,7 +8,7 @@ clear @a
 kill @e[tag=treasure_item]
 
 tag @e[type=marker,tag=start] remove start
-tag @a remove start
+tag @a remove playing
 
 effect clear @a
 effect give @a instant_health 1 100

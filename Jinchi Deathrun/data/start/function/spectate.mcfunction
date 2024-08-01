@@ -9,4 +9,4 @@ tellraw @s ["",{"text":"§6§l>> "},{"text":"若想中途加入§6隊伍§r, 可
 
 bossbar set countdown players @a
 bossbar set event players @a
-tag @s add start
+tag @s add playing
