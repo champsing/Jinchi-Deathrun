@@ -7,7 +7,7 @@ execute if score @s item_cd matches 1.. run return fail
 
 
 scoreboard players set @s item_cd 5
-clear @s nether_star[custom_data={"freeze": "single"}] 1
+clear @s packed_ice[custom_data={"freeze": "single"}] 1
 
 # 劇本:
 # 先讓target去檢查frozen

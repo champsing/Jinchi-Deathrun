@@ -171,7 +171,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:packed_ice",
+          "name": "minecraft:blue_ice",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -217,7 +217,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:packed_ice",
+          "name": "minecraft:barrier",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -263,7 +263,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:packed_ice",
+          "name": "minecraft:rabbit_foot",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -309,7 +309,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:packed_ice",
+          "name": "minecraft:slime_ball",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -355,7 +355,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:packed_ice",
+          "name": "minecraft:totem_of_undying",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -365,7 +365,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l無效狀態"
+                  "text": "§b§l召集"
                 }
               ]
             },
@@ -398,7 +398,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:packed_ice",
+          "name": "minecraft:recovery_compass",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -441,7 +441,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:packed_ice",
+          "name": "minecraft:bedrock",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -487,7 +487,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:packed_ice",
+          "name": "minecraft:enchanting_table",
           "functions": [
             {
               "function": "minecraft:set_count",

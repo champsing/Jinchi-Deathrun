@@ -4,7 +4,7 @@ execute if score @s item_cd matches 1.. run return fail
 execute as @a[team = red, tag = frozen] run return run tellraw @s[team = blue] ["",{"text":">> ","color":"gold"},{"text": "敵方全體已被凍結","color": "red"}]
 execute as @a[team = blue, tag = frozen] run return run tellraw @s[team = red] ["",{"text":">> ","color":"gold"},{"text": "敵方全體已被凍結","color": "red"}]
 
-clear @s nether_star[custom_data={"freeze": "all"}] 1
+clear @s blue_ice[custom_data={"freeze": "all"}] 1
 scoreboard players set @s item_cd 5
 
 execute if entity @s[team=red] as @a[team = blue] run function items:freeze/freeze
