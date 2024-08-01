@@ -1,4 +1,4 @@
-execute if entity @e[type = marker,scores={mode=3}] run function gameplay:force_end
+execute if entity @e[type = marker,scores={mode=3}] run function game:force_end
 
 gamerule announceAdvancements true
 gamerule commandBlockOutput true
