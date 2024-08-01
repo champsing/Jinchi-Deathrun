@@ -1,3 +1,5 @@
+execute if entity @e[type = marker,scores={mode=3}] run function gameplay:force_end
+
 gamerule announceAdvancements true
 gamerule commandBlockOutput true
 gamerule commandModificationBlockLimit 100000
@@ -29,7 +31,7 @@ team modify red color red
 team modify blue color blue
 
 bossbar remove countdown
-bossbar remove event
+# bossbar remove event
 bossbar remove prepare
 
 scoreboard objectives remove menu
