@@ -8,7 +8,7 @@ execute if score 準備時間 system matches 0 run function game:prepare/countdo
 
 #---開始---
 execute as @a[team=!spec] at @s if score 倒數 system matches 0..5 run function game:prepare/teleport
-execute as @a[tag=!start] run function start:spectate
+execute as @a[tag = !playing] run function start:spectate
 execute as @a[team=spec] at @s if entity @s[y=-120,dy=40] run tp @s @e[tag=center,limit=1]
 execute as @a if score @s score matches ..-1 run function game:score_death
 execute as @a[scores={death=1}] at @s run function game:death
