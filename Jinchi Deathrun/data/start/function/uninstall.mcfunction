@@ -60,5 +60,6 @@ scoreboard objectives remove total_duel
 
 scoreboard objectives remove item
 
+kill @e[tag = lobby]
 #---隨機生成貨櫃系統資料包也要 uninstall---
 # (指令)
