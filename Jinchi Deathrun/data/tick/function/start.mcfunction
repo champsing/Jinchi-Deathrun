@@ -1,3 +1,4 @@
+#---個人分數actionbar---
 execute as @a[team=!spec,tag=!infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"score"}}]
 execute as @a[team=!spec,tag=infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"text":"無限 ","bold":true,"color":"#871ea7"},{"score":{"name":"@s","objective":"score"},"color":"gray", "bold": false, "strikethrough": true}]
 
