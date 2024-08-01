@@ -21,6 +21,7 @@ execute if score 目標分數 menu matches 999 run scoreboard players set 目標
 #---無限提示---
 execute if score 目標分數 menu matches -1 run scoreboard players display numberformat 目標分數 menu fixed {"text": "無限","color": "dark_red","bold": true}
 execute if score 目標分數 menu matches -1 run tellraw @s ["",{"text": ">> ","color": "gold"},{"text":"目標分數無限制時，時間結束時較高分的一方獲勝。若平手時，一旦有一方領先便立即獲勝。"}]
+execute if score 目標分數 menu matches -1 run tellraw @s ["",{"text": ">> ","color": "gold"},{"text":"若想強制中止遊戲，請使用指令"},{"text":"/function game:force_end","bold":true,"color":"aqua","hoverEvent": {"action": "show_text", "contents": "點擊複製指令"}, "clickEvent": {"action": "copy_to_clipboard", "value": "/function game:force_end"}}]
 
 #---結果---
 execute as @e[tag = target_value] run data modify entity @s text set value '{"score":{"name":"目標分數","objective":"menu"}}'
