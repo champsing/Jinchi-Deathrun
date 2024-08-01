@@ -37,15 +37,19 @@ team join gold 遊戲時間
 team join gold 目標分數
 team join gold 玩家人數
 
-bossbar add countdown [{"text":"剩餘時間： "},{"score":{"name": "剩餘時間","objective": "gameinfo"}},{"text":"秒"}]
-bossbar add event "事件時間"
+bossbar add countdown [{"text":"剩餘時間： "},{"score":{"name": "剩餘時間","objective": "gameinfo"},"color": "gold"},{"text":"秒"}]
+# bossbar add event "事件時間"
 bossbar add prepare "準備時間"
 bossbar set countdown color yellow
 bossbar set event color red
+bossbar set countdown style notched_10
+# bossbar set event color red
 bossbar set prepare color purple
+bossbar set prepare max 2400
 
 scoreboard objectives add menu dummy ["",{"text":"陣地","bold":true,"color":"gold"},{"text":"大逃殺","bold":true,"color":"red"}]
 scoreboard objectives add gameinfo dummy {"text":"分數表","bold":true,"color":"gold"}
+scoreboard objectives add gameinfo dummy {"text":"遊戲資訊","bold":true,"italic":true,"color":"gold"}
 scoreboard objectives add system dummy "隱藏資訊"
 scoreboard objectives add join trigger "中途加入"
 scoreboard objectives add score dummy "分數"
