@@ -47,8 +47,9 @@ bossbar set prepare color purple
 bossbar set prepare max 2400
 
 scoreboard objectives add menu dummy ["",{"text":"陣地","bold":true,"color":"gold"},{"text":"大逃殺","bold":true,"color":"red"}]
-scoreboard objectives add mode dummy "模式和關於"
 scoreboard objectives add gameinfo dummy {"text":"遊戲資訊","bold":true,"italic":true,"color":"gold"}
+scoreboard objectives add editinfo dummy {"text": "編輯中","color": "dark_aqua","italic": true}
+scoreboard objectives add mode dummy "模式和關於"
 scoreboard objectives add system dummy "隱藏資訊"
 scoreboard objectives add join trigger "中途加入"
 scoreboard objectives add score dummy "分數"
@@ -79,6 +80,8 @@ scoreboard objectives add item used:carrot_on_a_stick
 scoreboard players set 一半 system 2
 scoreboard players set 一百 system 100
 scoreboard players set 十倍 system 10
+
+scoreboard players set 更新 mode 1
 
 #---隨機生成貨櫃系統資料包也要 install---
 # (指令)
