@@ -2,7 +2,7 @@
 
 forceload add ~ ~
 setworldspawn ~ ~ ~
-execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby","edit"]}
+execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby"]}
 function start:lobby
 function start:install
 

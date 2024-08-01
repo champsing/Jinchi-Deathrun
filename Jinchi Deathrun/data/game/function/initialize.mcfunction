@@ -8,7 +8,7 @@ execute at @e[type = marker, limit = 1, tag = lobby] run spawnpoint @a ~ ~ ~
 clear @a
 kill @e[tag=treasure_item]
 
-tag @e[type=marker,tag=start] remove start
+scoreboard players set @e[type = marker,scores={mode=3}] mode 2
 tag @a remove playing
 
 effect clear @a

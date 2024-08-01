@@ -1,7 +1,7 @@
 # 準備階段之分配綠寶石：這時遊戲還沒開始，玩家可以動
 
 #---設定---
-tag @e[type=marker,tag=lobby] add start
+scoreboard players set @e[type = marker,scores={mode=2}] mode 3
 tag @a add playing
 
 execute at @n[tag = base, tag = red] run spawnpoint @a[team = red] ~ ~ ~
