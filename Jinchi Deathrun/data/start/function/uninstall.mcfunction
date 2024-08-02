@@ -63,3 +63,7 @@ scoreboard objectives remove item
 kill @e[tag = lobby]
 #---隨機生成貨櫃系統資料包也要 uninstall---
 # (指令)
+
+tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+tellraw @a ["",{"text": ">> ","color":"gold"},{"text":"資料包解除安裝成功","color":"green"}]
+tellraw @s ["",{"text": ">> ","color":"gold"},{"text":"如果想重新安裝資料包請","color": "red"},{"text": "點擊 ","color":"gray"},{"text": "此處","color":"aqua","bold":true,"underlined": true,"clickEvent": {"action": "run_command","value": "/function start:activate"}}]
