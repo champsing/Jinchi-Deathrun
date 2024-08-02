@@ -2,6 +2,7 @@
 
 forceload add ~ ~
 setworldspawn ~ ~ ~
+spawnpoint @a ~ ~ ~
 execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby"]}
 scoreboard players set @e[tag = lobby] mode 1
 scoreboard objectives setdisplay sidebar editinfo
