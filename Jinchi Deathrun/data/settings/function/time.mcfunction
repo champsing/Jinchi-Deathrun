@@ -1,5 +1,5 @@
 #---不是大廳模式---
-execute if entity @e[tag = lobby, scores = {mode = 1}] run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"您目前處於編輯模式。請退出"},{"text":"編輯模式","bold":true,"color":"gold"},{"text":"再加入旁觀。"}]
+execute if entity @e[tag = lobby, scores = {mode = 1}] run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"您目前處於編輯模式。請退出"},{"text":"編輯模式","bold":true,"color":"gold"},{"text":"更改設定。"}]
 
 #---給予反應---
 execute positioned as @e[type = interaction, tag = time_interact] run particle flash ~ ~ ~ 0.1 0.1 0.1 0.3 1 normal
