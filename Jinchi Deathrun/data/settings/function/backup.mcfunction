@@ -21,7 +21,7 @@ summon interaction ~ ~ ~ {UUID:[I;425328237,-865777023,-2064810230,-716550501],T
 # time_value "53099724-2dd2-420b-aa3c-ec979d866df9" https://www.soltoder.com/mc-uuid-converter/#1393137444,768754187,-1438847849,-1652134407
 # time_interact "de2e4a39-a2a3-4ce8-9b73-900859a00d42" https://www.soltoder.com/mc-uuid-converter/#-567391687,-1566356248,-1686925304,1503661378
 summon text_display ~ ~ ~ {UUID:[I;-1223232701,-1412608957,-1882869384,92680213],Tags:["settings"],text:'{"text":"時間限制","color": "green"}',Rotation:[270f,0f]}
-summon text_display ~ ~ ~ {UUID:[I;1393137444,768754187,-1438847849,-1652134407],Tags:["settings"],text:'{"score":{"name":"時間限制","objective":"menu"}}',Rotation:[270f,0f]}
+summon text_display ~ ~ ~ {UUID:[I;1393137444,768754187,-1438847849,-1652134407],Tags:["settings"],text:'[{"score":{"name":"遊戲時間分鐘","objective":"system"}},{"text":" 分鐘"}]',Rotation:[270f,0f]}
 summon interaction ~ ~ ~ {UUID:[I;-567391687,-1566356248,-1686925304,1503661378],Tags:["settings"],Rotation:[270f,0f]}
 
 # 隨機分隊 
