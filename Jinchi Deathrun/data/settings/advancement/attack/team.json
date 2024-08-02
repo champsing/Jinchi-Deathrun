@@ -1,15 +1,15 @@
 {
 	"criteria": {
 		"requirement": {
-		  "trigger": "minecraft:player_hurt_entity",
-		  "conditions": {
-			"entity": {
-			  "type": "minecraft:interaction",
-			  "nbt": "{UUID:[I;-892880160,-866631349,-1602480790,-1991563274]}"
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:interaction",
+					"nbt": "{UUID:[I;-892880160,-866631349,-1602480790,-1991563274]}"
+				}
 			}
-		  }
 		}
-	  },
+	},
 	"rewards": {
 		"function": "settings:team"
 	}

@@ -1,7 +1,7 @@
 {
-	"criteria": {
-		"hurt": {
-			"trigger": "minecraft:entity_hurt_player",
+    "criteria": {
+        "hurt": {
+            "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "damage": {
                     "type": {
@@ -11,9 +11,9 @@
                     }
                 }
             }
-		}
-	},
-	"rewards": {
-		"function": "duel:hurt"
-	}
+        }
+    },
+    "rewards": {
+        "function": "duel:hurt"
+    }
 }
