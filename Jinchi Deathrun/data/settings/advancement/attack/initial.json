@@ -5,7 +5,7 @@
 			"conditions": {
 				"entity": {
 					"type": "minecraft:interaction",
-					"nbt": "{UUID:[I;-1746957356,-1525202357,-2030236345,1882179304]}"
+					"nbt": "{Tags:[\"inital_interact\"]}"
 				}
 			}
 		}
