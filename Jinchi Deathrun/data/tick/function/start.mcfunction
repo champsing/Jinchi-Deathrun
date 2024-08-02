@@ -1,6 +1,6 @@
 #---個人分數actionbar---
-execute as @a[team=!spec,tag=!infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"score"}}]
-execute as @a[team=!spec,tag=infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"text":"無限 ","bold":true,"color":"#871ea7"},{"score":{"name":"@s","objective":"score"},"color":"gray", "bold": false, "strikethrough": true}]
+execute as @a[team=!spec,tag=!infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"score"}},{"text":" / 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
+execute as @a[team=!spec,tag=infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"text":"無限 ","bold":true,"color":"#871ea7"},{"score":{"name":"@s","objective":"score"},"color":"gray", "bold": false, "strikethrough": true},{"text":" / 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
 
 #---準備時間---
 execute if score 準備時間 system matches 1.. store result bossbar prepare value run scoreboard players remove 準備時間 system 1
@@ -38,7 +38,7 @@ execute as @a[team=red,tag=infinity] at @s unless entity @e[tag=red,tag=base,dis
 execute as @a[team=blue,tag=infinity] at @s unless entity @e[tag=blue,tag=base,distance=..5] run tag @s remove infinity
 
 #---體力---
-execute as @a[team=!spec] if predicate stamina:is_running_mode run function stamina:consume
+
 execute as @a[team=!spec] if predicate stamina:adrenaline run effect give @s speed 1 0 true
 execute as @a[team=!spec,scores={stamina=..39}] run function stamina:effect
 
