@@ -33,9 +33,13 @@ team modify red seeFriendlyInvisibles true
 team modify blue seeFriendlyInvisibles true
 team modify red friendlyFire false
 team modify blue friendlyFire false
+team join gold 遊戲模式
 team join gold 遊戲時間
+team join gold 初始分數
 team join gold 目標分數
 team join gold 玩家人數
+team join red 紅隊人數
+team join blue 藍隊人數
 
 bossbar add countdown [{"text":"剩餘時間： "},{"score":{"name": "剩餘時間","objective": "gameinfo"},"color": "gold"},{"text":"秒"}]
 # bossbar add event "事件時間"
@@ -80,6 +84,11 @@ scoreboard objectives add item used:carrot_on_a_stick
 scoreboard players set 一半 system 2
 scoreboard players set 一百 system 100
 scoreboard players set 十倍 system 10
+scoreboard players set 一分鐘 system 60
+scoreboard players set 遊戲時間分鐘 system 15
+scoreboard players set 初始分數 menu 500
+scoreboard players set 目標分數 menu 3000
+scoreboard players set 遊戲時間 menu 900
 
 scoreboard players set 更新 mode 1
 
