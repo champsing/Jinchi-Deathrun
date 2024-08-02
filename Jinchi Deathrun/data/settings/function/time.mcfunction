@@ -13,12 +13,13 @@ execute if entity @s[advancements = {settings:attack/time = true}] run scoreboar
 
 #---超過範圍---
 # min 15分鐘 max 2小時
-execute if score 遊戲時間 menu matches 3900.. run scoreboard players set 遊戲時間 menu 900
+execute if score 遊戲時間 menu matches 7500.. run scoreboard players set 遊戲時間 menu 900
 execute if score 遊戲時間 menu matches ..600 run scoreboard players set 遊戲時間 menu 7200
-
+scoreboard players operation 遊戲時間分鐘 system = 遊戲時間 menu
+scoreboard players operation 遊戲時間分鐘 system /= 一分鐘 system
 #---結果---
-execute as @e[tag = time_value] run data modify entity @s text set value '{"score":{"name":"遊戲時間","objective":"menu"}}'
-tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"text":"遊戲時間設為 "},{"score":{"name":"遊戲時間","objective":"menu"},"bold":true,"color":"gold"}]
+execute as @e[tag = time_value] run data modify entity @s text set value '[{"score":{"name":"遊戲時間分鐘","objective":"system"}},{"text":" 分鐘"}]'
+tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"text":"遊戲時間設為 "},{"score":{"name":"遊戲時間分鐘","objective":"system"},"bold":true,"color":"gold"},{"text":" 分鐘"}]
 
 advancement revoke @s only settings:interact/time
 advancement revoke @s only settings:attack/time
