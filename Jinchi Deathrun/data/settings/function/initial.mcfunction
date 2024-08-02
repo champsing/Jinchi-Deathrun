@@ -11,8 +11,9 @@ execute if entity @s[advancements = {settings:interact/initial = true}] run scor
 execute if entity @s[advancements = {settings:attack/initial = true}] run scoreboard players remove 初始分數 menu 100
 
 #---超過範圍---
-execute if score 初始分數 menu matches 1600.. run scoreboard players set 初始分數 menu 500
-execute if score 初始分數 menu matches ..400 run scoreboard players set 初始分數 menu 1500
+#---1000~2000---
+execute if score 初始分數 menu matches 2100.. run scoreboard players set 初始分數 menu 1000
+execute if score 初始分數 menu matches ..900 run scoreboard players set 初始分數 menu 2000
 
 #---結果---
 execute as @e[tag = initial_value] run data modify entity @s text set value '{"score":{"name":"初始分數","objective":"menu"}}'
