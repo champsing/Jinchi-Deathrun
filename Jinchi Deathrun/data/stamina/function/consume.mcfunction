@@ -2,6 +2,6 @@
 execute if entity @e[type=marker,scores={mode=3}] run scoreboard players remove @s[team=!spec] stamina 1
 advancement revoke @s only stamina:consume
 
-#---4級以前可獲得經驗。4級經驗總值: 40，第40次獲得1點就會變5級0點---
-execute if entity @s[team = !spec, level = 5..] run return fail
-xp add @s[team = !spec, level = ..4] 1
+#---10級以前可獲得經驗。10級經驗總值: 160，第160次獲得1點就會變10級0點---
+execute if entity @s[team = !spec, level = 10..] run return fail
+xp add @s[team = !spec, level = ..9] 1
