@@ -24,6 +24,7 @@ scoreboard objectives setdisplay sidebar menu
 team leave @a
 gamemode adventure @a
 recipe take @a *
+xp set @a 0 points
 execute as @a at @s run playsound block.anvil.land ambient @s ~ ~ ~
 
 #---記分板---
