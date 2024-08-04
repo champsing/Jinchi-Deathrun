@@ -80,6 +80,7 @@ scoreboard objectives add top_score dummy
 scoreboard objectives add total_duel dummy "總對決數"
 
 scoreboard objectives add item used:carrot_on_a_stick
+scoreboard objectives setdisplay sidebar editinfo
 
 scoreboard players set 一半 system 2
 scoreboard players set 一百 system 100
@@ -91,6 +92,7 @@ scoreboard players display numberformat 遊戲模式 menu fixed {"text":"對戰"
 scoreboard players set 初始分數 menu 500
 scoreboard players set 目標分數 menu 3000
 scoreboard players set 遊戲時間 menu 900
+scoreboard players set @e[tag = lobby] mode 1
 
 scoreboard players set 更新 mode 1
 
