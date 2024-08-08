@@ -5,18 +5,18 @@
     {
       "weight": 50,
       "element": {
-        "location": "minecraft:blue_container",
+        "location": "container:blue_container",
         "processors": "minecraft:empty",
-		"projection": "rigid",
+        "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     },
-	{	
+    {
       "weight": 50,
       "element": {
-        "location": "minecraft:yellow_container",
+        "location": "container:yellow_container",
         "processors": "minecraft:empty",
-		"projection": "rigid",
+        "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }
     }
