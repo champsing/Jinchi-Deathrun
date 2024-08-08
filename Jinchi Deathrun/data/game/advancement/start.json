@@ -1,0 +1,17 @@
+{
+	"parent":"settings:root",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:interaction",
+					"nbt": "{Tags:[\"start\"]}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "game:hit_start"
+	}
+}
