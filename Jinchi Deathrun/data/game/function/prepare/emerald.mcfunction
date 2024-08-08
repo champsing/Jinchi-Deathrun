@@ -6,7 +6,6 @@ tag @a add playing
 
 execute at @n[tag = base, tag = red] run spawnpoint @a[team = red] ~ ~ ~
 execute at @n[tag = base, tag = blue] run spawnpoint @a[team = blue] ~ ~ ~
-setblock ~ ~ ~ air
 team join spec @a[team=]
 time set 1000
 clear @a

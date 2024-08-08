@@ -1,3 +1,5 @@
+
+
 scoreboard players set @e[type = marker, tag = lobby] mode 1
 
 tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"text":"已進入編輯模式"}]
