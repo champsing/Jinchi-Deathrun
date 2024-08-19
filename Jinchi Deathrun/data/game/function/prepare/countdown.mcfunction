@@ -1,5 +1,8 @@
 # 準備階段之開始前倒數：這時遊戲還沒開始，玩家不能動
 
+#---效果---
+effect give @a invisibility 9 0 true
+
 #---設定---
 scoreboard players set 倒數 system 5
 schedule function game:count 1s
