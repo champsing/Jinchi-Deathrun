@@ -24,16 +24,9 @@ scoreboard objectives setdisplay sidebar gameinfo
 scoreboard objectives setdisplay below_name total_duel
 scoreboard players reset @a
 scoreboard players operation 剩餘時間 gameinfo = 遊戲時間 menu
-scoreboard players set 藍隊分數 gameinfo 1000
-scoreboard players set 紅隊分數 gameinfo 1000
+scoreboard players operation 紅隊分數 gameinfo = 初始分數 menu
+scoreboard players operation 藍隊分數 gameinfo = 初始分數 menu
 scoreboard players operation 初始分數綠寶石 system = 初始分數 menu
-
-
-#---執行macro用aec---
-# UUID "47cc9d0c-b481-4f45-9776-8c941f618d53" https://www.soltoder.com/mc-uuid-converter/#1204591884,-1266593979,-1753838444,526486867
-summon minecraft:area_effect_cloud ~ ~ ~ {UUID:[I;1204591884,-1266593979,-1753838444,526486867],Duration:80,Age:0}
-execute store result entity 47cc9d0c-b481-4f45-9776-8c941f618d53 DurationOnUse int 1.0 run scoreboard players operation 初始分數綠寶石 system /= 十倍 system
-function game:prepare/emerald_macro with entity 47cc9d0c-b481-4f45-9776-8c941f618d53 DurationOnUse
 
 #---傳送---
 function game:prepare/teleport
@@ -42,5 +35,5 @@ function game:prepare/teleport
 scoreboard players set 準備時間 system 2400
 bossbar set prepare players @a
 execute store result bossbar minecraft:countdown max run scoreboard players get 遊戲時間 menu
-scoreboard players operation 初始分數 system = 初始分數 menu
+
 schedule function game:prepare/emerald_instruction 2s
