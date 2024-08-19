@@ -24,9 +24,9 @@ execute if score 目標分數 menu matches ..2500 run scoreboard players set 目
 
 #---結果---
 execute if score 目標分數 menu matches 3000..10000 run scoreboard players display numberformat 目標分數 menu styled {"color":"red","bold": false}
-execute if score 目標分數 menu matches -1 run scoreboard players display numberformat 目標分數 menu fixed {"text": "無限","color": "dark_red","bold": true}
 execute if score 目標分數 menu matches 3000..10000 as @e[tag = target_value] run data modify entity @s text set value '{"score":{"name":"目標分數","objective":"menu"},"color": "white"}'
 execute if score 目標分數 menu matches 3000..10000 run tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"text":"目標分數設為 "},{"score":{"name":"目標分數","objective":"menu"},"bold":true,"color":"gold"}]
+execute if score 目標分數 menu matches -1 run scoreboard players display numberformat 目標分數 menu fixed {"text": "無限","color": "dark_red","bold": true}
 execute if score 目標分數 menu matches -1 run tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"text":"目標分數設為 "},{"text": "無限","color": "dark_red","bold": true}]
 execute if score 目標分數 menu matches -1 as @e[tag = target_value] run data modify entity @s text set value '{"text": "無限","color": "dark_red","bold": true}'
 
