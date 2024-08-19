@@ -33,11 +33,6 @@ team modify red seeFriendlyInvisibles true
 team modify blue seeFriendlyInvisibles true
 team modify red friendlyFire false
 team modify blue friendlyFire false
-team join gold 遊戲模式
-team join gold 遊戲時間
-team join gold 初始分數
-team join gold 目標分數
-team join gold 玩家人數
 team join red 紅隊人數
 team join blue 藍隊人數
 
