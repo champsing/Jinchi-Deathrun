@@ -8,3 +8,5 @@ execute if entity @e[tag = lobby, scores = {mode = 1}] run return run tellraw @s
 execute if entity @e[tag = lobby, scores = {mode = 3}] run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"遊戲目前已經開始。請"},{"text":"結束遊戲","bold":true,"color":"gold"},{"text":"後才能再開始新遊戲。"}]
 
 execute if entity @e[tag = lobby, scores = {mode = 2}] run function game:prepare/emerald
+
+advancement revoke @s only game:start
