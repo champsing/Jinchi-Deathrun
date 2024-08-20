@@ -3,8 +3,8 @@ advancement revoke @a from settings:root
 advancement revoke @a only edit:edit
 
 #---個人分數actionbar---
-execute as @a[team=!spec,tag=!infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"score"}},{"text":" ． 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
-execute as @a[team=!spec,tag=infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"text":"無限 ","bold":true,"color":"#871ea7"},{"score":{"name":"@s","objective":"score"},"color":"gray", "bold": false, "strikethrough": true},{"text":" ． 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
+execute unless score 準備階段 system matches 1 as @a[team=!spec,tag=!infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"score"}},{"text":" ． 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
+execute unless score 準備階段 system matches 1 as @a[team=!spec,tag=infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"text":"無限 ","bold":true,"color":"#871ea7"},{"score":{"name":"@s","objective":"score"},"color":"gray", "bold": false, "strikethrough": true},{"text":" ． 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
 
 #---準備時間---
 execute if score 準備時間 system matches 1.. store result bossbar prepare value run scoreboard players remove 準備時間 system 1
@@ -42,9 +42,8 @@ execute as @a[team=red,tag=infinity] at @s unless entity @e[tag=red,tag=base,dis
 execute as @a[team=blue,tag=infinity] at @s unless entity @e[tag=blue,tag=base,distance=..5] run tag @s remove infinity
 
 #---體力---
-
-execute as @a[team=!spec] if predicate stamina:adrenaline run effect give @s speed 1 0 true
-execute as @a[team=!spec,scores={stamina=..39}] run function stamina:effect
+execute unless score 準備階段 system matches 1 as @a[team=!spec] if predicate stamina:adrenaline run effect give @s speed 1 0 true
+execute unless score 準備階段 system matches 1 as @a[team=!spec,scores={stamina=..39}] run function stamina:effect
 
 #---任務---
 # execute if score 任務倒數 system matches 1.. run function event:tick
