@@ -10,7 +10,8 @@ team join spec @a[team=]
 time set 1000
 clear @a
 difficulty hard
-gamemode adventure @a
+gamemode adventure @a[team=!spec]
+gamemode spectator @a[team=spec]
 recipe take @a *
 experience add @a -99999999 levels
 effect give @a invisibility 9 0 true
