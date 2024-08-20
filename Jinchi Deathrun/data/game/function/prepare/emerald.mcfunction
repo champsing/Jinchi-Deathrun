@@ -38,3 +38,4 @@ bossbar set prepare players @a
 execute store result bossbar minecraft:countdown max run scoreboard players get 遊戲時間 menu
 
 schedule function game:prepare/emerald_instruction 2s
+schedule function game:prepare/give_emerald 2s
