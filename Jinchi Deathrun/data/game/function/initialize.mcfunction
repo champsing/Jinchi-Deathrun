@@ -33,6 +33,8 @@ scoreboard players reset * system
 scoreboard players set 一半 system 2
 scoreboard players set 一百 system 100
 scoreboard players set 十倍 system 10
+scoreboard players set 一分鐘 system 60
+scoreboard players set 遊戲時間分鐘 system 15
 
 tag @a[tag = check_for_frozen] remove check_for_frozen
 tag @a[tag = success_freeze_person] remove success_freeze_person
