@@ -34,7 +34,9 @@ team modify blue seeFriendlyInvisibles true
 team modify red friendlyFire false
 team modify blue friendlyFire false
 team join red 紅隊人數
+team join red 紅隊分數
 team join blue 藍隊人數
+team join blue 藍隊分數
 
 bossbar add countdown [{"text":"剩餘時間： "},{"score":{"name": "剩餘時間","objective": "gameinfo"},"color": "gold"},{"text":"秒"}]
 # bossbar add event "事件時間"
