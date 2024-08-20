@@ -1,9 +1,9 @@
 # 99999 對戰 99998 捍衛
 
 #---先return 還沒新增，新增後可以刪除---
-# advancement revoke @s only settings:interact/mode
-# advancement revoke @s only settings:attack/mode
-# return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"目前尚未開放這項功能，敬請期待！","color": "red"}]
+advancement revoke @s only settings:interact/mode
+advancement revoke @s only settings:attack/mode
+return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"目前尚未開放這項功能，敬請期待！","color": "red"}]
 
 #---不是大廳模式---
 execute if entity @e[tag = lobby, scores = {mode = 1}] run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"您目前處於編輯模式。請退出"},{"text":"編輯模式","bold":true,"color":"gold"},{"text":"更改設定。"}]
