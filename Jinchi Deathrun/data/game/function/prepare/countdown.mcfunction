@@ -16,5 +16,5 @@ bossbar set countdown players @a
 function game:prepare/teleport
 
 #---分數---
-execute as @a[team=!spec] store result score @s score run clear @s emerald
+execute as @a[team=!spec] store result score @s score run clear @s emerald[item_name='"§c10分"']
 scoreboard players operation @a score *= 十倍 system
