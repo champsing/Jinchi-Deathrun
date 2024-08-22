@@ -4,7 +4,7 @@
 # >> 左鍵敲擊作者可重新顯示
 
 #---給予反應---
-execute positioned as @e[type = interaction, tag = team_interact] run particle flash ~ ~ ~ 0.1 0.1 0.1 0.3 1 normal
+execute positioned as @e[type = interaction, tag = champsing] run particle flash ~ ~ ~ 0.1 0.1 0.1 0.3 1 normal
 playsound block.medium_amethyst_bud.break master @s ~ ~ ~ 1 0.8 1
 
 tellraw @a ["",{"text":">> ","color":"gold"},"歡迎遊玩 ",{"text":"陣地","bold":true,"color":"gold"},{"text":"大逃殺","bold":true,"color":"red"}]
