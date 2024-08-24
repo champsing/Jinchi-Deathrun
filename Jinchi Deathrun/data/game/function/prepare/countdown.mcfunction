@@ -4,6 +4,8 @@ scoreboard players reset 準備時間 system
 
 #---效果---
 effect give @a invisibility 9 0 true
+execute as @a run attribute @s generic.jump_strength modifier add countdown -1 add_multiplied_base
+execute as @a run attribute @s generic.movement_speed modifier add countdown -1 add_multiplied_base
 
 #---設定---
 scoreboard players set 倒數 system 5
@@ -13,6 +15,7 @@ gamemode adventure @a[team=!spec]
 gamemode spectator @a[team=spec]
 bossbar set prepare players
 bossbar set countdown players @a
+bossbar set countdown name [{"text":"剩餘時間： "},{"score":{"name": "剩餘時間","objective": "gameinfo"},"color": "gold"},{"text":"秒"}]
 
 #---傳送---
 function game:prepare/teleport

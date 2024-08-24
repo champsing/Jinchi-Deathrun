@@ -7,6 +7,8 @@ effect give @a hunger 3 255 true
 effect give @a resistance 3 200 true
 effect give @a regeneration 15 100 true
 effect give @a night_vision infinite 0 true
+execute as @a run attribute @s generic.jump_strength modifier remove countdown
+execute as @a run attribute @s generic.jump_strength modifier remove countdown
 
 #---通知---
 title @a title {"text":"START","bold":true,"color":"gold"}
@@ -19,7 +21,6 @@ schedule function game:time 1s
 schedule function items:treasure/generate_treasure 30s
 schedule function stamina:regain 10s
 scoreboard players reset 準備階段 system
-scoreboard players operation 剩餘時間 gameinfo = 遊戲時間 menu
 # schedule function event:start 600s
 
 #---生分數物品---
