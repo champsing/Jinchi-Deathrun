@@ -19,6 +19,7 @@ schedule function game:time 1s
 schedule function items:treasure/generate_treasure 30s
 schedule function stamina:regain 10s
 scoreboard players reset 準備階段 system
+scoreboard players operation 剩餘時間 gameinfo = 遊戲時間 menu
 # schedule function event:start 600s
 
 #---生分數物品---
