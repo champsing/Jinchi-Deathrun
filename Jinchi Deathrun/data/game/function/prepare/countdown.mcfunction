@@ -1,4 +1,6 @@
 # 準備階段之開始前倒數：這時遊戲還沒開始，玩家不能動
+#---先取消掉分數---
+scoreboard players reset 準備時間 system
 
 #---效果---
 effect give @a invisibility 9 0 true
