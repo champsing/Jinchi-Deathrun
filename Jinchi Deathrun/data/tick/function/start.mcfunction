@@ -47,7 +47,3 @@ execute unless score 準備階段 system matches 1 as @a[team=!spec,scores={stam
 
 #---任務---
 # execute if score 任務倒數 system matches 1.. run function event:tick
-
-#---結算---
-execute unless score 目標分數 menu matches -1 if score 紅隊分數 gameinfo >= 目標分數 menu if score 勝負已分 system matches 0 run function game:end/red
-execute unless score 目標分數 menu matches -1 if score 藍隊分數 gameinfo >= 目標分數 menu if score 勝負已分 system matches 0 run function game:end/blue

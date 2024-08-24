@@ -19,7 +19,7 @@ give @a breeze_rod[custom_data= {"adrenaline": true}, item_name= '{"text":"§c§
 #---排程函數---
 schedule function game:time 1s
 schedule function items:treasure/generate_treasure 30s
-schedule function stamina:regain 10s
+schedule function stamina:regain 5s
 scoreboard players reset 準備階段 system
 # schedule function event:start 600s
 
