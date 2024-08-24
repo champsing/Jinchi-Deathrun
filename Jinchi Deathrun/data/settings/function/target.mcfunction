@@ -31,7 +31,7 @@ execute if score 目標分數 menu matches -1 run tellraw @a ["",{"text":">> ","
 execute if score 目標分數 menu matches -1 as @e[tag = target_value] run data modify entity @s text set value '{"text": "無限","color": "dark_red","bold": true}'
 
 #---無限提示---
-execute if score 目標分數 menu matches -1 run tellraw @s ["",{"text": ">> ","color": "gold"},{"text":"目標分數無限制時，時間結束時較高分的一方獲勝。若平手時，一旦有一方領先便立即獲勝。"},{"text":"若想強制中止遊戲，請使用指令"},{"text":"/function game:force_end","bold":true,"color":"aqua","hoverEvent": {"action": "show_text", "contents": "點擊複製指令"}, "clickEvent": {"action": "copy_to_clipboard", "value": "/function game:force_end"}}]
+execute if score 目標分數 menu matches -1 run tellraw @s ["",{"text": ">> ","color": "gold","bold": true},{"text":"目標分數無限制時，時間結束時較高分的一方獲勝。若平手時，\n一旦有一方領先便立即獲勝。"},{"text":"若想強制中止遊戲，請使用指令\n"},{"text":"/function game:force_end","color":"aqua","hoverEvent": {"action": "show_text", "contents": "點擊複製指令"}, "clickEvent": {"action": "copy_to_clipboard", "value": "/function game:force_end"}}]
 
 advancement revoke @s only settings:interact/target
 advancement revoke @s only settings:attack/target
