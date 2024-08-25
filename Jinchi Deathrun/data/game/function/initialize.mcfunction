@@ -22,6 +22,8 @@ scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay sidebar menu
 
 team leave @a
+team modify red prefix ""
+team modify blue prefix ""
 gamemode adventure @a
 recipe take @a *
 xp set @a 0 points
