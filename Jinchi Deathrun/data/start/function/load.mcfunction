@@ -1,2 +1,3 @@
 tellraw @a ["",{"text":">> ","color":"gold"},"資料包載入成功"]
+function start:check_updates
 execute unless entity @e[tag=lobby] run tellraw @a ["",{"text":">> ","color":"gold"},"點擊 ",{"text":"此處","clickEvent": {"action": "run_command","value": "/function start:activate"},"color": "aqua", "underlined": true}," 生成大廳"]
