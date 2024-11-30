@@ -1,6 +1,6 @@
 #---不是大廳模式---
-execute if entity @e[tag = lobby, scores = {mode = 1}] run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"您目前處於編輯模式。請退出"},{"text":"編輯模式","bold":true,"color":"gold"},{"text":"更改設定。"}]
-execute if entity @e[tag = lobby, scores = {mode = 3}] run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"遊戲目前已經開始。請"},{"text":"結束遊戲","bold":true,"color":"gold"},{"text":"後再更改設定。"}]
+execute if score 操作模式 system matches 1 run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"您目前處於編輯模式。請退出"},{"text":"編輯模式","bold":true,"color":"gold"},{"text":"更改設定。"}]
+execute if score 操作模式 system matches 3 run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"遊戲目前已經開始。請"},{"text":"結束遊戲","bold":true,"color":"gold"},{"text":"後再更改設定。"}]
 
 #---給予反應---
 execute positioned as @e[type = interaction, tag = initial_interact] run particle end_rod ~ ~ ~ 0.1 0.1 0.1 0.3 3 normal

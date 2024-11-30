@@ -1,7 +1,7 @@
 # 結束遊戲：勝方確定才執行
 
 effect give @a resistance infinite 150 true
-scoreboard players set 勝負已分 system 1
+scoreboard players set 勝負已分 gamecore 1
 schedule clear game:time
 schedule clear stamina:regain
 schedule clear items:treasure/generate_treasure

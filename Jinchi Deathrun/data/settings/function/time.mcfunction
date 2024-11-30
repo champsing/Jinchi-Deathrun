@@ -1,6 +1,6 @@
 #---不是大廳模式---
-execute if entity @e[tag = lobby, scores = {mode = 1}] run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"您目前處於編輯模式。請退出"},{"text":"編輯模式","bold":true,"color":"gold"},{"text":"更改設定。"}]
-execute if entity @e[tag = lobby, scores = {mode = 3}] run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"遊戲目前已經開始。請"},{"text":"結束遊戲","bold":true,"color":"gold"},{"text":"後再更改設定。"}]
+execute if score 操作模式 system matches 1 run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"您目前處於編輯模式。請退出"},{"text":"編輯模式","bold":true,"color":"gold"},{"text":"更改設定。"}]
+execute if score 操作模式 system matches 3 run return run tellraw @s ["",{"text":">> ","bold":true,"color":"gold"},{"text":"遊戲目前已經開始。請"},{"text":"結束遊戲","bold":true,"color":"gold"},{"text":"後再更改設定。"}]
 
 #---給予反應---
 execute positioned as @e[type = interaction, tag = time_interact] run particle end_rod ~ ~ ~ 0.1 0.1 0.1 0.3 3 normal
@@ -20,7 +20,7 @@ execute if entity @s[advancements = {settings:attack/time = true}] run scoreboar
 execute if score 遊戲時間 menu matches 7500.. run scoreboard players set 遊戲時間 menu 900
 execute if score 遊戲時間 menu matches ..600 run scoreboard players set 遊戲時間 menu 7200
 scoreboard players operation 遊戲時間分鐘 system = 遊戲時間 menu
-scoreboard players operation 遊戲時間分鐘 system /= 一分鐘 system
+scoreboard players operation 遊戲時間分鐘 system /= 一分鐘 readonly
 #---結果---
 execute as @e[tag = time_value] run data modify entity @s text set value '[{"score":{"name":"遊戲時間分鐘","objective":"system"}},{"text":" 分鐘"}]'
 tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"text":"遊戲時間設為 "},{"score":{"name":"遊戲時間分鐘","objective":"system"},"bold":true,"color":"gold"},{"text":" 分鐘"}]

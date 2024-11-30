@@ -1,5 +1,5 @@
 #---平手---
-execute unless score 延長賽 system matches 1 if score 藍隊分數 gameinfo = 紅隊分數 gameinfo run return run function game:end/tie
+execute unless score 延長賽 gamecore matches 1 if score 藍隊分數 gameinfo = 紅隊分數 gameinfo run return run function game:end/tie
 
 #---正常結算---
 

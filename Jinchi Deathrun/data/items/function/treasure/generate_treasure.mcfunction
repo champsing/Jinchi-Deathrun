@@ -1,5 +1,5 @@
 tag @e[type = armor_stand, tag = treasure_point, tag = generated] remove generated
-scoreboard players operation 生成寶箱 system = 寶箱數量 menu
+execute store result score 生成寶箱 gamecore run scoreboard players operation 寶箱點數量 menu /= 一半 readonly
 
 function items:treasure/run_summon
 

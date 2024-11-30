@@ -1,4 +1,4 @@
-execute if entity @e[type = marker,scores={mode=3}] run function game:force_end
+execute if score 操作模式 system matches 3 run function game:force_end
 
 gamerule announceAdvancements true
 gamerule commandBlockOutput true
@@ -36,7 +36,10 @@ bossbar remove prepare
 
 scoreboard objectives remove menu
 scoreboard objectives remove gameinfo
+scoreboard objectives remove editinfo
+scoreboard objectives remove gamecore
 scoreboard objectives remove system
+scoreboard objectives remove readonly
 scoreboard objectives remove join
 scoreboard objectives remove score
 scoreboard objectives remove team_score

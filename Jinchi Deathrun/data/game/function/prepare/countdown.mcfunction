@@ -1,6 +1,6 @@
 # 準備階段之開始前倒數：這時遊戲還沒開始，玩家不能動
 #---先取消掉分數---
-scoreboard players reset 準備時間 system
+scoreboard players reset 準備時間 gamecore
 
 #---效果---
 effect give @a invisibility 9 0 true
@@ -8,7 +8,7 @@ execute as @a run attribute @s generic.jump_strength modifier add countdown -1 a
 execute as @a run attribute @s generic.movement_speed modifier add countdown -1 add_multiplied_base
 
 #---設定---
-scoreboard players set 倒數 system 5
+scoreboard players set 倒數 gamecore 5
 schedule function game:count 1s
 schedule function game:start 6s
 gamemode adventure @a[team=!spec]
