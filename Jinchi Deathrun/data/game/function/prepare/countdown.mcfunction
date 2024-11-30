@@ -21,6 +21,6 @@ bossbar set countdown name [{"text":"剩餘時間： "},{"score":{"name": "剩�
 function game:prepare/teleport
 
 #---分數---
-#一直變0不知道為什麼，還沒解決
-execute as @a[team=!spec] store result score @s score run clear @s emerald
-scoreboard players operation @a[team=!spec] score *= 十倍 system
+execute as @a[team=!spec] store result score @s score run clear @s emerald 0
+scoreboard players operation @a[team=!spec] score *= 十倍 readonly
+execute as @a[team=!spec] run clear @s emerald
