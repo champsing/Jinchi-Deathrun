@@ -34,6 +34,7 @@ bossbar remove countdown
 # bossbar remove event
 bossbar remove prepare
 
+scoreboard objectives remove version
 scoreboard objectives remove menu
 scoreboard objectives remove gameinfo
 scoreboard objectives remove editinfo
