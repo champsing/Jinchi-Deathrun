@@ -56,6 +56,9 @@ scoreboard objectives remove grouped
 scoreboard objectives remove stamina
 scoreboard objectives remove stamina_max
 scoreboard objectives remove item_cd
+scoreboard objectives remove frozen
+scoreboard objectives remove check_for_freeze
+scoreboard objectives remove check_for_frozen
 
 scoreboard objectives remove death
 scoreboard objectives remove top_duel
@@ -65,6 +68,8 @@ scoreboard objectives remove total_duel
 scoreboard objectives remove item
 
 kill @e[tag = lobby]
+kill @e[tag = display]
+kill @e[tag = settings]
 #---隨機生成貨櫃系統資料包也要 uninstall---
 # (指令)
 
