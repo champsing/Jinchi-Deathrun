@@ -42,8 +42,10 @@
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
-                  "can_always_eat": true,
-                  "eat_seconds": 999999
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
                 }
               }
             }
@@ -88,8 +90,10 @@
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
-                  "can_always_eat": true,
-                  "eat_seconds": 999999
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
                 }
               }
             }
@@ -161,8 +165,10 @@
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
-                  "can_always_eat": true,
-                  "eat_seconds": 999999
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
                 }
               }
             }
@@ -207,8 +213,10 @@
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
-                  "can_always_eat": true,
-                  "eat_seconds": 999999
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
                 }
               }
             }
@@ -253,8 +261,10 @@
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
-                  "can_always_eat": true,
-                  "eat_seconds": 999999
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
                 }
               }
             }
@@ -299,8 +309,10 @@
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
-                  "can_always_eat": true,
-                  "eat_seconds": 999999
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
                 }
               }
             }
@@ -345,8 +357,10 @@
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
-                  "can_always_eat": true,
-                  "eat_seconds": 999999
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
                 }
               }
             }
@@ -388,8 +402,10 @@
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
-                  "can_always_eat": true,
-                  "eat_seconds": 999999
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
                 }
               }
             }
@@ -431,8 +447,10 @@
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
-                  "can_always_eat": true,
-                  "eat_seconds": 999999
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
                 }
               }
             }
@@ -477,8 +495,10 @@
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
-                  "can_always_eat": true,
-                  "eat_seconds": 999999
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
                 }
               }
             }
@@ -526,8 +546,10 @@
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 1,
-                  "can_always_eat": true,
-                  "eat_seconds": 999999
+                  "can_always_eat": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
                 }
               }
             }
