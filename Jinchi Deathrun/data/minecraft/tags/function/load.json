@@ -1,5 +1,6 @@
 {
 	"values":[
-		"start:load"
+		"start:load",
+		"start:check_updates"
 	]
 }
