@@ -4,8 +4,8 @@ scoreboard players reset 準備時間 gamecore
 
 #---效果---
 effect give @a invisibility 9 0 true
-execute as @a run attribute @s generic.jump_strength modifier add countdown -1 add_multiplied_base
-execute as @a run attribute @s generic.movement_speed modifier add countdown -1 add_multiplied_base
+execute as @a run attribute @s jump_strength modifier add countdown -1 add_multiplied_base
+execute as @a run attribute @s movement_speed modifier add countdown -1 add_multiplied_base
 
 #---設定---
 scoreboard players set 倒數 gamecore 5

@@ -7,8 +7,8 @@ effect give @a hunger 3 255 true
 effect give @a resistance 3 200 true
 effect give @a regeneration 15 100 true
 effect give @a night_vision infinite 0 true
-execute as @a run attribute @s generic.jump_strength modifier remove countdown
-execute as @a run attribute @s generic.movement_speed modifier remove countdown
+execute as @a run attribute @s jump_strength modifier remove countdown
+execute as @a run attribute @s movement_speed modifier remove countdown
 
 #---通知---
 title @a title {"text":"START","bold":true,"color":"gold"}
