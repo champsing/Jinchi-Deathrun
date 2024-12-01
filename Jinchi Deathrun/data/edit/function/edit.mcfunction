@@ -1,5 +1,3 @@
-
-
 scoreboard players set 操作模式 system 1
 
 execute as @e[tag = edit_title] run data modify entity @s text set value '{"text":"退出編輯模式","color":"#61ff9b","bold":true}'
