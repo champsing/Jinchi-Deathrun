@@ -2,4 +2,6 @@ execute if score 操作模式 system matches 3 run function game:force_end
 
 function start:install
 
-tellraw @a ["",{"text": ">> ","color":"gold"},{"text":"資料包更新成功","color":"green"},{"text": "，目前版本","color":"gold"}]
+tellraw @a ["",{"text": ">> ","color":"gold"},{"text":"資料包更新成功","color":"green"},{"text": "，目前版本：","color":"gold"},{"storage": "start:version_info", "nbt": "verFloat","color":"aqua"},{"text": "(","color":"aqua"},{"storage": "start:version_info", "nbt": "verInt","color":"aqua"},{"text": ")","color":"aqua"},{"text": "，發布日期：","color":"gold"},{"storage": "start:version_info", "nbt": "date", "color": "aqua"},{"text": "  ","color":"aqua"}]
+
+tellraw @a ["",{"text": ">> ","color":"gold"},{"text": "版本發布頁面","color":"aqua","bold": true, "underlined": true, "clickEvent": {"action": "open_url", "value": "https://github.com/champsing/Jinchi-Deathrun/releases/"}}]
