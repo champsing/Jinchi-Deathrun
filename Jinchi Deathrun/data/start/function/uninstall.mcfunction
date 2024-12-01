@@ -69,7 +69,8 @@ scoreboard objectives remove total_duel
 kill @e[tag = lobby]
 kill @e[tag = display]
 kill @e[tag = settings]
-kill @e[tag = champsing]
+kill @e[tag = champsing, type = interaction]
+kill @e[tag = champsing, type = armor_stand]
 #---隨機生成貨櫃系統資料包也要 uninstall---
 # (指令)
 

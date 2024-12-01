@@ -9,4 +9,4 @@ clear @s glowstone_dust[custom_data={"glowing": "single"}] 1
 advancement revoke @s only items:glowing_single
 execute if entity @s[team=red] run effect give @r[team=blue, predicate=!items:glowing] glowing 30 0 true
 execute if entity @s[team=blue] run effect give @r[team=red, predicate=!items:glowing] glowing 30 0 true
-tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"發光道具","color":"gold"},{"text":" 隨機一位敵方玩家發光"},{"text":"30分","color":"gold"}]
+tellraw @a ["",{"text":">> ","color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"發光道具","color":"gold"},{"text":" 隨機一位敵方玩家發光"},{"text":"30分","color":"gold"}]

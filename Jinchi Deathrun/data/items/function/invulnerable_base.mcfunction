@@ -14,4 +14,4 @@ execute if entity @s[team=blue] at @e[tag=base,tag=blue] run fill ~ ~ ~ ~ ~5 ~ b
 #---排程恢復原狀---
 execute if entity @s[team=red] run schedule function base:restore_invulnerable/red 20s
 execute if entity @s[team=blue] run schedule function base:restore_invulnerable/blue 20s
-tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"無敵陣地道具","color":"gold"},{"text":" 己方陣地無法攻陣"},{"text":"20秒","color":"gold"}]
+tellraw @a ["",{"text":">> ","color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"無敵陣地道具","color":"gold"},{"text":" 己方陣地無法攻陣"},{"text":"20秒","color":"gold"}]

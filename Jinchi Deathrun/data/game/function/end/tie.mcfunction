@@ -11,4 +11,4 @@ bossbar set countdown name [{"text":"剩餘時間： "},{"text": "延長賽", "c
 title @a times 1s 4s 1s
 title @a title {"text":"延長賽","bold":true,"color":"#ff5bbe"}
 title @a subtitle {"text":"先領先者獲勝","bold":true}
-tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"text": "由於時間限制已到，但雙方分數相同，因此進入延長賽階段，"},{"text": "先領先對方者獲勝","color": "gold"}]
+tellraw @a ["",{"text":">> ","color":"gold"},{"text": "由於時間限制已到，但雙方分數相同，因此進入延長賽階段，"},{"text": "先領先對方者獲勝","color": "gold"}]

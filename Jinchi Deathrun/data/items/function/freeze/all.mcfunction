@@ -14,4 +14,4 @@ execute if entity @s[team=blue] as @a[team = red] run function items:freeze/free
 execute as @a[team = red] run schedule function items:freeze/restore_from_frozen 10s
 execute as @a[team = blue] run schedule function items:freeze/restore_from_frozen 10s
 
-tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"凍結道具","color":"gold"},{"text":" 所有敵方玩家已被凍結無法移動"},{"text":"10秒","color":"gold"}]
+tellraw @a ["",{"text":">> ","color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"凍結道具","color":"gold"},{"text":" 所有敵方玩家已被凍結無法移動"},{"text":"10秒","color":"gold"}]

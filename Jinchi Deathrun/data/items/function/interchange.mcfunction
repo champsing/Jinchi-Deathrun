@@ -16,4 +16,4 @@ tp @a[tag=item15_target,limit=1] @e[tag=item15_marker,type=marker,limit=1]
 tag @s remove item15
 tag @s remove item15_target
 kill @e[tag=item15_marker,type=marker]
-tellraw @a ["",{"text":">> ","bold":true,"color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"互換道具","color":"gold"},{"text":" 與隨機一位隊友"},{"text":"互換位置","color":"gold"}]
+tellraw @a ["",{"text":">> ","color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"互換道具","color":"gold"},{"text":" 與隨機一位隊友"},{"text":"互換位置","color":"gold"}]
