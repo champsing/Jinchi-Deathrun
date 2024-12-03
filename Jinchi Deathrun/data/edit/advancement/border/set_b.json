@@ -1,0 +1,15 @@
+{
+    "criteria": { 
+        "use_item": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                 "item": {
+                     "predicates": {
+                        "minecraft:custom_data": {"border": "set_b"}
+                    }
+                }
+            }
+        }
+    },
+    "rewards": { "function": "edit:border/set_b" }
+}
