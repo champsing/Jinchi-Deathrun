@@ -17,5 +17,5 @@ execute on attacker run tag @s add success_freeze_person
 # @n[tag = success_freeze_person] 距離最近一位有success_freeze_person的實體
 # @n[tag = frozen] 距離最近一位有frozen的實體
 
-execute if entity @n[tag = success_freeze_person] run tellraw @s ["",{"text":">> ","color":"gold"},{"selector":"@n[tag = success_freeze_person]"},{"text":"使用了"},{"text":"凍結道具","color":"gold"},{"selector":""},{"text":"你已被凍結無法移動"},{"text":"10秒","color":"gold"}]
-execute if entity @n[tag = success_freeze_person] run tellraw @a ["",{"text":">> ","color":"gold"},{"selector":"@n[tag = success_freeze_person]"},{"text":"使用了"},{"text":"凍結道具","color":"gold"},{"selector":"@n[tag = frozen]"},{"text":" 已被凍結無法移動"},{"text":"10秒","color":"gold"}]
+execute if entity @n[tag = success_freeze_person] run tellraw @s ["",{"text":">> ","color":"gold"},{"selector":"@n[tag = success_freeze_person]", "color": "aqua"},{"text":"使用了"},{"text":"凍結道具","color":"gold"},{"text":"  "},{"text":"你已被凍結無法移動"},{"text":"10秒","color":"gold"}]
+execute if entity @n[tag = success_freeze_person] run tellraw @a ["",{"text":">> ","color":"gold"},{"selector":"@n[tag = success_freeze_person]", "color": "aqua"},{"text":"使用了"},{"text":"凍結道具","color":"gold"},{"text":"  "},{"selector":"@n[tag = frozen]"},{"text":"已被凍結無法移動"},{"text":"10秒","color":"gold"}]
