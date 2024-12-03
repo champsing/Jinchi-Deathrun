@@ -7,6 +7,7 @@ execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby"]}
 function start:lobby
 function start:check_updates
 function start:install
+function edit:give
 
 time set day
 clear @a

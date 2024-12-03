@@ -38,6 +38,7 @@ scoreboard objectives remove version
 scoreboard objectives remove menu
 scoreboard objectives remove gameinfo
 scoreboard objectives remove editinfo
+scoreboard objectives remove edit_cd
 scoreboard objectives remove gamecore
 scoreboard objectives remove system
 scoreboard objectives remove readonly
@@ -71,6 +72,9 @@ kill @e[tag = display]
 kill @e[tag = settings]
 kill @e[tag = champsing, type = interaction]
 kill @e[tag = champsing, type = armor_stand]
+kill @e[tag = treasure_item]
+kill @e[tag = treasure_point]
+kill @e[tag = border]
 #---隨機生成貨櫃系統資料包也要 uninstall---
 # (指令)
 
