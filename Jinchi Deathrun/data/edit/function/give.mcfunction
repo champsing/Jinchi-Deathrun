@@ -1,4 +1,6 @@
 # 紅藍陣地、A點B點
+clear @a player_head
+
 give @s player_head[lore=['{"text":"§7到定點點擊右鍵使用"}','{"text":"§7A點存在時，改為移動A點"}'],custom_name='{"text":"設定A點","color":"aqua","italic":false}',custom_data={border: "set_a"},food={nutrition: 1, saturation: 1, can_always_eat: true},consumable={consume_seconds: 99999},max_stack_size=1,profile={id:[I;1072089713,1034372872,-1472787902,297221623],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzcyMzcwNGE5ZDU5MTBiOWNkNTA1ZGM5OWM3NzliZjUwMzc5Y2I4NDc0NWNjNzE5ZTlmNzg0ZGQ4YyJ9fX0="}]}]
 give @s player_head[lore=['{"text":"§7到定點點擊右鍵使用"}','{"text":"§7B點存在時，改為移動B點"}'],custom_name='{"text":"設定B點","color":"aqua","italic":false}',custom_data={border: "set_b"},food={nutrition: 1, saturation: 1, can_always_eat: true},consumable={consume_seconds: 99999},max_stack_size=1,profile={id:[I;1072089713,1034372872,-1472787902,297221623],name:"",properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzcyMzcwNGE5ZDU5MTBiOWNkNTA1ZGM5OWM3NzliZjUwMzc5Y2I4NDc0NWNjNzE5ZTlmNzg0ZGQ4YyJ9fX0="}]}]
 
