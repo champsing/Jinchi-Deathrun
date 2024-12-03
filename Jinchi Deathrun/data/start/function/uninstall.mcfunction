@@ -75,6 +75,8 @@ kill @e[tag = champsing, type = armor_stand]
 kill @e[tag = treasure_item]
 kill @e[tag = treasure_point]
 kill @e[tag = border]
+
+clear @a
 #---隨機生成貨櫃系統資料包也要 uninstall---
 # (指令)
 
