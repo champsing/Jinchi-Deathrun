@@ -14,7 +14,7 @@ schedule clear items:treasure/generate_treasure
 # 大富豪家: @a[scores={top_score=0}]  (@a[scores={top_score=0}] score)
 # -----------------------------------------
 
-tellraw @a ["",{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n>> ","bold":true,"color":"gold"}]
+tellraw @a ["",{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n>> ","color":"gold"}]
 tellraw @a ["",{"text":"-----------------------------------------\n","bold":true,"color":"gold"}]
 tellraw @a [{"text":"紅隊分數: ","color":"red"},{"score":{"name":"紅隊分數","objective":"gameinfo"},"color":"red"},{"text":"\n藍隊分數: ","color":"blue"},{"score":{"name":"藍隊分數","objective":"gameinfo"},"color":"blue"}]
 tellraw @a [{"text":"\n-----------------------------------------\n","bold":true,"color":"gold"}]
