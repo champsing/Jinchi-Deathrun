@@ -5,4 +5,5 @@ tellraw @a ["",{"text":">> ","color":"gold"},{"text":"已進入編輯模式"}]
 scoreboard objectives setdisplay sidebar editinfo
 execute as @e[type = armor_stand, tag = A_point] run data merge entity @s {Glowing:1b,CustomNameVisible:1b,Marker:0b}
 execute as @e[type = armor_stand, tag = B_point] run data merge entity @s {Glowing:1b,CustomNameVisible:1b,Marker:0b}
+function edit:give
 playsound ui.button.click ambient @p ~ ~ ~
