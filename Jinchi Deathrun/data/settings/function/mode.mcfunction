@@ -27,10 +27,10 @@ execute if score 遊戲模式 menu matches 100000.. run scoreboard players set �
 execute if score 遊戲模式 menu matches ..99997 run scoreboard players set 遊戲模式 menu 99999
 
 #---結果---
-execute if score 遊戲模式 menu matches 99999 as @e[tag = mode_value] run data modify entity @s text set value '{"text":"對戰","color":"#c24cdc","bold":true}'
+execute if score 遊戲模式 menu matches 99999 as @e[tag = mode_value] run data modify entity @s text set value [{"text":"對戰","color":"#c24cdc","bold":true}]
 execute if score 遊戲模式 menu matches 99999 run scoreboard players display numberformat 遊戲模式 menu fixed {"text":"對戰","color":"#c24cdc","bold":true}
 execute if score 遊戲模式 menu matches 99999 run tellraw @a ["",{"text":">> ","color":"gold"},{"text":"對戰模式","bold":true,"color":"#a335bc"},{"text":"：雙方在時限內各自與敵方玩家對戰，以全隊分數決勝負。"}]
-execute if score 遊戲模式 menu matches 99998 as @e[tag = mode_value] run data modify entity @s text set value '{"text":"捍衛","color":"#61ff9b","bold":true}'
+execute if score 遊戲模式 menu matches 99998 as @e[tag = mode_value] run data modify entity @s text set value [{"text":"捍衛","color":"#61ff9b","bold":true}]
 execute if score 遊戲模式 menu matches 99998 run scoreboard players display numberformat 遊戲模式 menu fixed {"text":"捍衛","color":"#61ff9b","bold":true}
 execute if score 遊戲模式 menu matches 99998 run tellraw @a ["",{"text":">> ","color":"gold"},{"text":"捍衛模式","bold":true,"color":"#61ff9b"},{"text":"：雙方在時限內盡可能待在對方陣地範圍，以全隊待在對方陣地時間總和決勝負。"}]
 

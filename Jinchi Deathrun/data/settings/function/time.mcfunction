@@ -22,7 +22,7 @@ execute if score 遊戲時間 menu matches ..600 run scoreboard players set 遊�
 scoreboard players operation 遊戲時間分鐘 system = 遊戲時間 menu
 scoreboard players operation 遊戲時間分鐘 system /= 一分鐘 readonly
 #---結果---
-execute as @e[tag = time_value] run data modify entity @s text set value '[{"score":{"name":"遊戲時間分鐘","objective":"system"}},{"text":" 分鐘"}]'
+execute as @e[tag = time_value] run data modify entity @s text set value [{"score":{"name":"遊戲時間分鐘","objective":"system"}},{"text":" 分鐘"}]
 tellraw @a ["",{"text":">> ","color":"gold"},{"text":"遊戲時間設為 "},{"score":{"name":"遊戲時間分鐘","objective":"system"},"bold":true,"color":"gold"},{"text":" 分鐘"}]
 
 advancement revoke @s only settings:interact/time

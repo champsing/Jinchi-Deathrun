@@ -24,14 +24,14 @@ execute if score 目標分數 menu matches ..2500 run scoreboard players set 目
 
 #---結果---
 execute if score 目標分數 menu matches 3000..10000 run scoreboard players display numberformat 目標分數 menu styled {"color":"red","bold": false}
-execute if score 目標分數 menu matches 3000..10000 as @e[tag = target_value] run data modify entity @s text set value '{"score":{"name":"目標分數","objective":"menu"},"color": "white"}'
+execute if score 目標分數 menu matches 3000..10000 as @e[tag = target_value] run data modify entity @s text set value [{"score":{"name":"目標分數","objective":"menu"},"color": "white"}]
 execute if score 目標分數 menu matches 3000..10000 run tellraw @a ["",{"text":">> ","color":"gold"},{"text":"目標分數設為 "},{"score":{"name":"目標分數","objective":"menu"},"bold":true,"color":"gold"}]
 execute if score 目標分數 menu matches -1 run scoreboard players display numberformat 目標分數 menu fixed {"text": "無限","color": "dark_red","bold": true}
 execute if score 目標分數 menu matches -1 run tellraw @a ["",{"text":">> ","color":"gold"},{"text":"目標分數設為 "},{"text": "無限","color": "dark_red","bold": true}]
-execute if score 目標分數 menu matches -1 as @e[tag = target_value] run data modify entity @s text set value '{"text": "無限","color": "dark_red","bold": true}'
+execute if score 目標分數 menu matches -1 as @e[tag = target_value] run data modify entity @s text set value [{"text": "無限","color": "dark_red","bold": true}]
 
 #---無限提示---
-execute if score 目標分數 menu matches -1 run tellraw @s ["",{"text": ">> ","color": "gold"},{"text":"目標分數無限制時，時間結束時較高分的一方獲勝。若平手時，\n一旦有一方領先便立即獲勝。"},{"text":"若想強制中止遊戲，請使用指令\n"},{"text":"/function game:force_end","color":"aqua","hover_event": {"action": "show_text", "value": "點擊複製指令"}, "click_event": {"action": "copy_to_clipboard", "value": "/function game:force_end"}}]
+execute if score 目標分數 menu matches -1 run tellraw @s ["",{"text": ">> ","color": "gold"},{"text":"目標分數無限制時，時間結束時較高分的一方獲勝；若平手時，將進入延長賽。一旦有一方領先便立即獲勝。"},{"text":"若想強制中止遊戲，請使用指令\n"},{"text":"/function game:force_end","color":"aqua","hover_event": {"action": "show_text", "value": "點擊複製指令"}, "click_event": {"action": "copy_to_clipboard", "value": "/function game:force_end"}}]
 
 advancement revoke @s only settings:interact/target
 advancement revoke @s only settings:attack/target

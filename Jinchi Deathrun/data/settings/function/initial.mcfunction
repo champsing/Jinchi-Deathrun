@@ -20,7 +20,7 @@ execute if score 初始分數 menu matches 2100.. run scoreboard players set 初
 execute if score 初始分數 menu matches ..900 run scoreboard players set 初始分數 menu 2000
 
 #---結果---
-execute as @e[tag = initial_value] run data modify entity @s text set value '{"score":{"name":"初始分數","objective":"menu"}}'
+execute as @e[tag = initial_value] run data modify entity @s text set value [{"score":{"name":"初始分數","objective":"menu"}}]
 tellraw @a ["",{"text":">> ","color":"gold"},{"text":"初始分數設為 "},{"score":{"name":"初始分數","objective":"menu"},"bold":true,"color":"gold"}]
 
 advancement revoke @s only settings:interact/initial
