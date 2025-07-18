@@ -1,16 +1,14 @@
 {
-	"pack": {
-	"pack_format": 57,
-	"description": "Main datapack of Jinchi Deathrun made by champsing"
-	},
-	"filter":
-	{
-		"block":
-		[
-			{
-				"namespace": "minecraft",
-				"path": "advancement/"
-			}
-		]
-	}
+    "pack": {
+        "pack_format": 71,
+        "description": "Main datapack of Jinchi Deathrun made by champsing"
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "advancement/"
+            }
+        ]
+    }
 }
