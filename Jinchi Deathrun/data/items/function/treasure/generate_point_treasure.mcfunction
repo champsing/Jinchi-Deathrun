@@ -1,4 +1,31 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:player_head",components:{item_name:"§b§l50分",lore:[[{"text":"§7獲得50分。"}],[{"text":"§c不受道具冷卻時間限制。"}]],max_stack_size:1,profile:{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmNhNGRhOTVhOTIyNzY4M2E3ZTZlZGU5OTA2YzI4NTU4Nzg0NjBlOTFjN2NjZDc1Y2Q5YjAwZmFlMTQwNjY2YiJ9fX0="}]},custom_data:{"add_score": 50},consumable:{consume_seconds: 999999}}},Tags:["50_point","point_item"]}
+summon item ~ ~ ~ {Item:{id:"minecraft:player_head",components:{\
+	item_name:"§b§l50分",\
+		lore:[\
+		[\
+			{\
+				"text":"§7獲得50分。"\
+			}\
+		],[\
+			{\
+				"text":"§c不受道具冷卻時間限制。"\
+			}\
+		]\
+	],\
+	max_stack_size:1,\
+	profile:{\
+		"properties":[\
+			{\
+				"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmNhNGRhOTVhOTIyNzY4M2E3ZTZlZGU5OTA2YzI4NTU4Nzg0NjBlOTFjN2NjZDc1Y2Q5YjAwZmFlMTQwNjY2YiJ9fX0="\
+			}\
+		]\
+	},\
+	custom_data:{\
+		"add_score": 50\
+	},\
+	consumable:{\
+		consume_seconds: 999999\
+	}}},Tags:["50_point","point_item"]}
+
 summon item ~ ~ ~ {Item:{id:"minecraft:player_head",components:{item_name:"§b§l100分",lore:[[{"text":"§7獲得100分。"}],[{"text":"§c不受道具冷卻時間限制。"}]],max_stack_size:1,profile:{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDliMzk5NzYwMTc3YjI3NzVlMTc0ZDQ5NTEyZjdiNmZhOWFhMDgwNzEzZWY0MzRkNDQwN2IxMWUzZDk5N2E4NCJ9fX0="}]},custom_data:{"add_score": 100},consumable:{consume_seconds: 999999}}},Tags:["100_point","point_item"]}
 summon item ~ ~ ~ {Item:{id:"minecraft:player_head",components:{item_name:"§b§l150分",lore:[[{"text":"§7獲得150分。"}],[{"text":"§c不受道具冷卻時間限制。"}]],max_stack_size:1,profile:{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZhMjY3Y2VhYjE3ZmJiODkxMTYwYTU4Y2Y0YTE2YTFmMDNkNmU1ZTY4MmI4MWM3ODBmMDIwOWNhNTkxZDY0YSJ9fX0="}]},custom_data:{"add_score": 150},consumable:{consume_seconds: 999999}}},Tags:["150_point","point_item"]}
 summon item ~ ~ ~ {Item:{id:"minecraft:player_head",components:{item_name:"§b§l200分",lore:[[{"text":"§7獲得200分。"}],[{"text":"§c不受道具冷卻時間限制。"}]],max_stack_size:1,profile:{"properties":[{"name":"textures","value":"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTc3Y2E4YTI0ZDg4NmQyMWFjNTA3YWZmMTUzMWQ2YTY3MjA5NDM1ZTZlYmU3ZWMyNTc0ZDljOTQyMGM1MGNjZiJ9fX0="}]},custom_data:{"add_score": 200},consumable:{consume_seconds: 999999}}},Tags:["200_point","point_item"]}
