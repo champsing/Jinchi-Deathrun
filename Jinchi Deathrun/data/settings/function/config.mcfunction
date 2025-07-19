@@ -7,5 +7,6 @@ execute if entity @s[advancements = {settings:attack/config = true}] run playsou
 
 #---印出場地配置---
 tellraw @a {"text": "場地配置"}
+# tellraw @a [{text:""}]
 
 advancement revoke @s only settings:attack/config

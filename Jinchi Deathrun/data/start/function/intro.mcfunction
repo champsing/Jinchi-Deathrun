@@ -11,5 +11,6 @@ tellraw @a ["",{"text":">> ","color":"gold"},"歡迎遊玩 ",{"text":"陣地","b
 tellraw @a ["",{"text":">> ","color":"gold"},"作者: ",{"text":"香榭 Champsing","bold":true,"color":"aqua","hover_event": {"action": "show_text", "value": "點擊複製 Discord 使用者名稱"}, "click_event": {"action": "copy_to_clipboard", "value": "champsing"}}]
 tellraw @a ["",{"text":">> ","color":"gold"},"若想解除安裝資料包，請點擊 ",{"text":"此處","color":"gold", "hover_event": {"action": "show_text", "value": "/function start:uninstall"}, "click_event": {"action": "run_command", "command": "/function start:uninstall"}}]
 tellraw @a ["",{"text":">> ","color":"gold"},"左鍵敲擊作者可重新顯示"]
+tellraw @a ["",{"text":">> ","color":"gold"},{"text":"若您擁有權限，您可以點擊"},{"text":"","color":"gold"},{"text":" "},{"text":"此處","underlined": true,"bold": true, "color": "aqua","click_event": {"action": "run_command","command": "/function edit:give"},"hover_event": {"action": "show_text","value": [{"text": "/function edit:give"}]}},{"text":" "},{"text":"來取得編輯場地的道具"}]
 
 advancement revoke @s only start:hit_champsing
