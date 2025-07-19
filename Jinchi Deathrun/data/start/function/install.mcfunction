@@ -86,7 +86,6 @@ scoreboard players set 一半 readonly 2
 scoreboard players set 十倍 readonly 10
 scoreboard players set 一分鐘 readonly 60
 
-scoreboard players set 操作模式 system 1
 scoreboard players set 遊戲時間分鐘 system 15
 scoreboard players set 遊戲模式 menu 99999
 scoreboard players display numberformat 遊戲模式 menu fixed {"text":"對戰","color":"#c24cdc","bold":true}
