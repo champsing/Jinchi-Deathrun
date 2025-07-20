@@ -1,7 +1,7 @@
 {
     "criteria": { 
         "use_item": {
-            "trigger": "minecraft:using_item",
+            "trigger": "minecraft:consume_item",
             "conditions": {
                  "item": {
                      "predicates": {

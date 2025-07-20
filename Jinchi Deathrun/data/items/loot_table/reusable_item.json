@@ -39,11 +39,6 @@
                 "minecraft:custom_data": {
                   "glowing": "all"
                 },
-                "minecraft:food": {
-                  "nutrition": 1,
-                  "saturation": 1,
-                  "can_always_eat": true
-                },
                 "minecraft:consumable": {
                   "consume_seconds": 99999
                 }
@@ -86,11 +81,6 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "glowing": "single"
-                },
-                "minecraft:food": {
-                  "nutrition": 1,
-                  "saturation": 1,
-                  "can_always_eat": true
                 },
                 "minecraft:consumable": {
                   "consume_seconds": 99999
@@ -162,11 +152,6 @@
                 "minecraft:custom_data": {
                   "freeze": "single"
                 },
-                "minecraft:food": {
-                  "nutrition": 1,
-                  "saturation": 1,
-                  "can_always_eat": true
-                },
                 "minecraft:consumable": {
                   "consume_seconds": 99999
                 }
@@ -209,11 +194,6 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "freeze": "all"
-                },
-                "minecraft:food": {
-                  "nutrition": 1,
-                  "saturation": 1,
-                  "can_always_eat": true
                 },
                 "minecraft:consumable": {
                   "consume_seconds": 99999
@@ -258,11 +238,6 @@
                 "minecraft:custom_data": {
                   "invalid": true
                 },
-                "minecraft:food": {
-                  "nutrition": 1,
-                  "saturation": 1,
-                  "can_always_eat": true
-                },
                 "minecraft:consumable": {
                   "consume_seconds": 99999
                 }
@@ -305,11 +280,6 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "dash": true
-                },
-                "minecraft:food": {
-                  "nutrition": 1,
-                  "saturation": 1,
-                  "can_always_eat": true
                 },
                 "minecraft:consumable": {
                   "consume_seconds": 99999
@@ -354,11 +324,6 @@
                 "minecraft:custom_data": {
                   "invalid": false
                 },
-                "minecraft:food": {
-                  "nutrition": 1,
-                  "saturation": 1,
-                  "can_always_eat": true
-                },
                 "minecraft:consumable": {
                   "consume_seconds": 99999
                 }
@@ -399,11 +364,6 @@
                 "minecraft:custom_data": {
                   "convention": true
                 },
-                "minecraft:food": {
-                  "nutrition": 1,
-                  "saturation": 1,
-                  "can_always_eat": true
-                },
                 "minecraft:consumable": {
                   "consume_seconds": 99999
                 }
@@ -443,11 +403,6 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "freeze": "all"
-                },
-                "minecraft:food": {
-                  "nutrition": 1,
-                  "saturation": 1,
-                  "can_always_eat": true
                 },
                 "minecraft:consumable": {
                   "consume_seconds": 99999
@@ -491,11 +446,6 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "invulnerable_base": true
-                },
-                "minecraft:food": {
-                  "nutrition": 1,
-                  "saturation": 1,
-                  "can_always_eat": true
                 },
                 "minecraft:consumable": {
                   "consume_seconds": 99999
@@ -542,11 +492,6 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:custom_data": {
                   "clear_curse": true
-                },
-                "minecraft:food": {
-                  "nutrition": 1,
-                  "saturation": 1,
-                  "can_always_eat": true
                 },
                 "minecraft:consumable": {
                   "consume_seconds": 99999

@@ -25,4 +25,4 @@ clear @s packed_ice[custom_data={"freeze": "single"}] 1
 execute on target run tag @s add check_for_frozen
 
 #---5秒後檢查有沒有凍結到人---
-scoreboard players add @s check_for_freeze 100
+scoreboard players add @s check_for_freeze 5

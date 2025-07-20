@@ -1,3 +1,3 @@
 scoreboard players add @s score 150
 tellraw @a ["",{"text":">> ","color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"加分道具","color":"gold"},{"text":" 增加了"},{"text":"150分","color":"gold"}]
-clear @s player_head[custom_data={"add_score": 150}] 1
+advancement revoke @s only items:add_150
