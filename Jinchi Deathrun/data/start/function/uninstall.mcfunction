@@ -65,7 +65,11 @@ scoreboard objectives remove check_for_frozen
 scoreboard objectives remove death
 scoreboard objectives remove top_duel
 scoreboard objectives remove top_score
+scoreboard objectives remove top_success
+scoreboard objectives remove top_kill
 scoreboard objectives remove total_duel
+scoreboard objectives remove total_success
+scoreboard objectives remove total_kill
 
 kill @e[tag = lobby]
 kill @e[tag = display]

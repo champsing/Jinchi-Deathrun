@@ -76,7 +76,12 @@ scoreboard objectives add frozen dummy "凍結剩餘時間"
 scoreboard objectives add death deathCount "死亡數"
 scoreboard objectives add top_duel dummy "對決最多次"
 scoreboard objectives add top_score dummy "個人得分最多"
+scoreboard objectives add top_success dummy "成功攻陣最多次"
+scoreboard objectives add top_kill dummy "陣殺最多人"
+
 scoreboard objectives add total_duel dummy "總對決數"
+scoreboard objectives add total_success dummy "總攻陣數"
+scoreboard objectives add total_kill dummy "總陣殺數"
 
 scoreboard objectives add item used:carrot_on_a_stick
 scoreboard objectives setdisplay sidebar editinfo
