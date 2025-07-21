@@ -10,7 +10,7 @@ execute if entity @s[team=blue] run data modify entity @e[tag=base,tag=blue,limi
 execute if entity @s[team=red] run data modify entity @e[tag=base,tag=red,limit=1] Invulnerable set value 1b
 #---下2上5---
 execute if entity @s[team=red] at @e[tag=base,tag=red] run fill ~ ~-2 ~ ~ ~5 ~ bedrock
-execute if entity @s[team=blue] at @e[tag=base,tag=blue] run fill ~ ~ ~ ~ ~5 ~ bedrock
+execute if entity @s[team=blue] at @e[tag=base,tag=blue] run fill ~ ~-2 ~ ~ ~5 ~ bedrock
 #---排程恢復原狀---
 execute if entity @s[team=red] run schedule function base:restore_invulnerable/red 20s
 execute if entity @s[team=blue] run schedule function base:restore_invulnerable/blue 20s
