@@ -6,6 +6,9 @@ schedule clear game:time
 schedule clear stamina:regain
 schedule clear items:treasure/generate_treasure
 
+scoreboard players display numberformat 剩餘時間 gameinfo fixed {"text": "遊戲結束", "color": "#43d245", "bold": true}
+bossbar set countdown name [{"text": "遊戲結束", "color": "#43d245", "bold": true}]
+
 execute as @a[team=!spec] run scoreboard players operation @s top_duel = @s total_duel
 execute as @a[team=!spec] run scoreboard players operation @s top_score = @s score
 execute as @a[team=!spec] run scoreboard players operation @s top_success = @s total_success
@@ -30,7 +33,7 @@ scoreboard players operation @a[team=!spec] top_kill -= 陣殺最高分 total_ki
 # 陣殺MVP: @a[scores={top_kill=0}]  (@a[scores={top_kill=0}] total_kill)
 # -----------------------------------------
 
-tellraw @a ["",{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n>> ","color":"gold"}]
+tellraw @a ["",{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n","color":"gold"}]
 tellraw @a ["",{"text":"-----------------------------------------\n","bold":true,"color":"gold"}]
 tellraw @a [{"text":"紅隊分數: ","color":"red"},{"score":{"name":"紅隊分數","objective":"gameinfo"},"color":"red"},{"text":"\n藍隊分數: ","color":"blue"},{"score":{"name":"藍隊分數","objective":"gameinfo"},"color":"blue"}]
 tellraw @a [{"text":"-----------------------------------------\n","bold":true,"color":"gold"}]
