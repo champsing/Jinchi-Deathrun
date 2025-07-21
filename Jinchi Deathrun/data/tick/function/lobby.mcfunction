@@ -4,6 +4,7 @@ execute as @a at @s if entity @s[y=-120,dy=50] run tp @s @e[type=marker,tag=lobb
 execute store result score 玩家人數 menu if entity @a[team=!spec]
 execute store result score 紅隊人數 menu if entity @a[team=red]
 execute store result score 藍隊人數 menu if entity @a[team=blue]
+execute store result score 寶箱點數量 menu if entity @e[tag = treasure_point]
 
 #---這時候非創造模式的玩家不應該操作設定、開始遊戲、進入編輯模式---
 advancement revoke @a[gamemode = !creative] from settings:root

@@ -2,6 +2,7 @@ execute as @a[tag=!join] run function start:join
 execute as @a[scores = {death = 1}] run function start:death
 execute store result score A點 editinfo if entity @e[tag = A_point]
 execute store result score B點 editinfo if entity @e[tag = B_point]
+execute store result score 寶箱點數量 menu if entity @e[tag = treasure_point]
 execute if score A點 editinfo matches 0 run scoreboard players display numberformat A點 editinfo fixed {"text":"未設定","bold": true, "color": "dark_red"}
 execute if score B點 editinfo matches 0 run scoreboard players display numberformat B點 editinfo fixed {"text":"未設定","bold": true, "color": "dark_red"}
 execute if score A點 editinfo matches 1 run scoreboard players display numberformat A點 editinfo fixed {"text":"已設定", "color": "green"}
