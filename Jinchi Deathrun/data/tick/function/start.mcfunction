@@ -18,6 +18,7 @@ execute as @a if score @s score matches ..-1 run function game:score_death
 execute as @a[scores={death=1}] at @s run function game:death
 execute if score 勝負已分 gamecore matches 0 as @a[team=!spec] at @s run function game:border
 execute as @a[scores={join=1..}] run function game:join
+effect give @a saturation infinite
 
 #---道具---
 #---檢查單人凍結---

@@ -8,6 +8,8 @@ execute at @e[type = marker, limit = 1, tag = lobby] run spawnpoint @a ~ ~ ~
 clear @a
 kill @e[tag=treasure_item]
 
+advancement revoke @a everything
+
 scoreboard players set 操作模式 system 2
 tag @a remove playing
 
