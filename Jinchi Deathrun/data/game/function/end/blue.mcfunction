@@ -5,6 +5,7 @@ team modify blue prefix {"text":"[勝利者]","color":"blue"}
 function game:end/end
 
 # 紅隊接受遊戲的制裁
+effect clear @a[team = red] resistance
 effect give @a[team = blue] resistance 5 5 true
 execute at @a[team = red] run summon lightning_bolt ~ ~ ~
 execute as @a[team = red] run damage @s 100 lightning_bolt
