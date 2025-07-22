@@ -34,6 +34,21 @@ execute as @a at @s run playsound block.anvil.land ambient @s ~ ~ ~
 #---記分板---
 scoreboard players reset * gameinfo
 scoreboard players reset * gamecore
+scoreboard players reset * score
+scoreboard players reset * top_duel
+scoreboard players reset * top_success
+scoreboard players reset * top_kill
+scoreboard players reset * total_duel
+scoreboard players reset * total_success
+scoreboard players reset * total_kill
+scoreboard players reset * grouped
+scoreboard players reset * item
+scoreboard players reset * item_cd
+scoreboard players reset * teammate
+scoreboard players reset * stamina
+scoreboard players reset * stamina_max
+scoreboard players reset * frozen
+scoreboard players reset * check_for_freeze
 
 tag @a[tag = check_for_frozen] remove check_for_frozen
 tag @a[tag = success_freeze_person] remove success_freeze_person
