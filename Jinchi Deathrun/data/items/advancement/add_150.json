@@ -5,7 +5,7 @@
             "conditions": {
                  "item": {
                      "predicates": {
-                        "minecraft:custom_data": {"add_score": 300}
+                        "minecraft:custom_data": {"add_score": "150"}
                     }
                 }
             }
