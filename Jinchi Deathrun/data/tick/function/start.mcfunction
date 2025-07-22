@@ -2,19 +2,21 @@
 advancement revoke @a from settings:root
 advancement revoke @a only edit:edit
 
+#---準備時間---
+execute if score 準備時間 gamecore matches 1.. store result bossbar prepare value run scoreboard players remove 準備時間 gamecore 1
+execute if score 準備時間 gamecore matches 0 run function game:prepare/countdown
+
 #---個人分數actionbar---
 execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=!infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"score"}},{"text":" ． 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
 execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"text":"無限 ","bold":true,"color":"#871ea7"},{"score":{"name":"@s","objective":"score"},"color":"gray", "bold": false, "strikethrough": true},{"text":" ． 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
 
-#---準備時間---
-execute if score 準備時間 gamecore matches 1.. store result bossbar prepare value run scoreboard players remove 準備時間 gamecore 1
-execute if score 準備時間 gamecore matches 0 run function game:prepare/countdown
+#---同步隊伍總分---
 
 #---開始---
 execute as @a[team=!spec] at @s if score 倒數 gamecore matches 0..5 run function game:prepare/teleport
 execute as @a[tag = !playing] run function start:spectate
 execute as @a[team=spec] at @s if entity @s[y=-120,dy=40] run tp @s @e[tag=center,limit=1]
-execute as @a if score @s score matches ..-1 run function game:score_death
+execute as @a if score @s score matches ..0 run function game:score_death
 execute as @a[scores={death=1}] at @s run function game:death
 execute if score 勝負已分 gamecore matches 0 as @a[team=!spec] at @s run function game:border
 execute as @a[scores={join=1..}] run function game:join
