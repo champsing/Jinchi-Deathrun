@@ -20,6 +20,10 @@ bossbar set countdown name [{"text":"剩餘時間： "},{"score":{"name": "剩�
 #---傳送---
 function game:prepare/teleport
 
+#---設定出生點---
+execute as @a[team = red] at @e[tag = red_base, limit = 1] run spawnpoint @s ~ ~ ~
+execute as @a[team = blue] at @e[tag = blue_base, limit = 1] run spawnpoint @s ~ ~ ~
+
 #---分數---
 execute as @a[team=!spec] store result score @s score run clear @s emerald 0
 scoreboard players operation @a[team=!spec] score *= 十倍 readonly
