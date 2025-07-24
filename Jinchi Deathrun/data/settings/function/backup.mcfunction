@@ -43,7 +43,7 @@ summon interaction ~ ~ ~ {UUID:[I;1529810769,-603501037,-1362914651,652750680],T
 # 加入旁觀
 # spec_title "53ee349f-11ee-4c32-a7fc-a6aacd558b8e" https://www.soltoder.com/mc-uuid-converter/#1408119967,300829746,-1476614486,-850031730
 # spec_instruct "80ef652a-0cec-42fa-8b62-dfef28bb5702" https://www.soltoder.com/mc-uuid-converter/#-2131794646,216810234,-1956454417,683366146
-# spec_interact "0ad7e3cf-eb6f-4c8b-b044-dde49d24d5cf" https://www.soltoder.com/mc-uuid-converter/#181920719,-345027445,-1337664028,-1658530353
+# spec_interaction "0ad7e3cf-eb6f-4c8b-b044-dde49d24d5cf" https://www.soltoder.com/mc-uuid-converter/#181920719,-345027445,-1337664028,-1658530353
 summon text_display ~ ~ ~ {alignment: "center", UUID:[I;1408119967,300829746,-1476614486,-850031730],Tags:["spec_title","settings"],text:[{text:"加入旁觀",bold:true,color: "#c6c6c6"}],Rotation:[270f,0f]}
 summon text_display ~ ~ ~ {alignment: "center", UUID:[I;-2131794646,216810234,-1956454417,683366146],Tags:["spec_instruct","settings"],text:[{text:"左鍵旁觀，右鍵離開"}],Rotation:[270f,0f]}
 summon interaction ~ ~ ~ {UUID:[I;181920719,-345027445,-1337664028,-1658530353],Tags:["spec_interaction","settings"],Rotation:[270f,0f]}
@@ -54,13 +54,9 @@ summon interaction ~ ~ ~ {UUID:[I;181920719,-345027445,-1337664028,-1658530353],
 execute at @e[tag = base, tag = red] run summon block_display ~ ~2 ~ {block_state:{Name:"smooth_quartz"}, UUID:[I;935100629,162480655,-1453687871,1657414166],Glowing:1b}
 execute at @e[tag = base, tag = blue] run summon block_display ~ ~2 ~ {block_state:{Name:"smooth_quartz"}, UUID:[I;-213858175,2126335046,-1935201625,-1523576827],Glowing:1b}
 
+summon text_display ~ ~ ~ {Invulnerable: 0b,text: [{text:"退出編輯模式",color:"#A335BC",bold:true}], UUID: [I; 205417058, 1884112378, -1279432616, -881205101], Tags: ["edit_title"], Rotation:[0f,0f]}
 summon minecraft:interaction ~ ~ ~ {Invulnerable: 0b, Rotation: [0.0f, 0.0f], Tags: ["edit"]}
 
-summon minecraft:interaction ~ ~ ~ {Invulnerable: 0b, Rotation: [180.0f, 0.0f], Tags: ["start"]}
-
-summon text_display ~ ~ ~ {Invulnerable: 0b,text: [{text:"退出編輯模式",color:"#A335BC",bold:true}], UUID: [I; 205417058, 1884112378, -1279432616, -881205101], Tags: ["edit_title"], Rotation:[0f,0f]}
-
 summon text_display ~ ~ ~ {Invulnerable: 0b,text: [{text:"開始遊戲",color:"#0fc421",bold:true}], UUID: [I; 2054170057, 1884112378, -1279432616, -881205101], Tags: ["start_title"], Rotation:[180f,0f]}
-
-
 summon text_display ~ ~ ~ {Invulnerable: 0b, text: [{text:"模式："},{text:"對戰",color:"#C24CDC",bold:true}], UUID: [I; -925065706, -1941419362, -1503060242, -838133364], Tags: ["mode_title"], Rotation:[180f,0f]}
+summon minecraft:interaction ~ ~ ~ {Invulnerable: 0b, Rotation: [180.0f, 0.0f], Tags: ["start"]}
