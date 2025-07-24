@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "use_item": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:player"
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "components": {
+                                "custom_data": { "freeze": "single" }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": { "function": "items:freeze/single_attacker" }
+}
