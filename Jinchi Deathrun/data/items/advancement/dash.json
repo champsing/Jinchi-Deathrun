@@ -1,11 +1,11 @@
 {
-    "criteria": { 
+    "criteria": {
         "use_item": {
             "trigger": "minecraft:using_item",
             "conditions": {
-                 "item": {
-                     "predicates": {
-                        "minecraft:custom_data": {"dash": true}
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": { "dash": true }
                     }
                 }
             }

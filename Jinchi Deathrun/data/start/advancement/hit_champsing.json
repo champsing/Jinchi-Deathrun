@@ -1,16 +1,16 @@
 {
-	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:player_hurt_entity",
-			"conditions": {
-				"entity": {
-					"type": "minecraft:interaction",
-					"nbt": "{Tags:[\"champsing\"]}"
-				}
-			}
-		}
-	},
-	"rewards": {
-		"function": "start:intro"
-	}
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "nbt": "{Tags:[\"champsing\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "start:intro"
+    }
 }

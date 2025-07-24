@@ -1,11 +1,11 @@
 {
-    "criteria": { 
+    "criteria": {
         "use_item": {
             "trigger": "minecraft:consume_item",
             "conditions": {
-                 "item": {
-                     "predicates": {
-                        "minecraft:custom_data": {"add_score": "250"}
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": { "add_score": "250" }
                     }
                 }
             }

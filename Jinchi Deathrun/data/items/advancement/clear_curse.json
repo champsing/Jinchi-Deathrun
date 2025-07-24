@@ -1,11 +1,11 @@
 {
-    "criteria": { 
+    "criteria": {
         "use_item": {
             "trigger": "minecraft:using_item",
             "conditions": {
-                 "item": {
-                     "predicates": {
-                        "minecraft:custom_data": {"clear_curse": true}
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": { "clear_curse": true }
                     }
                 }
             }
