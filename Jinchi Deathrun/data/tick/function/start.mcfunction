@@ -10,7 +10,8 @@ execute if score 準備時間 gamecore matches 0 run function game:prepare/count
 execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=!infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"score"}},{"text":" ． 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
 execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"text":"無限 ","bold":true,"color":"#871ea7"},{"score":{"name":"@s","objective":"score"},"color":"gray", "bold": false, "strikethrough": true},{"text":" ． 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
 
-#---同步隊伍總分---
+#-------偵測treasure旁邊小於1格是否有玩家-------
+execute at @e[type = item, tag = treasure_item] as @p[team = !spec, distance = ..1] run function items:treasure/loot_treasure
 
 #---開始---
 execute as @a[team=!spec] at @s if score 倒數 gamecore matches 0..5 run function game:prepare/teleport
