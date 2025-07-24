@@ -13,8 +13,8 @@ summon interaction ~ ~ ~ {UUID:[I;-1746957356,-1525202357,-2030236345,1882179304
 # target_value "4cb5ef9d-2ed8-4dde-82c4-970024aadc8b" https://www.soltoder.com/mc-uuid-converter/#1286991773,785927646,-2101045504,615177355
 # target_interact "1959fe6d-cc65-4a81-84ed-7f0ad54a4e9b" https://www.soltoder.com/mc-uuid-converter/#425328237,-865777023,-2064810230,-716550501
 summon text_display ~ ~ ~ {alignment: "center", UUID:[I;778190456,2072203004,-1923121719,-1150778636],Tags:["target_title", "settings"],text:[{"text":"目標分數","color": "green"}],Rotation:[270f,0f]}
-summon text_display ~ ~ ~ {alignment: "center", UUID:[I;1286991773,785927646,-2101045504,615177355],Tags:["initial_value", "settings"],text:[{"score":{"name":"目標分數","objective":"menu"}}],Rotation:[270f,0f]}
-summon interaction ~ ~ ~ {UUID:[I;425328237,-865777023,-2064810230,-716550501],Tags:["initial_interaction", "settings"],Rotation:[270f,0f]}
+summon text_display ~ ~ ~ {alignment: "center", UUID:[I;1286991773,785927646,-2101045504,615177355],Tags:["target_value", "settings"],text:[{"score":{"name":"目標分數","objective":"menu"}}],Rotation:[270f,0f]}
+summon interaction ~ ~ ~ {UUID:[I;425328237,-865777023,-2064810230,-716550501],Tags:["target_interaction", "settings"],Rotation:[270f,0f]}
 
 # 時間限制
 # time_title "b716f343-abcd-4c43-8fc5-b17805863015" https://www.soltoder.com/mc-uuid-converter/#-1223232701,-1412608957,-1882869384,92680213
@@ -28,9 +28,17 @@ summon interaction ~ ~ ~ {UUID:[I;-567391687,-1566356248,-1686925304,1503661378]
 # team_title "20029a29-015c-4119-88a7-8cdb5784d99a" https://www.soltoder.com/mc-uuid-converter/#537041449,22823193,-2002285349,1468324250
 # team_instruct "5b6c9e02-4e4b-44bc-b240-fd419e21d0df" https://www.soltoder.com/mc-uuid-converter/#1533844994,1313555644,-1304363711,-1641951009
 # team_interact "cac7bae0-cc58-414b-a07c-156a894b27f6" https://www.soltoder.com/mc-uuid-converter/#-892880160,-866631349,-1602480790,-1991563274
-summon text_display ~ ~ ~ {alignment: "center", UUID:[I;537041449,22823193,-2002285349,1468324250],Tags:["team_title","settings"],text:[[{"text":"隨機","bold":true,"color":"red"},{"text":"分隊","bold":true,"color":"blue"}]],Rotation:[270f,0f]}
+summon text_display ~ ~ ~ {alignment: "center", UUID:[I;537041449,22823193,-2002285349,1468324250],Tags:["team_title","settings"],text:[[{"text":"隨機分隊","bold":true,"color": aqua}]],Rotation:[270f,0f]}
 summon text_display ~ ~ ~ {alignment: "center", UUID:[I;1533844994,1313555644,-1304363711,-1641951009],Tags:["team_instruct","settings"],text:[{"text":"左鍵分隊"}],Rotation:[270f,0f]}
 summon interaction ~ ~ ~ {UUID:[I;-892880160,-866631349,-1602480790,-1991563274],Tags:["team_interaction","settings"],Rotation:[270f,0f]}
+
+# 加入隊伍
+# join_title "4fdbb999-4489-498f-bfcc-5aa3bc3f0e7d" https://www.soltoder.com/mc-uuid-converter/#1339799961,1149847951,-1077126493,-1136718211
+# join_instruct "7e7b61a7-1280-43d0-af18-9a26ac0cc812" https://www.soltoder.com/mc-uuid-converter/#2122015143,310395856,-1357342170,-1408448494
+# join_interaction "5b2f0f51-dc07-4e13-aec3-92a526e82f58" https://www.soltoder.com/mc-uuid-converter/#1529810769,-603501037,-1362914651,652750680
+summon text_display ~ ~ ~ {alignment: "center",UUID:[I;1339799961,1149847951,-1077126493,-1136718211],Tags:["join_title","settings"],text:[[{"text":"加入隊伍","color":"gold", bold:true}]],Rotation:[270f,0f],background: -2147483647}
+summon text_display ~ ~ ~ {alignment: "center", UUID:[I;2122015143,310395856,-1357342170,-1408448494],Tags:["join_instruct","settings"],text:[{"text":"左鍵加入"},{text:"紅隊", color: red, bold: true},{"text":"，右鍵加入"},{"text":"藍隊", color: blue, bold: true}],Rotation:[270f,0f]}
+summon interaction ~ ~ ~ {UUID:[I;1529810769,-603501037,-1362914651,652750680],Tags:["join_interaction","settings"],Rotation:[270f,0f]}
 
 # 加入旁觀
 # spec_title "53ee349f-11ee-4c32-a7fc-a6aacd558b8e" https://www.soltoder.com/mc-uuid-converter/#1408119967,300829746,-1476614486,-850031730
@@ -46,10 +54,13 @@ summon interaction ~ ~ ~ {UUID:[I;181920719,-345027445,-1337664028,-1658530353],
 execute at @e[tag = base, tag = red] run summon block_display ~ ~2 ~ {block_state:{Name:"smooth_quartz"}, UUID:[I;935100629,162480655,-1453687871,1657414166],Glowing:1b}
 execute at @e[tag = base, tag = blue] run summon block_display ~ ~2 ~ {block_state:{Name:"smooth_quartz"}, UUID:[I;-213858175,2126335046,-1935201625,-1523576827],Glowing:1b}
 
-summon minecraft:interaction ~ ~ ~ {Motion: [0.0d, 0.0d, 0.0d], Invulnerable: 0b, Air: 300s, OnGround: 1b, PortalCooldown: 0, Rotation: [-90.0f, 0.0f], attack: {player: [I; 987550423, -1680389901, -1369398481, 1171586219], timestamp: 297889L}, response: 0b, Fire: 0s, width: 1.0f, interaction: {player: [I; 987550423, -1680389901, -1369398481, 1171586219], timestamp: 272101L}, Tags: ["edit"], height: 1.0f}
+summon minecraft:interaction ~ ~ ~ {Invulnerable: 0b, Rotation: [0.0f, 0.0f], Tags: ["edit"]}
 
-summon minecraft:interaction ~ ~ ~ {Motion: [0.0d, 0.0d, 0.0d], Invulnerable: 0b, Air: 300s, OnGround: 1b, PortalCooldown: 0, Rotation: [-90.0f, 0.0f], attack: {player: [I; 987550423, -1680389901, -1369398481, 1171586219], timestamp: 250528L}, response: 0b, Fire: 0s, width: 1.0f, Tags: ["start"], height: 1.0f}
+summon minecraft:interaction ~ ~ ~ {Invulnerable: 0b, Rotation: [180.0f, 0.0f], Tags: ["start"]}
 
-summon text_display ~ ~ ~ {glow_color_override: -1, shadow: 0b, line_width: 200, Invulnerable: 0b, PortalCooldown: 0, interpolation_duration: 0, teleport_duration: 0, see_through: 0b, text: [{"text":"退出編輯模式","color":"#A335BC","bold":true}], UUID: [I; 2054170057, 1884112378, -1279432616, -881205101], Tags: ["edit_title"], height: 0.0f, Motion: [0.0d, 0.0d, 0.0d], shadow_radius: 0.0f, Air: 300s, OnGround: 1b, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f]}, billboard: "fixed", shadow_strength: 1.0f, Rotation: [-86.85364f, -14.4000225f], default_background: 0b, Pos: [59.41012114691895d, -12.0d, 36.53674189616991d], background: 1073741824, Fire: 0s, width: 0.0f, view_range: 1.0f, alignment: "center"}
+summon text_display ~ ~ ~ {Invulnerable: 0b,text: [{"text":"退出編輯模式","color":"#A335BC","bold":true}], UUID: [I; 205417058, 1884112378, -1279432616, -881205101], Tags: ["edit_title"], Rotation:[0f,0f]}
 
-summon text_display ~ ~ ~ {glow_color_override: -1, shadow: 0b, line_width: 200, Invulnerable: 0b, PortalCooldown: 0, interpolation_duration: 0, teleport_duration: 0, see_through: 0b, text: [{"text":"模式："},{"text":"對戰","color":"#C24CDC","bold":true}], UUID: [I; -925065706, -1941419362, -1503060242, -838133364], Tags: ["mode_title"], height: 0.0f, Motion: [0.0d, 0.0d, 0.0d], shadow_radius: 0.0f, Air: 300s, OnGround: 1b, transformation: {left_rotation: [0.0f, 0.0f, 0.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f]}, billboard: "fixed", shadow_strength: 1.0f, Rotation: [-88.95407f, -12.300038f], default_background: 0b, Pos: [59.25521718768419d, -12.0d, 38.36198069691661d], background: 1073741824, Fire: 0s, width: 0.0f, view_range: 1.0f, alignment: "center"}
+summon text_display ~ ~ ~ {Invulnerable: 0b,text: [{"text":"開始遊戲","color":"#0fc421","bold":true}], UUID: [I; 2054170057, 1884112378, -1279432616, -881205101], Tags: ["start_title"], Rotation:[180f,0f]}
+
+
+summon text_display ~ ~ ~ {Invulnerable: 0b, text: [{"text":"模式："},{"text":"對戰","color":"#C24CDC","bold":true}], UUID: [I; -925065706, -1941419362, -1503060242, -838133364], Tags: ["mode_title"], Rotation:[180f,0f]}
