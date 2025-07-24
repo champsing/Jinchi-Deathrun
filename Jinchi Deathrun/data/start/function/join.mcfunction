@@ -11,7 +11,7 @@ title @s times 10 40 10
 tp @s @e[type=marker,tag=lobby,limit=1]
 execute at @e[type=marker,tag=lobby,limit=1] run spawnpoint @s ~ ~ ~
 
-title @s title ["",{"text":"陣地","bold":true,"color":"gold"},{"text":"大逃殺","bold":true,"color":"red"}]
-title @s subtitle ["",{"text":"作者: 香榭","bold":true,"color":"green"}]
+title @s title ["",{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red}]
+title @s subtitle ["",{text:"作者: 香榭",bold:true,color:"green"}]
 
 tag @s add join

@@ -8,8 +8,8 @@ schedule clear items:treasure/generate_treasure
 
 execute as @a at @e[tag = lobby, limit = 1] run spawnpoint @s ~ ~ ~
 
-scoreboard players display numberformat 剩餘時間 gameinfo fixed {"text": "遊戲結束", "color": "#43d245", "bold": true}
-bossbar set countdown name [{"text": "遊戲結束", "color": "#43d245", "bold": true}]
+scoreboard players display numberformat 剩餘時間 gameinfo fixed {text: "遊戲結束", color: "#43d245", bold: true}
+bossbar set countdown name [{text: "遊戲結束", color: "#43d245", bold: true}]
 
 execute as @a[team=!spec] run scoreboard players operation @s top_duel = @s total_duel
 execute as @a[team=!spec] run scoreboard players operation @s top_score = @s score
@@ -35,18 +35,18 @@ scoreboard players operation @a[team=!spec] top_kill -= 陣殺最高分 total_ki
 # 陣殺MVP: @a[scores={top_kill=0}]  (@a[scores={top_kill=0}] total_kill)
 # -----------------------------------------
 
-tellraw @a ["",{"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n","color":"gold"}]
-tellraw @a ["",{"text":"-----------------------------------------\n","bold":true,"color":"gold"}]
-tellraw @a [{"text":"紅隊分數: ","color":"red"},{"score":{"name":"紅隊分數","objective":"gameinfo"},"color":"red"},{"text":"\n藍隊分數: ","color":"blue"},{"score":{"name":"藍隊分數","objective":"gameinfo"},"color":"blue"}]
-tellraw @a [{"text":"-----------------------------------------\n","bold":true,"color":"gold"}]
+tellraw @a ["",{text:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",color:gold}]
+tellraw @a ["",{text:"-----------------------------------------\n",bold:true,color:gold}]
+tellraw @a [{text:"紅隊分數: ",color:red},{score:{name:"紅隊分數",objective:"gameinfo"},color:red},{text:"\n藍隊分數: ",color:"blue"},{score:{name:"藍隊分數",objective:"gameinfo"},color:"blue"}]
+tellraw @a [{text:"-----------------------------------------\n",bold:true,color:gold}]
 
-tellraw @a [{"text":"對戰好手: ","color":"aqua",hover_event:{action:"show_text", value:"對戰次數最多的玩家。"}},{"selector":"@a[scores={top_duel=0}]"},{"text":" (","color":"aqua"},{"score":{"name":"@p[scores={top_duel=0}]","objective":"total_duel"},"color":"aqua"},{"text":")","color":"aqua"}]
+tellraw @a [{text:"對戰好手: ",color:aqua,hover_event:{action:"show_text", value:"對戰次數最多的玩家。"}},{selector:"@a[scores={top_duel=0}]"},{text:" (",color:aqua},{score:{name:"@p[scores={top_duel=0}]",objective:"total_duel"},color:aqua},{text:")",color:aqua}]
 
-tellraw @a [{"text":"大富豪家: ","color":"aqua",hover_event:{action:"show_text", value:"個人分數最高的玩家。"}},{"selector":"@a[scores={top_score=0}]"},{"text":" (","color":"aqua"},{"score":{"name":"@a[scores={top_score=0}]","objective":"score"},"color":"aqua"},{"text":")","color":"aqua"}]
+tellraw @a [{text:"大富豪家: ",color:aqua,hover_event:{action:"show_text", value:"個人分數最高的玩家。"}},{selector:"@a[scores={top_score=0}]"},{text:" (",color:aqua},{score:{name:"@a[scores={top_score=0}]",objective:score},color:aqua},{text:")",color:aqua}]
 
-tellraw @a [{"text":"攻陣天才: ","color":"aqua",hover_event:{action:"show_text", value:"成功攻陣次數最多的玩家。"}},{"selector":"@a[scores={top_success=0}]"},{"text":" (","color":"aqua"},{"score":{"name":"@a[scores={top_success=0}]","objective":"total_success"},"color":"aqua"},{"text":")","color":"aqua"}]
+tellraw @a [{text:"攻陣天才: ",color:aqua,hover_event:{action:"show_text", value:"成功攻陣次數最多的玩家。"}},{selector:"@a[scores={top_success=0}]"},{text:" (",color:aqua},{score:{name:"@a[scores={top_success=0}]",objective:"total_success"},color:aqua},{text:")",color:aqua}]
 
-tellraw @a [{"text":"陣殺MVP: ","color":"aqua",hover_event:{action:"show_text", value:"陣殺玩家最多的玩家。"}},{"selector":"@a[scores={top_kill=0}]"},{"text":" (","color":"aqua"},{"score":{"name":"@a[scores={top_kill=0}]","objective":"total_kill"},"color":"aqua"},{"text":")","color":"aqua"}]
+tellraw @a [{text:"陣殺MVP: ",color:aqua,hover_event:{action:"show_text", value:"陣殺玩家最多的玩家。"}},{selector:"@a[scores={top_kill=0}]"},{text:" (",color:aqua},{score:{name:"@a[scores={top_kill=0}]",objective:"total_kill"},color:aqua},{text:")",color:aqua}]
 
-tellraw @a [{"text":"-----------------------------------------","bold":true,"color":"gold"}]
-tellraw @a {"text":"[點擊返回大廳並重置遊戲]","color":"aqua", "bold": true,"click_event": {"action": "run_command","command": "/function game:initialize"}}
+tellraw @a [{text:"-----------------------------------------",bold:true,color:gold}]
+tellraw @a {text:"[點擊返回大廳並重置遊戲]",color:aqua, bold: true,click_event: {action: "run_command",command: "/function game:initialize"}}

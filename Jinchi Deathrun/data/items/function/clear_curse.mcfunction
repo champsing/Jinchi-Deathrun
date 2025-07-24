@@ -10,4 +10,4 @@ effect clear @s glowing
 effect clear @s darkness
 function items:freeze/restore_from_frozen
 
-tellraw @a ["",{"text":">> ","color":"gold"},{"selector":"@s"},{"text":"使用了"},{"text":"解除詛咒道具","color":"gold"},{"text":" 消除所有"},{"text":"負面狀態效果","color":"gold"}]
+tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"使用了"},{text:"解除詛咒道具",color:gold},{text:" 消除所有"},{text:"負面狀態效果",color:gold}]

@@ -7,8 +7,8 @@ execute if score 準備時間 gamecore matches 1.. store result bossbar prepare 
 execute if score 準備時間 gamecore matches 0 run function game:prepare/countdown
 
 #---個人分數actionbar---
-execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=!infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"score"}},{"text":" ． 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
-execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=infinity] run title @s actionbar [{"text":"個人分數: ","bold":true,"color":"aqua"},{"text":"無限 ","bold":true,"color":"#871ea7"},{"score":{"name":"@s","objective":"score"},"color":"gray", "bold": false, "strikethrough": true},{"text":" ． 體力: ","bold":true,"color":"aqua"},{"score":{"name":"@s","objective":"stamina"},"color":"#a0cc1d"}]
+execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=!infinity] run title @s actionbar [{text:"個人分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
+execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=infinity] run title @s actionbar [{text:"個人分數: ",bold:true,color:aqua},{text:"無限 ",bold:true,color:"#871ea7"},{score:{name:"@s",objective:score},color:"gray", bold: false, "strikethrough": true},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
 
 #-------偵測treasure旁邊小於1格是否有玩家-------
 execute at @e[type = item, tag = treasure_item] as @p[team = !spec, distance = ..1] run function items:treasure/loot_treasure
@@ -24,9 +24,6 @@ execute as @a[scores={join=1..}] run function game:join
 effect give @a saturation infinite
 
 #---道具---
-#---檢查單人凍結---
-execute as @a[scores={check_for_freeze=0}] run function items:freeze/await_5_seconds
-execute as @a[tag = check_for_freeze] at @s run function items:freeze/check_frozen
 #---排程解除凍結---
 execute as @a[tag = frozen] if score @s frozen matches 0 run function items:freeze/restore_from_frozen
 

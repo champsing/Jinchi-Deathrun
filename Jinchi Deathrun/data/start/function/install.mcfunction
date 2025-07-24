@@ -38,7 +38,7 @@ team join red 紅隊分數
 team join blue 藍隊人數
 team join blue 藍隊分數
 
-bossbar add countdown [{"text":"剩餘時間： "},{"score":{"name": "剩餘時間","objective": "gameinfo"},"color": "gold"},{"text":"秒"}]
+bossbar add countdown [{text:"剩餘時間： "},{score:{name: "剩餘時間",objective: "gameinfo"},color: gold},{text:"秒"}]
 # bossbar add event "事件時間"
 bossbar add prepare "準備時間"
 bossbar set countdown color yellow
@@ -47,9 +47,9 @@ bossbar set countdown style notched_10
 bossbar set prepare color purple
 bossbar set prepare max 2400
 
-scoreboard objectives add menu dummy ["",{"text":"陣地","bold":true,"color":"gold"},{"text":"大逃殺","bold":true,"color":"red"}]
-scoreboard objectives add gameinfo dummy {"text":"遊戲資訊","bold":true,"italic":true,"color":"gold"}
-scoreboard objectives add editinfo dummy {"text": "編輯中","color": "dark_aqua","italic": true}
+scoreboard objectives add menu dummy ["",{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red}]
+scoreboard objectives add gameinfo dummy {text:"遊戲資訊",bold:true,false:true,color:gold}
+scoreboard objectives add editinfo dummy {text: "編輯中",color: "dark_aqua",false: true}
 scoreboard objectives add edit_cd dummy "編輯冷卻"
 scoreboard objectives add gamecore dummy "遊戲核心隱藏資訊，僅能在3寫入"
 scoreboard objectives add system dummy "系統分數，僅能在1和2寫入"
@@ -93,7 +93,7 @@ scoreboard players set 一分鐘 readonly 60
 
 scoreboard players set 遊戲時間分鐘 system 15
 scoreboard players set 遊戲模式 menu 99999
-scoreboard players display numberformat 遊戲模式 menu fixed {"text":"對戰","color":"#c24cdc","bold":true}
+scoreboard players display numberformat 遊戲模式 menu fixed {text:"對戰",color:"#c24cdc",bold:true}
 scoreboard players set 初始分數 menu 500
 scoreboard players set 目標分數 menu 3000
 scoreboard players set 遊戲時間 menu 900

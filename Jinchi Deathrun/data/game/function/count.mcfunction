@@ -1,5 +1,5 @@
 #---倒數---
-execute if score 倒數 gamecore matches 1..5 run title @a title {"score":{"name":"倒數","objective":"gamecore"},"bold":true,"color":"gold"}
+execute if score 倒數 gamecore matches 1..5 run title @a title {score:{name:"倒數",objective:"gamecore"},bold:true,color:gold}
 #---音效---
 execute if score 倒數 gamecore matches 5 as @a at @s run playsound entity.experience_orb.pickup ambient @s ~ ~ ~ 1 0
 execute if score 倒數 gamecore matches 4 as @a at @s run playsound entity.experience_orb.pickup ambient @s ~ ~ ~ 1 0.6

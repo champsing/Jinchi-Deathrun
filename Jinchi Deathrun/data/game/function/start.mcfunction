@@ -11,13 +11,13 @@ execute as @a run attribute @s jump_strength modifier remove countdown
 execute as @a run attribute @s movement_speed modifier remove countdown
 
 #---通知---
-title @a title {"text":"START","bold":true,"color":"gold"}
+title @a title {text:"START",bold:true,color:gold}
 
 #---重置時鐘---
 scoreboard players operation 剩餘時間 gameinfo = 遊戲時間 menu
 
 #---給大家大跑棒棒
-give @a breeze_rod[custom_data= {"adrenaline": true}, item_name= [{"text":"§c§l腎上腺素","italic": false}], lore= [{"text":"§7在主手時可獲得加速I效果。","italic": false},{"text":"§c體力低於 30% 時不得使用。","italic": false}]]
+give @a breeze_rod[custom_data= {"adrenaline": true}, item_name= [{text:"§c§l腎上腺素",false: false}], lore= [{text:"§7在主手時可獲得加速I效果。",false: false},{text:"§c體力低於 30% 時不得使用。",false: false}]]
 
 #---排程函數---
 schedule function game:time 1s

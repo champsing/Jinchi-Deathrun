@@ -9,7 +9,7 @@ execute unless score 延長賽 gamecore matches 1 unless score 勝負已分 game
 
 #---bossbar sync---
 execute unless score 延長賽 gamecore matches 1 store result bossbar countdown value run scoreboard players get 剩餘時間 gameinfo
-execute unless score 延長賽 gamecore matches 1 unless score 勝負已分 gamecore matches 1 run bossbar set countdown name [{"text":"剩餘時間： "},{"score":{"name": "剩餘時間","objective": "gameinfo"},"color": "gold"},{"text":"秒"}]
+execute unless score 延長賽 gamecore matches 1 unless score 勝負已分 gamecore matches 1 run bossbar set countdown name [{text:"剩餘時間： "},{score:{name: "剩餘時間",objective: "gameinfo"},color: gold},{text:"秒"}]
 
 #---偵測勝者---
 execute unless score 目標分數 menu matches -1 unless score 勝負已分 gamecore matches 1 run function game:end/reach_goal

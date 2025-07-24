@@ -6,7 +6,7 @@
 			"conditions": {
 				"entity": {
 					"type": "minecraft:interaction",
-					"nbt": "{Tags:[\"time_interact\"]}"
+					"nbt": "{Tags:[\"time_interaction\"]}"
 				}
 			}
 		}

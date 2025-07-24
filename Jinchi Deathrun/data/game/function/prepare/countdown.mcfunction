@@ -15,7 +15,7 @@ gamemode adventure @a[team=!spec]
 gamemode spectator @a[team=spec]
 bossbar set prepare players
 bossbar set countdown players @a
-bossbar set countdown name [{"text":"剩餘時間： "},{"score":{"name": "剩餘時間","objective": "gameinfo"},"color": "gold"},{"text":"秒"}]
+bossbar set countdown name [{text:"剩餘時間： "},{score:{name: "剩餘時間",objective: "gameinfo"},color: gold},{text:"秒"}]
 
 #---傳送---
 function game:prepare/teleport

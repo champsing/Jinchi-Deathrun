@@ -6,7 +6,7 @@
 			"conditions": {
 				"entity": {
 					"type": "minecraft:interaction",
-					"nbt": "{Tags:[\"initial_interact\"]}"
+					"nbt": "{Tags:[\"initial_interaction\"]}"
 				}
 			}
 		}

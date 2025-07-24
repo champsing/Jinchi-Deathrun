@@ -3,10 +3,10 @@ execute as @a[scores = {death = 1}] run function start:death
 execute store result score A點 editinfo if entity @e[tag = A_point]
 execute store result score B點 editinfo if entity @e[tag = B_point]
 execute store result score 寶箱點數量 editinfo if entity @e[tag = treasure_point]
-execute if score A點 editinfo matches 0 run scoreboard players display numberformat A點 editinfo fixed {"text":"未設定","bold": true, "color": "dark_red"}
-execute if score B點 editinfo matches 0 run scoreboard players display numberformat B點 editinfo fixed {"text":"未設定","bold": true, "color": "dark_red"}
-execute if score A點 editinfo matches 1 run scoreboard players display numberformat A點 editinfo fixed {"text":"已設定", "color": "green"}
-execute if score B點 editinfo matches 1 run scoreboard players display numberformat B點 editinfo fixed {"text":"已設定", "color": "green"}
+execute if score A點 editinfo matches 0 run scoreboard players display numberformat A點 editinfo fixed {text:"未設定",bold: true, color: "dark_red"}
+execute if score B點 editinfo matches 0 run scoreboard players display numberformat B點 editinfo fixed {text:"未設定",bold: true, color: "dark_red"}
+execute if score A點 editinfo matches 1 run scoreboard players display numberformat A點 editinfo fixed {text:"已設定", color: "green"}
+execute if score B點 editinfo matches 1 run scoreboard players display numberformat B點 editinfo fixed {text:"已設定", color: "green"}
 execute as @a if score @s edit_cd matches 1.. run scoreboard players remove @s edit_cd 1
 #---這時候任何人都不該操作設定、開始遊戲---
 advancement revoke @a from settings:root
