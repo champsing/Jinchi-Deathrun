@@ -11,7 +11,7 @@ advancement revoke @a[gamemode = !creative] from settings:root
 advancement revoke @a[gamemode = !creative] only edit:edit
 
 #---編輯、設定、開始 粒子效果高亮---
-execute at @e[tag = settings, type = interaction] run particle squid_ink ~ ~ ~ 0.1 0.1 0.1 0.01 1 normal
-execute at @e[tag = settings, type = interaction] run particle dust{color: [0.541, 0.902, 0.722], scale: 1.0} ~ ~ ~ 0.3 0.3 0.3 0.1 12 normal
-execute at @e[tag = edit, type = interaction] run particle dust{color: [0.65,0.0,0.78], scale: 1.0} ~ ~ ~ 0.3 0.3 0.3 0.1 12 normal
-execute at @e[tag = start, type = interaction] run particle dust{color: [0.52,0.83,0.31], scale: 1.0} ~ ~ ~ 0.3 0.3 0.3 0.1 12 normal
+execute at @e[tag = settings, type = interaction] positioned ~ ~0.5 ~ run particle squid_ink ~ ~ ~ 0.1 0.1 0.1 0.01 1 normal
+execute at @e[tag = settings, type = interaction] positioned ~ ~0.5 ~ run particle dust{color: [0.541, 0.902, 0.722], scale: 1.0} ~ ~ ~ 0.3 0.3 0.3 0.1 12 normal
+execute at @e[tag = edit, type = interaction] positioned ~ ~0.5 ~ run particle dust{color: [0.65,0.0,0.78], scale: 1.0} ~ ~ ~ 0.3 0.3 0.3 0.1 12 normal
+execute at @e[tag = start, type = interaction] positioned ~ ~0.5 ~ run particle dust{color: [0.52,0.83,0.31], scale: 1.0} ~ ~ ~ 0.3 0.3 0.3 0.1 12 normal
