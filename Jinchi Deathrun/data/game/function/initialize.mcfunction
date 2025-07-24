@@ -49,6 +49,7 @@ scoreboard players reset * stamina
 scoreboard players reset * stamina_max
 scoreboard players reset * frozen
 scoreboard players reset * check_for_freeze
+#(to be added...)
 
 tag @a[tag = check_for_frozen] remove check_for_frozen
 tag @a[tag = success_freeze_person] remove success_freeze_person
