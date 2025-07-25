@@ -99,20 +99,31 @@
                             "count": 1
                         },
                         {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "§b§l三叉戟"
+                                }
+                            ]
+                        },
+                        {
                             "function": "set_lore",
                             "lore": [
                                 {
-                                    "text": "§7一把三叉戟，耐久度為1。"
+                                    "text": "§7一把三叉戟，可以投擲 1 次。"
                                 },
                                 {
-                                    "text": "§7可用於遠程攻擊其他玩家發動對戰。"
+                                    "text": "§7可用於遠程攻擊其他玩家發動對戰；也可用於近戰。"
                                 }
                             ],
                             "mode": "append"
                         },
                         {
-                            "function": "set_damage",
-                            "damage": 0
+                          "function": "set_components",
+                          "components": {
+                            "minecraft:max_damage": 2,
+                            "minecraft:max_stack_size": 1
+                          }
                         }
                     ]
                 },

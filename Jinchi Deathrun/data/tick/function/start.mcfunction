@@ -24,6 +24,9 @@ execute as @a[scores={join=1..}] run function game:join
 effect give @a saturation infinite
 
 #---道具---
+#---刪除耐久1的三叉戟
+clear @a trident[damage=1, max_damage=2]
+
 #---排程解除凍結---
 execute as @a[tag = frozen] if score @s frozen matches 0 run function items:freeze/restore_from_frozen
 
