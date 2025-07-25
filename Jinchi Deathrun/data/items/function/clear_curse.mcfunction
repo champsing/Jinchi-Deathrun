@@ -4,6 +4,7 @@ execute if score @s item_cd matches 1.. run return fail
 execute unless entity @s[tag = frozen] unless predicate items:glowing unless predicate items:shocked run return fail
 
 scoreboard players set @s item_cd 5
+scoreboard players add @s total_item 1
 clear @s enchanting_table[custom_data={"clear_curse": true}] 1
 effect clear @s slowness
 effect clear @s glowing

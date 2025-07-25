@@ -5,6 +5,7 @@ execute if entity @e[tag=red_base,limit=1,nbt={Invulnerable:1b}] run return run 
 execute if entity @e[tag=blue_base,limit=1,nbt={Invulnerable:1b}] run return run tellraw @s[team=blue] ["",{text:">> ",color:gold},{text: "我方陣地已是無敵狀態",color: red}]
 
 scoreboard players set @s item_cd 5
+scoreboard players add @s total_item 1
 clear @s bedrock[custom_data={"invulnerable_base": true}] 1
 execute if entity @s[team=blue] run data modify entity @e[tag=blue_base,limit=1] Invulnerable set value 1b
 execute if entity @s[team=red] run data modify entity @e[tag=red_base,limit=1] Invulnerable set value 1b

@@ -4,6 +4,7 @@ execute if score @s item_cd matches 1.. run return fail
 execute if entity @s[tag = !invalid] run return run tellraw @s ["",{text:">> ",color:gold},{text: "你目前不能解除無效狀態",color: red}]
 
 scoreboard players set @s item_cd 5
+scoreboard players add @s total_item 1
 clear @s[tag = invalid] slime_ball[custom_data={"invalid": false}] 1
 tag @s remove invalid
 tellraw @s ["",{text:">> ",color:gold},{text:"你已解除"},{text:"無效狀態",color:gold}]
