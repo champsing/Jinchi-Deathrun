@@ -55,33 +55,39 @@ scoreboard objectives add gamecore dummy "遊戲核心隱藏資訊，僅能在3�
 scoreboard objectives add system dummy "系統分數，僅能在1和2寫入"
 scoreboard objectives add readonly dummy "唯讀分數，不可寫入"
 scoreboard objectives add join trigger "中途加入"
+
 scoreboard objectives add score dummy "分數"
+scoreboard objectives add nearby dummy "鄰近隊友數"
+scoreboard objectives add grouped dummy "小隊隊友數"
 scoreboard objectives add team_score dummy "團隊分數"
-scoreboard objectives add teammate dummy "隊友人數"
+
 scoreboard objectives add x dummy "X"
 scoreboard objectives add y dummy "Y"
 scoreboard objectives add z dummy "Z"
 scoreboard objectives add border_x dummy "X邊界"
 scoreboard objectives add border_y dummy "Y邊界"
 scoreboard objectives add border_z dummy "Z邊界"
-scoreboard objectives add nearby dummy "鄰近隊友數"
-scoreboard objectives add grouped dummy "小隊隊友數"
+
 scoreboard objectives add stamina dummy "體力"
 scoreboard objectives add stamina_max dummy "最大體力"
+
 scoreboard objectives add item_cd dummy "道具冷卻"
-scoreboard objectives add check_for_frozen dummy "檢查被單人凍結"
-scoreboard objectives add check_for_freeze dummy "檢查單人凍結"
 scoreboard objectives add frozen dummy "凍結剩餘時間"
 
 scoreboard objectives add death deathCount "死亡數"
+
 scoreboard objectives add top_duel dummy "對決最多次"
 scoreboard objectives add top_score dummy "個人得分最多"
 scoreboard objectives add top_success dummy "成功攻陣最多次"
 scoreboard objectives add top_kill dummy "陣殺最多人"
+scoreboard objectives add top_invalid dummy "無效狀態最多次"
+scoreboard objectives add top_item dummy "道具使用最多次"
 
 scoreboard objectives add total_duel dummy "總對決數"
 scoreboard objectives add total_success dummy "總攻陣數"
 scoreboard objectives add total_kill dummy "總陣殺數"
+scoreboard objectives add total_invalid dummy "總無效狀態次數"
+scoreboard objectives add total_item dummy "總道具使用數"
 
 scoreboard objectives add item used:carrot_on_a_stick
 scoreboard objectives setdisplay sidebar editinfo

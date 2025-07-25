@@ -32,26 +32,30 @@ xp set @a 0 points
 execute as @a at @s run playsound block.anvil.land ambient @s ~ ~ ~
 
 #---記分板---
+scoreboard players reset * death
 scoreboard players reset * gameinfo
 scoreboard players reset * gamecore
 scoreboard players reset * score
 scoreboard players reset * top_duel
 scoreboard players reset * top_success
 scoreboard players reset * top_kill
+scoreboard players reset * top_invalid
+scoreboard players reset * top_item
 scoreboard players reset * total_duel
 scoreboard players reset * total_success
 scoreboard players reset * total_kill
+scoreboard players reset * total_invalid
+scoreboard players reset * total_item
 scoreboard players reset * grouped
+scoreboard players reset * team_score
 scoreboard players reset * item
 scoreboard players reset * item_cd
-scoreboard players reset * teammate
 scoreboard players reset * stamina
 scoreboard players reset * stamina_max
 scoreboard players reset * frozen
-scoreboard players reset * check_for_freeze
 #(to be added...)
 
-tag @a[tag = check_for_frozen] remove check_for_frozen
+
 tag @a[tag = success_freeze_person] remove success_freeze_person
 execute as @a[tag = frozen] run function items:freeze/restore_from_frozen
 tag @a[tag = invalid] remove invalid

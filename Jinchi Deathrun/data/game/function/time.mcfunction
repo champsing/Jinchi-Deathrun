@@ -1,7 +1,6 @@
 # 每秒執行1次
 
 #---凍結---
-execute as @a[scores={check_for_freeze=1..}] run scoreboard players remove @s check_for_freeze 1
 execute as @a[scores={frozen=1..}] run scoreboard players remove @s frozen 1
 
 #---計時---
