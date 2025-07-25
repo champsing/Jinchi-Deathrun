@@ -5,7 +5,7 @@ execute if entity @s[tag = invalid] run return run tellraw @s ["",{text:">> ",co
 
 scoreboard players set @s item_cd 5
 scoreboard players add @s total_item 1
-clear @s barrier[custom_data={"invalid": true}] 1
+clear @s barrier[custom_data={invalid: true}] 1
 tag @s add invalid
 scoreboard players add @s total_invalid 1
 tellraw @s ["",{text:">> ",color:gold},{text:"你已進入"},{text:"無效狀態",color:gold}]

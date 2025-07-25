@@ -5,7 +5,7 @@ execute unless entity @s[tag = frozen] unless predicate items:glowing unless pre
 
 scoreboard players set @s item_cd 5
 scoreboard players add @s total_item 1
-clear @s enchanting_table[custom_data={"clear_curse": true}] 1
+clear @s enchanting_table[custom_data={clear_curse: true}] 1
 effect clear @s slowness
 effect clear @s glowing
 effect clear @s darkness

@@ -87,4 +87,4 @@ clear @a
 
 tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 tellraw @a ["",{text: ">> ",color:gold},{text:"資料包解除安裝成功",color:"green"}]
-tellraw @s ["",{text: ">> ",color:gold},{text:"如果想重新安裝資料包請",color: red},{text: "點擊 ",color:"gray"},{text: "此處",color:aqua,bold:true,"underlined": true,click_event: {action: "run_command",command: "/function start:activate"},hover_event: {action: "show_text",value: [{text: "/function start:activate"}]}}]
+tellraw @s ["",{text: ">> ",color:gold},{text:"如果想重新安裝資料包請",color: red},{text: "點擊 ",color:gray},{text: "此處",color:aqua,bold:true,underlined: true,click_event: {action: "run_command",command: "/function start:activate"},hover_event: {action: "show_text",value: [{text: "/function start:activate"}]}}]

@@ -17,7 +17,7 @@ title @a title {text:"START",bold:true,color:gold}
 scoreboard players operation 剩餘時間 gameinfo = 遊戲時間 menu
 
 #---給大家大跑棒棒
-give @a breeze_rod[custom_data= {"adrenaline": true}, item_name= [{text:"§c§l腎上腺素",italic: false}], lore= [{text:"§7在主手時可獲得加速I效果。",italic: false},{text:"§c體力低於 30% 時不得使用。",italic: false}]]
+give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{text:"§c§l腎上腺素",italic: false}], lore= [{text:"§7在主手時可獲得加速I效果。",italic: false},{text:"§c體力低於 30% 時不得使用。",italic: false}]]
 
 #---排程函數---
 schedule function game:time 1s

@@ -5,7 +5,7 @@ execute if score @s item_cd matches 1.. run return fail
 
 scoreboard players set @s item_cd 5
 scoreboard players add @s total_item 1
-clear @s recovery_compass[custom_data={"interchange": true}] 1
+clear @s recovery_compass[custom_data={interchange: true}] 1
 tag @s add item15
 execute if entity @s[team=red] run tag @r[team=red,tag=!item15] add item15_target
 execute if entity @s[team=blue] run tag @r[team=blue,tag=!item15] add item15_target

@@ -6,7 +6,7 @@ execute as @a[team = blue] if predicate items:glowing run return run tellraw @s[
 
 scoreboard players set @s item_cd 5
 scoreboard players add @s total_item 1
-clear @s glowstone_dust[custom_data={"glowing": "single"}] 1
+clear @s glowstone_dust[custom_data={glowing: "single"}] 1
 advancement revoke @s only items:glowing_single
 execute if entity @s[team=red] run effect give @r[team=blue, predicate=!items:glowing] glowing 15 0 true
 execute if entity @s[team=blue] run effect give @r[team=red, predicate=!items:glowing] glowing 15 0 true

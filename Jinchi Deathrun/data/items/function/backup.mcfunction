@@ -17,13 +17,22 @@ give @p player_head[item_name="\u00a7b\u00a7l250分",lore=[[{text:"\u00a77獲得
 give @p player_head[item_name="\u00a7b\u00a7l300分",lore=[[{text:"\u00a77獲得300分。"}],[{text:"\u00a7c不受道具冷卻時間限制。"}]],max_stack_size=1,profile={"properties":[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmNhNGRhOTVhOTIyNzY4M2E3ZTZlZGU5OTA2YzI4NTU4Nzg0NjBlOTFjN2NjZDc1Y2Q5YjAwZmFlMTQwNjY2YiJ9fX0="}]},custom_data={add_score: "300"},consumable={consume_seconds: 0, has_consume_particles: false}]
 
 # 全體發光
-give @p glowstone[item_name="\u00a7b\u00a7l全體發光",custom_data={glowing: "all"},lore=[{"text": "\u00a77所有敵隊玩家發光15秒。"},{"text": "\u00a7c敵方全體玩家皆處於發光狀態時不得使用。"}],max_stack_size=1,consumable={"consume_seconds": 99999}]
+give @p glowstone[item_name="\u00a7b\u00a7l全體發光",custom_data={glowing: "all"},lore=[{text: "\u00a77所有敵隊玩家發光15秒。"},{text: "\u00a7c敵方全體玩家皆處於發光狀態時不得使用。"}],max_stack_size=1,consumable={consume_seconds: 99999}]
 
 # 單人發光
-give @p glowstone_dust[item_name="\u00a7b\u00a7l單人發光",custom_data={glowing: "single"},lore=[{"text": "\u00a77隨機一位敵隊玩家發光15秒。"},{"text": "\u00a7c敵方全體玩家皆處於發光狀態時不得使用。"}],max_stack_size=1,consumable={"consume_seconds": 99999}]
+give @p glowstone_dust[item_name="\u00a7b\u00a7l單人發光",custom_data={glowing: "single"},lore=[{text: "\u00a77隨機一位敵隊玩家發光15秒。"},{text: "\u00a7c敵方全體玩家皆處於發光狀態時不得使用。"}],max_stack_size=1,consumable={consume_seconds: 99999}]
 
 # 三叉戟
-give @p trident[item_name="\u00a7b\u00a7l三叉戟",lore=[{"text": "\u00a77一把三叉戟，耐久度為1。"},{"text": "\u00a77可用於遠程攻擊其他玩家發動對戰。"}],max_damage=2]
+give @p trident[item_name="\u00a7b\u00a7l三叉戟",lore=[{text: "\u00a77一把三叉戟，耐久度為1。"},{text: "\u00a77可用於遠程攻擊其他玩家發動對戰。"}],max_damage=2]
 
 # 單人凍結
-give @p packed_ice[item_name="§b§l單人凍結"]
+give @p packed_ice[item_name="§b§l單人凍結", lore=[{text: "敲擊敵人使用",color: aqua, bold: true},{text: "§7使用後5秒內攻擊的單一敵隊玩家無法移動10秒。"},{text: "§c敵方全體玩家皆處於凍結狀態時不得使用。"}],max_stack_size=1,custom_data={freeze: "single"}, consumable={consume_seconds: 99999}]
+
+# 全體凍結
+give @p blue_ice[item_name="§b§l全體凍結", lore=[{text: "§7使用後全體敵隊玩家無法移動10秒。"},{text: "§c敵方全體玩家皆處於凍結狀態時不得使用。"}],max_stack_size=1,custom_data={freeze: "all"}, consumable={consume_seconds: 99999}]
+
+# 無效狀態
+give @p barrier[item_name="§b§l無效狀態", lore=[{text: "§7強制進入無效狀態。"},{text: "§c自身處於無效狀態時不得使用。"}], max_stack_size=1,custom_data={invalid: true}, consumable={consume_seconds: 99999}]
+
+# 狂奔
+give @p rabbit_foot[item_name="§b§l狂奔", lore=[{text: "§7獲得加速II 30秒。"},{text: "§c不受體力 30% 以下限制，但自身處於狂奔狀態時不得使用。"}], max_stack_size=1,custom_data={dash: true}, consumable={consume_seconds: 99999}]

@@ -4,7 +4,7 @@ execute if score @s item_cd matches 1.. run return fail
 
 scoreboard players set @s item_cd 5
 scoreboard players add @s total_item 1
-clear @s totem_of_undying[custom_data={"convention": true}] 1
+clear @s totem_of_undying[custom_data={convention: true}] 1
 tag @s add item14
 execute if entity @s[team=red] run tp @s[tag=!item14,team=red] @s
 execute if entity @s[team=blue] run tp @s[tag=!item14,team=blue] @s

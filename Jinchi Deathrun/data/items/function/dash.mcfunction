@@ -5,6 +5,6 @@ execute if predicate items:speed_2 run return run tellraw @s ["",{text:">> ",col
 
 scoreboard players set @s item_cd 5
 scoreboard players add @s total_item 1
-clear @s rabbit_foot[custom_data={"dash": true}] 1
+clear @s rabbit_foot[custom_data={dash: true}] 1
 effect give @s speed 30 1 true
 tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"使用了"},{text:"狂奔道具",color:gold},{text:" 獲得加速II效果"},{text:"30秒",color:gold}]
