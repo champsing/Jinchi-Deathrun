@@ -7,6 +7,7 @@ tp @a @e[type = marker, limit = 1, tag = lobby]
 execute at @e[type = marker, limit = 1, tag = lobby] run spawnpoint @a ~ ~ ~
 clear @a
 kill @e[tag=treasure_item]
+kill @e[type=trident]
 
 advancement revoke @a everything
 
