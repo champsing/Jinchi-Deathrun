@@ -48,8 +48,8 @@ bossbar set prepare color purple
 bossbar set prepare max 2400
 
 scoreboard objectives add menu dummy ["",{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red}]
-scoreboard objectives add gameinfo dummy {text:"遊戲資訊",bold:true,false:true,color:gold}
-scoreboard objectives add editinfo dummy {text: "編輯中",color: "dark_aqua",false: true}
+scoreboard objectives add gameinfo dummy {text:"遊戲資訊",bold:true,italic:true,color:gold}
+scoreboard objectives add editinfo dummy {text: "編輯中",color: "dark_aqua",italic: true}
 scoreboard objectives add edit_cd dummy "編輯冷卻"
 scoreboard objectives add gamecore dummy "遊戲核心隱藏資訊，僅能在3寫入"
 scoreboard objectives add system dummy "系統分數，僅能在1和2寫入"
