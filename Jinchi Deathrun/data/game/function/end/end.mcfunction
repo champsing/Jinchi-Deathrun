@@ -15,15 +15,22 @@ execute as @a[team=!spec] run scoreboard players operation @s top_duel = @s tota
 execute as @a[team=!spec] run scoreboard players operation @s top_score = @s score
 execute as @a[team=!spec] run scoreboard players operation @s top_success = @s total_success
 execute as @a[team=!spec] run scoreboard players operation @s top_kill = @s total_kill
+execute as @a[team=!spec] run scoreboard players operation @s top_invalid = @s total_invalid
+execute as @a[team=!spec] run scoreboard players operation @s top_item = @s total_item
+
 scoreboard players operation 對戰最高分 total_duel > @a[team=!spec] total_duel
 scoreboard players operation 個人最高分 score > @a[team=!spec] score
 scoreboard players operation 攻陣最高分 total_success > @a[team=!spec] total_success
 scoreboard players operation 陣殺最高分 total_kill > @a[team=!spec] total_kill
+scoreboard players operation 無效最高分 total_invalid > @a[team=!spec] total_invalid
+scoreboard players operation 道具最高分 total_item > @a[team=!spec] total_item
+
 scoreboard players operation @a[team=!spec] top_duel -= 對戰最高分 total_duel
 scoreboard players operation @a[team=!spec] top_score -= 個人最高分 score
 scoreboard players operation @a[team=!spec] top_success -= 攻陣最高分 total_success
 scoreboard players operation @a[team=!spec] top_kill -= 陣殺最高分 total_kill
-
+scoreboard players operation @a[team=!spec] top_invalid -= 無效最高分 total_invalid
+scoreboard players operation @a[team=!spec] top_item -= 道具最高分 total_item
 
 # -----------------------------------------
 # 紅隊分數: 紅隊分數 gameinfo

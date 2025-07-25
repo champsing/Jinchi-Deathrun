@@ -26,4 +26,4 @@ give @p glowstone_dust[item_name="\u00a7b\u00a7l單人發光",custom_data={glowi
 give @p trident[item_name="\u00a7b\u00a7l三叉戟",lore=[{"text": "\u00a77一把三叉戟，耐久度為1。"},{"text": "\u00a77可用於遠程攻擊其他玩家發動對戰。"}],max_damage=2]
 
 # 單人凍結
-give @p packed_ice[item_name=]
+give @p packed_ice[item_name="§b§l單人凍結"]
