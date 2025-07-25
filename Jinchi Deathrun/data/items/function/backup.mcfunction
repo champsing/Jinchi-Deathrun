@@ -35,7 +35,7 @@ give @p blue_ice[item_name="\u00a7b\u00a7l全體凍結", lore=[{text: "\u00a77�
 give @p barrier[item_name="\u00a7b\u00a7l無效狀態", lore=[{text: "\u00a77強制進入無效狀態。"},{text: "\u00a7c自身處於無效狀態時不得使用。"}], max_stack_size=1,custom_data={invalid: true}, consumable={consume_seconds: 99999}]
 
 # 狂奔
-give @p rabbit_foot[item_name="\u00a7b\u00a7l狂奔", lore=[{text: "\u00a77獲得加速II 30秒。"},{text: "\u00a7c不受體力 30% 以下限制，但自身處於狂奔狀態時不得使用。"}], max_stack_size=1,custom_data={dash: true}, consumable={consume_seconds: 99999}]
+give @p rabbit_foot[item_name="\u00a7b\u00a7l狂奔", lore=[{text: "\u00a77獲得加速II 30秒。"},{text: "\u00a7c不受體力 30% 以下限制"},{text: "\u00a7c，但自身處於狂奔狀態時不得使用。"}], max_stack_size=1,custom_data={dash: true}, consumable={consume_seconds: 99999}]
 
 # 解除無效狀態
 give @p slime_ball[item_name="\u00a7b\u00a7l解除無效狀態", lore=[{"text": "\u00a77原地解除無效狀態。"},{"text": "\u00a7c自身不處於無效狀態時不得使用。"}], max_stack_size=1,custom_data={invalid: false}, consumable={consume_seconds: 99999}]
