@@ -397,7 +397,7 @@
                             "function": "set_name",
                             "name": [
                                 {
-                                    "text": "§b§lc互換"
+                                    "text": "§b§l互換"
                                 }
                             ]
                         },
@@ -415,7 +415,7 @@
                             "components": {
                                 "minecraft:max_stack_size": 1,
                                 "minecraft:custom_data": {
-                                    "freeze": "all"
+                                    "interchange": true
                                 },
                                 "minecraft:consumable": {
                                     "consume_seconds": 99999

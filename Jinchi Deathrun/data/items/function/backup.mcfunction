@@ -26,13 +26,28 @@ give @p glowstone_dust[item_name="\u00a7b\u00a7l單人發光",custom_data={glowi
 give @p trident[item_name="\u00a7b\u00a7l三叉戟",lore=[{text: "\u00a77一把三叉戟，耐久度為1。"},{text: "\u00a77可用於遠程攻擊其他玩家發動對戰。"}],max_damage=2]
 
 # 單人凍結
-give @p packed_ice[item_name="§b§l單人凍結", lore=[{text: "敲擊敵人使用",color: aqua, bold: true},{text: "§7使用後5秒內攻擊的單一敵隊玩家無法移動10秒。"},{text: "§c敵方全體玩家皆處於凍結狀態時不得使用。"}],max_stack_size=1,custom_data={freeze: "single"}, consumable={consume_seconds: 99999}]
+give @p packed_ice[item_name="\u00a7b\u00a7l單人凍結", lore=[{text: "敲擊敵人使用",color: aqua, bold: true},{text: "\u00a77使用後5秒內攻擊的單一敵隊玩家無法移動10秒。"},{text: "\u00a7c敵方全體玩家皆處於凍結狀態時不得使用。"}],max_stack_size=1,custom_data={freeze: "single"}, consumable={consume_seconds: 99999}]
 
 # 全體凍結
-give @p blue_ice[item_name="§b§l全體凍結", lore=[{text: "§7使用後全體敵隊玩家無法移動10秒。"},{text: "§c敵方全體玩家皆處於凍結狀態時不得使用。"}],max_stack_size=1,custom_data={freeze: "all"}, consumable={consume_seconds: 99999}]
+give @p blue_ice[item_name="\u00a7b\u00a7l全體凍結", lore=[{text: "\u00a77使用後全體敵隊玩家無法移動10秒。"},{text: "\u00a7c敵方全體玩家皆處於凍結狀態時不得使用。"}],max_stack_size=1,custom_data={freeze: "all"}, consumable={consume_seconds: 99999}]
 
 # 無效狀態
-give @p barrier[item_name="§b§l無效狀態", lore=[{text: "§7強制進入無效狀態。"},{text: "§c自身處於無效狀態時不得使用。"}], max_stack_size=1,custom_data={invalid: true}, consumable={consume_seconds: 99999}]
+give @p barrier[item_name="\u00a7b\u00a7l無效狀態", lore=[{text: "\u00a77強制進入無效狀態。"},{text: "\u00a7c自身處於無效狀態時不得使用。"}], max_stack_size=1,custom_data={invalid: true}, consumable={consume_seconds: 99999}]
 
 # 狂奔
-give @p rabbit_foot[item_name="§b§l狂奔", lore=[{text: "§7獲得加速II 30秒。"},{text: "§c不受體力 30% 以下限制，但自身處於狂奔狀態時不得使用。"}], max_stack_size=1,custom_data={dash: true}, consumable={consume_seconds: 99999}]
+give @p rabbit_foot[item_name="\u00a7b\u00a7l狂奔", lore=[{text: "\u00a77獲得加速II 30秒。"},{text: "\u00a7c不受體力 30% 以下限制，但自身處於狂奔狀態時不得使用。"}], max_stack_size=1,custom_data={dash: true}, consumable={consume_seconds: 99999}]
+
+# 解除無效狀態
+give @p slime_ball[item_name="\u00a7b\u00a7l解除無效狀態", lore=[{"text": "\u00a77原地解除無效狀態。"},{"text": "\u00a7c自身不處於無效狀態時不得使用。"}], max_stack_size=1,custom_data={invalid: false}, consumable={consume_seconds: 99999}]
+
+# 召集
+give @p totem_of_undying[item_name="\u00a7b\u00a7l召集", lore=[{"text": "\u00a77隨機傳送一個隊友過來。"}], max_stack_size=1,custom_data={convention: true}, consumable={consume_seconds: 99999}]
+
+# 互換
+give @p recovery_compass[item_name="\u00a7b\u00a7l互換", lore=[{"text": "\u00a77與隨機一個隊友互換位置。"}], max_stack_size=1,custom_data={interchange: true}, consumable={consume_seconds: 99999}]
+
+# 無敵陣地
+give @p bedrock[item_name="\u00a7b\u00a7l無敵陣地", lore=[{"text": "\u00a77己方陣地20秒無法攻陣。"},{"text": "\u00a7c己方陣地處於無敵狀態時不得使用。"}], max_stack_size=1,custom_data={invulnerable_base: true}, consumable={consume_seconds: 99999}]
+
+# 解除詛咒
+give @p enchanting_table[item_name="\u00a7b\u00a7l解除詛咒", lore=[{"text": "\u00a77消除所有負面狀態效果。"},{"text": "\u00a7c自身沒有以下任一效果時不得使用："},{"text": "\u00a7c● 黑暗"},{"text": "\u00a7c● 凍結"},{"text": "\u00a7c● 發光"},{"text": "\u00a7c● 緩速"}], max_stack_size=1,custom_data={clear_curse: true}, consumable={consume_seconds: 99999}]
