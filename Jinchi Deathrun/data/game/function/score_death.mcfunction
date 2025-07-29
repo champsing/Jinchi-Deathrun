@@ -1,7 +1,7 @@
 # 因為分數為負死亡
 
 #---保險起見---
-execute if score @s score matches -1.. run return fail
+execute if score @s score matches 0.. run return fail
 
 #---設回0分以免連閃---
 scoreboard players set @s score 0
