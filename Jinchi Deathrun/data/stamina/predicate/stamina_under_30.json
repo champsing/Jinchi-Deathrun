@@ -7,7 +7,7 @@
             "max": {
                 "type": "minecraft:score",
                 "target": "this",
-                score: "stamina_max",
+                "score": "stamina_max",
                 "scale": 0.3
             }
         }

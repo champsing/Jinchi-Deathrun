@@ -10,7 +10,7 @@ execute unless score 勝負已分 gamecore matches 1 run advancement revoke @s o
 
 #---10級以前可獲得經驗。10級經驗總值: 160，第160次獲得1點就會變10級0點---
 execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if entity @s[team = !spec, level = 10..] run return fail
-execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:lose_stamina/5 unless predicate stamina:stamina_under_30 run xp add @s[team = !spec, level = 0..2] 1
-execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:lose_stamina/4 unless predicate stamina:stamina_under_30 run xp add @s[team = !spec, level = 3..5] 1
-execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:lose_stamina/3 unless predicate stamina:stamina_under_30 run xp add @s[team = !spec, level = 6..7] 1
-execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:lose_stamina/2 unless predicate stamina:stamina_under_30 run xp add @s[team = !spec, level = 8..9] 1
+execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:gain_xp/1 unless predicate stamina:stamina_under_30 run xp add @s[team = !spec, level = 0..2] 1
+execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:gain_xp/2 unless predicate stamina:stamina_under_30 run xp add @s[team = !spec, level = 3..5] 1
+execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:gain_xp/3 unless predicate stamina:stamina_under_30 run xp add @s[team = !spec, level = 6..7] 1
+execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:gain_xp/4 unless predicate stamina:stamina_under_30 run xp add @s[team = !spec, level = 8..9] 1
