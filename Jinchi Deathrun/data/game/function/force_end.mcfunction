@@ -1,4 +1,5 @@
 #-------強制結束遊戲-------
+schedule clear game:prepare/time
 schedule clear game:time
 schedule clear stamina:regain
 schedule clear items:treasure/generate_treasure
