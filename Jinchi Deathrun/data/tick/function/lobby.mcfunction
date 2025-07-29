@@ -15,3 +15,8 @@ execute at @e[tag = settings, type = interaction] positioned ~ ~0.5 ~ run partic
 execute at @e[tag = settings, type = interaction] positioned ~ ~0.5 ~ run particle dust{color: [0.541, 0.902, 0.722], scale: 1.0} ~ ~ ~ 0.3 0.3 0.3 0.1 12 normal
 execute at @e[tag = edit, type = interaction] positioned ~ ~0.5 ~ run particle dust{color: [0.65,0.0,0.78], scale: 1.0} ~ ~ ~ 0.3 0.3 0.3 0.1 12 normal
 execute at @e[tag = start, type = interaction] positioned ~ ~0.5 ~ run particle dust{color: [0.52,0.83,0.31], scale: 1.0} ~ ~ ~ 0.3 0.3 0.3 0.1 12 normal
+
+#---粒子效果高亮---
+execute as @n[tag=oreki] at @s run tp @s ~ ~ ~ ~2 ~
+execute as @n[tag=oreki] at @s run particle enchant ^ ^.25 ^-.83 0 0 0 0 10
+execute as @n[tag=oreki] at @s run particle minecraft:glow ^ ^.25 ^-.83 0 3 0 2 1
