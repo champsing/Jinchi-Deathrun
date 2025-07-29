@@ -73,10 +73,9 @@ scoreboard objectives remove total_invalid
 scoreboard objectives remove total_item
 
 kill @e[tag = lobby]
-kill @e[tag = display]
-kill @e[tag = settings]
-kill @e[tag = champsing, type = interaction]
-kill @e[tag = champsing, type = armor_stand]
+kill @e[tag = edit]
+kill @e[tag = start]
+kill @e[tag = champsing]
 kill @e[tag = treasure_item]
 kill @e[tag = treasure_point]
 kill @e[tag = border]
