@@ -20,6 +20,7 @@ gamerule logAdminCommands false
 gamerule mobGriefing false
 gamerule sendCommandFeedback false
 gamerule spawnRadius 0
+gamerule doDaylightCycle false
 
 team add red "紅隊"
 team add blue "藍隊"
