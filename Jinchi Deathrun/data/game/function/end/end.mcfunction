@@ -6,7 +6,7 @@ schedule clear game:time
 schedule clear stamina:regain
 schedule clear items:treasure/generate_treasure
 
-execute as @a at @e[tag = lobby, limit = 1] run spawnpoint @s ~ ~ ~
+execute as @a at @n[tag = lobby] run spawnpoint @s ~ ~ ~
 
 scoreboard players display numberformat 剩餘時間 gameinfo fixed {text: "遊戲結束", color: "#43d245", bold: true}
 bossbar set countdown name [{text: "遊戲結束", color: "#43d245", bold: true}]

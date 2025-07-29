@@ -1,3 +1,3 @@
-tp @a[team = red] @e[tag = base, tag = red, limit = 1]
-tp @a[team = blue] @e[tag = base, tag = blue, limit = 1]
-tp @a[team = spec] @e[tag = center, limit = 1]
+tp @a[team = red] @n[tag = base, tag = red]
+tp @a[team = blue] @n[tag = base, tag = blue]
+tp @a[team = spec] @n[tag = center]

@@ -2,6 +2,9 @@
 #---先取消掉分數---
 scoreboard players reset 準備時間 gamecore
 
+#---取消排程---
+schedule clear game:prepare/countdown
+
 #---效果---
 effect give @a invisibility 9 0 true
 execute as @a run attribute @s jump_strength modifier add countdown -1 add_multiplied_base
@@ -21,8 +24,8 @@ bossbar set countdown name [{text:"剩餘時間： "},{score:{name: "剩餘時�
 function game:prepare/teleport
 
 #---設定出生點---
-execute as @a[team = red] at @e[tag = red_base, limit = 1] run spawnpoint @s ~ ~ ~
-execute as @a[team = blue] at @e[tag = blue_base, limit = 1] run spawnpoint @s ~ ~ ~
+execute as @a[team = red] at @n[tag = red_base] run spawnpoint @s ~ ~ ~
+execute as @a[team = blue] at @n[tag = blue_base] run spawnpoint @s ~ ~ ~
 
 #---分數---
 execute as @a[team=!spec] store result score @s score run clear @s emerald 0

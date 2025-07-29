@@ -35,9 +35,11 @@ scoreboard players set @a[team = !spec] stamina 100
 function game:prepare/teleport
 
 #---準備：120秒---
-scoreboard players set 準備時間 gamecore 2400
+scoreboard players set 準備時間 gamecore 120
 bossbar set prepare players @a
 execute store result bossbar minecraft:countdown max run scoreboard players get 遊戲時間 menu
+execute store result bossbar minecraft:prepare max run scoreboard players get 準備時間 gamecore
 
+schedule function game:prepare/time 1s
 schedule function game:prepare/emerald_instruction 2s
 schedule function game:prepare/give_emerald 2s
