@@ -8,8 +8,10 @@ execute if entity @s[advancements = {settings:interact/initial = true}] run play
 execute if entity @s[advancements = {settings:attack/initial = true}] run playsound block.medium_amethyst_bud.break master @s ~ ~ ~ 1 0.8 1
 
 #---攻擊/互動---
-execute if entity @s[advancements = {settings:interact/target = true}] run team join blue @s
-execute if entity @s[advancements = {settings:attack/target = true}] run team join red @s
+execute if entity @s[advancements = {settings:interact/target = true}, team = blue] run tellraw @s ["",{text:">> ",color:gold},{text:"您已經加入"},{text:"藍隊", color: blue},{text:"了。"}]
+execute if entity @s[advancements = {settings:attack/target = true}, team = red] run tellraw @s ["",{text:">> ",color:gold},{text:"您已經加入"},{text:"紅隊", color: red},{text:"了。"}]
+execute if entity @s[advancements = {settings:interact/target = true}, team = !blue] run team join blue @s
+execute if entity @s[advancements = {settings:attack/target = true}, team = !red] run team join red @s
 
 #---告知結果---
 tellraw @s[team = blue] ["",{text:">> ",color:gold},{text:"您已加入"},{text:"藍隊", color: blue}]
