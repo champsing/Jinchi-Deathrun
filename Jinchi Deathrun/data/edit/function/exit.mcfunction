@@ -1,4 +1,4 @@
-#tp @s @e[limit = 1, type = marker, tag = lobby]
+#tp @s @n[type = marker, tag = lobby]
 playsound block.medium_amethyst_bud.break master @s ~ ~ ~ 1 0.8 1
 scoreboard objectives setdisplay sidebar menu
 clear @a
