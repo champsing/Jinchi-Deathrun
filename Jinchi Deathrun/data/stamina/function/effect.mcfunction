@@ -11,6 +11,6 @@ effect give @s[scores={stamina=20..29}] nausea 1 0 true
 effect give @s[scores={stamina=10..19}] nausea 1 1 true
 effect give @s[scores={stamina=0..9}] nausea 1 2 true
 
-effect give @s[scores={stamina=6..10}] wither 2 0 true
+effect give @s[scores={stamina=6..9}] wither 2 0 true
 effect give @s[scores={stamina=1..5}] wither 2 1 true
 effect give @s[scores={stamina=0}] wither 2 2 true
