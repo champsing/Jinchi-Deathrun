@@ -13,8 +13,11 @@ execute as @a[scores={join=1..}] run function game:join
 effect give @a saturation infinite 0 true
 
 #---個人分數actionbar---
-execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=!infinity] run title @s actionbar [{text:"個人分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
-execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=infinity] run title @s actionbar [{text:"個人分數: ",bold:true,color:aqua},{text:"無限 ",bold:true,color:"#871ea7"},{score:{name:"@s",objective:score},color:gray, bold: false, strikethrough: true},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
+execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=!infinity] run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
+
+execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=!infinity] if score @s grouped matches 2.. run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{score:{name:"@s",objective:team_score}},{text:"(",bold:true,color:aqua},{score:{name:"@s",objective:score}},{text:") ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
+
+execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=infinity] run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{text:"無限 ",bold:true,color:"#871ea7"},{score:{name:"@s",objective:score},color:gray, bold: false, strikethrough: true},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
 
 #-------偵測treasure旁邊小於1格是否有玩家-------
 execute at @e[type = item, tag = treasure_item] as @p[team = !spec, distance = ..1] run function items:treasure/loot_treasure
@@ -27,12 +30,11 @@ clear @a trident[damage=1, max_damage=2]
 execute as @a[tag = frozen] if score @s frozen matches 0 run function items:freeze/restore_from_frozen
 
 #---合體---
-execute as @a[team=red] at @s store result score @s nearby if entity @a[team=red,distance=..5]
-execute as @a[team=blue] at @s store result score @s nearby if entity @a[team=blue,distance=..5]
+execute as @a[team=red] at @s store result score @s nearby if entity @a[team=red,distance=..5,tag=!infinity]
+execute as @a[team=blue] at @s store result score @s nearby if entity @a[team=blue,distance=..5,tag=!infinity]
 #---陣地(無論顏色)內不允許合體，不然1000分會被平分---
-execute as @a[team=!spec] at @s if entity @e[tag = red_base, distance = ..5] run scoreboard players reset @s nearby
-execute as @a[team=!spec] at @s if entity @e[tag = blue_base, distance = ..5] run scoreboard players reset @s nearby
-execute as @a[team=!spec] unless score @s nearby = @s grouped run function game:teaming
+scoreboard players reset @a[tag=infinity,team=!spec] nearby
+execute as @a[team=!spec] at @s unless score @s nearby = @s grouped run function game:teaming
 
 #---陣地---
 #---陣地最遠距離與本體的歐幾里得距離為3根號2，大概是4.23，取整數5---

@@ -17,3 +17,5 @@ scoreboard players operation @a[tag=add_score] score += 加分 score
 
 tag @a[tag=add_score_remain] remove add_score_remain
 tag @a[tag=add_score] remove add_score
+
+function game:teaming
