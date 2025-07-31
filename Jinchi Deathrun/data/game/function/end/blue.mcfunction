@@ -9,3 +9,4 @@ effect clear @a[team = red] resistance
 effect give @a[team = blue] resistance 5 5 true
 execute at @a[team = red] run summon lightning_bolt ~ ~ ~
 execute as @a[team = red] run team join spec @s
+gamemode spectator @a[team = spec]
