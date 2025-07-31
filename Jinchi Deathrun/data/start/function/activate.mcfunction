@@ -3,7 +3,7 @@
 forceload add ~ ~
 setworldspawn ~ ~ ~
 spawnpoint @a ~ ~ ~
-execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["lobby"], UUID:[I; 590352237, 0, 0, 0]}
+execute align xyz run summon marker ~0.5 ~1 ~0.5 {Tags:["lobby"], UUID:[I; 590352237, 0, 0, 0]}
 function start:lobby
 function start:install
 
