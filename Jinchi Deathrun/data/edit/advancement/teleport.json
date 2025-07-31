@@ -5,11 +5,11 @@
             "conditions": {
                  "item": {
                      "predicates": {
-                        "minecraft:custom_data": {"base": "set_blue"}
+                        "minecraft:custom_data": {"mode": "teleport"}
                     }
                 }
             }
         }
     },
-    "rewards": { "function": "edit:base/set_blue" }
+    "rewards": { "function": "edit:teleport" }
 }

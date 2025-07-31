@@ -5,11 +5,11 @@
             "conditions": {
                  "item": {
                      "predicates": {
-                        "minecraft:custom_data": {"mode": "delete"}
+                        "minecraft:custom_data": {"border": "a"}
                     }
                 }
             }
         }
     },
-    "rewards": { "function": "edit:delete" }
+    "rewards": { "function": "edit:border/set_a" }
 }

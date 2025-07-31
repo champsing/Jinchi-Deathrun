@@ -1,4 +1,3 @@
-advancement revoke @s only edit:border/teleport_a
 execute unless entity @n[type = armor_stand, tag = red_base, tag = edit_amst] if score @s edit_cd matches 1.. run return fail
 scoreboard players add @s edit_cd 60
 execute unless entity @n[type = armor_stand, tag = red_base, tag = edit_amst] run playsound entity.ghast.warn ambient @p ~ ~ ~

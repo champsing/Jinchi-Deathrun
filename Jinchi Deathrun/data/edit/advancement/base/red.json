@@ -5,7 +5,7 @@
             "conditions": {
                  "item": {
                      "predicates": {
-                        "minecraft:custom_data": {"base": "set_red"}
+                        "minecraft:custom_data": {"base": "red"}
                     }
                 }
             }

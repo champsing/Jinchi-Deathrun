@@ -5,11 +5,11 @@
             "conditions": {
                  "item": {
                      "predicates": {
-                        "minecraft:custom_data": {"base": "teleport_blue"}
+                        "minecraft:custom_data": {"border": "b"}
                     }
                 }
             }
         }
     },
-    "rewards": { "function": "edit:base/teleport_blue" }
+    "rewards": { "function": "edit:border/set_b" }
 }
