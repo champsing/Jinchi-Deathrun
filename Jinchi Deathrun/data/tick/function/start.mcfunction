@@ -2,10 +2,6 @@
 advancement revoke @a from settings:root
 advancement revoke @a only edit:edit
 
-#準備時間
-execute if score 準備時間 gamecore matches 1.. as @a[team=red] at @s unless entity @e[tag=red_base,distance=..5] run tp @s @n[tag=red_base]
-execute if score 準備時間 gamecore matches 1.. as @a[team=blue] at @s unless entity @e[tag=blue_base,distance=..5] run tp @s @n[tag=blue_base]
-
 #---開始---
 execute as @a[team=!spec] at @s if score 倒數 gamecore matches 0..5 run function game:prepare/teleport
 execute as @a[tag = !playing] run function start:spectate
