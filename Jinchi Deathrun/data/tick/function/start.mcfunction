@@ -2,6 +2,10 @@
 advancement revoke @a from settings:root
 advancement revoke @a only edit:edit
 
+#準備時間
+execute if score 準備時間 gamecore matches 1.. as @a[team=red] at @s unless entity @e[tag=red_base,distance=..5] run tp @s @n[tag=red_base]
+execute if score 準備時間 gamecore matches 1.. as @a[team=blue] at @s unless entity @e[tag=blue_base,distance=..5] run tp @s @n[tag=blue_base]
+
 #---開始---
 execute as @a[team=!spec] at @s if score 倒數 gamecore matches 0..5 run function game:prepare/teleport
 execute as @a[tag = !playing] run function start:spectate
@@ -10,7 +14,7 @@ execute as @a if score @s score matches ..0 run function game:score_death
 execute as @a[scores={death=1}] at @s run function game:death
 execute if score 勝負已分 gamecore matches 0 as @a[team=!spec] at @s run function game:border
 execute as @a[scores={join=1..}] run function game:join
-effect give @a saturation infinite
+effect give @a saturation infinite 0 true
 
 #---個人分數actionbar---
 execute unless score 準備階段 gamecore matches 1 as @a[team=!spec,tag=!infinity] run title @s actionbar [{text:"個人分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]

@@ -68,7 +68,6 @@ tag @a[tag = add_score] remove add_score
 tag @a[tag = minus_score] remove minus_score
 tag @a[tag = item14] remove item14
 tag @a[tag = item15] remove item15
-tag @a[tag = item10_target] remove item10_target
 tag @a[tag = item15_target] remove item15_target
 kill @e[tag = item15_marker]
 

@@ -13,7 +13,8 @@ difficulty hard
 gamemode adventure @a[team=!spec]
 gamemode spectator @a[team=spec]
 recipe take @a *
-experience add @a -99999999 levels
+xp set @a 0 levels
+xp set @a 0 points
 effect give @a invisibility 9 0 true
 execute as @a at @s run playsound block.ender_chest.open ambient @s ~ ~ ~
 title @s times 10 40 10
@@ -40,6 +41,10 @@ bossbar set prepare players @a
 execute store result bossbar minecraft:countdown max run scoreboard players get 遊戲時間 menu
 execute store result bossbar minecraft:prepare max run scoreboard players get 準備時間 gamecore
 
+tellraw @a ["",{text:">> ",color:gold},{text:"準備階段：分配分數",bold: true}]
+tellraw @a ["",{text:">> ",color:gold},{text:"各組其中一人現已收到與初始分數等值的綠寶石，每顆代表10分。"}]
+tellraw @a ["",{text:">> ",color:gold},{text:"時間有2分鐘，請分配每個人的分數。"}]
+tellraw @a ["",{text:">> ",color:gold},{text:"分數不需平分，也可以不分給某一人。"}]
+function game:prepare/give_emerald
+
 schedule function game:prepare/time 1s
-schedule function game:prepare/emerald_instruction 2s
-schedule function game:prepare/give_emerald 2s

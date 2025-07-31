@@ -1,6 +1,7 @@
 gamemode adventure @s
 recipe take @s *
-experience add @s -99999999 levels
+xp set @a 0 levels
+xp set @a 0 points
 scoreboard players set @s stamina 100
 
 give @s breeze_rod[custom_data= {adrenaline: true}, item_name= [{text:"§4§l腎上腺素",italic: false}], lore= [{text:"§7在主手時可獲得加速I效果。",italic: false},{text:"§c體力低於 30% 時不得使用。",italic: false}]]
