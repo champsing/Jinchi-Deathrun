@@ -4,8 +4,8 @@
 scoreboard players set 操作模式 system 3
 tag @a add playing
 
-execute at @n[tag = base, tag = red] run spawnpoint @a[team = red] ~ ~ ~
-execute at @n[tag = base, tag = blue] run spawnpoint @a[team = blue] ~ ~ ~
+execute at @n[tag = red_base] run spawnpoint @a[team = red] ~ ~ ~
+execute at @n[tag = blue_base] run spawnpoint @a[team = blue] ~ ~ ~
 team join spec @a[team=]
 time set 1000
 clear @a

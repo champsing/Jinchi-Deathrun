@@ -51,8 +51,8 @@ summon interaction ~ ~ ~ {UUID:[I;181920719,-345027445,-1337664028,-1658530353],
 # 陣地發光
 # red_base_glowing "37bc80d5-09af-420f-a95a-7bc162ca2216" https://www.soltoder.com/mc-uuid-converter/#935100629,162480655,-1453687871,1657414166
 # blue_base_glowing "f340c881-7ebd-4c46-8ca7-2aa7a5301005" https://www.soltoder.com/mc-uuid-converter/#-213858175,2126335046,-1935201625,-1523576827
-execute at @e[tag = base, tag = red] run summon block_display ~ ~2 ~ {block_state:{Name:"smooth_quartz"}, UUID:[I;935100629,162480655,-1453687871,1657414166],Glowing:1b}
-execute at @e[tag = base, tag = blue] run summon block_display ~ ~2 ~ {block_state:{Name:"smooth_quartz"}, UUID:[I;-213858175,2126335046,-1935201625,-1523576827],Glowing:1b}
+execute at @e[tag = red_base] run summon block_display ~ ~2 ~ {block_state:{Name:"smooth_quartz"}, UUID:[I;935100629,162480655,-1453687871,1657414166],Glowing:1b}
+execute at @e[tag = blue_base] run summon block_display ~ ~2 ~ {block_state:{Name:"smooth_quartz"}, UUID:[I;-213858175,2126335046,-1935201625,-1523576827],Glowing:1b}
 
 summon text_display ~ ~ ~ {Invulnerable: 0b,text: [{text:"退出編輯模式",color:"#A335BC",bold:true}], UUID: [I; 205417058, 1884112378, -1279432616, -881205101], Tags: ["edit_title"], Rotation:[0f,0f]}
 summon minecraft:interaction ~ ~ ~ {Invulnerable: 0b, Rotation: [0.0f, 0.0f], Tags: ["edit"]}
