@@ -72,7 +72,7 @@ scoreboard objectives remove total_kill
 scoreboard objectives remove total_invalid
 scoreboard objectives remove total_item
 
-kill 23300f6d-0-0-0-0
+kill @e[tag = lobby]
 kill @e[tag = edit]
 kill @e[tag = start]
 kill @e[tag = champsing]
