@@ -1,4 +1,4 @@
-execute positioned as @e[type = interaction, tag = edit] run particle end_rod ~ ~ ~ 0.1 0.1 0.1 0.3 3 normal
+execute positioned as @n[type = interaction, tag = edit] run particle end_rod ~ ~ ~ 0.1 0.1 0.1 0.3 3 normal
 playsound block.medium_amethyst_bud.break master @s ~ ~ ~ 1 0.8 1
 
 #---不是創造---

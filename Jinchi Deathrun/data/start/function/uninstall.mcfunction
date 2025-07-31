@@ -72,14 +72,14 @@ scoreboard objectives remove total_kill
 scoreboard objectives remove total_invalid
 scoreboard objectives remove total_item
 
-kill @e[tag = lobby]
+kill 23300f6d-0-0-0-0
 kill @e[tag = edit]
 kill @e[tag = start]
 kill @e[tag = champsing]
 kill @e[tag = collaborators]
 kill @e[tag = treasure_item]
 kill @e[tag = treasure_point]
-kill @e[tag = border]
+kill @e[tag = edit_amst]
 
 clear @a
 #---隨機生成貨櫃系統資料包也要 uninstall---
