@@ -1,0 +1,15 @@
+{
+    "criteria": { 
+        "use_item": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                 "item": {
+                     "predicates": {
+                        "minecraft:custom_data": {"treasure_point": false}
+                    }
+                }
+            }
+        }
+    },
+    "rewards": { "function": "edit:treasure_point/delete" }
+}

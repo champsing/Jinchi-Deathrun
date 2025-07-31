@@ -17,6 +17,7 @@ execute if score 紅隊陣地 editinfo matches 1 run scoreboard players display 
 execute if score 藍隊陣地 editinfo matches 1 run scoreboard players display numberformat 藍隊陣地 editinfo fixed {text:"已設定", color: "green"}
 
 execute as @a if score @s edit_cd matches 1.. run scoreboard players remove @s edit_cd 1
+
 #---這時候任何人都不該操作設定、開始遊戲---
 advancement revoke @a from settings:root
 
