@@ -18,6 +18,12 @@ scoreboard players operation 剩餘時間 gameinfo = 遊戲時間 menu
 #---給大家大跑棒棒
 give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{text:"§c§l腎上腺素",italic: false}], lore= [{text:"§7在主手時可獲得加速I效果。",italic: false},{text:"§c體力低於 30% 時不得使用。",italic: false}]]
 
+#---放置陣地---
+execute at @n[type = armor_stand, tag = red_base] run summon block_display ~ ~ ~ {block_state: {Name: "smooth_quartz"}, Glowing: true, Tags: ["red_base"]}
+execute at @n[type = armor_stand, tag = blue_base] run summon block_display ~ ~ ~ {block_state: {Name: "smooth_quartz"}, Glowing: true, Tags: ["blue_base"]}
+team join red @n[type = block_display, tag = red_base]
+team join blue @n[type = block_display, tag = blue_base]
+
 #---排程函數---
 schedule function game:time 1s
 schedule function items:treasure/generate_treasure 30s
