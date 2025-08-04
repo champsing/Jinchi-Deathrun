@@ -3,6 +3,8 @@ execute if score 操作模式 system matches 3 run return run tellraw @s ["",{te
 
 #---印出場地配置---
 tellraw @s ["",{text: ">> ", color: gold},{text: "場地配置：", bold: true}]
+tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: " 寶箱點 ", color: aqua}, "：", {score: {name:  "寶箱點數量", objective: "menu"}, color: "gold"}, " 個"]
+
 tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ A點 ]", color: green, click_event: {action: "run_command", command: "/function edit:border/teleport_a"}, hover_event: {action: "show_text", value: "點擊可傳送"}}, "：", {score: {name:  "a_pt", objective: "x"}}, ", ", {score: {name: "a_pt", objective: "y"}}, ", ", {score: {name: "a_pt", objective: "z"}}]
 
 tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ B點 ]", color: green, click_event: {action: "run_command", command: "/function edit:border/teleport_b"}, hover_event: {action: "show_text", value: "點擊可傳送"}}, "：", {score: {name:  "b_pt", objective: "x"}}, ", ", {score: {name: "b_pt", objective: "y"}}, ", ", {score: {name: "b_pt", objective: "z"}}]
