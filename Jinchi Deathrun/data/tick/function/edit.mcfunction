@@ -27,5 +27,8 @@ advancement revoke @a[gamemode = !creative] only edit:edit
 #---編輯 粒子效果高亮---
 execute at @e[tag = edit, type = interaction] positioned ~ ~0.5 ~ run particle dust{color: [0.65,0.0,0.78], scale: 1.0} ~ ~ ~ 0.3 0.3 0.3 0.1 12 normal
 
+#---儲存標記點座標---
+function edit:save
+
 # execute as @e[type = armor_stand, tag = treasure_point, tag = !edited] at @s run function edit:modify
 # execute as @e[type = armor_stand, tag = treasure_point, tag = edited] at @s run function edit:edited

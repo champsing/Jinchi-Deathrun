@@ -7,10 +7,10 @@ playsound entity.slime.death ambient @p ~ ~ ~
 tellraw @s ["",{text:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",color:gold}]
 
 tellraw @s ["",{text: ">> ", color: gold},{text: "傳送到：", bold: true}]
-tellraw @s ["",{text: ">> ", color: gold},{text: "    ⫸ "},{text: "[ A點 ]", color: green, click_event: {action: "run_command", command: "/function edit:border/teleport_a"}}]
-tellraw @s ["",{text: ">> ", color: gold},{text: "    ⫸ "},{text: "[ B點 ]", color: green, click_event: {action: "run_command", command: "/function edit:border/teleport_b"}}]
-tellraw @s ["",{text: ">> ", color: gold},{text: "    ⫸ "},{text: "[ 紅隊陣地 ]", color: red, click_event: {action: "run_command", command: "/function edit:base/teleport_red"}}]
-tellraw @s ["",{text: ">> ", color: gold},{text: "    ⫸ "},{text: "[ 藍隊陣地 ]", color: blue, click_event: {action: "run_command", command: "/function edit:base/teleport_blue"}}]
-tellraw @s ["",{text: ">> ", color: gold},{text: "    ⫸ "},{text: "[ 回大廳 ]", color: gray, click_event: {action: "run_command", command: "/tp @s @n[tag = lobby]"}}]
+tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ A點 ]", color: green, click_event: {action: "run_command", command: "/function edit:border/teleport_a"}}]
+tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ B點 ]", color: green, click_event: {action: "run_command", command: "/function edit:border/teleport_b"}}]
+tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 紅隊陣地 ]", color: red, click_event: {action: "run_command", command: "/function edit:base/teleport_red"}}]
+tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 藍隊陣地 ]", color: blue, click_event: {action: "run_command", command: "/function edit:base/teleport_blue"}}]
+tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 回大廳 ]", color: gray, click_event: {action: "run_command", command: "/tp @s @n[tag = lobby]"}}]
 
 tellraw @s ["",{text: ">> ", color: gold},{text: "需3秒後才可再開啟傳送表單", color: red}]
