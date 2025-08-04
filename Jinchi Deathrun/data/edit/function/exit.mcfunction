@@ -8,3 +8,4 @@ execute if score 遊戲模式 menu matches 99999 run tellraw @a ["",{text:">> ",
 execute if score 遊戲模式 menu matches 99998 run tellraw @a ["",{text:">> ",color:gold},{text:"捍衛模式",bold:true,color:"#61ff9b"},{text:"：雙方在時限內盡可能待在對方陣地範圍，以全隊待在對方陣地時間總和決勝負。"}]
 execute as @e[type = armor_stand, tag = edit_amst] run data merge entity @s {Glowing:0b,CustomNameVisible:0b,Marker:1b,Invisible:1b}
 scoreboard players set 操作模式 system 2
+schedule clear edit:actionbar
