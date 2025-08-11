@@ -25,7 +25,7 @@ scoreboard players operation 陣殺最高分 top_kill > @a[team=!spec] total_kil
 scoreboard players operation 無效最高分 top_invalid > @a[team=!spec] total_invalid
 scoreboard players operation 道具最高分 top_item > @a[team=!spec] total_item
 
-scoreboard players operation @a[team=!spec] top_score -= 個人最高分 score
+scoreboard players operation @a[team=!spec] top_score -= 個人最高分 top_score
 scoreboard players operation @a[team=!spec] top_duel -= 對戰最高分 top_duel
 scoreboard players operation @a[team=!spec] top_success -= 攻陣最高分 top_success
 scoreboard players operation @a[team=!spec] top_kill -= 陣殺最高分 top_kill
