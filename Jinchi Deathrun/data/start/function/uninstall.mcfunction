@@ -60,12 +60,14 @@ scoreboard objectives remove item
 scoreboard objectives remove item_cd
 scoreboard objectives remove frozen
 scoreboard objectives remove death
+
 scoreboard objectives remove top_duel
 scoreboard objectives remove top_score
 scoreboard objectives remove top_success
 scoreboard objectives remove top_invalid
 scoreboard objectives remove top_item
 scoreboard objectives remove top_kill
+
 scoreboard objectives remove total_duel
 scoreboard objectives remove total_success
 scoreboard objectives remove total_kill
@@ -80,6 +82,8 @@ kill @e[tag = collaborators]
 kill @e[tag = treasure_item]
 kill @e[tag = treasure_point]
 kill @e[tag = edit_amst]
+kill @e[tag = red_base]
+kill @e[tag = blue_base]
 
 clear @a
 #---隨機生成貨櫃系統資料包也要 uninstall---
