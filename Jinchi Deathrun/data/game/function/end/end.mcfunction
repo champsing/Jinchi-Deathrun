@@ -18,19 +18,19 @@ execute as @a[team=!spec] run scoreboard players operation @s top_kill = @s tota
 execute as @a[team=!spec] run scoreboard players operation @s top_invalid = @s total_invalid
 execute as @a[team=!spec] run scoreboard players operation @s top_item = @s total_item
 
-scoreboard players operation 對戰最高分 total_duel > @a[team=!spec] total_duel
 scoreboard players operation 個人最高分 score > @a[team=!spec] score
-scoreboard players operation 攻陣最高分 total_success > @a[team=!spec] total_success
-scoreboard players operation 陣殺最高分 total_kill > @a[team=!spec] total_kill
-scoreboard players operation 無效最高分 total_invalid > @a[team=!spec] total_invalid
-scoreboard players operation 道具最高分 total_item > @a[team=!spec] total_item
+scoreboard players operation 對戰最高分 top_duel > @a[team=!spec] total_duel
+scoreboard players operation 攻陣最高分 top_success > @a[team=!spec] total_success
+scoreboard players operation 陣殺最高分 top_kill > @a[team=!spec] total_kill
+scoreboard players operation 無效最高分 top_invalid > @a[team=!spec] total_invalid
+scoreboard players operation 道具最高分 top_item > @a[team=!spec] total_item
 
-scoreboard players operation @a[team=!spec] top_duel -= 對戰最高分 total_duel
 scoreboard players operation @a[team=!spec] top_score -= 個人最高分 score
-scoreboard players operation @a[team=!spec] top_success -= 攻陣最高分 total_success
-scoreboard players operation @a[team=!spec] top_kill -= 陣殺最高分 total_kill
-scoreboard players operation @a[team=!spec] top_invalid -= 無效最高分 total_invalid
-scoreboard players operation @a[team=!spec] top_item -= 道具最高分 total_item
+scoreboard players operation @a[team=!spec] top_duel -= 對戰最高分 top_duel
+scoreboard players operation @a[team=!spec] top_success -= 攻陣最高分 top_success
+scoreboard players operation @a[team=!spec] top_kill -= 陣殺最高分 top_kill
+scoreboard players operation @a[team=!spec] top_invalid -= 無效最高分 top_invalid
+scoreboard players operation @a[team=!spec] top_item -= 道具最高分 top_item
 
 # -----------------------------------------
 # 紅隊分數: 紅隊分數 gameinfo
@@ -47,13 +47,14 @@ tellraw @a ["",{text:"-----------------------------------------\n",bold:true,col
 tellraw @a [{text:"紅隊分數: ",color:red},{score:{name:"紅隊分數",objective:"gameinfo"},color:red},{text:"\n藍隊分數: ",color:"blue"},{score:{name:"藍隊分數",objective:"gameinfo"},color:"blue"}]
 tellraw @a [{text:"-----------------------------------------\n",bold:true,color:gold}]
 
-tellraw @a [{text:"對戰好手: ",color:aqua,hover_event:{action:"show_text", value:"對戰次數最多的玩家。"}},{selector:"@a[scores={top_duel=0}]"},{text:" (",color:aqua},{score:{name:"@p[scores={top_duel=0}]",objective:"total_duel"},color:aqua},{text:")",color:aqua}]
-
 tellraw @a [{text:"大富豪家: ",color:aqua,hover_event:{action:"show_text", value:"個人分數最高的玩家。"}},{selector:"@a[scores={top_score=0}]"},{text:" (",color:aqua},{score:{name:"@a[scores={top_score=0}]",objective:score},color:aqua},{text:")",color:aqua}]
+
+tellraw @a [{text:"對戰好手: ",color:aqua,hover_event:{action:"show_text", value:"對戰次數最多的玩家。"}},{selector:"@a[scores={top_duel=0}]"},{text:" (",color:aqua},{score:{name:"@p[scores={top_duel=0}]",objective:"total_duel"},color:aqua},{text:")",color:aqua}]
 
 tellraw @a [{text:"攻陣天才: ",color:aqua,hover_event:{action:"show_text", value:"成功攻陣次數最多的玩家。"}},{selector:"@a[scores={top_success=0}]"},{text:" (",color:aqua},{score:{name:"@a[scores={top_success=0}]",objective:"total_success"},color:aqua},{text:")",color:aqua}]
 
 tellraw @a [{text:"陣殺MVP: ",color:aqua,hover_event:{action:"show_text", value:"陣殺玩家最多的玩家。"}},{selector:"@a[scores={top_kill=0}]"},{text:" (",color:aqua},{score:{name:"@a[scores={top_kill=0}]",objective:"total_kill"},color:aqua},{text:")",color:aqua}]
 
 tellraw @a [{text:"-----------------------------------------",bold:true,color:gold}]
+tellraw @a {text:"[切換排行榜顯示]\n",color:gold, bold: true,click_event: {action: "run_command",command: "/function game:end/leaderboard"}}
 tellraw @a {text:"[點擊返回大廳並重置遊戲]",color:aqua, bold: true,click_event: {action: "run_command",command: "/function game:initialize"}}
