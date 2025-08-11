@@ -75,6 +75,7 @@ scoreboard objectives remove total_invalid
 scoreboard objectives remove total_item
 
 kill @e[tag = lobby]
+kill @e[tag = settings]
 kill @e[tag = edit]
 kill @e[tag = start]
 kill @e[tag = champsing]
