@@ -18,7 +18,7 @@ execute as @a[team=!spec] run scoreboard players operation @s top_kill = @s tota
 execute as @a[team=!spec] run scoreboard players operation @s top_invalid = @s total_invalid
 execute as @a[team=!spec] run scoreboard players operation @s top_item = @s total_item
 
-scoreboard players operation 個人最高分 score > @a[team=!spec] score
+scoreboard players operation 個人最高分 top_score > @a[team=!spec] score
 scoreboard players operation 對戰最高分 top_duel > @a[team=!spec] total_duel
 scoreboard players operation 攻陣最高分 top_success > @a[team=!spec] total_success
 scoreboard players operation 陣殺最高分 top_kill > @a[team=!spec] total_kill

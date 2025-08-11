@@ -77,8 +77,8 @@ scoreboard objectives add frozen dummy "凍結剩餘時間"
 
 scoreboard objectives add death deathCount "死亡數"
 
-scoreboard objectives add top_duel dummy "對決最多次"
 scoreboard objectives add top_score dummy "個人得分最多"
+scoreboard objectives add top_duel dummy "對決最多次"
 scoreboard objectives add top_success dummy "成功攻陣最多次"
 scoreboard objectives add top_kill dummy "陣殺最多人"
 scoreboard objectives add top_invalid dummy "無效狀態最多次"
