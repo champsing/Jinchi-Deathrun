@@ -31,7 +31,7 @@ execute as @a[tag = frozen] if score @s frozen matches 0 run function items:free
 
 #---合體---
 execute as @a[team = red] at @s store result score @s nearby if entity @a[team = red, distance = ..5,tag = !infinity]
-execute as @a[team = blue] at @s store result score @s nearby if entity @a[team = blue,distance = ..5,tag = !infinity]
+execute as @a[team = blue] at @s store result score @s nearby if entity @a[team = blue, distance = ..5,tag = !infinity]
 #---陣地(無論顏色)內不允許合體，不然1000分會被平分---
 scoreboard players reset @a[tag = infinity,team = !spec] nearby
 execute as @a[team = !spec] at @s unless score @s nearby = @s grouped run function game:teaming
@@ -39,10 +39,10 @@ execute as @a[team = !spec] at @s unless score @s nearby = @s grouped run functi
 #---陣地---
 #---陣地最遠距離與本體的歐幾里得距離為3根號2，大概是4.23，取整數5---
 #---在陣地半徑5格球體內具有無敵，解除無效狀態---
-execute as @a[team = red] at @s if entity @e[tag = red,tag = base, distance = ..5] run function base:infinity
-execute as @a[team = blue] at @s if entity @e[tag = blue,tag = base,distance = ..5] run function base:infinity
-execute as @a[team = red,tag = infinity] at @s unless entity @e[tag = red,tag = base,distance = ..5] run tag @s remove infinity
-execute as @a[team = blue,tag = infinity] at @s unless entity @e[tag = blue,tag = base,distance = ..5] run tag @s remove infinity
+execute as @a[team = red] at @s if entity @e[tag = red_base, distance = ..5] run function base:infinity
+execute as @a[team = blue] at @s if entity @e[tag = blue_base, distance = ..5] run function base:infinity
+execute as @a[team = red,tag = infinity] at @s unless entity @e[tag = red_base, distance = ..5] run tag @s remove infinity
+execute as @a[team = blue,tag = infinity] at @s unless entity @e[tag = blue_base, distance = ..5] run tag @s remove infinity
 
 #---體力---
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] if predicate stamina:adrenaline run attribute @s movement_speed modifier add adrenaline 0.2 add_multiplied_base
