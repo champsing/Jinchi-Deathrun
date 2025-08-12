@@ -1,4 +1,4 @@
-advancement revoke @s only base:attack
+advancement revoke @s only base:friendly_fire
 
 title @s title {text: "誤擊己方陣地", bold: true, color: gray}
 title @s subtitle {text: "請勿攻擊己方陣地！", bold: true}
