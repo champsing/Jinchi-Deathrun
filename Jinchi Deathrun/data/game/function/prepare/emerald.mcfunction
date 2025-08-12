@@ -21,6 +21,9 @@ title @s times 10 40 10
 title @a title ["",{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red}]
 title @a subtitle ["",{text:"遊戲開始",bold:true,color:"green"}]
 
+#---防呆---
+execute as @e[tag = edit_amst] run data merge entity @s {Marker: 1b, Glowing: 0b,CustomNameVisible: 0b}
+
 #---記分板---
 scoreboard objectives setdisplay sidebar gameinfo
 scoreboard objectives setdisplay below_name total_duel

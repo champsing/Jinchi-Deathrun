@@ -1,3 +1,2 @@
-execute as @e[type = armor_stand, tag = treasure_point] run data merge entity @s {Glowing:0b,CustomNameVisible:0b}
-tellraw @a ["",{text:">> ",color:gold},{text:"寶箱點位置已經隱藏"}]
-data modify block ~ ~ ~ front_text.messages[1] set value '{bold:true,click_event:{action:"run_command",value:"/execute if entity @s[gamemode = creative] run function settings:treasure/show"},text:"顯示寶箱點位置"}'
+execute as @e[type = armor_stand, tag = treasure_point] run data merge entity @s {Marker: 1b, Glowing: 0b,CustomNameVisible: 0b}
+tellraw @a ["",{text:">> ",color:gold},{text:"寶箱點位置已經隱藏"}," ",{text: "[揭示]", bold: true, color: gold, underlined: true, click_event: {action: "run_command", command: "/function settings:treasure/show"}}]
