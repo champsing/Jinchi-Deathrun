@@ -1,4 +1,4 @@
-execute as @a[tag=!join] run function start:join
+execute as @a[tag = !join] run function start:join
 execute as @a[scores = {death = 1}] run function start:death
 execute store result score A點 editinfo if entity @e[tag = A_point]
 execute store result score B點 editinfo if entity @e[tag = B_point]

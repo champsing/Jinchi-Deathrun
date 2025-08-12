@@ -7,7 +7,7 @@ execute if entity @s[team = red] unless entity @a[team = blue, tag = !frozen] ru
 clear @s blue_ice[custom_data={"freeze": "all"}] 1
 scoreboard players set @s item_cd 5
 
-execute if entity @s[team=red] as @a[team = blue, tag = !frozen] run function items:freeze/freeze
-execute if entity @s[team=blue] as @a[team = red, tag = !frozen] run function items:freeze/freeze
+execute if entity @s[team = red] as @a[team = blue, tag = !frozen] run function items:freeze/freeze
+execute if entity @s[team = blue] as @a[team = red, tag = !frozen] run function items:freeze/freeze
 
 tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"使用了"},{text:"凍結道具",color:gold},{text:" 所有敵方玩家已被凍結無法移動"},{text:"10秒",color:gold}]

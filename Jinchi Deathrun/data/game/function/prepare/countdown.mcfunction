@@ -14,8 +14,8 @@ execute as @a run attribute @s movement_speed modifier add countdown -1 add_mult
 scoreboard players set 倒數 gamecore 5
 schedule function game:count 1s
 schedule function game:start 6s
-gamemode adventure @a[team=!spec]
-gamemode spectator @a[team=spec]
+gamemode adventure @a[team = !spec]
+gamemode spectator @a[team = spec]
 bossbar set prepare players
 bossbar set countdown players @a
 bossbar set countdown name [{text:"剩餘時間： "},{score:{name: "剩餘時間",objective: "gameinfo"},color: gold},{text:"秒"}]
@@ -28,6 +28,6 @@ execute as @a[team = red] at @n[tag = red_base] run spawnpoint @s ~ ~ ~
 execute as @a[team = blue] at @n[tag = blue_base] run spawnpoint @s ~ ~ ~
 
 #---分數---
-execute as @a[team=!spec] store result score @s score run clear @s emerald 0
-scoreboard players operation @a[team=!spec] score *= 十倍 readonly
-execute as @a[team=!spec] run clear @s emerald
+execute as @a[team = !spec] store result score @s score run clear @s emerald 0
+scoreboard players operation @a[team = !spec] score *= 十倍 readonly
+execute as @a[team = !spec] run clear @s emerald

@@ -6,8 +6,8 @@
 tp @a @n[type = marker, tag = lobby]
 execute at @n[type = marker, tag = lobby] run spawnpoint @a ~ ~ ~
 clear @a
-kill @e[tag=treasure_item]
-kill @e[type=trident]
+kill @e[tag = treasure_item]
+kill @e[type = trident]
 kill @e[type = !armor_stand, tag = red_base] 
 kill @e[type = !armor_stand, tag = blue_base]
 

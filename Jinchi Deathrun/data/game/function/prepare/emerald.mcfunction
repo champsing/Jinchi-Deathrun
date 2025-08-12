@@ -6,12 +6,12 @@ tag @a add playing
 
 execute at @n[tag = red_base] run spawnpoint @a[team = red] ~ ~ ~
 execute at @n[tag = blue_base] run spawnpoint @a[team = blue] ~ ~ ~
-team join spec @a[team=]
+team join spec @a[team = ]
 time set 1000
 clear @a
 difficulty hard
-gamemode adventure @a[team=!spec]
-gamemode spectator @a[team=spec]
+gamemode adventure @a[team = !spec]
+gamemode spectator @a[team = spec]
 recipe take @a *
 xp set @a 0 levels
 xp set @a 0 points
