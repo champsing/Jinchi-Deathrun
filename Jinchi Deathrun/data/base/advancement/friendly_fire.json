@@ -1,0 +1,39 @@
+{
+	"criteria": {
+		"red_self": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"player": {
+					"team": "red"
+				},
+				"entity": {
+					"type": "minecraft:interaction",
+					"nbt": "{Tags:[\"red_base\"]}"
+				}
+			}
+		},
+		"blue_self": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"player": {
+					"team": "blue"
+				},
+				"entity": {
+					"type": "minecraft:interaction",
+					"nbt": "{Tags:[\"blue_base\"]}"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"red_self"
+		],
+		[
+			"blue_self"
+		]
+	],
+	"rewards": {
+		"function": "base:friendly_fire"
+	}
+}
