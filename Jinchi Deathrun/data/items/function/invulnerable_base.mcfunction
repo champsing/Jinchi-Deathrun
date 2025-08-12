@@ -10,14 +10,6 @@ clear @s bedrock[custom_data={invulnerable_base: true}] 1
 execute if entity @s[team = blue] run tag @n[tag = blue_base] add invulnerable
 execute if entity @s[team = red] run tag @n[tag = red_base] add invulnerable
 
-#---先把人tp走以免窒息---
-execute if entity @s[team = red] at @n[tag = red_base] as @a[distance = ..3] run tp @s ~5 ~ ~
-execute if entity @s[team = blue] at @n[tag = blue_base] as @a[distance = ..3] run tp @s ~5 ~ ~
-
-#---3x3x3立方體---
-execute if entity @s[team = red] at @n[tag = red_base] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 bedrock
-execute if entity @s[team = blue] at @n[tag = blue_base] run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 bedrock
-
 #---排程恢復原狀---
 execute if entity @s[team = red] run schedule function base:restore_invulnerable/red 20s
 execute if entity @s[team = blue] run schedule function base:restore_invulnerable/blue 20s

@@ -1,11 +1,11 @@
 {
 	"criteria": {
-		"requirement": {
+		"red_base": {
 			"trigger": "minecraft:player_hurt_entity",
 			"conditions": {
 				"entity": {
 					"type": "minecraft:interaction",
-					"nbt": "{Tags:[\"base\"]}"
+					"nbt": "{Tags:[\"red_base\"]}"
 				}
 			}
 		}
