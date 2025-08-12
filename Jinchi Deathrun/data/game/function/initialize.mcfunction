@@ -63,7 +63,7 @@ tag @a[tag = success_freeze_person] remove success_freeze_person
 execute as @a[tag = frozen] run function items:freeze/restore_from_frozen
 tag @a[tag = invalid] remove invalid
 tag @a[tag = infinity] remove infinity
-tag @a[tag = base_attack] remove base_attack
+
 tag @a[tag = add_score] remove add_score
 tag @a[tag = minus_score] remove minus_score
 tag @a[tag = item14] remove item14
