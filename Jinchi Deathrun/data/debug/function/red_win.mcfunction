@@ -1,0 +1,1 @@
+scoreboard players add 紅隊分數 gameinfo 1

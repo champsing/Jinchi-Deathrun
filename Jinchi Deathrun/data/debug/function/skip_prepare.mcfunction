@@ -1,0 +1,1 @@
+scoreboard players set 準備時間 gamecore 3

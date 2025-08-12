@@ -1,0 +1,1 @@
+scoreboard players set 剩餘時間 gameinfo 3
