@@ -1,15 +1,38 @@
 {
 	"criteria": {
-		"requirement": {
+		"red_goal": {
 			"trigger": "minecraft:player_hurt_entity",
 			"conditions": {
+				"player": {
+					"team": "red"
+				},
 				"entity": {
 					"type": "minecraft:interaction",
-					"nbt": "{Tags:[\"base\"]}"
+					"nbt": "{Tags:[\"blue_base\"]}"
+				}
+			}
+		},
+		"blue_goal": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"player": {
+					"team": "blue"
+				},
+				"entity": {
+					"type": "minecraft:interaction",
+					"nbt": "{Tags:[\"red_base\"]}"
 				}
 			}
 		}
 	},
+	"requirements": [
+		[
+			"red_goal"
+		],
+		[
+			"blue_goal"
+		]
+	],
 	"rewards": {
 		"function": "base:attack"
 	}
