@@ -13,4 +13,6 @@ tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 紅隊陣�
 
 tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 藍隊陣地 ]", color: blue, click_event: {action: "run_command", command: "/function edit:base/teleport_blue"}, hover_event: {action: "show_text", value: "點擊可傳送"}}, "：", {score: {name:  "blue", objective: "x"}}, ", ", {score: {name: "blue", objective: "y"}}, ", ", {score: {name: "blue", objective: "z"}}]
 
+tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 中央點 ]", color: gray, click_event: {action: "run_command", command: "/function edit:center/teleport"}, hover_event: {action: "show_text", value: "點擊可傳送"}}, "：", {score: {name:  "center", objective: "x"}}, ", ", {score: {name: "center", objective: "y"}}, ", ", {score: {name: "center", objective: "z"}}]
+
 tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 大廳 ]", color: gray, click_event: {action: "run_command", command: "/tp @s @n[tag = lobby]"}, hover_event: {action: "show_text", value: "點擊可傳送"}}, "：", {score: {name:  "lobby", objective: "x"}}, ", ", {score: {name: "lobby", objective: "y"}}, ", ", {score: {name: "lobby", objective: "z"}}]
