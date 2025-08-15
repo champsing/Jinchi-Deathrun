@@ -8,13 +8,10 @@ execute at @n[type = marker, tag = lobby] run spawnpoint @a ~ ~ ~
 clear @a
 kill @e[tag = treasure_item]
 kill @e[type = trident]
-kill @e[type = !armor_stand, tag = red_base] 
-kill @e[type = !armor_stand, tag = blue_base]
-
-advancement revoke @a everything
+kill @e[tag = red_base_bd]
+kill @e[tag = blue_base_bd]
 
 scoreboard players set 操作模式 system 2
-tag @a remove playing
 
 effect clear @a
 effect give @a instant_health 1 100
@@ -26,12 +23,14 @@ effect give @a weakness infinite 100 true
 scoreboard objectives setdisplay below_name
 scoreboard objectives setdisplay sidebar menu
 
+tag @a remove playing
+advancement revoke @a everything
 team leave @a
 team modify red prefix ""
 team modify blue prefix ""
 gamemode adventure @a
 recipe take @a *
-xp set @a 0 points
+xp set @a 0 levels
 execute as @a at @s run playsound block.anvil.land ambient @s ~ ~ ~
 
 #---記分板---
