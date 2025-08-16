@@ -4,7 +4,7 @@
 execute as @a[scores = {frozen = 1..}] run scoreboard players remove @s frozen 1
 
 #---計時---
-execute unless score 延長賽 gamecore matches 1 unless score 勝負已分 gamecore matches 1 run scoreboard players remove 剩餘時間 gameinfo 1
+execute unless score 延長賽 gamecore matches 1 unless score 勝負已分 gamecore matches 1 if score 準備結束 gamecore matches 1 run scoreboard players remove 剩餘時間 gameinfo 1
 
 #---bossbar sync---
 execute unless score 延長賽 gamecore matches 1 store result bossbar countdown value run scoreboard players get 剩餘時間 gameinfo

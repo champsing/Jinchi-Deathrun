@@ -23,6 +23,8 @@ execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = in
 execute at @e[type = item, tag = treasure_item] as @p[team = !spec, distance = ..1] run function items:treasure/loot_treasure
 
 #---道具---
+#---寶箱數量---
+execute store result score 現存寶箱 gamecore if entity @e[tag = treasure_item]
 #---刪除耐久1的三叉戟
 clear @a trident[damage = 1, max_damage = 2]
 
