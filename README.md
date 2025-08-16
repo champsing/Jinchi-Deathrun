@@ -79,7 +79,7 @@
 
 遊戲參考：《今際之國的闖關者》 梅花K-分數爭奪戰
 
-遊戲版本： **1.21**
+遊戲版本： **1.21.5**
 
 建議人數：3~100人
 
@@ -112,22 +112,21 @@
 
 ### 準備
 
-1. 到[發布頁面](https://github.com/champsing/Jinchi-Deathrun/releases)下載最新版本的資料包。
-2. 確認兩個資料包都有下載到，並且檔案沒有遺失。
+到[發布頁面](https://github.com/champsing/Jinchi-Deathrun/releases)下載最新版本的資料包。
 
 在發布頁面會提供每個檔案的 SHA 256 雜湊值，把你下載的檔案放到[雜湊工具](https://emn178.github.io/online-tools/sha256_checksum.html)生成雜湊值，如果不一樣說明你的檔案有問題，請你重新下載。
 
 ### 安裝步驟
 
-1. 將兩個資料包複製到 `.minecraft\saves\<你的地圖檔資料夾>\datapacks` 資料夾。
+1. 將資料包複製到 `.minecraft\saves\<你的地圖檔資料夾>\datapacks` 資料夾。
 2. 重登遊戲，並在遊戲內輸入 `/reload`，出現提示即代表安裝成功。
 
 > [!NOTE]
-> 請 __**務必 一定要**__ 兩個資料包都裝進世界存檔的`datapacks`資料夾！
+> __**不要解壓縮**__！__**不要解壓縮**__！__**不要解壓縮**__！ 很重要說三次！
 
 ### 更新
 
-1. 將新的兩個資料包依照上述步驟複製到 `datapacks` 資料夾
+1. 將新的資料包依照上述步驟複製到 `datapacks` 資料夾
 2. 重登遊戲，並在遊戲內輸入 `/reload`，出現提示即代表更新安裝成功。
 
 <p align="right">(<a href="#readme-top">回上方</a>)</p>
