@@ -8,8 +8,8 @@ execute at @n[type = marker, tag = lobby] run spawnpoint @a ~ ~ ~
 clear @a
 kill @e[tag = treasure_item]
 kill @e[type = trident]
-kill @e[tag = red_base_bd]
-kill @e[tag = blue_base_bd]
+kill @e[tag = red_base, type = !armor_stand]
+kill @e[tag = blue_base, type = !armor_stand]
 
 scoreboard players set 操作模式 system 2
 
@@ -38,6 +38,7 @@ scoreboard players reset * death
 scoreboard players reset * gameinfo
 scoreboard players reset * gamecore
 scoreboard players reset * score
+scoreboard players reset * top_score
 scoreboard players reset * top_duel
 scoreboard players reset * top_success
 scoreboard players reset * top_kill
