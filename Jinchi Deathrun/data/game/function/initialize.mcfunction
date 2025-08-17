@@ -56,6 +56,7 @@ scoreboard players reset * item_cd
 scoreboard players reset * stamina
 scoreboard players reset * stamina_max
 scoreboard players reset * frozen
+scoreboard players reset * front_distance
 #(to be added...)
 
 

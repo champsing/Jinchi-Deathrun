@@ -74,6 +74,7 @@ scoreboard objectives add stamina_max dummy "最大體力"
 
 scoreboard objectives add item_cd dummy "道具冷卻"
 scoreboard objectives add frozen dummy "凍結剩餘時間"
+scoreboard objectives add front_distance dummy "前方距離"
 
 scoreboard objectives add death deathCount "死亡數"
 
@@ -90,7 +91,6 @@ scoreboard objectives add total_kill dummy "總陣殺數"
 scoreboard objectives add total_invalid dummy "總無效狀態次數"
 scoreboard objectives add total_item dummy "總道具使用數"
 
-scoreboard objectives add item used:carrot_on_a_stick
 scoreboard objectives setdisplay sidebar editinfo
 
 # 常數

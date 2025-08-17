@@ -56,10 +56,10 @@ scoreboard objectives remove nearby
 scoreboard objectives remove grouped
 scoreboard objectives remove stamina
 scoreboard objectives remove stamina_max
-scoreboard objectives remove item
 scoreboard objectives remove item_cd
 scoreboard objectives remove frozen
 scoreboard objectives remove death
+scoreboard objectives remove front_distance
 
 scoreboard objectives remove top_duel
 scoreboard objectives remove top_score
