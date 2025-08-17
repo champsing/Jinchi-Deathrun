@@ -22,8 +22,8 @@ give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{text:"§c§l腎
 #---放置陣地---
 execute at @n[type = armor_stand, tag = red_base] align xz run summon block_display ~ ~3 ~ {block_state: {Name: "smooth_quartz"}, Glowing: true, Tags: ["red_base"],CustomName:[{text:"紅隊陣地",color: red}],CustomNameVisible: true}
 execute at @n[type = armor_stand, tag = blue_base] align xz run summon block_display ~ ~3 ~ {block_state: {Name: "smooth_quartz"}, Glowing: true, Tags: ["blue_base"],CustomName:[{text:"藍隊陣地",color: blue}],CustomNameVisible: true}
-execute at @n[type = armor_stand, tag = red_base] run summon interaction ~ ~2.5 ~ {Tags: ["red_base"]}
-execute at @n[type = armor_stand, tag = blue_base] run summon interaction ~ ~2.5 ~ {Tags: ["blue_base"]}
+execute at @n[type = armor_stand, tag = red_base] align xz run summon interaction ~ ~2.5 ~ {Tags: ["red_base"], height: 1.1, width: 1.1}
+execute at @n[type = armor_stand, tag = blue_base] align xz run summon interaction ~ ~2.5 ~ {Tags: ["blue_base"], height: 1.1, width: 1.1}
 execute as @n[type = interaction, tag = red_base] at @s run tp @s ~ ~ ~ facing entity @n[tag = center]
 execute as @n[type = interaction, tag = blue_base] at @s run tp @s ~ ~ ~ facing entity @n[tag = center]
 team join red @n[type = block_display, tag = red_base]
