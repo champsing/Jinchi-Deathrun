@@ -8,5 +8,3 @@ scoreboard players add @s total_item 1
 clear @s player_head[custom_data={stamina: "100"}] 1
 scoreboard players set @s stamina 100
 tellraw @s ["",{text:">> ",color:gold},{text:"你已恢復"},{text:"全部體力",color:gold}]
-
-# tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"使用了"},{text:"無效狀態道具",color:gold}]
