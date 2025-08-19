@@ -44,8 +44,8 @@
     <a href="https://github.com/champsing/Jinchi-Deathrun">查看演示</a>
     ·
     <a href="https://github.com/champsing/Jinchi-Deathrun/issues/new?labels=bug&template=bug-report---.md">回報 Bug</a>
-    ·
-    <a href="https://github.com/champsing/Jinchi-Deathrun/issues/new?labels=enhancement&template=feature-request---.md">許願新功能</a>
+    <!-- ·
+    <a href="https://github.com/champsing/Jinchi-Deathrun/issues/new?labels=enhancement&template=feature-request---.md">許願新功能</a> -->
   </p>
 </div>
 
