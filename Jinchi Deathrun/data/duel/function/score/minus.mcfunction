@@ -15,7 +15,9 @@ execute if score @s grouped matches 2.. if score 餘數 score matches 1.. run fu
 
 scoreboard players operation @a[tag = minus_score] score -= 減分 score
 
+scoreboard players reset 減分 score
+scoreboard players reset 餘數 score
 tag @a[tag = minus_score_remain] remove minus_score_remain
 tag @a[tag = minus_score] remove minus_score
 
-function game:teaming
+function game:refresh_scbd
