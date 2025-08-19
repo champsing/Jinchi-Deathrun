@@ -18,7 +18,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Cartoland Community][cartoland-shield]][cartoland-url]
+<!-- [![Cartoland Community][cartoland-shield]][cartoland-url] -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -207,11 +207,25 @@ GitHub 個人檔案： [https://github.com/champsing/](https://github.com/champs
 
 **誠摯感謝** 每位為《陣地大逃殺》的開發貢獻或協力的人與團體！
 
+> 名單無先後順序之分
+
 ### 製作協力
+#### 指令
 * Oreki 惡靈：[GitHub](https://github.com/oreki200407) [YouTube](https://youtube.com/@oreki20)
+#### 建築
+* 杏奈 Anna0327
+* 野路 black__choco
+* 500 Elijah_Hsieh
+* 玫瑰 Rose
+* 檸檬 DayNightTNT0w0
+* 騰 DawnKeeperCal
+* 拉凡 Allosauridae369
+* AC Alex_Cai
+
+### 測試
+
 ### Readme 排版 Markdown 模板
 * othneildrew/Best-README-Template：[GitHub](https://github.com/othneildrew/Best-README-Template)
-### 測試
 
 <p align="right">(<a href="#readme-top">回上方</a>)</p>
 
