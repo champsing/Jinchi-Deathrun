@@ -3,4 +3,6 @@ tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 個人分�
 tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 對戰次數 ]", color: light_purple, click_event: {action: "run_command", command: "/scoreboard objectives setdisplay sidebar total_duel"}}]
 tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 攻陣次數 ]", color: green, click_event: {action: "run_command", command: "/scoreboard objectives setdisplay sidebar total_success"}}]
 tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 陣殺次數 ]", color: red, click_event: {action: "run_command", command: "/scoreboard objectives setdisplay sidebar total_kill"}}]
+tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 無效狀態次數 ]", color: gray, click_event: {action: "run_command", command: "/scoreboard objectives setdisplay sidebar total_invalid"}}]
+tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 使用道具次數 ]", color: yellow, click_event: {action: "run_command", command: "/scoreboard objectives setdisplay sidebar total_item"}}]
 tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 返回遊戲資訊 ]", color: gold, click_event: {action: "run_command", command: "/scoreboard objectives setdisplay sidebar gameinfo"}}]

@@ -15,7 +15,7 @@ effect give @a saturation infinite 0 true
 #---個人分數actionbar---
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = !infinity] run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
 
-execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = !infinity] if score @s grouped matches 2.. run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{score:{name:"@s",objective:team_score}},{text:"(",bold:true,color:aqua},{score:{name:"@s",objective:score}},{text:") ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
+execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = !infinity] if score @s grouped matches 2.. run title @s actionbar [{text:"組隊分數: ",bold:true,color:aqua},{score:{name:"@s",objective:team_score}},{text:"(個人: ",bold:true,color:aqua},{score:{name:"@s",objective:score}},{text:") ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
 
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = infinity] run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{text:"無限 ",bold:true,color:"#871ea7"},{score:{name:"@s",objective:score},color:gray, bold: false, strikethrough: true},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
 

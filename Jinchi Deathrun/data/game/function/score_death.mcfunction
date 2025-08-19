@@ -16,5 +16,3 @@ title @s subtitle "你的分數已耗盡"
 title @s title {text:"死亡",color: red,bold: true}
 tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 tellraw @s ["",{text:">> ",color: gold},"你的分數已經為負數，因此你死亡了"]
-
-

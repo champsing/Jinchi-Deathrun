@@ -44,6 +44,8 @@ scoreboard players operation @a[team = !spec] top_item -= 道具最高分 top_it
 # 大富豪家: @a[scores = {top_scores = 0}]  (@a[scores = {top_scores = 0}] score)
 # 攻陣好手: @a[scores = {top_success = 0}] (@a[scores = {top_success = 0}] total_success)
 # 陣殺MVP: @a[scores = {top_kill = 0}]  (@a[scores = {top_kill = 0}] total_kill)
+# 無效魔人: @a[scores = {top_invalid = 0}]  (@a[scores = {top_invalid = 0}] total_invalid)
+# 道具技師: @a[scores = {top_item = 0}]  (@a[scores = {top_item = 0}] total_item)
 # -----------------------------------------
 
 tellraw @a ["",{text:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",color:gold}]
@@ -53,11 +55,15 @@ tellraw @a [{text:"-----------------------------------------\n",bold:true,color:
 
 tellraw @a [{text:"大富豪家: ",color:aqua,hover_event:{action:"show_text", value:"個人分數最高的玩家。"}},{selector:"@a[scores = {top_score = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_score = 0}]",objective:score},color:aqua},{text:")",color:aqua}]
 
-tellraw @a [{text:"對戰好手: ",color:aqua,hover_event:{action:"show_text", value:"對戰次數最多的玩家。"}},{selector:"@a[scores = {top_duel = 0}]"},{text:" (",color:aqua},{score:{name:"@p[scores = {top_duel = 0}]",objective:"total_duel"},color:aqua},{text:")",color:aqua}]
+tellraw @a [{text:"對戰好手: ",color:light_purple,hover_event:{action:"show_text", value:"對戰次數最多的玩家。"}},{selector:"@a[scores = {top_duel = 0}]"},{text:" (",color:aqua},{score:{name:"@p[scores = {top_duel = 0}]",objective:"total_duel"},color:aqua},{text:")",color:aqua}]
 
-tellraw @a [{text:"攻陣天才: ",color:aqua,hover_event:{action:"show_text", value:"成功攻陣次數最多的玩家。"}},{selector:"@a[scores = {top_success = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_success = 0}]",objective:"total_success"},color:aqua},{text:")",color:aqua}]
+tellraw @a [{text:"攻陣天才: ",color:green,hover_event:{action:"show_text", value:"成功攻陣次數最多的玩家。"}},{selector:"@a[scores = {top_success = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_success = 0}]",objective:"total_success"},color:aqua},{text:")",color:aqua}]
 
-tellraw @a [{text:"陣殺MVP: ",color:aqua,hover_event:{action:"show_text", value:"陣殺玩家最多的玩家。"}},{selector:"@a[scores = {top_kill = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_kill = 0}]",objective:"total_kill"},color:aqua},{text:")",color:aqua}]
+tellraw @a [{text:"陣殺MVP: ",color:red,hover_event:{action:"show_text", value:"陣殺玩家最多的玩家。"}},{selector:"@a[scores = {top_kill = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_kill = 0}]",objective:"total_kill"},color:aqua},{text:")",color:aqua}]
+
+tellraw @a [{text:"無效魔人: ",color:gray,hover_event:{action:"show_text", value:"進入無效狀態最多的玩家。"}},{selector:"@a[scores = {top_invalid = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_invalid = 0}]",objective:"total_invalid"},color:aqua},{text:")",color:aqua}]
+
+tellraw @a [{text:"道具技師: ",color:yellow,hover_event:{action:"show_text", value:"使用道具最多（不計加分道具）的玩家。"}},{selector:"@a[scores = {top_item = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_item = 0}]",objective:"total_item"},color:aqua},{text:")",color:aqua}]
 
 tellraw @a [{text:"-----------------------------------------",bold:true,color:gold}]
 tellraw @a {text:"[切換排行榜顯示]\n",color:gold, bold: true,click_event: {action: "run_command",command: "/function game:end/leaderboard"}}
