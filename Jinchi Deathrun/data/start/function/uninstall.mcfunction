@@ -87,8 +87,6 @@ kill @e[tag = red_base]
 kill @e[tag = blue_base]
 
 clear @a
-#---隨機生成貨櫃系統資料包也要 uninstall---
-# (指令)
 
 tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 tellraw @a ["",{text: ">> ",color:gold},{text:"資料包解除安裝成功",color:"green"}]

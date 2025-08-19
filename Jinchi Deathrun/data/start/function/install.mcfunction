@@ -106,6 +106,3 @@ scoreboard players set 目標分數 menu 3000
 scoreboard players set 遊戲時間 menu 900
 
 scoreboard players operation 本地 version = 包 version
-
-#---隨機生成貨櫃系統資料包也要 install---
-# (指令)
