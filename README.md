@@ -142,9 +142,7 @@
 ### 指令
 
 #### Jinchi Deathrun
-遊戲內容的主資料包
-#### Jinchi Deathrun Random Generation
-負責隨機生成貨櫃系統的資料包
+遊戲內容的資料包
 
 1. 在[開啟中的 Issues](https://github.com/champsing/Jinchi-Deathrun/issues)可以看到已提案的新功能和所有已知bug。
 
@@ -190,9 +188,9 @@
 
 <h3 align="center">香榭 Champsing</h3>
 
-Discord: champsing
+Discord 使用者名稱： champsing
 
-champsingxiang@gmail.com
+Email: champsingxiang@gmail.com
 
 GitHub 個人檔案： [https://github.com/champsing/](https://github.com/champsing/)
 
@@ -210,8 +208,10 @@ GitHub 個人檔案： [https://github.com/champsing/](https://github.com/champs
 > 名單無先後順序之分
 
 ### 製作協力
+
 #### 指令
 * Oreki 惡靈：[GitHub](https://github.com/oreki200407) [YouTube](https://youtube.com/@oreki20)
+
 #### 建築
 * 杏奈 Anna0327
 * 野路 black__choco
