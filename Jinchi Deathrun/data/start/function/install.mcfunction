@@ -101,7 +101,7 @@ scoreboard players set 一分鐘 readonly 60
 scoreboard players set 遊戲時間分鐘 system 15
 scoreboard players set 遊戲模式 menu 99999
 scoreboard players display numberformat 遊戲模式 menu fixed {text:"對戰",color:"#c24cdc",bold:true}
-scoreboard players set 初始分數 menu 500
+scoreboard players set 初始分數 menu 1000
 scoreboard players set 目標分數 menu 3000
 scoreboard players set 遊戲時間 menu 900
 
