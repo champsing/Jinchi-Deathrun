@@ -69,8 +69,8 @@ tag @a[tag = add_score] remove add_score
 tag @a[tag = minus_score] remove minus_score
 tag @a[tag = item.convention] remove item.convention
 tag @a[tag = item.interchange] remove item.interchange
-tag @a[tag = item.convention.tp] remove item.convention_tped
-tag @a[tag = item.interchange_tped] remove item.interchange_tped
+tag @a[tag = item.convention.tped] remove item.convention.tped
+tag @a[tag = item.interchange.tped] remove item.interchange.tped
 kill @e[tag = item.interchange_marker]
 
 bossbar set minecraft:prepare players
