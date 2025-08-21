@@ -51,3 +51,12 @@ give @p bedrock[item_name="\u00a7b\u00a7l無敵陣地", lore=[{"text": "\u00a77�
 
 # 解除詛咒
 give @p enchanting_table[item_name="\u00a7b\u00a7l解除詛咒", lore=[{"text": "\u00a77消除所有負面狀態效果。"},{"text": "\u00a7c自身沒有以下任一效果時不得使用："},{"text": "\u00a7c● 黑暗"},{"text": "\u00a7c● 凍結"},{"text": "\u00a7c● 發光"},{"text": "\u00a7c● 緩速"}], max_stack_size = 1,custom_data={clear_curse: true}, consumable={consume_seconds: 99999}]
+
+# 體力稍滿
+give @p player_head[item_name="\u00a7b\u00a7l體力稍滿", lore=[{"text": "\u00a77立即恢復 20 點體力。"},{"text": "\u00a7c體力值滿時不得使用。"}], max_stack_size = 1,custom_data={stamina: "20"}, consumable={consume_seconds: 99999},profile={id: [I;-774494379, -66239193, -1419902744, -1507673795],properties: [{name: "textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMzZDdjMGI3MmQzYjU3Y2VlYzI4OWExOGE1YjEyZWM2YjUwNGRmN2U4ZTEwYmFjNGY5ODVmY2JlOWZhY2JkNiJ9fX0="}]}]
+
+# 體力全滿
+give @p player_head[item_name="\u00a7b\u00a7l體力全滿", lore=[{"text": "\u00a77立即恢復 100% 點體力。"},{"text": "\u00a7c體力值滿時不得使用。"}], max_stack_size = 1,custom_data={stamina: "100"}, consumable={consume_seconds: 99999},profile={id: [I;-774494379, -66239193, -1419902744,-1507673795],properties: [{name: "textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTM0Yzg3M2RmNDY1ZTIwMzQ5MThhMWUxZDkxNjc1Njc5YTU4MjQzOTJlZTMzZDI0OGY0ZDg1NzgzOWY0ZTUxIn19fQ=="}]}]
+
+# 體力奪取
+give @p player_head[item_name="\u00a7b\u00a7l體力奪取", lore=[{"text": "\u00a77使用後\u00a76目標敵對玩家\u00a77立即失去 50 點體力。"},{"text": "目標敵對玩家：準星瞄準的面前 10 格內最近的玩家。","color": "gray","italic": true}], max_stack_size = 1,custom_data={stamina: "robbery"}, consumable={consume_seconds: 99999},profile={id: [I;1711147465, -1634513950, -1877541374, 394962083],properties: [{name: "textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjUzYzE1NTliZjEyNTI1Y2E5Y2RlYWYxNDMxMTI2OGZiMzlhZDM2M2VhYjhjYTNiODUyNmQ5YjQwYTJjNzU4ZCJ9fX0="}]}]
