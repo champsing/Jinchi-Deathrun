@@ -59,11 +59,11 @@ tellraw @a [{text:"對戰好手: ",color:light_purple,hover_event:{action:"show_
 
 tellraw @a [{text:"攻陣天才: ",color:green,hover_event:{action:"show_text", value:"成功攻陣次數最多的玩家。"}},{selector:"@a[scores = {top_success = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_success = 0}]",objective:"total_success"},color:aqua},{text:")",color:aqua}]
 
-tellraw @a [{text:"陣殺MVP: ",color:red,hover_event:{action:"show_text", value:"陣殺玩家最多的玩家。"}},{selector:"@a[scores = {top_kill = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_kill = 0}]",objective:"total_kill"},color:aqua},{text:")",color:aqua}]
+tellraw @a [{text:"陣殺MVP: ",color:red,hover_event:{action:"show_text", value:"陣殺玩家人數最多的玩家。"}},{selector:"@a[scores = {top_kill = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_kill = 0}]",objective:"total_kill"},color:aqua},{text:")",color:aqua}]
 
-tellraw @a [{text:"無效魔人: ",color:gray,hover_event:{action:"show_text", value:"進入無效狀態最多的玩家。"}},{selector:"@a[scores = {top_invalid = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_invalid = 0}]",objective:"total_invalid"},color:aqua},{text:")",color:aqua}]
+tellraw @a [{text:"無效魔人: ",color:gray,hover_event:{action:"show_text", value:"進入無效狀態次數最多的玩家。"}},{selector:"@a[scores = {top_invalid = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_invalid = 0}]",objective:"total_invalid"},color:aqua},{text:")",color:aqua}]
 
-tellraw @a [{text:"道具技師: ",color:yellow,hover_event:{action:"show_text", value:"使用道具最多（不計加分道具）的玩家。"}},{selector:"@a[scores = {top_item = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_item = 0}]",objective:"total_item"},color:aqua},{text:")",color:aqua}]
+tellraw @a [{text:"道具技師: ",color:yellow,hover_event:{action:"show_text", value:"使用道具次數最多（不計加分道具）的玩家。"}},{selector:"@a[scores = {top_item = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_item = 0}]",objective:"total_item"},color:aqua},{text:")",color:aqua}]
 
 tellraw @a [{text:"-----------------------------------------",bold:true,color:gold}]
 tellraw @a {text:"[切換排行榜顯示]\n",color:gold, bold: true,click_event: {action: "run_command",command: "/function game:end/leaderboard"}}
