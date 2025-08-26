@@ -67,11 +67,13 @@ tag @a[tag = infinity] remove infinity
 
 tag @a[tag = add_score] remove add_score
 tag @a[tag = minus_score] remove minus_score
-tag @a[tag = item.convention] remove item.convention
-tag @a[tag = item.interchange] remove item.interchange
-tag @a[tag = item.convention.tped] remove item.convention.tped
-tag @a[tag = item.interchange.tped] remove item.interchange.tped
-kill @e[tag = item.interchange_marker]
+tag @a[tag = items.convention] remove items.convention
+tag @a[tag = items.interchange] remove items.interchange
+tag @a[tag = items.convention.tped] remove items.convention.tped
+tag @a[tag = items.interchange.tped] remove items.interchange.tped
+tag @a[tag = items.freeze_single.target] remove items.freeze_single.target
+tag @a[tag = items.freeze_single.user] remove items.freeze_single.user
+kill @e[tag = items.interchange_marker]
 
 bossbar set minecraft:prepare players
 bossbar set countdown players

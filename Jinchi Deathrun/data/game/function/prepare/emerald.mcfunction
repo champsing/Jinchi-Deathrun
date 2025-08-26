@@ -21,6 +21,13 @@ title @s times 10 40 10
 title @a title ["",{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red}]
 title @a subtitle ["",{text:"遊戲開始",bold:true,color:"green"}]
 
+scoreboard players operation 最大值 x > a_pt x
+scoreboard players operation 最大值 y > a_pt y
+scoreboard players operation 最大值 z > a_pt z
+scoreboard players operation 最大值 x > b_pt x
+scoreboard players operation 最大值 y > b_pt y
+scoreboard players operation 最大值 z > b_pt z
+
 #---防呆---
 execute as @e[tag = edit_amst] run data merge entity @s {Marker: 1b, Glowing: 0b,CustomNameVisible: 0b}
 
