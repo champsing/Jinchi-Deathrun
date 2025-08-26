@@ -11,6 +11,6 @@
 		}
 	},
 	"rewards": {
-		"function": "base:attack"
+		"function": "base:attack/blue"
 	}
 }
