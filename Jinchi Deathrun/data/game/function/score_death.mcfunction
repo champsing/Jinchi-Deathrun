@@ -8,7 +8,7 @@ scoreboard players set @s score 0
 function game:refresh_scbd
 gamemode spectator @s
 team join spec @s
-playsound entity.generic.explode ambient @s ~ ~ ~ 10 1 1
+playsound entity.generic.explode ambient @a ~ ~ ~ 10 1 1
 clear @s
 
 #-------告訴玩家他死了-------
@@ -16,3 +16,4 @@ title @s subtitle "你的分數已耗盡"
 title @s title {text:"死亡",color: red,bold: true}
 tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 tellraw @s ["",{text:">> ",color: gold},"你的分數已經為負數，因此你死亡了"]
+tellraw @a ["",{text:">> ",color: gold},{selector: "@s"},"的分數已經為負數，因此死亡了"]

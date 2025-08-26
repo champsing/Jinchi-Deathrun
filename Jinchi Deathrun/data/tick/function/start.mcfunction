@@ -6,9 +6,9 @@ advancement revoke @a only edit:edit
 execute as @a[team = !spec] at @s if score 倒數 gamecore matches 0..5 run function game:prepare/teleport
 execute as @a[tag = !playing] run function start:spectate
 execute as @a[team = spec] at @s if entity @s[y = -120,dy  =  40] run tp @s @n[tag = center]
-execute as @a if score @s score matches ..0 run function game:score_death
+execute as @a[scores = {score = ..-1}] run function game:score_death
 execute as @a[scores = {death = 1}] at @s run function game:death
-execute if score 勝負已分 gamecore matches 0 as @a[team = !spec] at @s run function game:border
+execute unless score 勝負已分 gamecore matches 1 as @a[team = !spec] at @s run function game:border
 execute as @a[scores = {join = 1..}] run function game:join
 effect give @a saturation infinite 0 true
 
@@ -52,6 +52,10 @@ execute as @a[team = blue,tag = infinity] at @s unless entity @e[tag = blue_base
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] if predicate stamina:adrenaline run attribute @s movement_speed modifier add adrenaline 0.2 add_multiplied_base
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] unless predicate stamina:adrenaline run attribute @s movement_speed modifier remove adrenaline
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,scores = {stamina=..39}] run function stamina:effect
+
+#---某一隊沒人---
+execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = blue] run function game:end/red
+execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = red] run function game:end/blue
 
 #---任務---
 # execute if score 任務倒數 gamecore matches 1.. run function event:tick
