@@ -15,6 +15,7 @@ execute if score @s grouped matches 2.. if score 餘數 score matches 1.. run fu
 
 scoreboard players operation @a[tag = minus_score] score -= 減分 score
 
+playsound entity.breeze.deflect ambient @a[tag = minus_score] ~ ~ ~ 10 1 1
 tellraw @a[tag = minus_score] ["",{text:">> ",color:gold},{text:"你因"},{text:"對戰失敗",color:red},{text:"，損失"},{score: {name: "減分", objective: "score"},color:gold},{text:"分"},{text:"，餘數由小隊隨機分攤"}]
 
 scoreboard players reset 減分 score

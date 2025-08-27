@@ -15,6 +15,7 @@ execute if score @s grouped matches 2.. if score 餘數 score matches 1.. run fu
 
 scoreboard players operation @a[tag = add_score] score += 加分 score
 
+playsound entity.pillager.celebrate ambient @a[tag = add_score] ~ ~ ~ 10 1 1
 tellraw @a[tag = add_score] ["",{text:">> ",color:gold},{text:"你因"},{text:"對戰勝利",color:green},{text:"，獲得"},{score: {name: "加分", objective: "score"},color:gold},{text:"分"},{text:"，餘數由小隊隨機分攤"}]
 
 scoreboard players reset 加分 score

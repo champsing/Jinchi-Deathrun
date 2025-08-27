@@ -1,6 +1,7 @@
 # 電擊
 # @s: 1. target 2. attacker
 # at: Server
+playsound entity.zombie_villager.converted ambient @s
 
 effect give @s darkness 10 0 true
 effect give @s slowness 10 2 true
