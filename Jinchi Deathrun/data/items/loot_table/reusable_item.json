@@ -167,6 +167,9 @@
                                 "minecraft:max_stack_size": 1,
                                 "minecraft:custom_data": {
                                     "freeze": "single"
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 99999
                                 }
                             }
                         }
@@ -639,7 +642,7 @@
                             "function": "set_name",
                             "name": [
                                 {
-                                    "text": "§b§l體力奪取"
+                                    "text": "§b§l體力下降"
                                 }
                             ]
                         },

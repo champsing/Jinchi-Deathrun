@@ -1,8 +1,8 @@
 # 結束遊戲：勝方確定才執行
 
 # 先上無敵防止進一步變更分數
-tag @n[tag = red_base] add invulnerable
-tag @n[tag = blue_base] add invulnerable
+tag @n[tag = red_base, type = interaction] add invulnerable
+tag @n[tag = blue_base, type = interaction] add invulnerable
 effect give @a weakness infinite 150 true
 effect give @a resistance infinite 150 true
 scoreboard players set 勝負已分 gamecore 1

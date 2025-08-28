@@ -7,10 +7,10 @@ effect give @s[scores = {stamina = 20..29}] slowness 1 1 true
 effect give @s[scores = {stamina = 10..19}] slowness 1 2 true
 effect give @s[scores = {stamina = 0..9}] slowness 1 3 true
 
-effect give @s[scores = {stamina = 20..29}] nausea 1 0 true
-effect give @s[scores = {stamina = 10..19}] nausea 1 1 true
-effect give @s[scores = {stamina = 0..9}] nausea 1 2 true
+effect give @s[scores = {stamina = 20..29}] darkness 1 0 true
+effect give @s[scores = {stamina = 10..19}] darkness 1 1 true
+effect give @s[scores = {stamina = 0..9}] darkness 1 2 true
 
-effect give @s[scores = {stamina=6..9}] wither 2 0 true
-effect give @s[scores = {stamina = 1..5}] wither 2 1 true
-effect give @s[scores = {stamina = 0}] wither 2 2 true
+effect give @s[scores = {stamina=6..9}] glowing 2 0 true
+effect give @s[scores = {stamina = 1..5}] glowing 2 1 true
+effect give @s[scores = {stamina = 0}] glowing 2 2 true
