@@ -13,12 +13,19 @@ execute as @a[scores = {join = 1..}] run function game:join
 effect give @a saturation infinite 0 true
 
 #---個人分數actionbar---
+#---準備階段預告---
+execute if score 準備階段 gamecore matches 1 as @a[team = !spec] run title @s actionbar [{text:"進場時個人分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}}]
+
+#---正常情況---
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = !infinity] run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
 
+#---組隊時---
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = !infinity] if score @s grouped matches 2.. run title @s actionbar [{text:"組隊分數: ",bold:true,color:aqua},{score:{name:"@s",objective:team_score}},{text:"(個人: ",bold:true,color:aqua},{score:{name:"@s",objective:score}},{text:") ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
 
+#---無敵時---
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = infinity] run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{text:"無限 ",bold:true,color:"#871ea7"},{score:{name:"@s",objective:score},color:gray, bold: false, strikethrough: true},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
 
+#---無效時---
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = invalid] run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{text:"無效 ",bold:true,color:"#d1cad1"},{score:{name:"@s",objective:score},color:gray, bold: false, strikethrough: true},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
 
 #-------偵測treasure旁邊小於1格是否有玩家-------
@@ -41,7 +48,6 @@ scoreboard players reset @a[tag = infinity,team = !spec] nearby
 execute as @a[team = !spec] at @s unless score @s nearby = @s grouped run function game:teaming
 
 #---陣地---
-#---陣地最遠距離與本體的歐幾里得距離為3根號2，大概是4.23，取整數5---
 #---在陣地半徑5格球體內具有無敵，解除無效狀態---
 execute as @a[team = red] at @s if entity @e[tag = red_base, distance = ..5] run function base:infinity
 execute as @a[team = blue] at @s if entity @e[tag = blue_base, distance = ..5] run function base:infinity
