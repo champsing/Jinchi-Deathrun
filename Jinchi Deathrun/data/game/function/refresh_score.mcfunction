@@ -5,3 +5,4 @@ scoreboard players operation @s gamecore *= 十倍 readonly
 scoreboard players operation @s score += @s gamecore
 scoreboard players reset @s gamecore
 clear @s emerald
+function game:refresh_scbd
