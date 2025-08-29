@@ -4,7 +4,7 @@
 execute as @a[scores = {frozen = 1..}] run scoreboard players remove @s frozen 1
 
 #---計時---
-execute unless score 延長賽 gamecore matches 1 unless score 勝負已分 gamecore matches 1 if score 準備結束 gamecore matches 1 run scoreboard players remove 剩餘時間 gameinfo 1
+execute unless score 延長賽 gamecore matches 1 unless score 勝負已分 gamecore matches 1 unless score 準備階段 gamecore matches 1 run scoreboard players remove 剩餘時間 gameinfo 1
 
 #---消道具冷卻---
 execute unless score 勝負已分 gamecore matches 1 as @a[scores = {item_cd = 1..}] run scoreboard players remove @s item_cd 1
