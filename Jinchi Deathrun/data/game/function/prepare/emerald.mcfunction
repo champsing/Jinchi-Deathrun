@@ -36,6 +36,7 @@ scoreboard objectives setdisplay sidebar gameinfo
 scoreboard objectives setdisplay below_name total_duel
 scoreboard players reset @a
 scoreboard players set 準備階段 gamecore 1
+scoreboard players set 已準備人數 gameinfo 0
 scoreboard players operation 剩餘時間 gameinfo = 遊戲時間 menu
 scoreboard players operation 初始分數 gameinfo = 初始分數 menu
 scoreboard players operation 目標分數 gameinfo = 目標分數 menu
@@ -57,6 +58,9 @@ tellraw @a ["",{text:">> ",color:gold},{text:"準備階段：分配分數",bold:
 tellraw @a ["",{text:">> ",color:gold},{text:"各組現已收到與初始分數等值的綠寶石，隨機分配在每位玩家身上，每顆代表10分。"}]
 tellraw @a ["",{text:">> ",color:gold},{text:"時間有2分鐘，請分配每個人的分數。"}]
 tellraw @a ["",{text:">> ",color:gold},{text:"分數不需平分，也可以不分給某一人。"}]
+tellraw @a ["",{text:">> ",color:gold},{text:"若所有玩家皆已使用準備道具表示準備，則會提前開始遊戲。"}]
+
 function game:prepare/give_emerald
+item replace entity @a[team = !spec] hotbar.8 with player_head[item_name={text: "準備", color: aqua, italic: false}, lore=[{text: "用於表示準備開始遊戲。", color: gray, italic: false}], custom_data={ready: true}, max_stack_size=1, consumable={consume_seconds: 99999},profile={id:[I;-1347156543,384453155,-2009098362,2122167289],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc5YTVjOTVlZTE3YWJmZWY0NWM4ZGMyMjQxODk5NjQ5NDRkNTYwZjE5YTQ0ZjE5ZjhhNDZhZWYzZmVlNDc1NiJ9fX0="}]}] 1
 
 schedule function game:prepare/time 1s
