@@ -18,6 +18,6 @@ execute unless score 目標分數 menu matches -1 unless score 勝負已分 game
 execute unless score 勝負已分 gamecore matches 1 if score 剩餘時間 gameinfo matches ..0 run function game:end/choose_endings
 
 #---清綠寶石---
-execute unless score 準備階段 gamecore matches 1 as @a[scores = {emerald = 1..}] run function game:refresh_score
+execute unless score 準備階段 gamecore matches 1 as @a[scores = {emerald = 1..}] run function game:clear_emerald
 
 schedule function game:time 1s
