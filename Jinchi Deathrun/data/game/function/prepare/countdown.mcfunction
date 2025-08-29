@@ -32,4 +32,5 @@ execute as @a[team = red] at @n[tag = red_base] run spawnpoint @s ~ ~ ~
 execute as @a[team = blue] at @n[tag = blue_base] run spawnpoint @s ~ ~ ~
 
 #---分數---
+execute as @a[team = !spec] store result score @s score run scoreboard players operation @s emerald *= 十倍 readonly
 execute as @a[team = !spec] run clear @s emerald
