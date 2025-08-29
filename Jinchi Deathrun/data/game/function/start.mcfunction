@@ -14,6 +14,9 @@ title @a title {text:"START",bold:true,color:gold}
 
 #---重置時鐘---
 scoreboard players operation 剩餘時間 gameinfo = 遊戲時間 menu
+#---重置分數---
+scoreboard players operation 紅隊分數 gameinfo = 初始分數 menu
+scoreboard players operation 藍隊分數 gameinfo = 初始分數 menu
 scoreboard players reset 準備階段 gamecore
 
 #---給大家大跑棒棒
