@@ -71,9 +71,11 @@ tag @a[tag = items.convention] remove items.convention
 tag @a[tag = items.interchange] remove items.interchange
 tag @a[tag = items.convention.tped] remove items.convention.tped
 tag @a[tag = items.interchange.tped] remove items.interchange.tped
-tag @a[tag = items.freeze_single.target] remove items.freeze_single.target
-tag @a[tag = items.freeze_single.user] remove items.freeze_single.user
 kill @e[tag = items.interchange_marker]
+
+function items:freeze_single/stop_search
+function items:remove_invalid/stop_search
+function items:stamina_robbery/stop_search
 
 bossbar set minecraft:prepare players
 bossbar set countdown players
