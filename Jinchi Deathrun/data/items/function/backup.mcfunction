@@ -26,7 +26,7 @@ give @p glowstone_dust[item_name="\u00a7b\u00a7l單人發光",custom_data={glowi
 give @p trident[item_name="\u00a7b\u00a7l三叉戟",lore=[{text: "\u00a77一把三叉戟，耐久度為1。"},{text: "\u00a77可用於遠程攻擊其他玩家發動對戰。"}],max_damage = 2]
 
 # 單人凍結
-give @p packed_ice[item_name="\u00a7b\u00a7l單人凍結", lore=[{"text": "\u00a77使用後\u00a76目標敵對玩家\u00a77立即無法移動 10 秒。"},{"text": "目標敵對玩家：準星瞄準的面前 10 格內最近的玩家。","color": "gray","italic": true},{text: "\u00a7c該玩家已被凍結、敵隊玩家均已被凍結時不得使用。"}],max_stack_size = 1,custom_data={freeze: "single"}, consumable={consume_seconds: 99999}]
+give @p packed_ice[item_name="\u00a7b\u00a7l單人凍結", lore=[{"text": "\u00a77使用後\u00a76目標玩家\u00a77立即無法移動 10 秒。"},{"text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。","color": "gray","italic": true},{text: "\u00a7c該玩家已被凍結、敵隊玩家均已被凍結時不得使用。"}],max_stack_size = 1,custom_data={freeze: "single"}, consumable={consume_seconds: 99999}]
 
 # 全體凍結
 give @p blue_ice[item_name="\u00a7b\u00a7l全體凍結", lore=[{text: "\u00a77使用後全體敵隊玩家無法移動10秒。"},{text: "\u00a7c該玩家已被凍結、敵隊玩家均已被凍結時不得使用。"}],max_stack_size = 1,custom_data={freeze: "all"}, consumable={consume_seconds: 99999}]
@@ -59,4 +59,10 @@ give @p player_head[item_name="\u00a7b\u00a7l體力稍滿", lore=[{"text": "\u00
 give @p player_head[item_name="\u00a7b\u00a7l體力全滿", lore=[{"text": "\u00a77立即恢復 100% 點體力。"},{"text": "\u00a7c體力值滿時不得使用。"}], max_stack_size = 1,custom_data={stamina: "100"}, consumable={consume_seconds: 99999},profile={id: [I;-774494379, -66239193, -1419902744,-1507673795],properties: [{name: "textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTM0Yzg3M2RmNDY1ZTIwMzQ5MThhMWUxZDkxNjc1Njc5YTU4MjQzOTJlZTMzZDI0OGY0ZDg1NzgzOWY0ZTUxIn19fQ=="}]}]
 
 # 體力流失
-give @p player_head[item_name="\u00a7b\u00a7l體力流失", lore=[{"text": "\u00a77使用後\u00a76目標敵對玩家\u00a77立即失去 50 點體力。"},{"text": "目標敵對玩家：準星瞄準的面前 10 格內最近的玩家。","color": "gray","italic": true}], max_stack_size = 1,custom_data={stamina: "robbery"}, consumable={consume_seconds: 99999},profile={id: [I;1711147465, -1634513950, -1877541374, 394962083],properties: [{name: "textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjUzYzE1NTliZjEyNTI1Y2E5Y2RlYWYxNDMxMTI2OGZiMzlhZDM2M2VhYjhjYTNiODUyNmQ5YjQwYTJjNzU4ZCJ9fX0="}]}]
+give @p player_head[item_name="\u00a7b\u00a7l體力流失", lore=[{"text": "\u00a77使用後\u00a76目標玩家\u00a77立即失去 50 點體力。"},{"text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。","color": "gray","italic": true}], max_stack_size = 1,custom_data={stamina: "robbery"}, consumable={consume_seconds: 99999},profile={id: [I;1711147465, -1634513950, -1877541374, 394962083],properties: [{name: "textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjUzYzE1NTliZjEyNTI1Y2E5Y2RlYWYxNDMxMTI2OGZiMzlhZDM2M2VhYjhjYTNiODUyNmQ5YjQwYTJjNzU4ZCJ9fX0="}]}]
+
+# 隱形
+give @p tinted_glass[item_name="\u00a7b\u00a7l隱形", lore=[{"text": "\u00a77使自身隱形30秒。"},{text: "\u00a7c自身處於隱形狀態時不得使用。"}], max_stack_size = 1,custom_data={cloak: true}, consumable={consume_seconds: 99999}]
+
+# 移除無效狀態
+give @p shears[item_name="\u00a7b\u00a7e移除\u00a7r\u00a7b\u00a7l無效狀態", lore=[{"text": "\u00a77使用後\u00a76目標玩家\u00a77立即解除無效狀態。"},{text: "\u00a7c目標玩家非處於無效狀態時不得使用。"},{"text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。","color": "gray","italic": true}], max_stack_size = 1,custom_data={remove_invalid: true}, consumable={consume_seconds: 99999}]
