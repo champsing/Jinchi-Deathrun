@@ -5,11 +5,11 @@
             "conditions": {
                 "item": {
                     "predicates": {
-                        "minecraft:custom_data": { "freeze": "single" }
+                        "minecraft:custom_data": { "remove_invalid": true }
                     }
                 }
             }
         }
     },
-    "rewards": { "function": "items:freeze_single/entrypoint" }
+    "rewards": { "function": "items:remove_invalid/entrypoint" }
 }

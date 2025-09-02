@@ -11,5 +11,5 @@
             }
         }
     },
-    "rewards": { "function": "items:stamina_robbery" }
+    "rewards": { "function": "items:stamina_robbery/entrypoint" }
 }
