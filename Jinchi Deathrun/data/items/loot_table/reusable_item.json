@@ -685,6 +685,46 @@
                             }
                         }
                     ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:tinted_glass",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "§b§l隱形"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "§7獲得隱形效果30秒。"
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:custom_data": {
+                                    "cloak": true
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 99999
+                                }
+                            }
+                        }
+                    ]
                 }
             ]
         }
