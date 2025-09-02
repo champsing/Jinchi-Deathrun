@@ -26,7 +26,7 @@ give @p glowstone_dust[item_name="\u00a7b\u00a7l單人發光",custom_data={glowi
 give @p trident[item_name="\u00a7b\u00a7l三叉戟",lore=[{text: "\u00a77一把三叉戟，耐久度為1。"},{text: "\u00a77可用於遠程攻擊其他玩家發動對戰。"}],max_damage = 2]
 
 # 單人凍結
-give @p packed_ice[item_name="\u00a7b\u00a7l單人凍結", lore=[{"text": "\u00a77使用後\u00a76目標玩家\u00a77立即無法移動 10 秒。"},{"text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。","color": "gray","italic": true},{text: "\u00a7c該玩家已被凍結、敵隊玩家均已被凍結時不得使用。"}],max_stack_size = 1,custom_data={freeze: "single"}, consumable={consume_seconds: 99999}]
+give @p packed_ice[item_name="\u00a7b\u00a7l單人凍結", lore=[{"text": "\u00a77使用後\u00a76目標玩家\u00a77立即無法移動 10 秒。"},{text: "\u00a7c該玩家已被凍結、敵隊玩家均已被凍結時不得使用。"},{"text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。","color": "gray","italic": true}],max_stack_size = 1,custom_data={freeze: "single"}, consumable={consume_seconds: 99999}]
 
 # 全體凍結
 give @p blue_ice[item_name="\u00a7b\u00a7l全體凍結", lore=[{text: "\u00a77使用後全體敵隊玩家無法移動10秒。"},{text: "\u00a7c該玩家已被凍結、敵隊玩家均已被凍結時不得使用。"}],max_stack_size = 1,custom_data={freeze: "all"}, consumable={consume_seconds: 99999}]
