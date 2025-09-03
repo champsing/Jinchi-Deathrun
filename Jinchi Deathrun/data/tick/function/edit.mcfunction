@@ -33,6 +33,3 @@ execute at @e[tag = edit, type = interaction] positioned ~ ~0.5 ~ run particle d
 
 #---儲存標記點座標---
 function edit:save
-
-# execute as @e[type = armor_stand, tag = treasure_point, tag = !edited] at @s run function edit:modify
-# execute as @e[type = armor_stand, tag = treasure_point, tag = edited] at @s run function edit:edited
