@@ -7,7 +7,6 @@ scoreboard players reset 準備時間 gamecore
 
 #---取消排程---
 schedule clear game:prepare/countdown
-schedule clear game:prepare/refresh_score
 
 #---效果---
 effect give @a invisibility 9 0 true
