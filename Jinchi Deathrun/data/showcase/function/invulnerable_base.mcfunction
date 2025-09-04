@@ -3,3 +3,4 @@ tellraw @a ["",{text:">> ", color: gold},{text: "道具介紹："}, {text: "無�
 tellraw @a ["",{text:">> ", color: gold},{text: "代表物品："}, {text: "附魔台", bold: true, color: "dark_aqua"}]
 tellraw @a ["",{text:">> ", color: gold},{text: "己方陣地20秒無法攻陣。"}]
 tellraw @a ["",{text:">> ", color: gold},{text: "己方陣地處於無敵狀態時不得使用。", color: red}]
+tellraw @a ""

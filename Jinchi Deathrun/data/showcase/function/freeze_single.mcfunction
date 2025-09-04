@@ -4,3 +4,4 @@ tellraw @a ["",{text:">> ", color: gold},{text: "代表物品："}, {text: "冰�
 tellraw @a ["",{text:">> ", color: gold},{text: "使用後"},{text: "目標玩家", color: gold, bold: true},{text: "立即無法移動10秒。"}]
 tellraw @a ["",{text:">> ", color: gold},{text: "該玩家已被凍結、敵隊玩家均已被凍結時不得使用。", color: red}]
 tellraw @a ["",{text:">> ", color: gold},{text: "目標玩家：準星瞄準的面前 10 格內最近的玩家。", color: gray, italic: true}]
+tellraw @a ""
