@@ -1,4 +1,5 @@
 {
+    "parent": "items:root",
     "criteria": {
         "use_item": {
             "trigger": "minecraft:consume_item",
