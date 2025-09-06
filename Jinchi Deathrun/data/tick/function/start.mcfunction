@@ -29,6 +29,9 @@ execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = in
 #---無效時---
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = invalid] run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{text:"無效 ",bold:true,color:"#d1cad1"},{score:{name:"@s",objective:score},color:gray, bold: false, strikethrough: true},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
 
+#---護盾時---
+execute unless score 準備階段 gamecore matches 1 as @a[team = !spec, predicate=items:has_shield] run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{text:"護盾 ",bold:true,color:"#109e76"},{score:{name:"@s",objective:score},color:aqua, bold: false},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
+
 #-------偵測treasure旁邊小於1格是否有玩家-------
 execute at @e[type = item, tag = treasure_item] as @p[team = !spec, distance = ..1] run function items:treasure/loot_treasure
 

@@ -66,3 +66,6 @@ give @p tinted_glass[item_name="\u00a7b\u00a7l隱形", lore=[{"text": "\u00a77�
 
 # 移除無效狀態
 give @p shears[item_name="\u00a7b\u00a7e移除\u00a7r\u00a7b\u00a7l無效狀態", lore=[{"text": "\u00a77使用後\u00a76目標玩家\u00a77立即解除無效狀態。"},{text: "\u00a7c目標玩家非處於無效狀態時不得使用。"},{"text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。","color": "gray","italic": true}], max_stack_size = 1,custom_data={remove_invalid: true}, consumable={consume_seconds: 99999}]
+
+# 護盾
+give @p shield[minecraft:banner_patterns=[{color: "red", pattern: "stripe_downleft"}],item_name="\u00a7b\u00a7l護盾", lore=[{"text": "\u00a77自身無法被發起對戰 10 秒。"},{"text": "\u00a7c護盾效果期間仍可攻陣、發起對戰、進入/解除無效狀態等。",color: light_purple, italic: true}], max_stack_size = 1,custom_data={shield: true}, consumable={consume_seconds: 99999}]

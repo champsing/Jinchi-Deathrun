@@ -1,0 +1,16 @@
+{
+    "parent": "items:root",
+    "criteria": {
+        "use_item": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": { "shield": true }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": { "function": "items:shield/entrypoint" }
+}
