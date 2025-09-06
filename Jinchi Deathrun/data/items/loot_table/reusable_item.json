@@ -753,6 +753,10 @@
                                     "text": "護盾效果間仍可攻陣、發起對戰、進入/解除無效狀態等。",
                                     "color": "light_purple",
                                     "italic": true
+                                },
+                                {
+                                    "text": "自身擁有護盾狀態時不得使用。",
+                                    "color": "red"
                                 }
                             ],
                             "mode": "append"
@@ -766,6 +770,9 @@
                                         "pattern": "stripe_downleft"
                                     }
                                 ],
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": ["banner_patterns"]
+                                },
                                 "minecraft:max_stack_size": 1,
                                 "minecraft:custom_data": {
                                     "shield": true
