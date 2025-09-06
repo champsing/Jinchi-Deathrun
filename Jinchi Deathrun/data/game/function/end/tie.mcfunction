@@ -5,7 +5,7 @@ execute as @a at @s run playsound entity.wither.spawn ambient @s ~ ~ ~
 
 #---延長賽分數---
 scoreboard players set 延長賽 gamecore 1
-scoreboard players display numberformat 剩餘時間 gameinfo fixed {text: "延長賽", color: "#ff5bbe"}
+scoreboard players display numberformat 剩餘時間 gamecore fixed {text: "延長賽", color: "#ff5bbe"}
 bossbar set countdown name [{text:"剩餘時間： "},{text: "延長賽", color: "#ff5bbe"}]
 
 title @a times 1s 4s 1s

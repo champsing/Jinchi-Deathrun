@@ -12,7 +12,7 @@ schedule clear items:treasure/generate_treasure
 
 execute as @a at @n[type = marker, tag = lobby] run spawnpoint @s ~ ~ ~
 
-scoreboard players display numberformat 剩餘時間 gameinfo fixed {text: "遊戲結束", color: "#43d245", bold: true}
+scoreboard players display numberformat 剩餘時間 gamecore fixed {text: "遊戲結束", color: "#43d245", bold: true}
 bossbar set countdown name [{text: "遊戲結束", color: "#43d245", bold: true}]
 
 execute as @a[team = !spec] run scoreboard players operation @s top_duel = @s total_duel

@@ -37,7 +37,7 @@ scoreboard objectives setdisplay below_name total_duel
 scoreboard players reset @a
 scoreboard players set 準備階段 gamecore 1
 scoreboard players set 已準備人數 gameinfo 0
-scoreboard players operation 剩餘時間 gameinfo = 遊戲時間 menu
+scoreboard players operation 剩餘時間 gamecore = 遊戲時間 menu
 scoreboard players operation 初始分數 gameinfo = 初始分數 menu
 scoreboard players operation 目標分數 gameinfo = 目標分數 menu
 scoreboard players operation 初始分數綠寶石 gamecore = 初始分數 menu
