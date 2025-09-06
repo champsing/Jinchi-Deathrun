@@ -6,7 +6,7 @@ execute if predicate items:has_shield run return run tellraw @s ["",{text:">> ",
 scoreboard players set @s item_cd 5
 scoreboard players add @s total_item 1
 clear @s shield[custom_data={shield: true}] 1
-item replace entity @s armor.head with shield[minecraft:banner_patterns=[{color: "red", pattern:"stripe_downleft"}],custom_data={shield: true},enchantments={binding_curse: 1}]
+item replace entity @s armor.head with shield[minecraft:banner_patterns=[{color: "red", pattern:"stripe_downleft"}],base_color="cyan",custom_data={shield: true},enchantments={binding_curse: 1}]
 
 #---排程恢復原狀---
 schedule function items:shield/restore 10s
