@@ -72,6 +72,7 @@ scoreboard objectives add stamina_max dummy "最大體力"
 
 scoreboard objectives add item_cd dummy "道具冷卻"
 scoreboard objectives add frozen dummy "凍結剩餘時間"
+scoreboard objectives add shield dummy "護盾剩餘時間"
 scoreboard objectives add front_distance dummy "前方距離"
 
 scoreboard objectives add death deathCount "死亡數"

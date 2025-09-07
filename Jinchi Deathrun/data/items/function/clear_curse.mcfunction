@@ -9,6 +9,6 @@ clear @s enchanting_table[custom_data={clear_curse: true}] 1
 effect clear @s slowness
 effect clear @s glowing
 effect clear @s darkness
-function items:freeze/restore_from_frozen
+function items:freeze/restore
 
 tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"使用了"},{text:"解除詛咒道具",color:gold},{text:" 消除所有"},{text:"負面狀態效果",color:gold}]

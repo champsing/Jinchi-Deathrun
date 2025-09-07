@@ -56,12 +56,13 @@ scoreboard players reset * item_cd
 scoreboard players reset * stamina
 scoreboard players reset * stamina_max
 scoreboard players reset * frozen
+scoreboard players reset * shield
 scoreboard players reset * front_distance
 #(to be added...)
 
 
 tag @a[tag = success_freeze_person] remove success_freeze_person
-execute as @a[tag = frozen] run function items:freeze/restore_from_frozen
+execute as @a[tag = frozen] run function items:freeze/restore
 tag @a[tag = invalid] remove invalid
 tag @a[tag = infinity] remove infinity
 

@@ -32,6 +32,9 @@ execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = in
 #---護盾時---
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec, predicate=items:has_shield] run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{text:"護盾 ",bold:true,color:"#109e76"},{score:{name:"@s",objective:score},color:aqua, bold: false},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
 
+#---無效又護盾時---
+execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,tag = invalid, predicate=items:has_shield] run title @s actionbar [{text:"分數: ",bold:true,color:aqua},{text:"護盾 ",bold:true,color:"#109e76"},{text:"無效 ",bold:true,color:"#d1cad1"},{score:{name:"@s",objective:score},color:gray, bold: false, strikethrough: true},{text:" ． 體力: ",bold:true,color:aqua},{score:{name:"@s",objective:"stamina"},color:"#a0cc1d"}]
+
 #-------偵測treasure旁邊小於1格是否有玩家-------
 execute at @e[type = item, tag = treasure_item] as @p[team = !spec, distance = ..1] run function items:treasure/loot_treasure
 
@@ -40,9 +43,6 @@ execute at @e[type = item, tag = treasure_item] as @p[team = !spec, distance = .
 execute store result score 現存寶箱 gamecore if entity @e[tag = treasure_item]
 #---刪除耐久1的三叉戟
 clear @a trident[damage = 1, max_damage = 2]
-
-#---排程解除凍結---
-execute as @a[tag = frozen] if score @s frozen matches 0 run function items:freeze/restore_from_frozen
 
 #---合體---
 execute as @a[team = red] at @s store result score @s nearby if entity @a[team = red, distance = ..5,tag = !infinity]

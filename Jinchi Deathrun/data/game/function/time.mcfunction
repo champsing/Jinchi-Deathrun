@@ -2,6 +2,13 @@
 
 #---凍結---
 execute as @a[scores = {frozen = 1..}] run scoreboard players remove @s frozen 1
+#---排程解除凍結---
+execute as @a[tag = frozen] if score @s frozen matches 0 run function items:freeze/restore
+
+#---護盾---
+execute as @a[scores = {shield = 1..}] run scoreboard players remove @s shield 1
+#---排程解除護盾---
+execute as @a[predicate=items:has_shield] if score @s shield matches 0 run function items:shield/restore
 
 #---計時---
 execute unless score 延長賽 gamecore matches 1 unless score 勝負已分 gamecore matches 1 unless score 準備階段 gamecore matches 1 run scoreboard players remove 剩餘時間 gamecore 1

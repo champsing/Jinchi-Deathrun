@@ -9,5 +9,5 @@ clear @s shield[custom_data={shield: true}] 1
 item replace entity @s armor.head with shield[minecraft:banner_patterns=[{color: "red", pattern:"stripe_downleft"}],base_color="cyan",custom_data={shield: true},enchantments={binding_curse: 1}]
 
 #---排程恢復原狀---
-schedule function items:shield/restore 10s
+scoreboard players set @s shield 10
 tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"你使用了"},{text:"護盾",color:gold},{text:" 無法被發起對戰"},{text:"10秒",color:gold}]

@@ -56,6 +56,7 @@ scoreboard objectives remove stamina
 scoreboard objectives remove stamina_max
 scoreboard objectives remove item_cd
 scoreboard objectives remove frozen
+scoreboard objectives remove shield
 scoreboard objectives remove death
 scoreboard objectives remove front_distance
 
