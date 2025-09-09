@@ -3,8 +3,8 @@ playsound block.medium_amethyst_bud.break master @s ~ ~ ~ 1 0.8 1
 scoreboard objectives setdisplay sidebar menu
 clear @a
 
-execute as @n[type = text_display, tag = edit_title] run data modify entity @s text set value [{text:"進入編輯模式",color:"#a335bc",bold:true}]
-execute if score 遊戲模式 menu matches 99999 run tellraw @a ["",{text:">> ",color:gold},{text:"對戰模式",bold:true,color:"#a335bc"},{text:"：雙方在時限內各自與敵方玩家對戰，以全隊分數決勝負。"}]
+execute as @n[type = text_display, tag = edit_title] run data modify entity @s text set value [{text:"進入編輯模式",color:"#ac75b9",bold:true}]
+execute if score 遊戲模式 menu matches 99999 run tellraw @a ["",{text:">> ",color:gold},{text:"對戰模式",bold:true,color:"#ac75b9"},{text:"：雙方在時限內各自與敵方玩家對戰，以全隊分數決勝負。"}]
 execute if score 遊戲模式 menu matches 99998 run tellraw @a ["",{text:">> ",color:gold},{text:"捍衛模式",bold:true,color:"#61ff9b"},{text:"：雙方在時限內盡可能待在對方陣地範圍，以全隊待在對方陣地時間總和決勝負。"}]
 tellraw @a ""
 tellraw @a ["",{text:">> ",color:gold},{text: "[檢視場地配置]", bold: true, color: light_purple, underlined: true, click_event: {action: "run_command", command: "/function edit:config"}}," ",{text: "[檢視寶箱點位置]", bold: true, color: dark_aqua, underlined: true, click_event: {action: "run_command", command: "/function settings:treasure/show"}}]
