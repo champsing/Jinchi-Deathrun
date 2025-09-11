@@ -29,7 +29,6 @@ team add gold
 team modify red color red
 team modify blue color blue
 team modify spec color gray
-team modify gold color gold
 team modify red seeFriendlyInvisibles true
 team modify blue seeFriendlyInvisibles true
 team modify red friendlyFire false

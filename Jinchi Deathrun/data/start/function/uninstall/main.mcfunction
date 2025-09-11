@@ -1,7 +1,7 @@
 execute if score 操作模式 system matches 3 run function game:force_end
 
 gamerule announceAdvancements true
-gamerule commandBlockOutput true
+execute unless score 預設世界 system matches 1 run gamerule commandBlockOutput true
 gamerule commandModificationBlockLimit 100000
 gamerule disableRaids false
 gamerule doDaylightCycle true
@@ -26,13 +26,24 @@ gamerule spawnRadius 0
 team remove red
 team remove blue
 team remove spec
-team remove gold
-team modify red color red
-team modify blue color blue
 
 bossbar remove countdown
 # bossbar remove event
 bossbar remove prepare
+
+kill @e[tag = lobby]
+kill @e[tag = settings]
+kill @e[tag = edit]
+kill @e[tag = start]
+kill @e[tag = room_name]
+kill @e[tag = showcase]
+kill @e[tag = champsing]
+kill @e[tag = collaborators]
+kill @e[tag = treasure_item]
+
+execute if score 刪除標記盔甲座 system matches 1 run kill @e[tag = edit_amst]
+execute if score 刪除標記盔甲座 system matches 1 run kill @e[tag = treasure_point]
+clear @a
 
 scoreboard objectives remove version
 scoreboard objectives remove menu
@@ -72,21 +83,6 @@ scoreboard objectives remove total_success
 scoreboard objectives remove total_kill
 scoreboard objectives remove total_invalid
 scoreboard objectives remove total_item
-
-kill @e[tag = lobby]
-kill @e[tag = settings]
-kill @e[tag = edit]
-kill @e[tag = start]
-kill @e[tag = room_name]
-kill @e[tag = champsing]
-kill @e[tag = collaborators]
-kill @e[tag = treasure_item]
-kill @e[tag = treasure_point]
-kill @e[tag = edit_amst]
-kill @e[tag = red_base]
-kill @e[tag = blue_base]
-
-clear @a
 
 tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 tellraw @a ["",{text: ">> ",color:gold},{text:"資料包解除安裝成功",color:"green"}]
