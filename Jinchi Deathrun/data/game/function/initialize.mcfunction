@@ -68,6 +68,7 @@ tag @a[tag = infinity] remove infinity
 
 tag @a[tag = add_score] remove add_score
 tag @a[tag = minus_score] remove minus_score
+tag @a[tag = duel.first_blood] remove duel.first_blood
 tag @a[tag = items.convention] remove items.convention
 tag @a[tag = items.interchange] remove items.interchange
 tag @a[tag = items.convention.tped] remove items.convention.tped

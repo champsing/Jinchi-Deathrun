@@ -5,7 +5,8 @@
 execute if entity @s[team = red] run tag @a[team = red, distance = ..5] add add_score
 execute if entity @s[team = blue] run tag @a[team = blue, distance = ..5] add add_score
 
-scoreboard players set 加分 score 50
+execute if entity @s[tag = duel.first_blood] run scoreboard players set 加分 score 550
+execute unless entity @s[tag = duel.first_blood] run scoreboard players set 加分 score 50
 scoreboard players set 餘數 score 50
 
 #---2以上才除，void跟1不需要---
@@ -17,6 +18,7 @@ scoreboard players operation @a[tag = add_score] score += 加分 score
 
 playsound entity.pillager.celebrate ambient @a[tag = add_score] ~ ~ ~ 10 1 1
 tellraw @a[tag = add_score] ["",{text:">> ",color:gold},{text:"你因"},{text:"對戰勝利",color:green},{text:"，獲得"},{score: {name: "加分", objective: "score"},color:gold},{text:"分"},{text:"，餘數由小隊隨機分攤"}]
+tellraw @a[tag = add_score, tag = duel.first_blood] ["",{text:">> ",color:gold},{text:"你是本場"},{text:"第一位發起對戰並勝利",color:green},{text:"的人，獲得先手優勢 500 分，餘數由小隊隨機分攤"}]
 
 scoreboard players reset 加分 score
 scoreboard players reset 餘數 score
