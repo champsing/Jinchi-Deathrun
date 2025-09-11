@@ -61,7 +61,6 @@ scoreboard players reset * front_distance
 #(to be added...)
 
 
-tag @a[tag = success_freeze_person] remove success_freeze_person
 execute as @a[tag = frozen] run function items:freeze/restore
 tag @a[tag = invalid] remove invalid
 tag @a[tag = infinity] remove infinity
