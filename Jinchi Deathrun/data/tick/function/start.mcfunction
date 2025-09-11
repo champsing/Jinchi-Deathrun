@@ -48,7 +48,7 @@ clear @a trident[damage = 1, max_damage = 2]
 execute as @a[team = red] at @s store result score @s nearby if entity @a[team = red, distance = ..5,tag = !infinity]
 execute as @a[team = blue] at @s store result score @s nearby if entity @a[team = blue, distance = ..5,tag = !infinity]
 #---陣地(無論顏色)內不允許合體，不然1000分會被平分---
-scoreboard players reset @a[tag = infinity,team = !spec] nearby
+scoreboard players reset @a[tag = infinity, team = !spec] nearby
 execute as @a[team = !spec] at @s unless score @s nearby = @s grouped run function game:teaming
 
 #---陣地---
@@ -64,8 +64,8 @@ execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] unless 
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,scores = {stamina=..39}] run function stamina:effect
 
 #---某一隊沒人---
-#execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = blue] run function game:end/red
-#execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = red] run function game:end/blue
+execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = blue] run function game:end/red
+execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = red] run function game:end/blue
 
 #---清除綠寶石掉落物---
 execute unless score 準備階段 gamecore matches 1 run kill @e[type = item, nbt = {Item: {id: "minecraft:emerald"}}]
