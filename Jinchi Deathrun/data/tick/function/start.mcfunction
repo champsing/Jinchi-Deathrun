@@ -68,7 +68,7 @@ execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = blu
 execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = red] run function game:end/blue
 
 #---清除綠寶石掉落物---
-execute unless score 準備階段 gamecore matches 1 run kill @e[type = item, nbt = {Item: {id: "minecraft:emerald"}}]
+# execute unless score 準備階段 gamecore matches 1 run kill @e[type = item, nbt = {Item: {id: "minecraft:emerald"}}]
 
 #---任務---
 # execute if score 任務倒數 gamecore matches 1.. run function event:tick

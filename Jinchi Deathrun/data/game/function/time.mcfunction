@@ -24,4 +24,7 @@ execute unless score 延長賽 gamecore matches 1 unless score 勝負已分 game
 execute unless score 目標分數 menu matches -1 unless score 勝負已分 gamecore matches 1 run function game:end/reach_goal
 execute unless score 勝負已分 gamecore matches 1 if score 剩餘時間 gamecore matches ..0 run function game:end/choose_endings
 
+#---清除綠寶---
+execute as @a[scores={emerald = 1..}] run function game:clear_emerald
+
 schedule function game:time 1s
