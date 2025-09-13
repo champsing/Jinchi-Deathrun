@@ -1,5 +1,6 @@
 # 移除無效狀態：剪刀
 tellraw @a ["",{text:">> ", color: gold},{text: "道具介紹："}, {text: "移除無效狀態", bold: true, color: light_purple}]
+tellraw @a ["",{text:">> ", color: gold},{text: "道具類型："}, {text: "干擾與攻擊型", bold: true, color: red}]
 tellraw @a ["",{text:">> ", color: gold},{text: "代表物品："}, {text: "剪刀", bold: true, color: "dark_aqua"}]
 tellraw @a ["",{text:">> ", color: gold},{text: "使用後"},{text: "目標玩家", color: gold, bold: true},{text: "立即解除無效狀態。"}]
 tellraw @a ["",{text:">> ", color: gold},{text: "目標玩家非處於無效狀態時不得使用。", color: red}]
