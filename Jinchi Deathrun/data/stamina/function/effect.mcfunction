@@ -11,6 +11,6 @@ effect give @s[scores = {stamina = 20..29}] darkness 1 0 true
 effect give @s[scores = {stamina = 10..19}] darkness 1 1 true
 effect give @s[scores = {stamina = 0..9}] darkness 1 2 true
 
-effect give @s[scores = {stamina=6..9}] glowing 2 0 true
-effect give @s[scores = {stamina = 1..5}] glowing 2 1 true
-effect give @s[scores = {stamina = 0}] glowing 2 2 true
+effect give @s[scores = {stamina=6..9}] blindness 2 0 true
+effect give @s[scores = {stamina = 1..5}] blindness 2 1 true
+effect give @s[scores = {stamina = 0}] blindness 2 2 true
