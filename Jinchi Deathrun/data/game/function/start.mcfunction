@@ -21,7 +21,7 @@ scoreboard players reset 初始分數 gameinfo
 scoreboard players reset 準備階段 gamecore
 
 #---給大家大跑棒棒
-give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{text:"§c§l腎上腺素",italic: false}], lore= [{text:"§7在主手時可獲得加速I效果。",italic: false},{text:"§c體力低於 30% 時不得使用。",italic: false}]]
+give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{text:"§c§l腎上腺素",italic: false}], lore= [{text:"§7在主手時移動速度增快為1.5倍。",italic: false},{text:"§c使用 Ctrl 鍵慢跑、體力低於 30% 和擁有速度效果時不得使用。",italic: false}]]
 
 #---放置陣地---
 execute at @n[type = armor_stand, tag = red_base] align xz run summon block_display ~ ~2 ~ {block_state: {Name: "smooth_quartz"}, Glowing: true, Tags: ["red_base"],CustomName:[{text:"紅隊陣地",color: red}]}

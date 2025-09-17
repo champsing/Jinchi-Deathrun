@@ -59,13 +59,13 @@ execute as @a[team = red,tag = infinity] at @s unless entity @e[tag = red_base, 
 execute as @a[team = blue,tag = infinity] at @s unless entity @e[tag = blue_base, distance = ..5] run tag @s remove infinity
 
 #---體力---
-execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] if predicate stamina:adrenaline run attribute @s movement_speed modifier add adrenaline 0.2 add_multiplied_base
+execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] if predicate stamina:adrenaline unless predicate stamina:is_sprinting unless predicate stamina:has_speed run attribute @s movement_speed modifier add adrenaline 0.5 add_multiplied_total
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] unless predicate stamina:adrenaline run attribute @s movement_speed modifier remove adrenaline
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,scores = {stamina=..39}] run function stamina:effect
 
 #---某一隊沒人---
-execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = blue] run function game:end/red
-execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = red] run function game:end/blue
+# execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = blue] run function game:end/red
+# execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = red] run function game:end/blue
 
 #---任務---
 # execute if score 任務倒數 gamecore matches 1.. run function event:tick
