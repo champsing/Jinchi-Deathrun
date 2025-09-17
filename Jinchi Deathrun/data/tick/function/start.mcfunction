@@ -64,8 +64,8 @@ execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] unless 
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,scores = {stamina=..39}] run function stamina:effect
 
 #---某一隊沒人---
-# execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = blue] run function game:end/red
-# execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = red] run function game:end/blue
+execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = blue] run function game:end/red
+execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = red] run function game:end/blue
 
 #---任務---
 # execute if score 任務倒數 gamecore matches 1.. run function event:tick
