@@ -22,6 +22,13 @@ gamerule sendCommandFeedback false
 gamerule spawnRadius 0
 gamerule doDaylightCycle false
 
+time set day
+clear @a
+
+# 清除亡國餘孽
+team remove gold
+scoreboard objectives remove menu
+
 team add red "紅隊"
 team add blue "藍隊"
 team add spec "觀戰"
@@ -89,6 +96,7 @@ scoreboard objectives add total_kill dummy "總陣殺數"
 scoreboard objectives add total_invalid dummy "總無效狀態次數"
 scoreboard objectives add total_item dummy "總道具使用數"
 
+scoreboard players set 操作模式 system 1
 scoreboard objectives setdisplay sidebar editinfo
 
 # 常數
