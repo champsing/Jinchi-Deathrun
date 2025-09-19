@@ -25,7 +25,6 @@ gamerule doDaylightCycle false
 time set day
 clear @a
 
-
 team add red "紅隊"
 team add blue "藍隊"
 team add spec "觀戰"
