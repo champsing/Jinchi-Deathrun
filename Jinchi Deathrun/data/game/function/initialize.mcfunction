@@ -3,8 +3,8 @@
 # at: tellraw.clickPerson
 
 #---設定---
-tp @a @n[type = marker, tag = lobby]
-execute at @n[type = marker, tag = lobby] run spawnpoint @a ~ ~ ~
+tp @a @n[type = marker, tag = jd.lobby]
+execute at @n[type = marker, tag = jd.lobby] run spawnpoint @a ~ ~ ~
 clear @a
 kill @e[tag = treasure_item]
 kill @e[type = trident]

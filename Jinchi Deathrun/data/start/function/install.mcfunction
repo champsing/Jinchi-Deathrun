@@ -25,9 +25,6 @@ gamerule doDaylightCycle false
 time set day
 clear @a
 
-# 清除亡國餘孽
-team remove gold
-scoreboard objectives remove menu
 
 team add red "紅隊"
 team add blue "藍隊"

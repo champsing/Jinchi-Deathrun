@@ -8,8 +8,8 @@ effect give @s blindness 3 0 true
 
 gamemode adventure @s
 title @s times 10 40 10
-tp @s @n[type = marker,tag = lobby]
-execute at @n[type = marker,tag = lobby] run spawnpoint @s ~ ~ ~
+tp @s @n[type = marker,tag = jd.lobby]
+execute at @n[type = marker,tag = jd.lobby] run spawnpoint @s ~ ~ ~
 
 title @s title ["",{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red}]
 title @s subtitle ["",{text:"作者: 香榭",bold:true,color:"green"}]

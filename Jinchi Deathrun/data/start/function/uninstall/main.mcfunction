@@ -31,7 +31,7 @@ bossbar remove countdown
 # bossbar remove event
 bossbar remove prepare
 
-kill @e[tag = lobby]
+kill @e[tag = jd.lobby]
 kill @e[tag = settings]
 kill @e[tag = edit]
 kill @e[tag = start]

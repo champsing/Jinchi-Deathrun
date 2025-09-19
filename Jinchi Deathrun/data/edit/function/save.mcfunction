@@ -1,6 +1,6 @@
-execute store result score lobby x run data get entity @n[tag = lobby] Pos[0]
-execute store result score lobby y run data get entity @n[tag = lobby] Pos[1]
-execute store result score lobby z run data get entity @n[tag = lobby] Pos[2]
+execute store result score lobby x run data get entity @n[tag = jd.lobby] Pos[0]
+execute store result score lobby y run data get entity @n[tag = jd.lobby] Pos[1]
+execute store result score lobby z run data get entity @n[tag = jd.lobby] Pos[2]
 
 execute store result score a_pt x run data get entity @n[tag = A_point] Pos[0]
 execute store result score a_pt y run data get entity @n[tag = A_point] Pos[1]

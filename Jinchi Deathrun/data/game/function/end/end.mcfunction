@@ -10,7 +10,7 @@ schedule clear game:time
 schedule clear stamina:regain
 schedule clear items:treasure/generate_treasure
 
-execute as @a at @n[type = marker, tag = lobby] run spawnpoint @s ~ ~ ~
+execute as @a at @n[type = marker, tag = jd.lobby] run spawnpoint @s ~ ~ ~
 
 scoreboard players display numberformat 剩餘時間 gamecore fixed {text: "遊戲結束", color: "#43d245", bold: true}
 bossbar set countdown name [{text: "遊戲結束", color: "#43d245", bold: true}]
