@@ -4,8 +4,8 @@ forceload add ~ ~
 setworldspawn ~ ~ ~
 spawnpoint @a ~ ~ ~
 execute align xyz run summon marker ~0.5 ~1 ~0.5 {Tags:["jd.lobby"], UUID:[I; 590352237, 0, 0, 0]}
-# 清除亡國2餘孽
-function start:uninstall/wangguo2
+# 清除亡國2和監控2的餘孽
+function start:uninstall/other_maps
 function start:lobby
 function start:install
 function edit:actionbar
