@@ -41,7 +41,7 @@
     <a href="#安裝教學"><strong>了解如何安裝 »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/champsing/Jinchi-Deathrun">查看演示</a>
+    <a href="https://forum.gamer.com.tw/C.php?bsn=18673&snA=204540&tnum=1">查看地圖場景</a>
     ·
     <a href="https://github.com/champsing/Jinchi-Deathrun/issues/new?labels=bug&template=bug-report---.md">回報 Bug</a>
     <!-- ·
@@ -81,11 +81,9 @@
 
 遊戲版本： **1.21.5**
 
-建議人數：3~100人
+建議人數：2~20人
 
 遊戲時間：15分鐘～2小時/場，自訂
-
-地圖載點：點此
 
 《陣地大逃殺》是一款塔防型團戰PVP遊戲。遊戲開始時雙方會獲得一定分數，是每位隊員各自的個人分數加總；遊戲期間雙方必須尋找對方玩家進行對戰、攻擊對方陣地，或是尋找場上的道具贏得分數，或為自己增加優勢。率先達到事先設定的目標分數，或遊戲結束時分數較高的一方獲得勝利。
 
@@ -100,9 +98,9 @@
 [《陣地大逃殺》玩法教學](https://docs.google.com/document/d/13DN1XVfx8GLBMqpHVgBwiKtkdb5Y66AMiOXcsnJQLxI/edit#heading=h.csa3qtth73)
 
 <!-- ROADMAP -->
-### 設定教學
+<!-- ### 設定教學
 
-[《陣地大逃殺》設定教學]()
+[《陣地大逃殺》設定教學]() -->
 
 <p align="right">(<a href="#readme-top">回上方</a>)</p>
 
@@ -112,9 +110,7 @@
 
 ### 準備
 
-到[發布頁面](https://github.com/champsing/Jinchi-Deathrun/releases)下載最新版本的資料包。
-
-在發布頁面會提供每個檔案的 SHA 256 雜湊值，把你下載的檔案放到[雜湊工具](https://emn178.github.io/online-tools/sha256_checksum.html)生成雜湊值，如果不一樣說明你的檔案有問題，請你重新下載。
+到[Mediafire](https://app.mediafire.com/folder/0lyncjl4ow1mt)下載最新版本的資料包。
 
 ### 安裝步驟
 
@@ -223,6 +219,16 @@ GitHub 個人檔案： [https://github.com/champsing/](https://github.com/champs
 * AC Alex_Cai
 
 ### 測試
+* 杏奈 Anna0327
+* 野路 black__choco
+* 500 Elijah_Hsieh
+* 玫瑰 Rose
+* 檸檬 DayNightTNT0w0
+* 騰 DawnKeeperCal
+* 拉凡 Allosauridae369
+* AC Alex_Cai
+* 餅乾 cookie_0320
+...
 
 ### Readme 排版 Markdown 模板
 * othneildrew/Best-README-Template：[GitHub](https://github.com/othneildrew/Best-README-Template)
