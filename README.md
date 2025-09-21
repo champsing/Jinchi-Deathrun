@@ -262,6 +262,6 @@ GitHub 個人檔案： [https://github.com/champsing/](https://github.com/champs
 
 [license-shield]: https://img.shields.io/github/license/champsing/Jinchi-Deathrun.svg?style=for-the-badge
 
-[license-url]: https://github.com/champsing/Jinchi-Deathrun/blob/master/LICENSE.txt
+[license-url]: https://github.com/champsing/Jinchi-Deathrun/blob/master/LICENSE
 
 [lobby-screenshot]: images/screenshot.png
