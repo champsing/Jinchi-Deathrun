@@ -9,7 +9,7 @@ execute store success score 亡國II資料包 od run datapack disable "file/亡�
 
 # 刪除 監控圍城II
 function system:uninstall
-execute store success score 監控IIII資料包 od run datapack disable "file/JianKong2.zip"
+execute store success score 監控II資料包 od run datapack disable "file/JianKong2.zip"
 
 execute if score 亡國II資料包 od matches 1.. run tellraw @a ["",{text: ">> ", color: gold},{text: "已刪除「亡國之戰 II」所有內容", bold: true}]
 execute if score 監控II資料包 od matches 1.. run tellraw @a ["",{text: ">> ", color: gold},{text: "已刪除「監控圍城 II」所有內容", bold: true}]
