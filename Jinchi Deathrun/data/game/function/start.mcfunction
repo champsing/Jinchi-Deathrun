@@ -24,8 +24,8 @@ scoreboard players reset 準備階段 gamecore
 give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{text:"§c§l腎上腺素",italic: false}], lore= [{text:"§7在主手時移動速度增快為1.5倍。",italic: false},{text:"§c使用 Ctrl 鍵慢跑、體力低於 30% 和擁有速度效果時不得使用。",italic: false}]]
 
 #---放置陣地---
-execute at @n[type = armor_stand, tag = red_base] align xz run summon block_display ~ ~2 ~ {block_state: {Name: "smooth_quartz"}, Glowing: true, Tags: ["red_base"],CustomName:[{text:"紅隊陣地",color: red}]}
-execute at @n[type = armor_stand, tag = blue_base] align xz run summon block_display ~ ~2 ~ {block_state: {Name: "smooth_quartz"}, Glowing: true, Tags: ["blue_base"],CustomName:[{text:"藍隊陣地",color: blue}]}
+execute at @n[type = armor_stand, tag = red_base] align xz run summon block_display ~ ~2 ~ {block_state: {Name: "target"}, Glowing: true, Tags: ["red_base"],CustomName:[{text:"紅隊陣地",color: red}]}
+execute at @n[type = armor_stand, tag = blue_base] align xz run summon block_display ~ ~2 ~ {block_state: {Name: "target"}, Glowing: true, Tags: ["blue_base"],CustomName:[{text:"藍隊陣地",color: blue}]}
 execute at @n[type = armor_stand, tag = red_base] align xz run summon text_display ~0.5 ~3.5 ~0.5 {billboard: "center", Tags: ["red_base"], text:[{text:"紅隊陣地",color: red}]}
 execute at @n[type = armor_stand, tag = blue_base] align xz run summon text_display ~0.5 ~3.5 ~0.5 {billboard: "center", Tags: ["blue_base"], text:[{text:"藍隊陣地",color: blue}]}
 execute at @n[type = block_display, tag = red_base] align xz run summon interaction ~0.5 ~ ~0.5 {Tags: ["red_base"], height: 1.1, width: 1.1}
