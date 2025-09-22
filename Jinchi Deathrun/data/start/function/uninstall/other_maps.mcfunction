@@ -5,7 +5,7 @@ scoreboard objectives add od dummy "其他資料包"
 function start:delete
 team remove gold
 scoreboard objectives remove menu
-execute store success score 亡國II資料包 od run datapack disable "file/亡國之戰2資料包 Ver1.3.7.zip"
+function start:uninstall/iterate_versions
 
 # 刪除 監控圍城II
 function system:uninstall
