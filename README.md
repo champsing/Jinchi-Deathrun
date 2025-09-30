@@ -98,9 +98,9 @@
 [《陣地大逃殺》玩法教學](https://docs.google.com/document/d/13DN1XVfx8GLBMqpHVgBwiKtkdb5Y66AMiOXcsnJQLxI/edit#heading=h.csa3qtth73)
 
 <!-- ROADMAP -->
-<!-- ### 設定教學
+### 設定教學
 
-[《陣地大逃殺》設定教學]() -->
+[《陣地大逃殺》設定教學](https://youtu.be/RLFXnIPJuZY)
 
 <p align="right">(<a href="#readme-top">回上方</a>)</p>
 
