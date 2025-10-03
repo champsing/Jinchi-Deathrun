@@ -10,6 +10,6 @@ execute if score 本地 version matches 1.. if score 包 version > 本地 versio
 #execute if score 本地 version matches ..0 if score 包 version < 本地 version run return run function start:update/main
 
 tellraw @a ["",{text: ">> ",color:gold},{text: "資料包載入成功，目前版本：",color:gold},{"storage": "start:version_info", nbt: "verFloat",color:aqua, hover_event:{action: "show_text", value: [{text: "VN "},{storage: "start:version_info", nbt: "verInt"}]}},{text: "，發布日期：",color:gold},{"storage": "start:version_info", nbt: "date", color: aqua}]
-tellraw @a ["",{text: ">> ",color:gold},{text: "版本發布頁面",color:aqua,bold: true, underlined: true, click_event: {action: "open_url", "url": "https://github.com/champsing/Jinchi-Deathrun/releases/"}}]
+tellraw @a ["",{text: ">> ",color:gold},{text: "版本更新紀錄",color:aqua,bold: true, underlined: true, click_event: {action: "open_url", "url": "https://reurl.cc/koAYrb"}}]
 
 execute unless entity @e[tag = jd.lobby] run tellraw @a ["\n",{text:">> ",color:gold},"點擊 ",{text:"此處",click_event: {action: "run_command",command: "/function start:activate"},hover_event: {action: "show_text",value: [{text: "/function start:activate"}]},color: aqua, underlined: true}," 生成大廳"]
