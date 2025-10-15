@@ -1,8 +1,4 @@
 # 準備階段之開始前倒數：這時遊戲還沒開始，玩家不能動
-#---取消排程---
-schedule clear game:prepare/time
-
-
 
 #---如果是因為大家都準備，先告知---
 execute if score 已準備人數 gameinfo = 玩家人數 menu run tellraw @a ["",{text:">> ",color: gold},{text:"所有玩家已準備，"},{text:"遊戲即將開始！",color: yellow}]
