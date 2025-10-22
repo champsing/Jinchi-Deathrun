@@ -12,6 +12,7 @@ clear @a
 difficulty hard
 gamemode adventure @a[team = !spec]
 gamemode spectator @a[team = spec]
+advancement revoke @a everything
 recipe take @a *
 xp set @a 0 levels
 xp set @a 0 points
