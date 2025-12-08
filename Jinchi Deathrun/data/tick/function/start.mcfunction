@@ -59,7 +59,7 @@ execute as @a[team = red,tag = infinity] at @s unless entity @e[tag = red_base, 
 execute as @a[team = blue,tag = infinity] at @s unless entity @e[tag = blue_base, distance = ..5] run tag @s remove infinity
 
 #---體力---
-execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] if predicate stamina:adrenaline unless predicate stamina:is_sprinting unless predicate stamina:has_speed run attribute @s movement_speed modifier add adrenaline 0.5 add_multiplied_total
+execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] if predicate stamina:adrenaline run attribute @s movement_speed modifier add adrenaline 0.7 add_multiplied_total
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] unless predicate stamina:adrenaline run attribute @s movement_speed modifier remove adrenaline
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,scores = {stamina=..39}] run function stamina:effect
 
