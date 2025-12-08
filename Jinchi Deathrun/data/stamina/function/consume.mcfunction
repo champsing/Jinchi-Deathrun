@@ -1,4 +1,4 @@
-# I: 0.25 / II: 0.2 / III: 0.15 / IV: 0.1 / V: 0.05
+# I: 0.1 / II: 0.08 / III: 0.06 / IV: 0.04 / V: 0.02
 
 #---玩家在疾走、大跑，消耗體力、給經驗值---
 execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:lose_stamina/1 run scoreboard players remove @s[team = !spec,level = 0..2] stamina 1
