@@ -10,6 +10,8 @@ kill @e[tag = treasure_item]
 kill @e[type = trident]
 kill @e[tag = red_base, type = !armor_stand]
 kill @e[tag = blue_base, type = !armor_stand]
+execute as @n[tag = red_base] at @s run tp @s ~ ~ ~ facing entity @n[tag = center]
+execute as @n[tag = blue_base] at @s run tp @n[tag = blue_base] ~ ~ ~ facing entity @n[tag = center]
 
 scoreboard players set 操作模式 system 2
 

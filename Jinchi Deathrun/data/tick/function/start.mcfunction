@@ -54,8 +54,8 @@ execute as @a[team = !spec] at @s unless score @s nearby = @s grouped run functi
 
 #---陣地---
 #---在陣地半徑5格球體內具有無敵，解除無效狀態---
-execute as @n[tag = red_base, type = armor_stand] at @s run function base:particle/red
-execute as @n[tag = blue_base, type = armor_stand] at @s run function base:particle/blue
+execute unless score 準備階段 gamecore matches 1 as @n[tag = red_base, type = armor_stand] at @s run function base:particle/red
+execute unless score 準備階段 gamecore matches 1 as @n[tag = blue_base, type = armor_stand] at @s run function base:particle/blue
 
 execute as @a[team = red] at @s if entity @e[tag = red_base, distance = ..5] run function base:infinity
 execute as @a[team = blue] at @s if entity @e[tag = blue_base, distance = ..5] run function base:infinity
