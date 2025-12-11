@@ -2,8 +2,8 @@
 # @s: attacker[tag = !invalid,tag = !infinity]
 # at: attacker
 
-say 2
 execute if score @s team_score > @n[tag = attack] team_score run function duel:win
 execute if score @s team_score < @n[tag = attack] team_score run function duel:lose
+execute if score @s team_score = @n[tag = attack] team_score run function duel:tie
 
 function game:refresh_scbd
