@@ -8,5 +8,5 @@ execute if score @s stamina matches 20..29 run return run effect give @s slownes
 
 execute if score @s stamina matches 10..19 run return run effect give @s slowness 1 2 true
 
-effect give @s[scores = {stamina=0..9}] weakness 1 99 true
+effect give @s[scores = {stamina=0..9}] weakness 1 100 true
 execute if score @s stamina matches 0..9 run return run effect give @s slowness 1 3 true

@@ -1,5 +1,8 @@
 # 每秒執行1次
 
+#---消對決冷卻---
+execute as @a[scores = {duel_cd = 1..}] run scoreboard players remove @s duel_cd 1
+
 #---電擊---
 execute as @a[scores = {shocked = 1..}] run scoreboard players remove @s shocked 1
 #---排程解除電擊---

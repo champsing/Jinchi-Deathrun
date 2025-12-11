@@ -59,6 +59,7 @@ scoreboard objectives add system dummy "系統分數，僅能在1和2寫入"
 scoreboard objectives add readonly dummy "唯讀分數，不可寫入"
 scoreboard objectives add join trigger "中途加入"
 scoreboard objectives add shocked dummy "電擊"
+scoreboard objectives add duel_cd dummy "對決冷卻"
 
 scoreboard objectives add score dummy "分數"
 scoreboard objectives add nearby dummy "鄰近隊友數"
