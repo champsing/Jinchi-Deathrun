@@ -50,12 +50,12 @@ execute store result score 現存寶箱 gamecore if entity @e[tag = treasure_ite
 clear @a trident[damage = 1, max_damage = 2]
 
 #---合體---
-execute as @a[team = red] at @s store result score @s nearby if entity @a[team = red, distance = ..5,tag = !infinity]
-execute as @a[team = blue] at @s store result score @s nearby if entity @a[team = blue, distance = ..5,tag = !infinity]
+execute as @a[team = red] at @s store result score @s grouped if entity @a[team = red, distance = ..5,tag = !infinity]
+execute as @a[team = blue] at @s store result score @s grouped if entity @a[team = blue, distance = ..5,tag = !infinity]
 #---陣地(無論顏色)內不允許合體，不然1000分會被平分---
-scoreboard players reset @a[tag = infinity, team = !spec] nearby
-execute as @a[team = !spec] at @s unless score @s nearby = @s grouped run function game:teaming
-execute as @a[team = !spec,scores={nearby=1,grouped=1}] run scoreboard players operation @s team_score = @s score
+scoreboard players reset @a[tag = infinity, team = !spec] grouped
+execute as @a[team = !spec,scores={grouped=1..}] at @s run function game:teaming
+execute as @a[team = !spec,scores={grouped=1}] run scoreboard players operation @s team_score = @s score
 
 #---陣地---
 #---在陣地半徑5格球體內具有無敵，解除無效狀態---
@@ -73,8 +73,8 @@ execute unless score 準備階段 gamecore matches 1 as @a[team = !spec] unless 
 execute unless score 準備階段 gamecore matches 1 as @a[team = !spec,scores = {stamina=..39}] run function stamina:effect
 
 #---某一隊沒人---
-execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = blue] run function game:end/red
-execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = red] run function game:end/blue
+#execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = blue] run function game:end/red
+#execute unless score 勝負已分 gamecore matches 1 unless entity @a[team = red] run function game:end/blue
 
 #---任務---
 # execute if score 任務倒數 gamecore matches 1.. run function event:tick
