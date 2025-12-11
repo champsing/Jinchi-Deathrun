@@ -50,7 +50,7 @@ give @p recovery_compass[custom_name="\u00a7b\u00a7l互換", lore=[{"text": "\u0
 give @p bedrock[custom_name="\u00a7b\u00a7l無敵陣地", lore=[{"text": "\u00a77己方陣地20秒無法攻陣。"},{"text": "\u00a7c己方陣地處於無敵狀態時不得使用。"}], max_stack_size = 1,custom_data={invulnerable_base: true}, consumable={consume_seconds: 99999}]
 
 # 解除詛咒
-give @p enchanting_table[custom_name="\u00a7b\u00a7l解除詛咒", lore=[{"text": "\u00a77消除所有負面狀態效果。"},{"text": "\u00a7c自身沒有以下任一效果時不得使用："},{"text": "\u00a7c● 黑暗"},{"text": "\u00a7c● 凍結"},{"text": "\u00a7c● 發光"},{"text": "\u00a7c● 緩速"}], max_stack_size = 1,custom_data={clear_curse: true}, consumable={consume_seconds: 99999}]
+give @p enchanting_table[custom_name="\u00a7b\u00a7l解除詛咒", lore=[{"text": "\u00a77消除所有負面狀態效果。"},{"text": "\u00a7c自身沒有以下任一效果時不得使用："},{"text": "\u00a7c● 凍結"},{"text": "\u00a7c● 發光"},{"text": "\u00a7c● 緩速"}], max_stack_size = 1,custom_data={clear_curse: true}, consumable={consume_seconds: 99999}]
 
 # 體力稍滿
 give @p player_head[custom_name="\u00a7b\u00a7l體力稍滿", lore=[{"text": "\u00a77立即恢復 20 點體力。"},{"text": "\u00a7c體力值滿時不得使用。"}], max_stack_size = 1,custom_data={stamina: "20"}, consumable={consume_seconds: 99999},profile={id: [I;-774494379, -66239193, -1419902744, -1507673795],properties: [{name: "textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMzZDdjMGI3MmQzYjU3Y2VlYzI4OWExOGE1YjEyZWM2YjUwNGRmN2U4ZTEwYmFjNGY5ODVmY2JlOWZhY2JkNiJ9fX0="}]}]

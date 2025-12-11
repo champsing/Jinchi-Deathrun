@@ -1,5 +1,10 @@
 # 每秒執行1次
 
+#---電擊---
+execute as @a[scores = {shocked = 1..}] run scoreboard players remove @s shocked 1
+#---排程解除電擊---
+execute as @a[tag = shocked] if score @s shocked matches 0 run function duel:shock/restore
+
 #---凍結---
 execute as @a[scores = {frozen = 1..}] run scoreboard players remove @s frozen 1
 #---排程解除凍結---

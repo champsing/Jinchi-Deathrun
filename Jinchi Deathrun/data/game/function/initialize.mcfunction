@@ -62,6 +62,7 @@ scoreboard players reset * front_distance
 
 
 execute as @a[tag = frozen] run function items:freeze/restore
+execute as @a[tag = shocked] run function duel:shock/restore
 tag @a[tag = invalid] remove invalid
 tag @a[tag = infinity] remove infinity
 
