@@ -10,6 +10,7 @@ gamemode spectator @s
 team join spec @s
 playsound entity.generic.explode ambient @a ~ ~ ~ 10 1 1
 clear @s
+execute on attacker run scoreboard players add @s total_kill 1
 
 #-------告訴玩家他死了-------
 title @s subtitle "你的分數已耗盡"

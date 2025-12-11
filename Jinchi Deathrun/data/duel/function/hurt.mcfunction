@@ -8,6 +8,8 @@ execute if score @s duel_cd matches 1.. run return fail
 execute on attacker run tag @s add attack
 execute if score @a[tag = attack , limit = 1] duel_cd matches 1.. run return run tag @a[tag = attack] remove attack
 
+tag @s add hurt
+
 execute unless score 先手優勢 gamecore matches 1 run function duel:first_blood
 
 function duel:check
@@ -16,4 +18,5 @@ execute if entity @s[tag = !invalid,tag = !infinity, predicate = !items:has_shie
 
 scoreboard players set @a[tag = attack] duel_cd 5
 tag @a[tag = attack] remove attack
+tag @a[tag = hurt] remove hurt
 tag @a[tag = duel.first_blood] remove duel.first_blood
