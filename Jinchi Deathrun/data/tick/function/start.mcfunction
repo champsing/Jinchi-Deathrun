@@ -56,7 +56,7 @@ execute as @a[team = blue] at @s store result score @s nearby if entity @a[team 
 #---陣地(無論顏色)內不允許合體，不然1000分會被平分---
 scoreboard players reset @a[tag = infinity, team = !spec] nearby
 execute as @a[team = !spec] at @s unless score @s nearby = @s grouped run function game:teaming
-execute as @a[team = !spec,scores={nearby=1,grouped=1}] run scoreboard players operation @s team_score += @s score
+execute as @a[team = !spec,scores={nearby=1,grouped=1}] run scoreboard players operation @s team_score = @s score
 
 #---陣地---
 #---在陣地半徑5格球體內具有無敵，解除無效狀態---
