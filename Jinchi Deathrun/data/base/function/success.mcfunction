@@ -4,7 +4,9 @@ function game:refresh_scbd
 tag @s add invalid
 scoreboard players add @s total_success 1
 scoreboard players add @s total_invalid 1
-playsound block.anvil.place ambient @a
+execute if entity @s[team = red] at @e[tag = blue_base, type = interaction] run summon lightning_bolt ~ ~10 ~
+execute if entity @s[team = blue] at @e[tag = red_base, type = interaction] run summon lightning_bolt ~ ~10 ~
+
 execute if entity @s[team = red] run title @a[team = red] subtitle {text: "我方成功攻陣", bold: true, color: red}
 execute if entity @s[team = red] run title @a[team = blue] subtitle {text: "我方陣地遭攻陣", bold: true, color: blue}
 execute if entity @s[team = blue] run title @a[team = blue] subtitle {text: "我方成功攻陣", bold: true, color: blue}
