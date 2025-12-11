@@ -51,7 +51,6 @@ scoreboard players reset * total_invalid
 scoreboard players reset * total_item
 scoreboard players reset * grouped
 scoreboard players reset * team_score
-scoreboard players reset * item
 scoreboard players reset * item_cd
 scoreboard players reset * stamina
 scoreboard players reset * stamina_max

@@ -1,7 +1,6 @@
 # 開始遊戲：這時玩家已經可以動了
 
 #---效果---
-clear @a
 effect clear @a
 effect give @a resistance 3 200 true
 effect give @a regeneration 15 100 true

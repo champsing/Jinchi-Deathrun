@@ -13,6 +13,7 @@ execute as @a run attribute @s jump_strength modifier add countdown -1 add_multi
 execute as @a run attribute @s movement_speed modifier add countdown -1 add_multiplied_base
 
 #---設定---
+clear @a player_head[item_name={text: "準備", color: aqua, italic: false}]
 scoreboard players set 倒數 gamecore 5
 schedule function game:count 1s
 schedule function game:start 6s

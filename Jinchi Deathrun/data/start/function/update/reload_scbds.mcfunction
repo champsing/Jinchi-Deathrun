@@ -5,6 +5,7 @@ scoreboard objectives remove edit_cd
 scoreboard objectives remove gamecore
 scoreboard objectives remove system
 scoreboard objectives remove readonly
+scoreboard objectives remove shocked
 
 scoreboard objectives remove join
 scoreboard objectives remove score
