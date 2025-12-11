@@ -13,6 +13,10 @@ execute as @a[scores = {join = 1..}] run function game:join
 effect give @a saturation infinite 0 true
 execute as @a[team = !spec] run function game:emerald
 
+#---攻陣---
+execute as @e[type=interaction,tag=red_base] if data entity @s attack run function base:attack/red
+execute as @e[type=interaction,tag=blue_base] if data entity @s attack run function base:attack/blue
+
 #---個人分數actionbar---
 #---準備階段預告---
 execute if score 準備階段 gamecore matches 1 as @a[team = !spec] run title @s actionbar [{text:"進場時個人分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}}]

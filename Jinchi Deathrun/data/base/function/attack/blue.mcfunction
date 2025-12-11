@@ -1,4 +1,13 @@
-advancement revoke @s only base:attack_blue
-tag @s add base_attack_blue
-function base:attack/success
-tag @s remove base_attack_blue
+#---無效狀態攻陣---
+execute on attacker if entity @s[tag = invalid] run function duel:shock/success
+
+#---攻擊自己陣地---
+execute on attacker if entity @s[team = blue] run function base:friendly_fire
+
+#---如果陣地無敵直接return---
+execute if entity @s[tag = invulnerable] on attacker run function base:invulnerable
+
+#---成功---
+execute on attacker if entity @s[team = red] run function base:success
+
+data remove entity @s attack
