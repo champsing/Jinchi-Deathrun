@@ -1,8 +1,8 @@
 # 發光-單人：螢石粉
 advancement revoke @s only items:glowing_all
 execute if score @s item_cd matches 1.. run return fail
-execute as @a[team = red] if predicate items:glowing run return run tellraw @s[team = blue] ["",{text:">> ",color:gold},{text: "敵方全體已在發光",color: red}]
-execute as @a[team = blue] if predicate items:glowing run return run tellraw @s[team = red] ["",{text:">> ",color:gold},{text: "敵方全體已在發光",color: red}]
+execute unless entity @a[team = red, predicate=!items:glowing] run return run tellraw @s[team = blue] ["",{text:">> ",color:gold},{text: "敵方全體已在發光",color: red}]
+execute unless entity @a[team = blue, predicate=!items:glowing] run return run tellraw @s[team = red] ["",{text:">> ",color:gold},{text: "敵方全體已在發光",color: red}]
 
 scoreboard players set @s item_cd 5
 scoreboard players add @s total_item 1
