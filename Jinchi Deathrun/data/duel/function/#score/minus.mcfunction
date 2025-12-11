@@ -23,4 +23,3 @@ scoreboard players reset 餘數 score
 tag @a[tag = minus_score_remain] remove minus_score_remain
 tag @a[tag = minus_score] remove minus_score
 
-function game:refresh_scbd

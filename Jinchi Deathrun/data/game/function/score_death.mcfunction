@@ -5,7 +5,7 @@ execute if score @s score matches 0.. run return fail
 
 #---設回0分以免連閃---
 scoreboard players set @s score 0
-function game:refresh_scbd
+
 gamemode spectator @s
 team join spec @s
 playsound entity.generic.explode ambient @a ~ ~ ~ 10 1 1
