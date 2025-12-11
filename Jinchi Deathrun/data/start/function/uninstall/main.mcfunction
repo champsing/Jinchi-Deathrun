@@ -63,6 +63,7 @@ scoreboard objectives remove team_score
 scoreboard objectives remove x
 scoreboard objectives remove y
 scoreboard objectives remove z
+scoreboard objectives remove emerald
 scoreboard objectives remove nearby
 scoreboard objectives remove grouped
 scoreboard objectives remove stamina

@@ -61,6 +61,7 @@ scoreboard objectives add join trigger "中途加入"
 scoreboard objectives add shocked dummy "電擊"
 scoreboard objectives add duel_cd dummy "對決冷卻"
 
+scoreboard objectives add emerald dummy "身上綠寶石數量"
 scoreboard objectives add score dummy "分數"
 scoreboard objectives add nearby dummy "鄰近隊友數"
 scoreboard objectives add grouped dummy "小隊隊友數"

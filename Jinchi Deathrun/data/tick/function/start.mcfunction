@@ -11,7 +11,7 @@ execute as @a[scores = {death = 1}] at @s run function game:death
 execute unless score 勝負已分 gamecore matches 1 as @a[team = !spec] at @s run function game:border
 execute as @a[scores = {join = 1..}] run function game:join
 effect give @a saturation infinite 0 true
-execute as @a[team = !spec] store result score @s score run data get entity @s Inventory[{id:"minecraft:emerald"}].count 10
+execute as @a[team = !spec] run function game:emerald
 
 #---個人分數actionbar---
 #---準備階段預告---
