@@ -13,8 +13,7 @@ effect give @a saturation infinite 0 true
 execute as @a[team = !spec] run function game:emerald
 function game:refresh_scbd
 
-#---個人分數actionbar---
-#---準備階段預告---
+#---準備階段actionbar：預告進場個人分數---
 execute if score 準備階段 gamecore matches 1 as @a[team = !spec] run title @s actionbar [{text:"進場時個人分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}}]
 
 #---遊戲階段跑start
