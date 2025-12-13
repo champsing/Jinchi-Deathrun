@@ -76,9 +76,9 @@ tag @a[tag = items.convention.tped] remove items.convention.tped
 tag @a[tag = items.interchange.tped] remove items.interchange.tped
 kill @e[tag = items.interchange_marker]
 
-function items:freeze_single/stop_search
-function items:remove_invalid/stop_search
-function items:stamina_robbery/stop_search
+execute as @a[tag = items.freeze_single.user] run function items:freeze_single/stop_search
+execute as @a[tag = items.remove_invalid.remover] run function items:remove_invalid/stop_search
+execute as @a[tag = items.stamina_robbery.robber] run function items:stamina_robbery/stop_search
 
 bossbar set minecraft:prepare players
 bossbar set countdown players
