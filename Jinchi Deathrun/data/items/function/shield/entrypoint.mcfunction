@@ -10,4 +10,4 @@ item replace entity @s armor.head with shield[minecraft:banner_patterns=[{color:
 
 #---排程恢復原狀---
 scoreboard players set @s shield 10
-tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"你使用了"},{text:"護盾",color:gold},{text:" 無法被發起對戰"},{text:"10秒",color:gold}]
+tellraw @s ["",{text:">> ",color:gold},{text:"你使用了"},{text:"護盾",color:gold},{text:" 無法被發起對戰"},{text:"10秒",color:gold}]
