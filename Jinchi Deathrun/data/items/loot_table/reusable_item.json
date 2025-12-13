@@ -742,7 +742,7 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "§7獲得隱形效果30秒。"
+                  "text": "§7獲得隱形效果15秒。"
                 }
               ],
               "mode": "append"

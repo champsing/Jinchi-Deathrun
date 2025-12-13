@@ -6,5 +6,5 @@ execute if predicate items:cloaked run return run tellraw @s ["",{text:">> ",col
 scoreboard players set @s item_cd 10
 scoreboard players add @s total_item 1
 clear @s tinted_glass[custom_data={cloak: true}] 1
-effect give @s invisibility 30 1 true
-tellraw @s ["",{text:">> ",color:gold},{text:"你使用了"},{text:"隱形道具",color:gold},{text:" 獲得隱形效果"},{text:"30秒",color:gold}]
+effect give @s invisibility 15 1 true
+tellraw @s ["",{text:">> ",color:gold},{text:"你使用了"},{text:"隱形道具",color:gold},{text:" 獲得隱形效果"},{text:"15秒",color:gold}]
