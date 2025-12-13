@@ -1,9 +1,9 @@
 # 解除無效狀態：史萊姆球
 advancement revoke @s only items:clear_invalid
-execute if score @s item_cd matches 1.. run return run function items:cooldown
+execute if score @s item_cd matches 1.. run return fail
 execute if entity @s[tag = !invalid] run return run tellraw @s ["",{text:">> ",color:gold},{text: "你目前不能解除無效狀態",color: red}]
 
-scoreboard players set @s item_cd 5
+scoreboard players set @s item_cd 10
 scoreboard players add @s total_item 1
 clear @s[tag = invalid] slime_ball[custom_data={"invalid": false}] 1
 tag @s remove invalid

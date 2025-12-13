@@ -1,7 +1,7 @@
 # 凍結-單人
 
 advancement revoke @s only items:freeze_single
-execute if score @s item_cd matches 1.. run return run function items:cooldown
+execute if score @s item_cd matches 1.. run return fail
 
 scoreboard players add @s total_item 1
 execute anchored eyes positioned ^ ^ ^1 run function items:freeze_single/search

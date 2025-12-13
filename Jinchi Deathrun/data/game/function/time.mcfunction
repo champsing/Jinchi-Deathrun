@@ -21,9 +21,6 @@ execute as @a[predicate=items:has_shield] if score @s shield matches 0 run funct
 #---計時---
 execute unless score 延長賽 gamecore matches 1 unless score 勝負已分 gamecore matches 1 unless score 準備階段 gamecore matches 1 run scoreboard players remove 剩餘時間 gamecore 1
 
-#---消道具冷卻---
-execute unless score 勝負已分 gamecore matches 1 as @a[scores = {item_cd = 1..}] run scoreboard players remove @s item_cd 1
-
 #---bossbar sync---
 execute unless score 延長賽 gamecore matches 1 store result bossbar countdown value run scoreboard players get 剩餘時間 gamecore
 execute unless score 延長賽 gamecore matches 1 unless score 勝負已分 gamecore matches 1 run bossbar set countdown name [{text:"剩餘時間： "},{score:{name: "剩餘時間",objective: "gamecore"},color: gold},{text:"秒"}]

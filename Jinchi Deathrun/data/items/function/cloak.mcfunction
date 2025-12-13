@@ -1,9 +1,9 @@
 # 隱形：遮光玻璃
 advancement revoke @s only items:cloak
-execute if score @s item_cd matches 1.. run return run function items:cooldown
+execute if score @s item_cd matches 1.. run return fail
 execute if predicate items:cloaked run return run tellraw @s ["",{text:">> ",color:gold},{text: "你目前已是隱形狀態",color: red}]
 
-scoreboard players set @s item_cd 5
+scoreboard players set @s item_cd 10
 scoreboard players add @s total_item 1
 clear @s tinted_glass[custom_data={cloak: true}] 1
 effect give @s invisibility 30 1 true

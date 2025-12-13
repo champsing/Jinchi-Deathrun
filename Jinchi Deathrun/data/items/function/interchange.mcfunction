@@ -1,9 +1,9 @@
 # 互換：回生羅盤
 # at: Server
 advancement revoke @s only items:interchange
-execute if score @s item_cd matches 1.. run return run function items:cooldown
+execute if score @s item_cd matches 1.. run return fail
 
-scoreboard players set @s item_cd 5
+scoreboard players set @s item_cd 10
 scoreboard players add @s total_item 1
 clear @s recovery_compass[custom_data={interchange: true}] 1
 tag @s add items.interchange

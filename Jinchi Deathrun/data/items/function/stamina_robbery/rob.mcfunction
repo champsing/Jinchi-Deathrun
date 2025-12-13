@@ -4,7 +4,7 @@ scoreboard players remove @a[tag = items.stamina_robbery.robbed] stamina 50
 
 clear @s player_head[custom_data={stamina: "robbery"}] 1
 
-scoreboard players set @s item_cd 5
+scoreboard players set @s item_cd 10
 
 tellraw @s ["",{"text":">> ","color":"gold"},{"text":"你已經成功奪取"},{"selector":"@a[tag = items.stamina_robbery.robbed]","color": "gold", "bold": true},{"text":" 50 點體力"}]
 tellraw @a[tag = items.stamina_robbery.robbed] ["",{"text":">> ","color":"gold"},{"selector":"@s","color":"gold"},{"text":"對你使用了"},{"text":"體力流失","color": "gold", "bold": true},{"text":"，奪取了你"},{"text":" 50 點體力","color": "gold", "bold": true}]

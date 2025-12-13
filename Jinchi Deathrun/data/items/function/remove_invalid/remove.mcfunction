@@ -2,7 +2,7 @@ tag @a[tag = !items.remove_invalid.remover,dx = 0, dy = 0, dz = 0, team = !spec]
 
 execute if entity @a[tag = items.remove_invalid.removed, tag = !invalid] run return run function items:remove_invalid/not_in_invalid
 
-scoreboard players set @s item_cd 5
+scoreboard players set @s item_cd 10
 clear @s shears[custom_data={"remove_invalid": true}] 1
 tag @a[tag = items.remove_invalid.removed] remove invalid
 

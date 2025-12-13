@@ -1,9 +1,9 @@
 # 解除詛咒：附魔台
 advancement revoke @s only items:clear_curse
-execute if score @s item_cd matches 1.. run return run function items:cooldown
+execute if score @s item_cd matches 1.. run return fail
 execute unless entity @s[tag = frozen] unless predicate items:glowing unless entity @s[tag = shocked] run return fail
 
-scoreboard players set @s item_cd 5
+scoreboard players set @s item_cd 10
 scoreboard players add @s total_item 1
 clear @s enchanting_table[custom_data={clear_curse: true}] 1
 effect clear @s slowness
