@@ -1,6 +1,6 @@
 # 凍結-全體
 advancement revoke @s only items:freeze_all
-execute if score @s item_cd matches 1.. run return fail
+execute if score @s item_cd matches 1.. run return run function items:cooldown
 execute if entity @s[team = blue] unless entity @a[team = red, tag = !frozen] run return run tellraw @s ["",{text:">> ",color:gold},{text: "敵方全體已被凍結",color: red}]
 execute if entity @s[team = red] unless entity @a[team = blue, tag = !frozen] run return run tellraw @s ["",{text:">> ",color:gold},{text: "敵方全體已被凍結",color: red}]
 

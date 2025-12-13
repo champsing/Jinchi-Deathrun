@@ -1,6 +1,6 @@
 # 解除無效狀態：史萊姆球
 advancement revoke @s only items:clear_invalid
-execute if score @s item_cd matches 1.. run return fail
+execute if score @s item_cd matches 1.. run return run function items:cooldown
 execute if entity @s[tag = !invalid] run return run tellraw @s ["",{text:">> ",color:gold},{text: "你目前不能解除無效狀態",color: red}]
 
 scoreboard players set @s item_cd 5

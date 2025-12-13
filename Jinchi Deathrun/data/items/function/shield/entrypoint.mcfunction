@@ -1,6 +1,6 @@
 # 護盾：盾牌
 advancement revoke @s only items:shield
-execute if score @s item_cd matches 1.. run return fail
+execute if score @s item_cd matches 1.. run return run function items:cooldown
 execute if predicate items:has_shield run return run tellraw @s ["",{text:">> ",color:gold},{text: "你目前已有護盾效果",color: red}]
 
 scoreboard players set @s item_cd 5

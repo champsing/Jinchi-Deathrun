@@ -1,6 +1,6 @@
 # 召集：不死圖騰
 advancement revoke @s only items:convention
-execute if score @s item_cd matches 1.. run return fail
+execute if score @s item_cd matches 1.. run return run function items:cooldown
 
 scoreboard players set @s item_cd 5
 scoreboard players add @s total_item 1

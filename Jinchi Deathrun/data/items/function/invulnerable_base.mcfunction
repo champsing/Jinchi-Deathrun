@@ -1,6 +1,6 @@
 # 無敵陣地：基岩
 advancement revoke @s only items:invulnerable_base
-execute if score @s item_cd matches 1.. run return fail
+execute if score @s item_cd matches 1.. run return run function items:cooldown
 execute if entity @n[tag = red_base, tag = invulnerable, type = interaction] run return run tellraw @s[team = red] ["",{text:">> ",color:gold},{text: "我方陣地已是無敵狀態",color: red}]
 execute if entity @n[tag = blue_base, tag = invulnerable, type = interaction] run return run tellraw @s[team = blue] ["",{text:">> ",color:gold},{text: "我方陣地已是無敵狀態",color: red}]
 

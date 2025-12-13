@@ -1,0 +1,1 @@
+tellraw @s[team = blue] ["",{text:">> ",color:gold},{text: "你的道具正在冷卻",color: red}]
