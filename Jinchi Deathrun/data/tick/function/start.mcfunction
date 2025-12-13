@@ -2,7 +2,7 @@
 advancement revoke @a from settings:root
 advancement revoke @a only edit:edit
 
-#---只要模式 == 3就常駐運行---
+#---只要mode == 3就常駐運行---
 execute as @a[team = !spec] at @s if score 倒數 gamecore matches 0..5 run function game:prepare/teleport
 execute as @a[tag = !playing] run function start:spectate
 execute as @a[team = spec] at @s if entity @s[y = -120,dy = 40] run tp @s @n[tag = center]
@@ -18,7 +18,7 @@ function game:refresh_scbd
 execute if score 準備階段 gamecore matches 1 as @a[team = !spec] run title @s actionbar [{text:"進場時個人分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}}]
 
 #---遊戲階段跑start
-execute unless score 準備階段 gamecore matches 1 run function tick:game/start
+execute unless score 準備階段 gamecore matches 1 run function #tick:start
 
 #---任務---
 # execute if score 任務倒數 gamecore matches 1.. run function event:tick
