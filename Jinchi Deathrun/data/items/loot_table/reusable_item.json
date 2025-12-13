@@ -1,794 +1,829 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:glowstone",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
                 {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:glowstone",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l全體發光"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7所有敵隊玩家發光10秒。"
-                                },
-                                {
-                                    "text": "§c敵隊玩家均已發光時不得使用。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "glowing": "all"
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:glowstone_dust",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l單人發光"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7隨機一位敵隊玩家發光10秒。"
-                                },
-                                {
-                                    "text": "§c敵隊玩家均已發光時不得使用。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "glowing": "single"
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:trident",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l三叉戟"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7一把三叉戟，可以投擲 1 次。"
-                                },
-                                {
-                                    "text": "§7可用於遠程攻擊其他玩家發動對戰；也可用於近戰。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_damage": 2,
-                                "minecraft:max_stack_size": 1
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:packed_ice",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l單人凍結"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7使用後§6目標玩家§7立即無法移動 10 秒。"
-                                },
-                                {
-                                    "text": "§c該玩家已被凍結、敵隊玩家均已被凍結時不得使用。"
-                                },
-                                {
-                                    "text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。",
-                                    "color": "gray",
-                                    "italic": true
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "freeze": "single"
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:blue_ice",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l全體凍結"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7使用後全體敵隊玩家無法移動10秒。"
-                                },
-                                {
-                                    "text": "§c敵隊玩家均已被凍結時不得使用。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "freeze": "all"
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:barrier",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l無效狀態"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7強制進入無效狀態。"
-                                },
-                                {
-                                    "text": "§c自身處於無效狀態時不得使用。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "invalid": true
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:rabbit_foot",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l狂奔"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7獲得加速II 30秒。"
-                                },
-                                {
-                                    "text": "§c不受體力系統 30% 以下限制，"
-                                },
-                                {
-                                    "text": "§c但自身處於狂奔狀態時不得使用。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "dash": true
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:slime_ball",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l解除無效狀態"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7原地解除無效狀態。"
-                                },
-                                {
-                                    "text": "§c自身不處於無效狀態時不得使用。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "invalid": false
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:totem_of_undying",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l召集"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7隨機傳送一個隊友過來。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "convention": true
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:recovery_compass",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l互換"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7與隨機一個隊友互換位置。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "interchange": true
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:bedrock",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l無敵陣地"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7己方陣地20秒無法攻陣。"
-                                },
-                                {
-                                    "text": "§c己方陣地處於無敵狀態時不得使用。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "invulnerable_base": true
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:enchanting_table",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l解除詛咒"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7消除所有負面狀態效果。"
-                                },
-                                {
-                                    "text": "§c自身沒有以下任一效果時不得使用："
-                                },
-                                {
-                                    "text": "§c凍結、發光、緩速"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "clear_curse": true
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:player_head",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l體力稍滿"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7立即恢復 20 點體力。"
-                                },
-                                {
-                                    "text": "§c自身體力值滿時不得使用。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "stamina": "20"
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                },
-                                "minecraft:profile": {
-                                    "id": [
-                                        -774494379, -66239193, -1419902744,
-                                        -1507673795
-                                    ],
-                                    "properties": [
-                                        {
-                                            "name": "textures",
-                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMzZDdjMGI3MmQzYjU3Y2VlYzI4OWExOGE1YjEyZWM2YjUwNGRmN2U4ZTEwYmFjNGY5ODVmY2JlOWZhY2JkNiJ9fX0="
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:player_head",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l體力全滿"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7立即恢復 100% 體力。"
-                                },
-                                {
-                                    "text": "§c體力值滿時不得使用。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "stamina": "100"
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                },
-                                "minecraft:profile": {
-                                    "id": [
-                                        -500658506, -911720021, -1558802643,
-                                        111598278
-                                    ],
-                                    "properties": [
-                                        {
-                                            "name": "textures",
-                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTM0Yzg3M2RmNDY1ZTIwMzQ5MThhMWUxZDkxNjc1Njc5YTU4MjQzOTJlZTMzZDI0OGY0ZDg1NzgzOWY0ZTUxIn19fQ=="
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:player_head",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l體力下降"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7使用後§6目標玩家§7立即失去 50 點體力。"
-                                },
-                                {
-                                    "text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。",
-                                    "color": "gray",
-                                    "italic": true
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "stamina": "robbery"
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                },
-                                "minecraft:profile": {
-                                    "id": [
-                                        1711147465, -1634513950, -1877541374,
-                                        394962083
-                                    ],
-                                    "properties": [
-                                        {
-                                            "name": "textures",
-                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjUzYzE1NTliZjEyNTI1Y2E5Y2RlYWYxNDMxMTI2OGZiMzlhZDM2M2VhYjhjYTNiODUyNmQ5YjQwYTJjNzU4ZCJ9fX0="
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:tinted_glass",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l隱形"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7獲得隱形效果30秒。"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "cloak": true
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "minecraft:shield",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": 1
-                        },
-                        {
-                            "function": "set_name",
-                            "name": [
-                                {
-                                    "text": "§b§l護盾"
-                                }
-                            ]
-                        },
-                        {
-                            "function": "set_lore",
-                            "lore": [
-                                {
-                                    "text": "§7自身無法被發起對戰 10 秒。"
-                                },
-                                {
-                                    "text": "護盾效果期間仍可攻陣、發起對戰、進入/解除無效狀態等。",
-                                    "color": "light_purple",
-                                    "italic": true
-                                },
-                                {
-                                    "text": "自身擁有護盾狀態時不得使用。",
-                                    "color": "red"
-                                },
-                                {
-                                    "text": "護盾無法抵擋陣殺效果。",
-                                    "color": "red"
-                                }
-                            ],
-                            "mode": "append"
-                        },
-                        {
-                            "function": "set_components",
-                            "components": {
-                                "minecraft:banner_patterns": [
-                                    {
-                                        "color": "red",
-                                        "pattern": "stripe_downleft"
-                                    }
-                                ],
-                                "minecraft:tooltip_display": {
-                                    "hidden_components": ["banner_patterns"]
-                                },
-                                "minecraft:max_stack_size": 1,
-                                "minecraft:custom_data": {
-                                    "shield": true
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 99999
-                                }
-                            }
-                        }
-                    ]
+                  "text": "§b§l全體發光"
                 }
-            ]
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7所有敵隊玩家發光10秒。"
+                },
+                {
+                  "text": "§c敵隊玩家均已發光時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "glowing": "all"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:glowstone_dust",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l單人發光"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7隨機一位敵隊玩家發光10秒。"
+                },
+                {
+                  "text": "§c敵隊玩家均已發光時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "glowing": "single"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l三叉戟"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7一把三叉戟，可以投擲 1 次。"
+                },
+                {
+                  "text": "§7可用於遠程攻擊其他玩家發動對戰；也可用於近戰。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_damage": 2,
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:packed_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l單人凍結"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7使用後§6目標玩家§7立即無法移動 10 秒。"
+                },
+                {
+                  "text": "§c該玩家已被凍結、敵隊玩家均已被凍結時不得使用。"
+                },
+                {
+                  "text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。",
+                  "color": "gray",
+                  "italic": true
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "freeze": "single"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:blue_ice",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l全體凍結"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7使用後全體敵隊玩家無法移動10秒。"
+                },
+                {
+                  "text": "§c敵隊玩家均已被凍結時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "freeze": "all"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:barrier",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l無效狀態"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7強制進入無效狀態。"
+                },
+                {
+                  "text": "§c自身處於無效狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "invalid": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:rabbit_foot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l狂奔"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7獲得加速II 30秒。"
+                },
+                {
+                  "text": "§c不受體力系統 30% 以下限制，"
+                },
+                {
+                  "text": "§c但自身處於狂奔狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "dash": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:slime_ball",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l解除無效狀態"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7原地解除無效狀態。"
+                },
+                {
+                  "text": "§c自身不處於無效狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "invalid": false
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:shears",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§e移除§r§b§l無效狀態"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                { "text": "§7使用後§6目標玩家§7立即解除無效狀態。" },
+                { "text": "§c目標玩家非處於無效狀態時不得使用。" },
+                {
+                  "text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。",
+                  "color": "gray",
+                  "italic": true
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "remove_invalid": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l召集"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7隨機傳送一個隊友過來。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "convention": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:recovery_compass",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l互換"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7與隨機一個隊友互換位置。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "interchange": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:bedrock",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l無敵陣地"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7己方陣地20秒無法攻陣。"
+                },
+                {
+                  "text": "§c己方陣地處於無敵狀態時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "invulnerable_base": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:enchanting_table",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l解除詛咒"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7消除所有負面狀態效果。"
+                },
+                {
+                  "text": "§c自身沒有以下任一效果時不得使用："
+                },
+                {
+                  "text": "§c凍結、發光、緩速"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "clear_curse": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l體力稍滿"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7立即恢復 20 點體力。"
+                },
+                {
+                  "text": "§c自身體力值滿時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "stamina": "20"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                },
+                "minecraft:profile": {
+                  "id": [-774494379, -66239193, -1419902744, -1507673795],
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmMzZDdjMGI3MmQzYjU3Y2VlYzI4OWExOGE1YjEyZWM2YjUwNGRmN2U4ZTEwYmFjNGY5ODVmY2JlOWZhY2JkNiJ9fX0="
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l體力全滿"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7立即恢復 100% 體力。"
+                },
+                {
+                  "text": "§c體力值滿時不得使用。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "stamina": "100"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                },
+                "minecraft:profile": {
+                  "id": [-500658506, -911720021, -1558802643, 111598278],
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTM0Yzg3M2RmNDY1ZTIwMzQ5MThhMWUxZDkxNjc1Njc5YTU4MjQzOTJlZTMzZDI0OGY0ZDg1NzgzOWY0ZTUxIn19fQ=="
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l體力下降"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7使用後§6目標玩家§7立即失去 50 點體力。"
+                },
+                {
+                  "text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。",
+                  "color": "gray",
+                  "italic": true
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "stamina": "robbery"
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                },
+                "minecraft:profile": {
+                  "id": [1711147465, -1634513950, -1877541374, 394962083],
+                  "properties": [
+                    {
+                      "name": "textures",
+                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjUzYzE1NTliZjEyNTI1Y2E5Y2RlYWYxNDMxMTI2OGZiMzlhZDM2M2VhYjhjYTNiODUyNmQ5YjQwYTJjNzU4ZCJ9fX0="
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:tinted_glass",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l隱形"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7獲得隱形效果30秒。"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "cloak": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "text": "§b§l護盾"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "§7自身無法被發起對戰 10 秒。"
+                },
+                {
+                  "text": "護盾效果期間仍可攻陣、發起對戰、進入/解除無效狀態等。",
+                  "color": "light_purple",
+                  "italic": true
+                },
+                {
+                  "text": "自身擁有護盾狀態時不得使用。",
+                  "color": "red"
+                },
+                {
+                  "text": "護盾無法抵擋陣殺效果。",
+                  "color": "red"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:banner_patterns": [
+                  {
+                    "color": "red",
+                    "pattern": "stripe_downleft"
+                  }
+                ],
+                "minecraft:tooltip_display": {
+                  "hidden_components": ["banner_patterns"]
+                },
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {
+                  "shield": true
+                },
+                "minecraft:consumable": {
+                  "consume_seconds": 99999
+                }
+              }
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
