@@ -10,7 +10,7 @@ execute if score @a[tag = attack , limit = 1] duel_cd matches 1.. run return run
 
 tag @s add hurt
 
-execute unless score 先手優勢 gamecore matches 1 run function duel:first_blood
+execute unless score 先手優勢 gamecore matches 1 run tag @a[tag=attack] add duel.first_blood
 
 function duel:check
 

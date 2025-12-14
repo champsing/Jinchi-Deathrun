@@ -1,1 +1,0 @@
-tag @a[tag=attack] add duel.first_blood
