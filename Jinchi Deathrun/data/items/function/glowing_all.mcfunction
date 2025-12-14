@@ -9,4 +9,4 @@ scoreboard players add @s total_item 1
 clear @s glowstone[custom_data={glowing: "all"}] 1
 execute if entity @s[team = red] run effect give @a[team = blue, predicate=!items:glowing] glowing 15 0 true
 execute if entity @s[team = blue] run effect give @a[team = red, predicate=!items:glowing] glowing 15 0 true
-tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"使用了"},{text:"發光道具",color:gold},{text:" 所有敵方玩家發光"},{text:"15秒",color:gold}]
+tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"使用了"},{text:"全體發光",color:gold},{text:" 所有敵方玩家發光"},{text:"15秒",color:gold}]
