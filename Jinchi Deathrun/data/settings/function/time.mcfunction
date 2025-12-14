@@ -16,9 +16,9 @@ execute if entity @s[advancements = {settings:interact/time = true}] run scorebo
 execute if entity @s[advancements = {settings:attack/time = true}] run scoreboard players remove 遊戲時間 menu 300
 
 #---超過範圍---
-# min 15分鐘 max 2小時
-execute if score 遊戲時間 menu matches 1500.. run scoreboard players set 遊戲時間 menu 600
-execute if score 遊戲時間 menu matches ..300 run scoreboard players set 遊戲時間 menu 1200
+# min 10分鐘 max 1小時
+execute if score 遊戲時間 menu matches 3900.. run scoreboard players set 遊戲時間 menu 600
+execute if score 遊戲時間 menu matches ..300 run scoreboard players set 遊戲時間 menu 3600
 scoreboard players operation 遊戲時間分鐘 system = 遊戲時間 menu
 scoreboard players operation 遊戲時間分鐘 system /= 一分鐘 readonly
 #---結果---
