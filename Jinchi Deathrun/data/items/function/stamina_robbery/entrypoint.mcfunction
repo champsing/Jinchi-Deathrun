@@ -1,4 +1,4 @@
-# 體力下降：無限頭顱
+# 體力流失：無限頭顱
 advancement revoke @s only items:stamina_robbery
 execute if score @s item_cd matches 1.. run return fail
 
