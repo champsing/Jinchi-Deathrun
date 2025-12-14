@@ -101,11 +101,11 @@ scoreboard players set 一半 readonly 2
 scoreboard players set 十倍 readonly 10
 scoreboard players set 一分鐘 readonly 60
 
-scoreboard players set 遊戲時間分鐘 system 15
 scoreboard players set 遊戲模式 menu 99999
 scoreboard players display numberformat 遊戲模式 menu fixed {text:"對戰",color:"#ac75b9",bold:true}
 scoreboard players set 初始分數 menu 1000
-scoreboard players set 目標分數 menu 3000
-scoreboard players set 遊戲時間 menu 900
+scoreboard players set 目標分數 menu 4000
+scoreboard players set 遊戲時間 menu 600
+scoreboard players set 遊戲時間分鐘 system 10
 
 scoreboard players operation 本地 version = 包 version
