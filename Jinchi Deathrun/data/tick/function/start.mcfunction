@@ -11,7 +11,6 @@ execute unless score 勝負已分 gamecore matches 1 as @a[team = !spec] at @s r
 execute as @a[scores = {join = 1..}] run function game:join
 effect give @a saturation infinite 0 true
 execute as @a[team = !spec] run function game:emerald
-function game:refresh_scbd
 
 #---準備階段actionbar：預告進場個人分數---
 execute if score 準備階段 gamecore matches 1 as @a[team = !spec] run title @s actionbar [{text:"進場時個人分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}}]

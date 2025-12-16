@@ -53,7 +53,7 @@ tellraw @a ["",{text:"-----------------------------------------\n",bold:true,col
 tellraw @a [{text:"紅隊分數: ",color:red},{score:{name:"紅隊分數",objective:"gameinfo"},color:red},{text:"\n藍隊分數: ",color:"blue"},{score:{name:"藍隊分數",objective:"gameinfo"},color:"blue"}]
 tellraw @a [{text:"-----------------------------------------\n",bold:true,color:gold}]
 
-tellraw @a [{text:"大富豪家: ",color:aqua,hover_event:{action:"show_text", value:"個人分數最高的玩家。"}},{selector:"@a[scores = {top_score = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_score = 0}]",objective:score},color:aqua},{text:")",color:aqua}]
+tellraw @a [{text:"大富豪家: ",color:aqua,hover_event:{action:"show_text", value:"個人加分最多的玩家。"}},{selector:"@a[scores = {top_score = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_score = 0}]",objective:score},color:aqua},{text:")",color:aqua}]
 
 tellraw @a [{text:"對戰好手: ",color:light_purple,hover_event:{action:"show_text", value:"對戰次數最多的玩家。"}},{selector:"@a[scores = {top_duel = 0}]"},{text:" (",color:aqua},{score:{name:"@p[scores = {top_duel = 0}]",objective:"total_duel"},color:aqua},{text:")",color:aqua}]
 
