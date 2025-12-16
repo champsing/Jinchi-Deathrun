@@ -18,6 +18,7 @@ scoreboard players operation 藍隊分數 gameinfo = 初始分數 menu
 scoreboard players reset 已準備人數 gameinfo
 scoreboard players reset 初始分數 gameinfo
 scoreboard players reset 準備階段 gamecore
+scoreboard players reset 倒數 gamecore
 
 #---給大家大跑棒棒
 give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{text:"§c§l腎上腺素",italic: false}], lore= [{text:"§7在主手時移動速度增快為1.7倍。",italic: false},{text:"§c體力低於 30% 時不得使用。",italic: false}]]
