@@ -6,7 +6,5 @@ execute if entity @s[team = red] run tag @a[team = red, distance = ..5] add minu
 execute if entity @s[team = blue] run tag @a[team = blue, distance = ..5] add minus_score
 
 playsound entity.breeze.deflect ambient @a[tag = minus_score] ~ ~ ~ 10 1 1
-execute if entity @a[tag = add_score, tag = duel.first_blood] run tellraw @a[tag = minus_score] ["",{text:">> ",color:gold},{text:"你與"},{selector:"@a[tag = add_score]"},{text:"對戰失敗",color:red},{text:"，對方獲得先手優勢，陣地增加"},{text:"500",color:gold},{text:"分"}]
-tellraw @a[tag = minus_score] ["",{text:">> ",color:gold},{text:"你與"},{selector:"@a[tag = add_score]"},{text:"對戰失敗",color:red},{text:"，對方陣地增加"},{text:"50",color:gold},{text:"分"}]
 
 scoreboard players add @a[tag = minus_score] total_duel 1
