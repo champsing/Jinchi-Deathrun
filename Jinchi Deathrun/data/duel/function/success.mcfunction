@@ -5,3 +5,6 @@
 execute if score @s team_score > @n[tag = attack] team_score run function duel:win
 execute if score @s team_score < @n[tag = attack] team_score run function duel:lose
 execute if score @s team_score = @n[tag = attack] team_score run function duel:tie
+
+tag @a[tag = minus_score] remove minus_score
+tag @a[tag = add_score] remove add_score

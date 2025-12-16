@@ -17,5 +17,4 @@ tellraw @a[tag = add_score, tag = !duel.first_blood] ["",{text:">> ",color:gold}
 tellraw @a[tag = add_score, tag = duel.first_blood] ["",{text:">> ",color:gold},{text:"你與"},{selector:"@a[tag = minus_score]"},{text:"對戰勝利",color:green}]
 tellraw @a[tag = add_score, tag = duel.first_blood] ["",{text:">> ",color:gold},{text:"由於你是本場"},{text:"第一位發起對戰並勝利",color:green},{text:"的人，己方陣地獲得先手優勢"},{text:"500",color:gold},{text:"分"}]
 
-tag @a[tag = add_score] remove add_score
 function duel:invalid
