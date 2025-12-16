@@ -24,6 +24,10 @@
               "function": "set_lore",
               "lore": [
                 {
+                  "text": "隊伍型",
+                  "color": "dark_aqua"
+                },
+                {
                   "text": "§7所有敵隊玩家發光10秒。"
                 },
                 {
@@ -66,6 +70,10 @@
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "隊伍型",
+                  "color": "dark_aqua"
+                },
                 {
                   "text": "§7隨機一位敵隊玩家發光10秒。"
                 },
@@ -110,6 +118,10 @@
               "function": "set_lore",
               "lore": [
                 {
+                  "text": "瞄準型",
+                  "color": "#db438f"
+                },
+                {
                   "text": "§7一把三叉戟，可以投擲 1 次。"
                 },
                 {
@@ -147,6 +159,10 @@
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "瞄準型",
+                  "color": "#db438f"
+                },
                 {
                   "text": "§7使用後§6目標玩家§7立即無法移動 10 秒。"
                 },
@@ -196,6 +212,10 @@
               "function": "set_lore",
               "lore": [
                 {
+                  "text": "隊伍型",
+                  "color": "dark_aqua"
+                },
+                {
                   "text": "§7使用後全體敵隊玩家無法移動10秒。"
                 },
                 {
@@ -239,6 +259,10 @@
               "function": "set_lore",
               "lore": [
                 {
+                  "text": "自身型",
+                  "color": "dark_aqua"
+                },
+                {
                   "text": "§7強制自身進入無效狀態。"
                 },
                 {
@@ -281,6 +305,10 @@
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "自身型",
+                  "color": "dark_aqua"
+                },
                 {
                   "text": "§7獲得加速II 30秒。"
                 },
@@ -328,6 +356,10 @@
               "function": "set_lore",
               "lore": [
                 {
+                  "text": "自身型",
+                  "color": "dark_aqua"
+                },
+                {
                   "text": "§7原地解除無效狀態。"
                 },
                 {
@@ -370,6 +402,10 @@
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "瞄準型",
+                  "color": "#db438f"
+                },
                 { "text": "§7使用後§6目標玩家§7立即解除無效狀態。" },
                 { "text": "§c目標玩家非處於無效狀態時不得使用。" },
                 {
@@ -415,6 +451,10 @@
               "function": "set_lore",
               "lore": [
                 {
+                  "text": "隊伍型",
+                  "color": "dark_aqua"
+                },
+                {
                   "text": "§7隨機傳送一個隊友過來。"
                 }
               ],
@@ -455,6 +495,10 @@
               "function": "set_lore",
               "lore": [
                 {
+                  "text": "隊伍型",
+                  "color": "dark_aqua"
+                },
+                {
                   "text": "§7與隨機一個隊友互換位置。"
                 }
               ],
@@ -494,6 +538,10 @@
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "隊伍型",
+                  "color": "dark_aqua"
+                },
                 {
                   "text": "§7己方陣地20秒無法攻陣。"
                 },
@@ -537,6 +585,10 @@
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "自身型",
+                  "color": "dark_aqua"
+                },
                 {
                   "text": "§7消除所有負面狀態效果。"
                 },
@@ -583,6 +635,10 @@
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "自身型",
+                  "color": "dark_aqua"
+                },
                 {
                   "text": "§7立即恢復 20 點體力。"
                 },
@@ -636,6 +692,10 @@
               "function": "set_lore",
               "lore": [
                 {
+                  "text": "自身型",
+                  "color": "dark_aqua"
+                },
+                {
                   "text": "§7立即恢復 100% 體力。"
                 },
                 {
@@ -687,6 +747,10 @@
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "瞄準型",
+                  "color": "#db438f"
+                },
                 {
                   "text": "§7使用後§6目標玩家§7立即失去 50 點體力。"
                 },
@@ -742,6 +806,10 @@
               "function": "set_lore",
               "lore": [
                 {
+                  "text": "自身型",
+                  "color": "dark_aqua"
+                },
+                {
                   "text": "§7獲得隱形效果15秒。"
                 }
               ],
@@ -781,6 +849,10 @@
             {
               "function": "set_lore",
               "lore": [
+                {
+                  "text": "自身型",
+                  "color": "dark_aqua"
+                },
                 {
                   "text": "§7自身無法被發起對戰 10 秒。"
                 },
