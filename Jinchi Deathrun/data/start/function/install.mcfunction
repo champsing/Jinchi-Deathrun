@@ -80,13 +80,14 @@ scoreboard objectives add front_distance dummy "前方距離"
 
 scoreboard objectives add death deathCount "死亡數"
 
-scoreboard objectives add top_score dummy "個人得分最多"
+scoreboard objectives add top_contribution dummy "個人貢獻加分最多"
 scoreboard objectives add top_duel dummy "對戰最多次"
 scoreboard objectives add top_success dummy "成功攻陣最多次"
 scoreboard objectives add top_kill dummy "陣殺最多人"
 scoreboard objectives add top_invalid dummy "無效狀態最多次"
 scoreboard objectives add top_item dummy "道具使用最多次"
 
+scoreboard objectives add total_contribution dummy "總貢獻加分"
 scoreboard objectives add total_duel dummy "總對戰數"
 scoreboard objectives add total_success dummy "總攻陣數"
 scoreboard objectives add total_kill dummy "總陣殺數"

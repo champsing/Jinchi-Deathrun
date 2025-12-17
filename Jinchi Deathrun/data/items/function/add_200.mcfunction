@@ -1,5 +1,6 @@
 execute if entity @s[team = red] run scoreboard players add 紅隊陣地 score 200
 execute if entity @s[team = blue] run scoreboard players add 藍隊陣地 score 200
+scoreboard players add @s total_contribution 200
 
 tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"使用了"},{text:"加分道具",color:gold},{text:" 該隊陣地增加了"},{text:"200分",color:gold}]
 advancement revoke @s only items:add_200

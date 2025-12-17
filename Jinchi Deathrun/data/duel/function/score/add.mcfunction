@@ -9,6 +9,8 @@ execute if entity @s[team = red, tag = !duel.first_blood] run scoreboard players
 execute if entity @s[team = blue, tag = !duel.first_blood] run scoreboard players add 藍隊陣地 score 50
 execute if entity @s[team = red, tag = duel.first_blood] run scoreboard players add 紅隊陣地 score 500
 execute if entity @s[team = blue, tag = duel.first_blood] run scoreboard players add 藍隊陣地 score 500
+execute if entity @s[tag = !duel.first_blood] run scoreboard players add @s total_contribution 50
+execute if entity @s[tag = duel.first_blood] run scoreboard players add @s total_contribution 500
 
 execute if entity @a[tag = add_score, tag = duel.first_blood] run scoreboard players set 先手優勢 gamecore 1
 
