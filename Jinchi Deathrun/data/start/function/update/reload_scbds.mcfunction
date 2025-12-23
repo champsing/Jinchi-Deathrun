@@ -25,7 +25,7 @@ scoreboard objectives remove death
 scoreboard objectives remove front_distance
 
 scoreboard objectives remove top_duel
-scoreboard objectives remove top_score
+scoreboard objectives remove top_contribution
 scoreboard objectives remove top_success
 scoreboard objectives remove top_invalid
 scoreboard objectives remove top_item

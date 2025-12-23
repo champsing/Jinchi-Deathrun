@@ -40,7 +40,7 @@ scoreboard players reset * death
 scoreboard players reset * gameinfo
 scoreboard players reset * gamecore
 scoreboard players reset * score
-scoreboard players reset * top_score
+scoreboard players reset * top_contribution
 scoreboard players reset * top_duel
 scoreboard players reset * top_success
 scoreboard players reset * top_kill
