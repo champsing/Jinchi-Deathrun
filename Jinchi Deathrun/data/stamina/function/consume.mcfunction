@@ -6,6 +6,12 @@ execute unless score 準備階段 gamecore matches 1 if score 操作模式 syste
 execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:lose_stamina/3 run scoreboard players remove @s[team = !spec,level=6..7] stamina 1
 execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:lose_stamina/4 run scoreboard players remove @s[team = !spec,level=8..9] stamina 1
 execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:lose_stamina/5 run scoreboard players remove @s[team = !spec,level = 10] stamina 1
+
+execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:adrenaline if predicate stamina:lose_stamina/1 run scoreboard players remove @s[team = !spec,level = 0..2] stamina 4
+execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:adrenaline if predicate stamina:lose_stamina/2 run scoreboard players remove @s[team = !spec,level = 3..5] stamina 4
+execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:adrenaline if predicate stamina:lose_stamina/3 run scoreboard players remove @s[team = !spec,level=6..7] stamina 4
+execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:adrenaline if predicate stamina:lose_stamina/4 run scoreboard players remove @s[team = !spec,level=8..9] stamina 4
+execute unless score 準備階段 gamecore matches 1 if score 操作模式 system matches 3 if predicate stamina:adrenaline if predicate stamina:lose_stamina/5 run scoreboard players remove @s[team = !spec,level = 10] stamina 4
 execute unless score 勝負已分 gamecore matches 1 run advancement revoke @s only stamina:consume
 
 #---10級以前可獲得經驗。10級經驗總值: 160，第160次獲得1點就會變10級0點---
