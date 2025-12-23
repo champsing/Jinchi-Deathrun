@@ -9,6 +9,8 @@ scoreboard players set 勝負已分 gamecore 1
 schedule clear game:time
 schedule clear stamina:regain
 schedule clear items:treasure/generate_treasure
+schedule clear base:restore_invulnerable/blue
+schedule clear base:restore_invulnerable/red
 
 execute as @a at @n[type = marker, tag = jd.lobby] run spawnpoint @s ~ ~ ~
 

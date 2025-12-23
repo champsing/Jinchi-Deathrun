@@ -2,12 +2,14 @@
 scoreboard objectives add od dummy "其他資料包"
 
 # 刪除 亡國之戰II
+# entrypoint: start:delete
 function start:delete
 team remove gold
 scoreboard objectives remove menu
 function start:uninstall/iterate_versions
 
 # 刪除 監控圍城II
+# entrypoint: system:uninstall
 function system:uninstall
 execute store success score 監控II資料包 od run datapack disable "file/JianKong2.zip"
 
