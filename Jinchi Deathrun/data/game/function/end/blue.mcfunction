@@ -8,3 +8,4 @@ function game:end/end
 effect clear @a[team = red] resistance
 effect give @a[team = blue] resistance 5 5 true
 execute at @a[team = red] run summon lightning_bolt ~ ~ ~
+gamemode spectator @a[team = red]
