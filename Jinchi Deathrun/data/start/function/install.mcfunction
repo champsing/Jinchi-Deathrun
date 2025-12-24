@@ -101,6 +101,7 @@ scoreboard objectives setdisplay sidebar editinfo
 scoreboard players set 一半 readonly 2
 scoreboard players set 十倍 readonly 10
 scoreboard players set 一分鐘 readonly 60
+scoreboard players set 一百 readonly 100
 
 scoreboard players set 遊戲模式 menu 99999
 scoreboard players display numberformat 遊戲模式 menu fixed {text:"對戰",color:"#ac75b9",bold:true}
