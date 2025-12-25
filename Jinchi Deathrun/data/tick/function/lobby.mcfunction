@@ -5,6 +5,8 @@ execute store result score 玩家人數 menu if entity @a[team = !spec]
 execute store result score 紅隊人數 menu if entity @a[team = red]
 execute store result score 藍隊人數 menu if entity @a[team = blue]
 execute store result score 寶箱點數量 menu if entity @e[tag = treasure_point]
+execute store result score 紅隊陣地數量 menu if entity @e[tag = red_base, tag = edit_amst]
+execute store result score 藍隊陣地數量 menu if entity @e[tag = blue_base, tag = edit_amst]
 
 #---這時候非創造模式的玩家不應該操作設定、開始遊戲、進入編輯模式---
 advancement revoke @a[gamemode = !creative] from settings:root
