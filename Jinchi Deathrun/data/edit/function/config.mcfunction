@@ -5,9 +5,9 @@ execute if score 操作模式 system matches 3 run return run tellraw @s ["",{te
 tellraw @s ["",{text: ">> ", color: gold},{text: "場地配置：", bold: true}]
 tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: " 寶箱點 ", color: aqua}, "：", {score: {name:  "寶箱點數量", objective: "menu"}, color: "gold"}, " 個"]
 
-tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: " 紅隊陣地 ", color: red}, "：", {score: {name:  "紅隊陣地數量", objective: "menu"}, color: "gold"}, " 個"]
+tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: " 紅隊陣地 ", color: red}, "：", {score: {name:  "紅隊陣地", objective: "menu"}, color: "gold"}, " 個"]
 
-tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: " 藍隊陣地 ", color: blue}, "：", {score: {name:  "藍隊陣地數量", objective: "menu"}, color: "gold"}, " 個"]
+tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: " 藍隊陣地 ", color: blue}, "：", {score: {name:  "藍隊陣地", objective: "menu"}, color: "gold"}, " 個"]
 
 tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ A點 ]", color: green, click_event: {action: "run_command", command: "/function edit:border/teleport_a"}, hover_event: {action: "show_text", value: "點擊可傳送"}}, "：", {score: {name:  "a_pt", objective: "x"}}, ", ", {score: {name: "a_pt", objective: "y"}}, ", ", {score: {name: "a_pt", objective: "z"}}]
 
