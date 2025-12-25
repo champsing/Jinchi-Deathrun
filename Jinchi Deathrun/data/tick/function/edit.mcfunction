@@ -16,7 +16,13 @@ execute if score 中央點 editinfo matches 0 run scoreboard players display num
 execute if score 中央點 editinfo matches 1 run scoreboard players display numberformat 中央點 editinfo fixed {text:"已設定", color: "green"}
 
 execute as @a if score @s edit_cd matches 1.. run scoreboard players remove @s edit_cd 1
-execute as @a[team = !spec] if score @s item_cd matches 1.. run title @s actionbar [{text:"編輯冷卻: ",bold:true,color:aqua},{score:{name:"@s",objective:item_cd},color:gold},{text:" 刻",color:aqua}]
+execute as @a[team = !spec] if score @s edit_cd matches 50..59 run title @s actionbar [{text:"編輯冷卻: ",bold:true,color:aqua},{text:"◼◼◼◼◼◼",color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 40..49 run title @s actionbar [{text:"編輯冷卻: ",bold:true,color:aqua},{text:"◼◼◼◼◼",color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 30..39 run title @s actionbar [{text:"編輯冷卻: ",bold:true,color:aqua},{text:"◼◼◼◼",color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 20..29 run title @s actionbar [{text:"編輯冷卻: ",bold:true,color:aqua},{text:"◼◼◼",color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 10..19 run title @s actionbar [{text:"編輯冷卻: ",bold:true,color:aqua},{text:"◼◼",color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 2..9 run title @s actionbar [{text:"編輯冷卻: ",bold:true,color:aqua},{text:"◼",color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 1 run title @s actionbar [{text:"編輯冷卻: ",bold:true,color:aqua},{text:"✓", color: green, bold: true}]
 
 #---這時候任何人都不該操作設定、開始遊戲---
 advancement revoke @a from settings:root
