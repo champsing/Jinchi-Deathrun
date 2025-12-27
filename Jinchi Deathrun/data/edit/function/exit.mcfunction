@@ -10,4 +10,4 @@ tellraw @a ""
 tellraw @a ["",{text:">> ",color:gold},{text: "[檢視場地配置]", bold: true, color: light_purple, underlined: true, click_event: {action: "run_command", command: "/function edit:config"}}," ",{text: "[檢視寶箱點位置]", bold: true, color: dark_aqua, underlined: true, click_event: {action: "run_command", command: "/function settings:treasure/show"}}]
 execute as @e[type = armor_stand, tag = edit_amst] run data merge entity @s {Glowing:0b,CustomNameVisible:0b,Marker:1b,Invisible:1b}
 scoreboard players set 操作模式 system 2
-schedule clear edit:actionbar
+function edit:actionbar

@@ -46,6 +46,7 @@ scoreboard players reset * top_success
 scoreboard players reset * top_kill
 scoreboard players reset * top_invalid
 scoreboard players reset * top_item
+scoreboard players reset * total_contribution
 scoreboard players reset * total_duel
 scoreboard players reset * total_success
 scoreboard players reset * total_kill
@@ -60,7 +61,6 @@ scoreboard players reset * frozen
 scoreboard players reset * shield
 scoreboard players reset * front_distance
 #(to be added...)
-
 
 execute as @a[tag = frozen] run function items:freeze/restore
 execute as @a[tag = shocked] run function duel:shock/restore
