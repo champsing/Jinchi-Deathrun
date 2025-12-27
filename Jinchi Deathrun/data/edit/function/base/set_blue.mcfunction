@@ -1,5 +1,6 @@
 advancement revoke @s only edit:base/blue
 execute if score @s edit_cd matches 1.. run return fail
+execute if score 藍隊陣地 editinfo matches 5 run return run tellraw @s ["",{text: ">> ", color: gold},{text: "您最多僅可設置5個藍隊陣地", color: red}]
 scoreboard players add @s edit_cd 60
 execute at @s run summon armor_stand ~ ~ ~ {DisabledSlots: 16191,Tags:['blue_base','edit_amst'],Team: blue,CustomName:[{text:"藍隊陣地",color: blue}],CustomNameVisible: true, Glowing: true, NoGravity: true, NoBasePlate: true}
 function edit:align
