@@ -36,5 +36,11 @@
     "lobby.creators.gorden": "狗燈 gorden111",
     "lobby.creators.cpk": "CPK CPK201314",
     "lobby.creators.ac": "AC Alex_Cai",
-    "lobby.creators.lafan": "拉凡 Allosaurus"
+    "lobby.creators.lafan": "拉凡 Allosaurus",
+    "edit.function.base.set_red.1": "紅隊陣地",
+    "edit.function.base.set_blue.1": "藍隊陣地",
+    "edit.function.center.set.0": "中央點",
+    "edit.function.treasure_point.set.0": "寶箱點",
+    "edit.function.border.set_a.0": "A點",
+    "edit.function.border.set_b.0": "B點"
 }
