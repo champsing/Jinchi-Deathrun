@@ -1,7 +1,7 @@
-execute unless score A點 editinfo matches 1 run return run tellraw @s ["",{text:">> ",color: gold},{text:"無法退出"},{text:"編輯模式",color:gold},{text:", 請指定"},{text:"A點",color:gold}]
-execute unless score B點 editinfo matches 1 run return run tellraw @s ["",{text:">> ",color: gold},{text:"無法退出"},{text:"編輯模式",color:gold},{text:", 請指定"},{text:"B點",color:gold}]
-execute unless score 紅隊陣地 editinfo matches 1..5 run return run tellraw @s ["",{text:">> ",color: gold},{text:"無法退出"},{text:"編輯模式",color:gold},{text:", 請指定"},{text:"紅隊陣地",color:gold}]
-execute unless score 藍隊陣地 editinfo matches 1..5 run return run tellraw @s ["",{text:">> ",color: gold},{text:"無法退出"},{text:"編輯模式",color:gold},{text:", 請指定"},{text:"藍隊陣地",color:gold}]
-execute unless score 中央點 editinfo matches 1 run return run tellraw @s ["",{text:">> ",color: gold},{text:"無法退出"},{text:"編輯模式",color:gold},{text:", 請指定"},{text:"中央點",color:gold}]
+execute unless score A點 editinfo matches 1 run return run tellraw @s ["",{text:">> ",color: gold},{text:"無法退出"},{text:"編輯模式",color:gold},{text:", 請指定"},{translate: "edit.function.border.set_a.0",color:gold}]
+execute unless score B點 editinfo matches 1 run return run tellraw @s ["",{text:">> ",color: gold},{text:"無法退出"},{text:"編輯模式",color:gold},{text:", 請指定"},{translate: "edit.function.border.set_b.0",color:gold}]
+execute unless score 紅隊陣地 editinfo matches 1..5 run return run tellraw @s ["",{text:">> ",color: gold},{text:"無法退出"},{text:"編輯模式",color:gold},{text:", 請指定"},{translate: "edit.function.base.set_red.1",color:gold}]
+execute unless score 藍隊陣地 editinfo matches 1..5 run return run tellraw @s ["",{text:">> ",color: gold},{text:"無法退出"},{text:"編輯模式",color:gold},{text:", 請指定"},{translate: "edit.function.base.set_blue.1",color:gold}]
+execute unless score 中央點 editinfo matches 1 run return run tellraw @s ["",{text:">> ",color: gold},{text:"無法退出"},{text:"編輯模式",color:gold},{text:", 請指定"},{translate: "edit.function.center.set.0",color:gold}]
 
 execute if score A點 editinfo matches 1 if score B點 editinfo matches 1 if score 紅隊陣地 editinfo matches 1..5 if score 藍隊陣地 editinfo matches 1..5 if score 中央點 editinfo matches 1 run function edit:exit

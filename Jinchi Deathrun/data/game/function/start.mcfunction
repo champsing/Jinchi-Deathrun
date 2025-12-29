@@ -24,10 +24,10 @@ scoreboard players reset 倒數 gamecore
 give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{text:"§c§l腎上腺素",italic: false}], lore= [{text:"§7在主手時移動速度增快為1.7倍。",italic: false},{text:"§c體力低於 30% 時不得使用。",italic: false}]]
 
 #---放置陣地---
-execute at @n[type = armor_stand, tag = red_base] align xz run summon block_display ~ ~2 ~ {block_state: {Name: "target"}, Glowing: true, Tags: ["red_base"],CustomName:[{text:"紅隊陣地",color: red}]}
-execute at @n[type = armor_stand, tag = blue_base] align xz run summon block_display ~ ~2 ~ {block_state: {Name: "target"}, Glowing: true, Tags: ["blue_base"],CustomName:[{text:"藍隊陣地",color: blue}]}
-execute at @n[type = armor_stand, tag = red_base] align xz run summon text_display ~0.5 ~3.5 ~0.5 {billboard: "center", Tags: ["red_base"], text:[{text:"紅隊陣地",color: red}]}
-execute at @n[type = armor_stand, tag = blue_base] align xz run summon text_display ~0.5 ~3.5 ~0.5 {billboard: "center", Tags: ["blue_base"], text:[{text:"藍隊陣地",color: blue}]}
+execute at @n[type = armor_stand, tag = red_base] align xz run summon block_display ~ ~2 ~ {block_state: {Name: "target"}, Glowing: true, Tags: ["red_base"],CustomName:[{translate:"edit.function.base.set_red.1",color: red}]}
+execute at @n[type = armor_stand, tag = blue_base] align xz run summon block_display ~ ~2 ~ {block_state: {Name: "target"}, Glowing: true, Tags: ["blue_base"],CustomName:[{translate: "edit.function.base.set_blue.1",color: blue}]}
+execute at @n[type = armor_stand, tag = red_base] align xz run summon text_display ~0.5 ~3.5 ~0.5 {billboard: "center", Tags: ["red_base"], text:[{translate:"edit.function.base.set_red.1",color: red}]}
+execute at @n[type = armor_stand, tag = blue_base] align xz run summon text_display ~0.5 ~3.5 ~0.5 {billboard: "center", Tags: ["blue_base"], text:[{translate: "edit.function.base.set_blue.1",color: blue}]}
 execute at @n[type = block_display, tag = red_base] align xz run summon interaction ~0.5 ~ ~0.5 {Tags: ["red_base"], height: 1.1, width: 1.1}
 execute at @n[type = block_display, tag = blue_base] align xz run summon interaction ~0.5 ~ ~0.5 {Tags: ["blue_base"], height: 1.1, width: 1.1}
 execute as @n[type = interaction, tag = red_base] at @s run tp @s ~ ~ ~ facing entity @n[tag = center]
