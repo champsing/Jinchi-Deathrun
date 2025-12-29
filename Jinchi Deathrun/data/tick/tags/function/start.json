@@ -4,7 +4,7 @@
     "tick:region/base",
     "tick:region/group",
     "tick:region/item",
-    "tick:region/nobody_in_either_team",
+    "tick:region/walkover",
     "tick:region/stamina",
     "game:refresh_scbd"
   ]

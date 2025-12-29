@@ -40,10 +40,6 @@ team modify red seeFriendlyInvisibles true
 team modify blue seeFriendlyInvisibles true
 team modify red friendlyFire false
 team modify blue friendlyFire false
-team join red 紅隊人數
-team join red 紅隊分數
-team join blue 藍隊人數
-team join blue 藍隊分數
 
 bossbar add countdown [{text:"剩餘時間： "},{score:{name: "剩餘時間",objective: "gamecore"},color: gold},{text:"秒"}]
 # bossbar add event "事件時間"
@@ -107,11 +103,22 @@ scoreboard players set 十倍 readonly 10
 scoreboard players set 一分鐘 readonly 60
 scoreboard players set 一百 readonly 100
 
+# 調整項分數
 scoreboard players set 遊戲模式 menu 99999
-scoreboard players display numberformat 遊戲模式 menu fixed {text:"對戰",color:"#ac75b9",bold:true}
 scoreboard players set 初始分數 menu 1000
 scoreboard players set 目標分數 menu 4000
 scoreboard players set 遊戲時間 menu 600
 scoreboard players set 遊戲時間分鐘 system 10
+
+# 前端顯示格式
+scoreboard players display numberformat 遊戲模式 menu fixed {text:"對戰",color:"#ac75b9",bold:true}
+scoreboard players display name 紅隊陣地 menu [{text:"紅隊",color:red},{text:"陣地",color:white}]
+scoreboard players display name 紅隊人數 menu [{text:"紅隊",color:red},{text:"人數",color:white}]
+scoreboard players display name 紅隊分數 menu [{text:"紅隊",color:red},{text:"分數",color:white}]
+scoreboard players display name 紅隊分數 gameinfo [{text:"紅隊分數",color:red}]
+scoreboard players display name 藍隊陣地 menu [{text:"藍隊",color:blue},{text:"陣地",color:white}]
+scoreboard players display name 藍隊人數 menu [{text:"藍隊",color:blue},{text:"人數",color:white}]
+scoreboard players display name 藍隊分數 menu [{text:"藍隊",color:blue},{text:"分數",color:white}]
+scoreboard players display name 藍隊分數 gameinfo [{text:"藍隊分數",color:blue}]
 
 scoreboard players operation 本地 version = 包 version

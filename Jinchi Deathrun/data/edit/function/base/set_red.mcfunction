@@ -6,3 +6,4 @@ execute at @s run summon armor_stand ~ ~ ~ {DisabledSlots: 16191,Tags:['red_base
 function edit:align
 execute at @s unless score 紅隊陣地 editinfo matches 0 run tp @n[type = armor_stand, tag = red_base, tag = edit_amst] @s
 playsound ui.button.click ambient @p ~ ~ ~
+tellraw @s ["",{text: ">> ", color: gold},{text: "需3秒後才可設置下一個紅隊陣地", color: red}]
