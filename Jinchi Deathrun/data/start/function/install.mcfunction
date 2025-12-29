@@ -29,8 +29,12 @@ team add red "紅隊"
 team add blue "藍隊"
 team add spec "觀戰"
 team add gold
+team add red_base "紅隊陣地"
+team add blue_base "藍隊陣地"
 team modify red color red
+team modify red_base color red
 team modify blue color blue
+team modify blue_base color blue
 team modify spec color gray
 team modify red seeFriendlyInvisibles true
 team modify blue seeFriendlyInvisibles true
