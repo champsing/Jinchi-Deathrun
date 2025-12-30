@@ -14,4 +14,4 @@ execute if entity @s[team = blue] run title @a[team = blue] subtitle {text: "我
 execute if entity @s[team = blue] run title @a[team = red] subtitle {text: "我方陣地遭攻陣", bold: true, color: red}
 execute if entity @s[team = red] run title @a title {text: "紅隊攻陣", color: red, bold: true}
 execute if entity @s[team = blue] run title @a title {text: "藍隊攻陣", color: blue, bold: true}
-tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"成功碰觸敵方"},{text:"陣地",color:gold},{text:" 獲得了"},{text:"1000分",color:gold}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{selector:"@s"},{text:"成功碰觸敵方"},{text:"陣地",color:gold},{text:" 獲得了"},{text:"1000分",color:gold}]

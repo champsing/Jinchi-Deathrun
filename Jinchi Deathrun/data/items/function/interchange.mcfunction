@@ -19,4 +19,4 @@ execute at @p[tag = items.interchange.tped] run kill @n[tag = items.interchange_
 tag @s remove items.interchange
 tag @p[tag = items.interchange.tped] remove items.interchange.tped
 
-tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"使用了"},{text:"互換道具",color:gold},{text:" 與隨機一位隊友"},{selector:"@p[tag = items.interchange.tped]"},{text:"互換位置",color:gold}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{selector:"@s"},{text:"使用了"},{text:"互換道具",color:gold},{text:" 與隨機一位隊友"},{selector:"@p[tag = items.interchange.tped]"},{text:"互換位置",color:gold}]

@@ -1,5 +1,5 @@
 #---不是大廳或編輯模式---
-execute if score 操作模式 system matches 3 run return run tellraw @s ["",{text:">> ",color:gold},{text:"遊戲目前已經開始。請"},{text:"結束遊戲",bold:true,color:gold},{text:"後再瀏覽場地配置。"}]
+execute if score 操作模式 system matches 3 run return run tellraw @s [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"遊戲目前已經開始。請"},{text:"結束遊戲",bold:true,color:gold},{text:"後再瀏覽場地配置。"}]
 
 #---印出場地配置---
 tellraw @s ["",{text: ">> ", color: gold},{text: "場地配置：", bold: true}]

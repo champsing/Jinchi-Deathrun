@@ -4,6 +4,6 @@
 execute positioned as @e[type = interaction, tag = persist_intro] run particle flash ~ ~ ~ 0.1 0.1 0.1 0.3 1 normal
 playsound block.medium_amethyst_bud.break master @s ~ ~ ~ 1 0.8 1
 
-tellraw @a ["",{text:">> ",color:gold},{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red},"   ",{text:"捍衛模式",bold:true,color:"#61ff9b"}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red},"   ",{text:"捍衛模式",bold:true,color:"#61ff9b"}]
 
 advancement revoke @s only start:persist

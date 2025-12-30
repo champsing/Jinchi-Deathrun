@@ -9,6 +9,6 @@ tag @s add items.convention
 execute if entity @s[team = red] run tag @r[tag = !items.convention,team = red] add items.convention.tped
 execute if entity @s[team = blue] run tag @r[tag = !items.convention,team = blue] add items.convention.tped
 tp @a[tag = items.convention.tped] @s
-tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"使用了"},{text:"召集道具",color:gold},{text:" 隨機把一名隊友"},{selector:"@a[tag = items.convention.tped]",color:gold},{text:"傳送過來"}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{selector:"@s"},{text:"使用了"},{text:"召集道具",color:gold},{text:" 隨機把一名隊友"},{selector:"@a[tag = items.convention.tped]",color:gold},{text:"傳送過來"}]
 tag @a[tag = items.convention.tped] remove items.convention.tped
 tag @s remove items.convention

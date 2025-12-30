@@ -1,4 +1,7 @@
 {
+    "jd.empty": "",
+    "jd.space": " ",
+    "jd.console": ">> ",
     "lobby.room_name.settings": "遊戲設定",
     "lobby.room_name.creators": "作者團隊",
     "lobby.room_name.showcase": "道具展示",
@@ -8,7 +11,7 @@
     "lobby.settings.initial_title": "初始分數",
     "lobby.settings.target_title": "目標分數",
     "lobby.settings.time_title": "時間限制",
-    "lobby.settings.time_value.1": " 分鐘",
+    "lobby.settings.time_value.0": " 分鐘",
     "lobby.settings.start_title": "開始遊戲",
     "lobby.settings.mode_title.0": "模式：",
     "lobby.settings.mode_title.1.duel": "對戰",
@@ -37,10 +40,12 @@
     "lobby.creators.cpk": "CPK CPK201314",
     "lobby.creators.ac": "AC Alex_Cai",
     "lobby.creators.lafan": "拉凡 Allosaurus",
+    "base.function.restore_vulnerable.blue": "",
     "edit.function.base.set_red.1": "紅隊陣地",
     "edit.function.base.set_blue.1": "藍隊陣地",
     "edit.function.center.set.0": "中央點",
     "edit.function.treasure_point.set.0": "寶箱點",
     "edit.function.border.set_a.0": "A點",
-    "edit.function.border.set_b.0": "B點"
+    "edit.function.border.set_b.0": "B點",
+    ""
 }

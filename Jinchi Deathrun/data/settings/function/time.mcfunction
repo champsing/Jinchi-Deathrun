@@ -1,6 +1,6 @@
 #---不是大廳模式---
-execute if score 操作模式 system matches 1 run return run tellraw @s ["",{text:">> ",color:gold},{text:"您目前處於編輯模式。請退出"},{text:"編輯模式",bold:true,color:gold},{text:"更改設定。"}]
-execute if score 操作模式 system matches 3 run return run tellraw @s ["",{text:">> ",color:gold},{text:"遊戲目前已經開始。請"},{text:"結束遊戲",bold:true,color:gold},{text:"後再更改設定。"}]
+execute if score 操作模式 system matches 1 run return run tellraw @s [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"您目前處於編輯模式。請退出"},{text:"編輯模式",bold:true,color:gold},{text:"更改設定。"}]
+execute if score 操作模式 system matches 3 run return run tellraw @s [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"遊戲目前已經開始。請"},{text:"結束遊戲",bold:true,color:gold},{text:"後再更改設定。"}]
 
 #---給予反應---
 execute positioned as @e[type = interaction, tag = time_interact] run particle end_rod ~ ~ ~ 0.1 0.1 0.1 0.3 3 normal
@@ -8,7 +8,7 @@ execute if entity @s[advancements = {settings:interact/time = true}] run playsou
 execute if entity @s[advancements = {settings:attack/time = true}] run playsound block.medium_amethyst_bud.break master @s ~ ~ ~ 1 0.8 1
 
 #---不是創造---
-execute as @s[gamemode = !creative] run return run tellraw @s[gamemode = !creative] ["",{text:">> ",color:gold},{text:"您沒有權限更動這項設定。請使用"},{text:"創造模式",bold:true,color:gold},{text:"更改設定。"}]
+execute as @s[gamemode = !creative] run return run tellraw @s[gamemode = !creative] [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"您沒有權限更動這項設定。請使用"},{text:"創造模式",bold:true,color:gold},{text:"更改設定。"}]
 
 #---攻擊/互動---
 #---單位: 秒---
@@ -23,7 +23,7 @@ scoreboard players operation 遊戲時間分鐘 system = 遊戲時間 menu
 scoreboard players operation 遊戲時間分鐘 system /= 一分鐘 readonly
 #---結果---
 execute as @e[tag = time_value] run data modify entity @s text set value [{score:{name:"遊戲時間分鐘",objective:"system"}},{translate:"lobby.settings.time_value.0"}]
-tellraw @a ["",{text:">> ",color:gold},{text:"遊戲時間設為 "},{score:{name:"遊戲時間分鐘",objective:"system"},bold:true,color:gold},{translate:"lobby.settings.time_value.0"}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"遊戲時間設為 "},{score:{name:"遊戲時間分鐘",objective:"system"},bold:true,color:gold},{translate:"lobby.settings.time_value.0"}]
 
 advancement revoke @s only settings:interact/time
 advancement revoke @s only settings:attack/time

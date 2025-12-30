@@ -1,6 +1,6 @@
 execute unless entity @n[type = armor_stand, tag = B_point] if score @s edit_cd matches 1.. run return fail
 scoreboard players add @s edit_cd 60
 execute unless entity @n[type = armor_stand, tag = B_point] run playsound entity.ghast.warn ambient @p ~ ~ ~
-execute unless entity @n[type = armor_stand, tag = B_point] run return run tellraw @s ["",{text:">> ",color: gold},{text:"無法傳送",color: red},{text:", 請先指定"},{translate: "edit.function.border.set_b.0",color:gold}]
+execute unless entity @n[type = armor_stand, tag = B_point] run return run tellraw @s [{translate: jd.empty},{translate:"jd.console",color: gold},{text:"無法傳送",color: red},{text:", 請先指定"},{translate: "edit.function.border.set_b.0",color:gold}]
 tp @s @n[type =  armor_stand, tag = B_point]
 playsound entity.enderman.teleport ambient @p ~ ~ ~

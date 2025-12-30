@@ -1,7 +1,7 @@
 # 準備階段之開始前倒數：這時遊戲還沒開始，玩家不能動
 
 #---如果是因為大家都準備，先告知---
-execute if score 已準備人數 gameinfo = 玩家人數 menu run tellraw @a ["",{text:">> ",color: gold},{text:"所有玩家已準備，"},{text:"遊戲即將開始！",color: yellow}]
+execute if score 已準備人數 gameinfo = 玩家人數 menu run tellraw @a [{translate: jd.empty},{translate:"jd.console",color: gold},{text:"所有玩家已準備，"},{text:"遊戲即將開始！",color: yellow}]
 
 #---先取消掉分數---
 scoreboard players reset 準備時間 gamecore

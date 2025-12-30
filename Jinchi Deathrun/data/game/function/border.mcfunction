@@ -13,6 +13,6 @@ execute if score @s z < 最小值 z run tag @s add border
 
 execute if entity @s[y=-120,dy = 40] run tag @s add border
 
-tellraw @s[tag = border] ["",{text:">> ",color:gold},{text:"請勿跨越"},{text:"地圖邊界",color:gold}]
+tellraw @s[tag = border] [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"請勿跨越"},{text:"地圖邊界",color:gold}]
 kill @s[tag = border]
 tag @s[tag = border] remove border

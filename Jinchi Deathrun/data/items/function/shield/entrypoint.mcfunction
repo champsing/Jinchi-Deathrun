@@ -1,7 +1,7 @@
 # 護盾：盾牌
 advancement revoke @s only items:shield
 execute if score @s item_cd matches 1.. run return fail
-execute if predicate items:has_shield run return run tellraw @s ["",{text:">> ",color:gold},{text: "你目前已有護盾效果",color: red}]
+execute if predicate items:has_shield run return run tellraw @s [{translate: jd.empty},{translate:"jd.console",color:gold},{text: "你目前已有護盾效果",color: red}]
 
 scoreboard players set @s item_cd 10
 scoreboard players add @s total_item 1
@@ -10,4 +10,4 @@ item replace entity @s armor.head with shield[minecraft:banner_patterns=[{color:
 
 #---排程恢復原狀---
 scoreboard players set @s shield 10
-tellraw @s ["",{text:">> ",color:gold},{text:"你使用了"},{text:"護盾",color:gold},{text:" 無法被發起對戰"},{text:"10秒",color:gold}]
+tellraw @s [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"你使用了"},{text:"護盾",color:gold},{text:" 無法被發起對戰"},{text:"10秒",color:gold}]
