@@ -17,9 +17,9 @@
     "lobby.settings.mode_title.1.duel": "對戰",
     "lobby.settings.join_title": "加入隊伍",
     "lobby.settings.join_instruct.0": "左鍵加入",
-    "lobby.settings.join_instruct.1": "紅隊",
-    "lobby.settings.join_instruct.2": "，右鍵加入",
-    "lobby.settings.join_instruct.3": "藍隊",
+    "lobby.team_name.red": "紅隊",
+    "lobby.settings.join_instruct.1": "，右鍵加入",
+    "lobby.team_name.blue": "藍隊",
     "lobby.settings.team_title": "隨機分隊",
     "lobby.settings.team_instruct": "左鍵分隊",
     "lobby.settings.spec_title": "加入旁觀",
@@ -40,12 +40,10 @@
     "lobby.creators.cpk": "CPK CPK201314",
     "lobby.creators.ac": "AC Alex_Cai",
     "lobby.creators.lafan": "拉凡 Allosaurus",
-    "base.function.restore_vulnerable.blue": "",
+    "base.function.restore_vulnerable.red.1": "陣地已失去無敵狀態，可被攻陣。",
     "edit.function.base.set_red.1": "紅隊陣地",
     "edit.function.base.set_blue.1": "藍隊陣地",
     "edit.function.center.set.0": "中央點",
     "edit.function.treasure_point.set.0": "寶箱點",
-    "edit.function.border.set_a.0": "A點",
-    "edit.function.border.set_b.0": "B點",
-    ""
+    "edit.function.border.set_a.0": "A點"
 }

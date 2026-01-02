@@ -18,8 +18,8 @@ execute if entity @s[advancements = {settings:interact/join = true}] run team jo
 execute if entity @s[advancements = {settings:attack/join = true}] run team join red @s
 
 #---告知結果---
-tellraw @s[team = blue] [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"您已加入"},{text:"藍隊", color: blue}]
-tellraw @s[team = red] [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"您已加入"},{text:"紅隊", color: red}]
+tellraw @s[team = blue] [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"您已加入"},{translate: lobby.team_name.blue, color: blue, bold: true}]
+tellraw @s[team = red] [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"您已加入"},{translate: lobby.team_name.red, color: red}]
 
 advancement revoke @s only settings:interact/join
 advancement revoke @s only settings:attack/join
