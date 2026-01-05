@@ -114,11 +114,9 @@ scoreboard players set 遊戲時間分鐘 system 10
 scoreboard players display numberformat 遊戲模式 menu fixed {text:"對戰",color:"#ac75b9",bold:true}
 scoreboard players display name 紅隊陣地 menu [{text:"紅隊",color:red},{text:"陣地",color:white}]
 scoreboard players display name 紅隊人數 menu [{text:"紅隊",color:red},{text:"人數",color:white}]
-scoreboard players display name 紅隊分數 menu [{text:"紅隊",color:red},{text:"分數",color:white}]
-scoreboard players display name 紅隊分數 gameinfo [{text:"紅隊分數",color:red}]
 scoreboard players display name 藍隊陣地 menu [{text:"藍隊",color:blue},{text:"陣地",color:white}]
 scoreboard players display name 藍隊人數 menu [{text:"藍隊",color:blue},{text:"人數",color:white}]
-scoreboard players display name 藍隊分數 menu [{text:"藍隊",color:blue},{text:"分數",color:white}]
+scoreboard players display name 紅隊分數 gameinfo [{text:"紅隊分數",color:red}]
 scoreboard players display name 藍隊分數 gameinfo [{text:"藍隊分數",color:blue}]
 
 scoreboard players operation 本地 version = 包 version
