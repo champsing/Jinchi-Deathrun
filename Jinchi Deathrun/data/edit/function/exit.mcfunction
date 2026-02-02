@@ -3,7 +3,7 @@ playsound block.medium_amethyst_bud.break master @s ~ ~ ~ 1 0.8 1
 scoreboard objectives setdisplay sidebar menu
 clear @a
 
-execute as @n[type = text_display, tag = edit_title] run data modify entity @s text set value [{translate:"lobby.settings.enter_edit",color:"#ac75b9",bold:true}]
+execute as @n[type = text_display, tag = edit_title] run data modify entity @s text set value [{translate:"jd.lobby.settings.enter_edit",color:"#ac75b9",bold:true}]
 execute if score 遊戲模式 menu matches 99999 run tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.edit.function.exit.7_1,bold:true,color:"#ac75b9"},{translate:jd.edit.function.exit.7_2}]
 execute if score 遊戲模式 menu matches 99998 run tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.edit.function.exit.8_1,bold:true,color:"#61ff9b"},{translate:jd.edit.function.exit.8_2}]
 tellraw @a ""

@@ -22,8 +22,8 @@ execute if score 遊戲時間 menu matches ..300 run scoreboard players set 遊�
 scoreboard players operation 遊戲時間分鐘 system = 遊戲時間 menu
 scoreboard players operation 遊戲時間分鐘 system /= 一分鐘 readonly
 #---結果---
-execute as @e[tag = time_value] run data modify entity @s text set value [{score:{name:"遊戲時間分鐘",objective:"system"}},{translate:"lobby.settings.time_value.0"}]
-tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.settings.function.time.26_1},{score:{name:"遊戲時間分鐘",objective:"system"},bold:true,color:gold},{translate:"lobby.settings.time_value.0"}]
+execute as @e[tag = time_value] run data modify entity @s text set value [{score:{name:"遊戲時間分鐘",objective:"system"}},{translate:"jd.lobby.settings.time_value.0"}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.settings.function.time.26_1},{score:{name:"遊戲時間分鐘",objective:"system"},bold:true,color:gold},{translate:"jd.lobby.settings.time_value.0"}]
 
 advancement revoke @s only settings:interact/time
 advancement revoke @s only settings:attack/time
