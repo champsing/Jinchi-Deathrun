@@ -41,7 +41,7 @@ team modify blue seeFriendlyInvisibles true
 team modify red friendlyFire false
 team modify blue friendlyFire false
 
-bossbar add countdown [{text:"剩餘時間： "},{score:{name: "剩餘時間",objective: "gamecore"},color: gold},{text:"秒"}]
+bossbar add countdown [{translate:jd.game.function.time.26_1},{score:{name: "剩餘時間",objective: "gamecore"},color: gold},{translate:jd.game.function.time.26_2}]
 # bossbar add event "事件時間"
 bossbar add prepare "準備時間"
 bossbar set countdown color yellow
@@ -50,9 +50,9 @@ bossbar set countdown style notched_10
 bossbar set prepare color purple
 bossbar set prepare max 2400
 
-scoreboard objectives add menu dummy ["",{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red}]
-scoreboard objectives add gameinfo dummy {text:"遊戲資訊",bold:true,italic:true,color:gold}
-scoreboard objectives add editinfo dummy {text: "編輯中",color: dark_aqua,italic: true}
+scoreboard objectives add menu dummy ["",{translate:jd.base.function.success.17_2,bold:true,color:gold},{translate:jd.game.function.prepare.emerald.22_2,bold:true,color:red}]
+scoreboard objectives add gameinfo dummy {translate:jd.start.function.install.54_1,bold:true,italic:true,color:gold}
+scoreboard objectives add editinfo dummy {translate:jd.start.function.install.55_1,color: dark_aqua,italic: true}
 scoreboard objectives add edit_cd dummy "編輯冷卻"
 scoreboard objectives add gamecore dummy "遊戲核心隱藏資訊，僅能在3寫入"
 scoreboard objectives add system dummy "系統分數，僅能在1和2寫入"
@@ -111,14 +111,14 @@ scoreboard players set 遊戲時間 menu 600
 scoreboard players set 遊戲時間分鐘 system 10
 
 # 前端顯示格式
-scoreboard players display numberformat 遊戲模式 menu fixed {text:"對戰",color:"#ac75b9",bold:true}
-scoreboard players display name 紅隊陣地 menu [{text:"紅隊",color:red},{text:"陣地",color:white}]
-scoreboard players display name 紅隊人數 menu [{text:"紅隊",color:red},{text:"人數",color:white}]
-scoreboard players display name 紅隊分數 menu [{text:"紅隊",color:red},{text:"分數",color:white}]
-scoreboard players display name 紅隊分數 gameinfo [{text:"紅隊分數",color:red}]
-scoreboard players display name 藍隊陣地 menu [{text:"藍隊",color:blue},{text:"陣地",color:white}]
-scoreboard players display name 藍隊人數 menu [{text:"藍隊",color:blue},{text:"人數",color:white}]
-scoreboard players display name 藍隊分數 menu [{text:"藍隊",color:blue},{text:"分數",color:white}]
-scoreboard players display name 藍隊分數 gameinfo [{text:"藍隊分數",color:blue}]
+scoreboard players display numberformat 遊戲模式 menu fixed {translate:jd.settings.function.mode.30_1,color:"#ac75b9",bold:true}
+scoreboard players display name 紅隊陣地 menu [{translate:jd.base.function.restore_invulnerable.red.3_1,color:red},{translate:jd.base.function.success.17_2,color:white}]
+scoreboard players display name 紅隊人數 menu [{translate:jd.base.function.restore_invulnerable.red.3_1,color:red},{translate:jd.start.function.install.116_2,color:white}]
+scoreboard players display name 紅隊分數 menu [{translate:jd.base.function.restore_invulnerable.red.3_1,color:red},{translate:jd.start.function.install.117_2,color:white}]
+scoreboard players display name 紅隊分數 gameinfo [{translate:jd.start.function.install.118_1,color:red}]
+scoreboard players display name 藍隊陣地 menu [{translate:jd.base.function.restore_invulnerable.blue.3_1,color:blue},{translate:jd.base.function.success.17_2,color:white}]
+scoreboard players display name 藍隊人數 menu [{translate:jd.base.function.restore_invulnerable.blue.3_1,color:blue},{translate:jd.start.function.install.116_2,color:white}]
+scoreboard players display name 藍隊分數 menu [{translate:jd.base.function.restore_invulnerable.blue.3_1,color:blue},{translate:jd.start.function.install.117_2,color:white}]
+scoreboard players display name 藍隊分數 gameinfo [{translate:jd.start.function.install.122_1,color:blue}]
 
 scoreboard players operation 本地 version = 包 version

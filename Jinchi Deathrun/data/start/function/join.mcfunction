@@ -11,7 +11,7 @@ title @s times 10 40 10
 tp @s @n[type = marker,tag = jd.lobby]
 execute at @n[type = marker,tag = jd.lobby] run spawnpoint @s ~ ~ ~
 
-title @s title ["",{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red}]
-title @s subtitle ["",{text:"作者: 香榭",bold:true,color:"green"}]
+title @s title ["",{translate:jd.base.function.success.17_2,bold:true,color:gold},{translate:jd.game.function.prepare.emerald.22_2,bold:true,color:red}]
+title @s subtitle ["",{translate:jd.start.function.join.15_1,bold:true,color:"green"}]
 
 tag @s add join

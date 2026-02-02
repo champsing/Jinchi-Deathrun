@@ -16,7 +16,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l全體發光"
+                  text:"§b§l全體發光"
                 }
               ]
             },
@@ -24,14 +24,14 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "隊伍型",
+                  text:"隊伍型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7所有敵隊玩家發光10秒。"
+                  text:"§7所有敵隊玩家發光10秒。"
                 },
                 {
-                  "text": "§c敵隊玩家均已發光時不得使用。"
+                  text:"§c敵隊玩家均已發光時不得使用。"
                 }
               ],
               "mode": "append"
@@ -63,7 +63,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l單人發光"
+                  text:"§b§l單人發光"
                 }
               ]
             },
@@ -71,14 +71,14 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "隊伍型",
+                  text:"隊伍型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7隨機一位敵隊玩家發光10秒。"
+                  text:"§7隨機一位敵隊玩家發光10秒。"
                 },
                 {
-                  "text": "§c敵隊玩家均已發光時不得使用。"
+                  text:"§c敵隊玩家均已發光時不得使用。"
                 }
               ],
               "mode": "append"
@@ -110,7 +110,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l三叉戟"
+                  text:"§b§l三叉戟"
                 }
               ]
             },
@@ -118,14 +118,14 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "瞄準型",
+                  text:"瞄準型",
                   "color": "#db438f"
                 },
                 {
-                  "text": "§7一把三叉戟，可以投擲 1 次。"
+                  text:"§7一把三叉戟，可以投擲 1 次。"
                 },
                 {
-                  "text": "§7可用於遠程攻擊其他玩家發動對戰；也可用於近戰。"
+                  text:"§7可用於遠程攻擊其他玩家發動對戰；也可用於近戰。"
                 }
               ],
               "mode": "append"
@@ -152,7 +152,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l單人凍結"
+                  text:"§b§l單人凍結"
                 }
               ]
             },
@@ -160,17 +160,17 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "瞄準型",
+                  text:"瞄準型",
                   "color": "#db438f"
                 },
                 {
-                  "text": "§7使用後§6目標玩家§7立即無法移動 10 秒。"
+                  text:"§7使用後§6目標玩家§7立即無法移動 10 秒。"
                 },
                 {
-                  "text": "§c該玩家已被凍結、敵隊玩家均已被凍結時不得使用。"
+                  text:"§c該玩家已被凍結、敵隊玩家均已被凍結時不得使用。"
                 },
                 {
-                  "text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。",
+                  text:"目標玩家：準星瞄準的面前 10 格內最近的玩家。",
                   "color": "gray",
                   "italic": true
                 }
@@ -204,7 +204,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l全體凍結"
+                  text:"§b§l全體凍結"
                 }
               ]
             },
@@ -212,14 +212,14 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "隊伍型",
+                  text:"隊伍型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7使用後全體敵隊玩家無法移動10秒。"
+                  text:"§7使用後全體敵隊玩家無法移動10秒。"
                 },
                 {
-                  "text": "§c敵隊玩家均已被凍結時不得使用。"
+                  text:"§c敵隊玩家均已被凍結時不得使用。"
                 }
               ],
               "mode": "append"
@@ -251,7 +251,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l無效狀態"
+                  text:"§b§l無效狀態"
                 }
               ]
             },
@@ -259,14 +259,14 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "自身型",
+                  text:"自身型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7強制自身進入無效狀態。"
+                  text:"§7強制自身進入無效狀態。"
                 },
                 {
-                  "text": "§c自身處於無效狀態時不得使用。"
+                  text:"§c自身處於無效狀態時不得使用。"
                 }
               ],
               "mode": "append"
@@ -298,7 +298,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l狂奔"
+                  text:"§b§l狂奔"
                 }
               ]
             },
@@ -306,17 +306,17 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "自身型",
+                  text:"自身型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7獲得加速II 30秒。"
+                  text:"§7獲得加速II 30秒。"
                 },
                 {
-                  "text": "§c不受體力系統 30% 以下限制，"
+                  text:"§c不受體力系統 30% 以下限制，"
                 },
                 {
-                  "text": "§c但自身處於狂奔狀態時不得使用。"
+                  text:"§c但自身處於狂奔狀態時不得使用。"
                 }
               ],
               "mode": "append"
@@ -348,7 +348,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l解除無效狀態"
+                  text:"§b§l解除無效狀態"
                 }
               ]
             },
@@ -356,14 +356,14 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "自身型",
+                  text:"自身型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7原地解除無效狀態。"
+                  text:"§7原地解除無效狀態。"
                 },
                 {
-                  "text": "§c自身不處於無效狀態時不得使用。"
+                  text:"§c自身不處於無效狀態時不得使用。"
                 }
               ],
               "mode": "append"
@@ -395,7 +395,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§e移除§r§b§l無效狀態"
+                  text:"§b§e移除§r§b§l無效狀態"
                 }
               ]
             },
@@ -403,13 +403,13 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "瞄準型",
+                  text:"瞄準型",
                   "color": "#db438f"
                 },
-                { "text": "§7使用後§6目標玩家§7立即解除無效狀態。" },
-                { "text": "§c目標玩家非處於無效狀態時不得使用。" },
+                { text:"§7使用後§6目標玩家§7立即解除無效狀態。" },
+                { text:"§c目標玩家非處於無效狀態時不得使用。" },
                 {
-                  "text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。",
+                  text:"目標玩家：準星瞄準的面前 10 格內最近的玩家。",
                   "color": "gray",
                   "italic": true
                 }
@@ -443,7 +443,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l召集"
+                  text:"§b§l召集"
                 }
               ]
             },
@@ -451,11 +451,11 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "隊伍型",
+                  text:"隊伍型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7隨機傳送一個隊友過來。"
+                  text:"§7隨機傳送一個隊友過來。"
                 }
               ],
               "mode": "append"
@@ -487,7 +487,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l互換"
+                  text:"§b§l互換"
                 }
               ]
             },
@@ -495,11 +495,11 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "隊伍型",
+                  text:"隊伍型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7與隨機一個隊友互換位置。"
+                  text:"§7與隨機一個隊友互換位置。"
                 }
               ],
               "mode": "append"
@@ -531,7 +531,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l無敵陣地"
+                  text:"§b§l無敵陣地"
                 }
               ]
             },
@@ -539,14 +539,14 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "隊伍型",
+                  text:"隊伍型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7己方陣地20秒無法攻陣。"
+                  text:"§7己方陣地20秒無法攻陣。"
                 },
                 {
-                  "text": "§c己方陣地處於無敵狀態時不得使用。"
+                  text:"§c己方陣地處於無敵狀態時不得使用。"
                 }
               ],
               "mode": "append"
@@ -578,7 +578,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l解除詛咒"
+                  text:"§b§l解除詛咒"
                 }
               ]
             },
@@ -586,17 +586,17 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "自身型",
+                  text:"自身型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7消除所有負面狀態效果。"
+                  text:"§7消除所有負面狀態效果。"
                 },
                 {
-                  "text": "§c自身沒有以下任一效果時不得使用："
+                  text:"§c自身沒有以下任一效果時不得使用："
                 },
                 {
-                  "text": "§c凍結、發光、緩速"
+                  text:"§c凍結、發光、緩速"
                 }
               ],
               "mode": "append"
@@ -628,7 +628,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l體力稍滿"
+                  text:"§b§l體力稍滿"
                 }
               ]
             },
@@ -636,14 +636,14 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "自身型",
+                  text:"自身型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7立即恢復 20 點體力。"
+                  text:"§7立即恢復 20 點體力。"
                 },
                 {
-                  "text": "§c自身體力值滿時不得使用。"
+                  text:"§c自身體力值滿時不得使用。"
                 }
               ],
               "mode": "append"
@@ -684,7 +684,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l體力全滿"
+                  text:"§b§l體力全滿"
                 }
               ]
             },
@@ -692,14 +692,14 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "自身型",
+                  text:"自身型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7立即恢復 100% 體力。"
+                  text:"§7立即恢復 100% 體力。"
                 },
                 {
-                  "text": "§c體力值滿時不得使用。"
+                  text:"§c體力值滿時不得使用。"
                 }
               ],
               "mode": "append"
@@ -740,7 +740,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l體力流失"
+                  text:"§b§l體力流失"
                 }
               ]
             },
@@ -748,14 +748,14 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "瞄準型",
+                  text:"瞄準型",
                   "color": "#db438f"
                 },
                 {
-                  "text": "§7使用後§6目標玩家§7立即失去 50 點體力。"
+                  text:"§7使用後§6目標玩家§7立即失去 50 點體力。"
                 },
                 {
-                  "text": "目標玩家：準星瞄準的面前 10 格內最近的玩家。",
+                  text:"目標玩家：準星瞄準的面前 10 格內最近的玩家。",
                   "color": "gray",
                   "italic": true
                 }
@@ -798,7 +798,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l隱形"
+                  text:"§b§l隱形"
                 }
               ]
             },
@@ -806,11 +806,11 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "自身型",
+                  text:"自身型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7獲得隱形效果15秒。"
+                  text:"§7獲得隱形效果15秒。"
                 }
               ],
               "mode": "append"
@@ -842,7 +842,7 @@
               "function": "set_name",
               "name": [
                 {
-                  "text": "§b§l護盾"
+                  text:"§b§l護盾"
                 }
               ]
             },
@@ -850,23 +850,23 @@
               "function": "set_lore",
               "lore": [
                 {
-                  "text": "自身型",
+                  text:"自身型",
                   "color": "dark_aqua"
                 },
                 {
-                  "text": "§7自身無法被發起對戰 10 秒。"
+                  text:"§7自身無法被發起對戰 10 秒。"
                 },
                 {
-                  "text": "護盾效果期間仍可攻陣、發起對戰、進入/解除無效狀態等。",
+                  text:"護盾效果期間仍可攻陣、發起對戰、進入/解除無效狀態等。",
                   "color": "light_purple",
                   "italic": true
                 },
                 {
-                  "text": "自身擁有護盾狀態時不得使用。",
+                  text:"自身擁有護盾狀態時不得使用。",
                   "color": "red"
                 },
                 {
-                  "text": "護盾無法抵擋陣殺效果。",
+                  text:"護盾無法抵擋陣殺效果。",
                   "color": "red"
                 }
               ],

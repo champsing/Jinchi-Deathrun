@@ -14,8 +14,8 @@ schedule clear base:restore_invulnerable/red
 
 execute as @a at @n[type = marker, tag = jd.lobby] run spawnpoint @s ~ ~ ~
 
-scoreboard players display numberformat 剩餘時間 gamecore fixed {text: "遊戲結束", color: "#43d245", bold: true}
-bossbar set countdown name [{text: "遊戲結束", color: "#43d245", bold: true}]
+scoreboard players display numberformat 剩餘時間 gamecore fixed {translate:jd.game.function.end.blue.2_1, color: "#43d245", bold: true}
+bossbar set countdown name [{translate:jd.game.function.end.blue.2_1, color: "#43d245", bold: true}]
 
 execute as @a[team = !spec] run scoreboard players operation @s top_contribution = @s total_contribution
 execute as @a[team = !spec] run scoreboard players operation @s top_duel = @s total_duel
@@ -50,23 +50,23 @@ scoreboard players operation @a[team = !spec] top_item -= 道具最高分 top_it
 # 道具技師: @a[scores = {top_item = 0}]  (@a[scores = {top_item = 0}] total_item)
 # -----------------------------------------
 
-tellraw @a ["",{text:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",color:gold}]
-tellraw @a ["",{text:"-----------------------------------------\n",bold:true,color:gold}]
-tellraw @a [{text:"紅隊分數: ",color:red},{score:{name:"紅隊分數",objective:"gameinfo"},color:red},{text:"\n藍隊分數: ",color:"blue"},{score:{name:"藍隊分數",objective:"gameinfo"},color:"blue"}]
-tellraw @a [{text:"-----------------------------------------\n",bold:true,color:gold}]
+tellraw @a ["",{translate:jd.edit.function.teleport.7_1,color:gold}]
+tellraw @a ["",{translate:jd.game.function.end.end.54_1,bold:true,color:gold}]
+tellraw @a [{translate:jd.game.function.end.end.55_1,color:red},{score:{name:"紅隊分數",objective:"gameinfo"},color:red},{translate:jd.game.function.end.end.55_2,color:"blue"},{score:{name:"藍隊分數",objective:"gameinfo"},color:"blue"}]
+tellraw @a [{translate:jd.game.function.end.end.54_1,bold:true,color:gold}]
 
-tellraw @a [{text:"大富豪家: ",color:aqua,hover_event:{action:"show_text", value:"個人貢獻加分最多的玩家。"}},{selector:"@a[scores = {top_contribution = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_contribution = 0}]",objective:score},color:aqua},{text:")",color:aqua}]
+tellraw @a [{translate:jd.game.function.end.end.58_1,color:aqua,hover_event:{action:"show_text", value:"個人貢獻加分最多的玩家。"}},{selector:"@a[scores = {top_contribution = 0}]"},{translate:jd.game.function.end.end.58_2,color:aqua},{score:{name:"@a[scores = {top_contribution = 0}]",objective:score},color:aqua},{translate:jd.game.function.end.end.58_3,color:aqua}]
 
-tellraw @a [{text:"對戰好手: ",color:light_purple,hover_event:{action:"show_text", value:"對戰次數最多的玩家。"}},{selector:"@a[scores = {top_duel = 0}]"},{text:" (",color:aqua},{score:{name:"@p[scores = {top_duel = 0}]",objective:"total_duel"},color:aqua},{text:")",color:aqua}]
+tellraw @a [{translate:jd.game.function.end.end.60_1,color:light_purple,hover_event:{action:"show_text", value:"對戰次數最多的玩家。"}},{selector:"@a[scores = {top_duel = 0}]"},{translate:jd.game.function.end.end.58_2,color:aqua},{score:{name:"@p[scores = {top_duel = 0}]",objective:"total_duel"},color:aqua},{translate:jd.game.function.end.end.58_3,color:aqua}]
 
-tellraw @a [{text:"攻陣天才: ",color:green,hover_event:{action:"show_text", value:"成功攻陣次數最多的玩家。"}},{selector:"@a[scores = {top_success = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_success = 0}]",objective:"total_success"},color:aqua},{text:")",color:aqua}]
+tellraw @a [{translate:jd.game.function.end.end.62_1,color:green,hover_event:{action:"show_text", value:"成功攻陣次數最多的玩家。"}},{selector:"@a[scores = {top_success = 0}]"},{translate:jd.game.function.end.end.58_2,color:aqua},{score:{name:"@a[scores = {top_success = 0}]",objective:"total_success"},color:aqua},{translate:jd.game.function.end.end.58_3,color:aqua}]
 
-tellraw @a [{text:"陣殺MVP: ",color:red,hover_event:{action:"show_text", value:"陣殺玩家人數最多的玩家。"}},{selector:"@a[scores = {top_kill = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_kill = 0}]",objective:"total_kill"},color:aqua},{text:")",color:aqua}]
+tellraw @a [{translate:jd.game.function.end.end.64_1,color:red,hover_event:{action:"show_text", value:"陣殺玩家人數最多的玩家。"}},{selector:"@a[scores = {top_kill = 0}]"},{translate:jd.game.function.end.end.58_2,color:aqua},{score:{name:"@a[scores = {top_kill = 0}]",objective:"total_kill"},color:aqua},{translate:jd.game.function.end.end.58_3,color:aqua}]
 
-tellraw @a [{text:"無效魔人: ",color:gray,hover_event:{action:"show_text", value:"進入無效狀態次數最多的玩家。"}},{selector:"@a[scores = {top_invalid = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_invalid = 0}]",objective:"total_invalid"},color:aqua},{text:")",color:aqua}]
+tellraw @a [{translate:jd.game.function.end.end.66_1,color:gray,hover_event:{action:"show_text", value:"進入無效狀態次數最多的玩家。"}},{selector:"@a[scores = {top_invalid = 0}]"},{translate:jd.game.function.end.end.58_2,color:aqua},{score:{name:"@a[scores = {top_invalid = 0}]",objective:"total_invalid"},color:aqua},{translate:jd.game.function.end.end.58_3,color:aqua}]
 
-tellraw @a [{text:"道具技師: ",color:yellow,hover_event:{action:"show_text", value:"使用道具次數最多（不計加分道具）的玩家。"}},{selector:"@a[scores = {top_item = 0}]"},{text:" (",color:aqua},{score:{name:"@a[scores = {top_item = 0}]",objective:"total_item"},color:aqua},{text:")",color:aqua}]
+tellraw @a [{translate:jd.game.function.end.end.68_1,color:yellow,hover_event:{action:"show_text", value:"使用道具次數最多（不計加分道具）的玩家。"}},{selector:"@a[scores = {top_item = 0}]"},{translate:jd.game.function.end.end.58_2,color:aqua},{score:{name:"@a[scores = {top_item = 0}]",objective:"total_item"},color:aqua},{translate:jd.game.function.end.end.58_3,color:aqua}]
 
-tellraw @a [{text:"-----------------------------------------",bold:true,color:gold}]
-tellraw @a {text:"[切換排行榜顯示]\n",color:gold, bold: true,click_event: {action: "run_command",command: "/function game:end/leaderboard"}}
-tellraw @a {text:"[點擊返回大廳並重置遊戲]",color:aqua, bold: true,click_event: {action: "run_command",command: "/function game:initialize"}}
+tellraw @a [{translate:jd.game.function.end.end.70_1,bold:true,color:gold}]
+tellraw @a {translate:jd.game.function.end.end.71_1,color:gold, bold: true,click_event: {action: "run_command",command: "/function game:end/leaderboard"}}
+tellraw @a {translate:jd.game.function.end.end.72_1,color:aqua, bold: true,click_event: {action: "run_command",command: "/function game:initialize"}}

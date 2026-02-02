@@ -14,7 +14,7 @@ execute on attacker run scoreboard players add @s total_kill 1
 
 #-------告訴玩家他死了-------
 title @s subtitle "你的分數已耗盡"
-title @s title {text:"死亡",color: red,bold: true}
+title @s title {translate:jd.game.function.score_death.17_1,color: red,bold: true}
 tellraw @s "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 tellraw @s [{translate: jd.empty},{translate:"jd.console",color: gold},"你的分數已經為負數，因此你死亡了"]
 tellraw @a [{translate: jd.empty},{translate:"jd.console",color: gold},{selector: "@s"},"的分數已經為負數，因此死亡了"]

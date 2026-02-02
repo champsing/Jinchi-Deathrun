@@ -6,8 +6,8 @@ clear @s player_head[custom_data={stamina: "robbery"}] 1
 
 scoreboard players set @s item_cd 10
 
-tellraw @s ["",{"text":">> ","color":"gold"},{"text":"你已經成功奪取"},{"selector":"@a[tag = items.stamina_robbery.robbed]","color": "gold", "bold": true},{"text":" 50 點體力"}]
-tellraw @a[tag = items.stamina_robbery.robbed] ["",{"text":">> ","color":"gold"},{"selector":"@s","color":"gold"},{"text":"對你使用了"},{"text":"體力流失","color": "gold", "bold": true},{"text":"，奪取了你"},{"text":" 50 點體力","color": "gold", "bold": true}]
+tellraw @s ["",{translate:jd.edit.function.config.5_1, color:"gold"},{translate:jd.items.function.stamina_robbery.rob.9_2},{"selector":"@a[tag = items.stamina_robbery.robbed]", color: "gold", "bold": true},{translate:jd.items.function.stamina_robbery.rob.9_3}]
+tellraw @a[tag = items.stamina_robbery.robbed] ["",{translate:jd.edit.function.config.5_1, color:"gold"},{"selector":"@s", color:"gold"},{translate:jd.items.function.remove_invalid.remove.10_2},{translate:jd.showcase.function.stamina_robbery.2_2, color: "gold", "bold": true},{translate:jd.items.function.stamina_robbery.rob.10_4},{translate:jd.items.function.stamina_robbery.rob.9_3, color: "gold", "bold": true}]
 
 execute at @s run playsound block.note_block.bell ambient @s ~ ~ ~ 10 1 1
 execute as @a[tag = items.stamina_robbery.robbed] at @s run playsound block.note_block.bell ambient @s ~ ~ ~ 10 1 1

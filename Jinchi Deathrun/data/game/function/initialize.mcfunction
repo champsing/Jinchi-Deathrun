@@ -84,4 +84,4 @@ bossbar set minecraft:prepare players
 bossbar set countdown players
 
 
-tellraw @a ["",{text:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n>> ",color:gold},{text:"所有遊戲內容已經初始化完畢，可以開始新的遊戲"}]
+tellraw @a ["",{translate:jd.game.function.initialize.87_1,color:gold},{translate:jd.game.function.initialize.87_2}]

@@ -9,7 +9,7 @@ execute as @a run attribute @s jump_strength modifier remove countdown
 execute as @a run attribute @s movement_speed modifier remove countdown
 
 #---通知---
-title @a title {text:"START",bold:true,color:gold}
+title @a title {translate:jd.game.function.start.12_1,bold:true,color:gold}
 
 #---重置分數---
 scoreboard players operation 剩餘時間 gamecore = 遊戲時間 menu
@@ -21,7 +21,7 @@ scoreboard players reset 準備階段 gamecore
 scoreboard players reset 倒數 gamecore
 
 #---給大家大跑棒棒
-give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{text:"§c§l腎上腺素",italic: false}], lore= [{text:"§7在主手時移動速度增快為1.7倍。",italic: false},{text:"§c體力低於 30% 時不得使用。",italic: false}]]
+give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{translate:jd.game.function.join.7_1,italic: false}], lore= [{translate:jd.game.function.join.7_2,italic: false},{translate:jd.game.function.join.7_3,italic: false}]]
 
 #---放置陣地---
 execute at @n[type = armor_stand, tag = red_base] align xz run summon block_display ~ ~2 ~ {block_state: {Name: "target"}, Glowing: true, Tags: ["red_base"],CustomName:[{translate:"edit.function.base.set_red.1",color: red}]}

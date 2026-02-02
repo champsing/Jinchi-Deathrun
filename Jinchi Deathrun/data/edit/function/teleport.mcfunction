@@ -2,14 +2,14 @@ advancement revoke @s only edit:teleport
 execute if score @s edit_cd matches 1.. run return fail
 scoreboard players add @s edit_cd 60
 execute unless entity @e[tag = edit_amst] run playsound minecraft:entity.ghast.warn ambient @p ~ ~ ~
-execute unless entity @e[tag = edit_amst] run return run tellraw @s [{translate: jd.empty},{translate:"jd.console",color: gold},{text:"找不到可傳送的標記盔甲座",color: red},{text:", 請先指定"},{text:"至少一個",color:gold},{text:"標記盔甲座"}]
+execute unless entity @e[tag = edit_amst] run return run tellraw @s [{translate: jd.empty},{translate:"jd.console",color: gold},{translate:jd.edit.function.teleport.5_1,color: red},{translate:jd.edit.function.delete.5_2},{translate:jd.edit.function.delete.5_3,color:gold},{translate:jd.edit.function.delete.5_4}]
 playsound entity.slime.death ambient @p ~ ~ ~
-tellraw @s ["",{text:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",color:gold}]
+tellraw @s ["",{translate:jd.edit.function.teleport.7_1,color:gold}]
 
-tellraw @s ["",{text: ">> ", color: gold},{text: "傳送到：", bold: true}]
-tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ A點 ]", color: green, click_event: {action: "run_command", command: "/function edit:border/teleport_a"}}]
-tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ B點 ]", color: green, click_event: {action: "run_command", command: "/function edit:border/teleport_b"}}]
-tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 中央點 ]", color: gray, click_event: {action: "run_command", command: "/function edit:center/teleport"}}]
-tellraw @s ["",{text: ">> ", color: gold},{text: "  ⫸ "},{text: "[ 回大廳 ]", color: gray, click_event: {action: "run_command", command: "/tp @s @n[tag = jd.lobby]"}}]
+tellraw @s ["",{translate:jd.edit.function.config.5_1, color: gold},{translate:jd.edit.function.teleport.9_2, bold: true}]
+tellraw @s ["",{translate:jd.edit.function.config.5_1, color: gold},{translate:jd.edit.function.config.6_2},{translate:jd.edit.function.config.12_3, color: green, click_event: {action: "run_command", command: "/function edit:border/teleport_a"}}]
+tellraw @s ["",{translate:jd.edit.function.config.5_1, color: gold},{translate:jd.edit.function.config.6_2},{translate:jd.edit.function.config.14_3, color: green, click_event: {action: "run_command", command: "/function edit:border/teleport_b"}}]
+tellraw @s ["",{translate:jd.edit.function.config.5_1, color: gold},{translate:jd.edit.function.config.6_2},{translate:jd.edit.function.config.16_3, color: gray, click_event: {action: "run_command", command: "/function edit:center/teleport"}}]
+tellraw @s ["",{translate:jd.edit.function.config.5_1, color: gold},{translate:jd.edit.function.config.6_2},{translate:jd.edit.function.teleport.13_3, color: gray, click_event: {action: "run_command", command: "/tp @s @n[tag = jd.lobby]"}}]
 
-tellraw @s ["",{text: ">> ", color: gold},{text: "需3秒後才可再開啟傳送表單", color: red}]
+tellraw @s ["",{translate:jd.edit.function.config.5_1, color: gold},{translate:jd.edit.function.teleport.15_2, color: red}]

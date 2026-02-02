@@ -4,6 +4,6 @@
 execute positioned as @e[type = interaction, tag = duel_intro] run particle flash ~ ~ ~ 0.1 0.1 0.1 0.3 1 normal
 playsound block.medium_amethyst_bud.break master @s ~ ~ ~ 1 0.8 1
 
-tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red},"   ",{text:"對戰模式",bold:true,color:"#a335bc"}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.base.function.success.17_2,bold:true,color:gold},{translate:jd.game.function.prepare.emerald.22_2,bold:true,color:red},"   ",{translate:jd.edit.function.exit.7_1,bold:true,color:"#a335bc"}]
 
 advancement revoke @s only start:duel
