@@ -84,4 +84,4 @@ bossbar set minecraft:prepare players
 bossbar set countdown players
 
 
-tellraw @a ["",{translate:jd.game.function.initialize.87_1,color:gold},{translate:jd.game.function.initialize.87_2}]
+tellraw @a ["",{translate:jd.clear_chat,color:gold},{translate:jd.game.function.initialize.87_2}]

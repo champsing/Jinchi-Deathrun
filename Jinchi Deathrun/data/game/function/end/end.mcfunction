@@ -50,7 +50,7 @@ scoreboard players operation @a[team = !spec] top_item -= 道具最高分 top_it
 # 道具技師: @a[scores = {top_item = 0}]  (@a[scores = {top_item = 0}] total_item)
 # -----------------------------------------
 
-tellraw @a ["",{translate:jd.edit.function.teleport.7_1,color:gold}]
+tellraw @a ["",{translate:jd.clear_chat,color:gold}]
 tellraw @a ["",{translate:jd.game.function.end.end.54_1,bold:true,color:gold}]
 tellraw @a [{translate:jd.game.function.end.end.55_1,color:red},{score:{name:"紅隊分數",objective:"gameinfo"},color:red},{translate:jd.game.function.end.end.55_2,color:"blue"},{score:{name:"藍隊分數",objective:"gameinfo"},color:"blue"}]
 tellraw @a [{translate:jd.game.function.end.end.54_1,bold:true,color:gold}]

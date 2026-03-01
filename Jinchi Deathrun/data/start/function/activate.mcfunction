@@ -9,5 +9,5 @@ function start:uninstall/other_maps
 function start:lobby
 function start:install
 function edit:actionbar
-tellraw @a ["",{translate:jd.start.function.activate.12_1,color:gold},{translate:jd.start.function.activate.12_2}]
+tellraw @a ["",{translate:jd.clear_chat,color:gold},{translate:jd.start.function.activate.12_2}]
 function start:intro
