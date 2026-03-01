@@ -46,6 +46,9 @@ scoreboard players operation 玩家人數一半 gamecore = 玩家人數 menu
 scoreboard players operation 玩家人數一半 gamecore /= 一半 readonly
 scoreboard players set @a[team = !spec] stamina 100
 
+#---前端顯示格式---
+# 還沒弄
+
 #---傳送---
 function game:prepare/teleport
 

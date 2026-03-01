@@ -7,6 +7,7 @@ tp @a @n[type = marker, tag = jd.lobby]
 execute at @n[type = marker, tag = jd.lobby] run spawnpoint @a ~ ~ ~
 clear @a
 kill @e[tag = treasure_item]
+kill @e[tag = point_item]
 kill @e[type = trident]
 kill @e[tag = red_base, type = !armor_stand]
 kill @e[tag = blue_base, type = !armor_stand]
