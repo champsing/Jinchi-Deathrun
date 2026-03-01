@@ -1,7 +1,7 @@
 scoreboard objectives add version dummy "版本"
 
 # refer to VN.txt
-data merge storage start:version_info {verInt: 6, verFloat: "1.3.0", date: "2026/2/3"}
+data merge storage start:version_info {verInt: 6, verFloat: "1.3.0", date: "2026/3/2"}
 execute store result score 包 version run data get storage start:version_info verInt 1.0
 
 # Prod
