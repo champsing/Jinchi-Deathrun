@@ -1,6 +1,6 @@
 #---不是大廳模式---
-execute if score 操作模式 system matches 1 run return run tellraw @s ["",{text:">> ",color:gold},{text:"您目前處於編輯模式。請退出"},{text:"編輯模式",bold:true,color:gold},{text:"更改設定。"}]
-execute if score 操作模式 system matches 3 run return run tellraw @s ["",{text:">> ",color:gold},{text:"遊戲目前已經開始。請"},{text:"結束遊戲",bold:true,color:gold},{text:"後再更改設定。"}]
+execute if score 操作模式 system matches 1 run return run tellraw @s [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.game.function.hit_start.12_1},{translate:jd.edit.function.check.1_2,bold:true,color:gold},{translate:jd.settings.function.initial.2_3}]
+execute if score 操作模式 system matches 3 run return run tellraw @s [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.edit.function.config.2_1},{translate:jd.edit.function.config.2_2,bold:true,color:gold},{translate:jd.settings.function.initial.3_3}]
 
 #---給予反應---
 execute positioned as @e[type = interaction, tag = initial_interaction] run particle end_rod ~ ~ ~ 0.1 0.1 0.1 0.3 3 normal
@@ -8,7 +8,7 @@ execute if entity @s[advancements = {settings:interact/initial = true}] run play
 execute if entity @s[advancements = {settings:attack/initial = true}] run playsound block.medium_amethyst_bud.break master @s ~ ~ ~ 1 0.8 1
 
 #---不是創造---
-execute as @s[gamemode = !creative] run return run tellraw @s[gamemode = !creative] ["",{text:">> ",color:gold},{text:"您沒有權限更動這項設定。請使用"},{text:"創造模式",bold:true,color:gold},{text:"更改設定。"}]
+execute as @s[gamemode = !creative] run return run tellraw @s[gamemode = !creative] [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.settings.function.initial.11_1},{translate:jd.edit.function.hit_edit.5_2,bold:true,color:gold},{translate:jd.settings.function.initial.2_3}]
 
 #---攻擊/互動---
 execute if entity @s[advancements = {settings:interact/initial = true}] run scoreboard players add 初始分數 menu 100
@@ -21,7 +21,7 @@ execute if score 初始分數 menu matches ..900 run scoreboard players set 初�
 
 #---結果---
 execute as @e[tag = initial_value] run data modify entity @s text set value [{score:{name:"初始分數",objective:"menu"}}]
-tellraw @a ["",{text:">> ",color:gold},{text:"初始分數設為 "},{score:{name:"初始分數",objective:"menu"},bold:true,color:gold}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.settings.function.initial.24_1},{score:{name:"初始分數",objective:"menu"},bold:true,color:gold}]
 
 advancement revoke @s only settings:interact/initial
 advancement revoke @s only settings:attack/initial

@@ -11,4 +11,4 @@ effect clear @s glowing
 function items:freeze/restore
 function duel:shock/restore
 
-tellraw @a ["",{text:">> ",color:gold},{selector:"@s"},{text:"使用了"},{text:"解除詛咒道具",color:gold},{text:" 消除所有"},{text:"負面狀態效果",color:gold}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{selector:"@s"},{translate:jd.items.function.add_100.5_1},{translate:jd.items.function.clear_curse.14_2,color:gold},{translate:jd.items.function.clear_curse.14_3},{translate:jd.items.function.clear_curse.14_4,color:gold}]

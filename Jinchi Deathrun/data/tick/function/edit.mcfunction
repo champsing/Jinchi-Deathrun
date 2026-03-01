@@ -7,22 +7,22 @@ execute store result score 紅隊陣地 editinfo if entity @e[tag = red_base, ta
 execute store result score 藍隊陣地 editinfo if entity @e[tag = blue_base, tag = edit_amst]
 execute store result score 寶箱點數量 editinfo if entity @e[tag = treasure_point]
 
-execute if score A點 editinfo matches 0 run scoreboard players display numberformat A點 editinfo fixed {text:"未設定",bold: true, color: "dark_red"}
-execute if score B點 editinfo matches 0 run scoreboard players display numberformat B點 editinfo fixed {text:"未設定",bold: true, color: "dark_red"}
-execute if score A點 editinfo matches 1 run scoreboard players display numberformat A點 editinfo fixed {text:"已設定", color: "green"}
-execute if score B點 editinfo matches 1 run scoreboard players display numberformat B點 editinfo fixed {text:"已設定", color: "green"}
+execute if score A點 editinfo matches 0 run scoreboard players display numberformat A點 editinfo fixed {translate:jd.tick.function.edit.10_1,bold: true, color: "dark_red"}
+execute if score B點 editinfo matches 0 run scoreboard players display numberformat B點 editinfo fixed {translate:jd.tick.function.edit.10_1,bold: true, color: "dark_red"}
+execute if score A點 editinfo matches 1 run scoreboard players display numberformat A點 editinfo fixed {translate:jd.tick.function.edit.12_1, color: "green"}
+execute if score B點 editinfo matches 1 run scoreboard players display numberformat B點 editinfo fixed {translate:jd.tick.function.edit.12_1, color: "green"}
 
-execute if score 中央點 editinfo matches 0 run scoreboard players display numberformat 中央點 editinfo fixed {text:"未設定",bold: true, color: "dark_red"}
-execute if score 中央點 editinfo matches 1 run scoreboard players display numberformat 中央點 editinfo fixed {text:"已設定", color: "green"}
+execute if score 中央點 editinfo matches 0 run scoreboard players display numberformat 中央點 editinfo fixed {translate:jd.tick.function.edit.10_1,bold: true, color: "dark_red"}
+execute if score 中央點 editinfo matches 1 run scoreboard players display numberformat 中央點 editinfo fixed {translate:jd.tick.function.edit.12_1, color: "green"}
 
 execute as @a if score @s edit_cd matches 1.. run scoreboard players remove @s edit_cd 1
-execute as @a[team = !spec] if score @s edit_cd matches 50..59 run title @s actionbar [{text:"編輯道具冷卻: ",bold:true,color:aqua},{text:"◼◼◼◼◼◼",color:gold}]
-execute as @a[team = !spec] if score @s edit_cd matches 40..49 run title @s actionbar [{text:"編輯道具冷卻: ",bold:true,color:aqua},{text:"◼◼◼◼◼",color:gold}]
-execute as @a[team = !spec] if score @s edit_cd matches 30..39 run title @s actionbar [{text:"編輯道具冷卻: ",bold:true,color:aqua},{text:"◼◼◼◼",color:gold}]
-execute as @a[team = !spec] if score @s edit_cd matches 20..29 run title @s actionbar [{text:"編輯道具冷卻: ",bold:true,color:aqua},{text:"◼◼◼",color:gold}]
-execute as @a[team = !spec] if score @s edit_cd matches 10..19 run title @s actionbar [{text:"編輯道具冷卻: ",bold:true,color:aqua},{text:"◼◼",color:gold}]
-execute as @a[team = !spec] if score @s edit_cd matches 2..9 run title @s actionbar [{text:"編輯道具冷卻: ",bold:true,color:aqua},{text:"◼",color:gold}]
-execute as @a[team = !spec] if score @s edit_cd matches 1 run title @s actionbar [{text:"編輯道具冷卻: ",bold:true,color:aqua},{text:"✓", color: green, bold: true}]
+execute as @a[team = !spec] if score @s edit_cd matches 50..59 run title @s actionbar [{translate:jd.tick.function.edit.19_1,bold:true,color:aqua},{translate:jd.tick.function.edit.19_2,color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 40..49 run title @s actionbar [{translate:jd.tick.function.edit.19_1,bold:true,color:aqua},{translate:jd.tick.function.edit.20_2,color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 30..39 run title @s actionbar [{translate:jd.tick.function.edit.19_1,bold:true,color:aqua},{translate:jd.tick.function.edit.21_2,color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 20..29 run title @s actionbar [{translate:jd.tick.function.edit.19_1,bold:true,color:aqua},{translate:jd.tick.function.edit.22_2,color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 10..19 run title @s actionbar [{translate:jd.tick.function.edit.19_1,bold:true,color:aqua},{translate:jd.tick.function.edit.23_2,color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 2..9 run title @s actionbar [{translate:jd.tick.function.edit.19_1,bold:true,color:aqua},{translate:jd.tick.function.edit.24_2,color:gold}]
+execute as @a[team = !spec] if score @s edit_cd matches 1 run title @s actionbar [{translate:jd.tick.function.edit.19_1,bold:true,color:aqua},{translate:jd.tick.function.edit.25_2, color: green, bold: true}]
 
 #---這時候任何人都不該操作設定、開始遊戲---
 advancement revoke @a from settings:root

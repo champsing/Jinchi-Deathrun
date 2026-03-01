@@ -19,8 +19,8 @@ xp set @a 0 points
 effect give @a invisibility 9 0 true
 execute as @a at @s run playsound block.ender_chest.open ambient @s ~ ~ ~
 title @s times 10 40 10
-title @a title ["",{text:"陣地",bold:true,color:gold},{text:"大逃殺",bold:true,color:red}]
-title @a subtitle ["",{text:"遊戲開始",bold:true,color:"green"}]
+title @a title ["",{translate:jd.base.function.success.17_2,bold:true,color:gold},{translate:jd.game.function.prepare.emerald.22_2,bold:true,color:red}]
+title @a subtitle ["",{translate:jd.game.function.prepare.emerald.23_1,bold:true,color:"green"}]
 
 scoreboard players operation 最大值 x > a_pt x
 scoreboard players operation 最大值 y > a_pt y
@@ -58,13 +58,13 @@ bossbar set prepare players @a
 execute store result bossbar minecraft:countdown max run scoreboard players get 遊戲時間 menu
 execute store result bossbar minecraft:prepare max run scoreboard players get 準備時間 gamecore
 
-tellraw @a ["",{text:">> ",color:gold},{text:"準備階段：分配分數",bold: true}]
-tellraw @a ["",{text:">> ",color:gold},{text:"各組現已收到與初始分數等值的綠寶石，隨機分配在每位玩家身上，每顆代表10分。"}]
-tellraw @a ["",{text:">> ",color:gold},{text:"時間有2分鐘，請分配每個人的分數。"}]
-tellraw @a ["",{text:">> ",color:gold},{text:"分數不需平分，也可以不分給某一人。"}]
-tellraw @a ["",{text:">> ",color:gold},{text:"若所有玩家皆已使用準備道具表示準備，則會提前開始遊戲。"}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.game.function.prepare.emerald.58_1,bold: true}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.game.function.prepare.emerald.59_1}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.game.function.prepare.emerald.60_1}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.game.function.prepare.emerald.61_1}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.game.function.prepare.emerald.62_1}]
 
 function game:prepare/give_emerald
-item replace entity @a[team = !spec] hotbar.8 with player_head[item_name={text: "準備", color: aqua, italic: false}, lore=[{text: "用於表示準備開始遊戲。", color: gray, italic: false}], custom_data={ready: true}, max_stack_size=1, consumable={consume_seconds: 99999},profile={id:[I;-1347156543,384453155,-2009098362,2122167289],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc5YTVjOTVlZTE3YWJmZWY0NWM4ZGMyMjQxODk5NjQ5NDRkNTYwZjE5YTQ0ZjE5ZjhhNDZhZWYzZmVlNDc1NiJ9fX0="}]}] 1
+item replace entity @a[team = !spec] hotbar.8 with player_head[item_name={translate:jd.game.function.prepare.countdown.16_1, color: aqua, italic: false}, lore=[{translate:jd.game.function.prepare.emerald.65_2, color: gray, italic: false}], custom_data={ready: true}, max_stack_size=1, consumable={consume_seconds: 99999},profile={id:[I;-1347156543,384453155,-2009098362,2122167289],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc5YTVjOTVlZTE3YWJmZWY0NWM4ZGMyMjQxODk5NjQ5NDRkNTYwZjE5YTQ0ZjE5ZjhhNDZhZWYzZmVlNDc1NiJ9fX0="}]}] 1
 
 schedule function game:prepare/time 1s

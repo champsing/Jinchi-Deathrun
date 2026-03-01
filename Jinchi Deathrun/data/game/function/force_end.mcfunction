@@ -6,6 +6,6 @@ schedule clear items:treasure/generate_treasure
 schedule clear base:restore_invulnerable/blue
 schedule clear base:restore_invulnerable/red
 title @a subtitle "已由指令強制結束遊戲"
-title @a title {text:"遊戲中止",color: gray}
+title @a title {translate:jd.game.function.force_end.9_1,color: gray}
 function game:initialize
-tellraw @a ["",{text:">> ",color:gold},{text:"遊戲已經強制結束"}]
+tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.game.function.force_end.11_1}]

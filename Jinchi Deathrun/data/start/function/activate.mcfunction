@@ -9,5 +9,5 @@ function start:uninstall/other_maps
 function start:lobby
 function start:install
 function edit:actionbar
-tellraw @a ["",{text:"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n>> 大廳",color:gold},{text:"已生成完畢"}]
+tellraw @a ["",{translate:jd.clear_chat,color:gold},{translate:jd.start.function.activate.12_2}]
 function start:intro

@@ -4,7 +4,7 @@ xp set @s 0 levels
 xp set @s 0 points
 scoreboard players set @s stamina 100
 
-give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{text:"§c§l腎上腺素",italic: false}], lore= [{text:"§7在主手時移動速度增快為1.7倍。",italic: false},{text:"§c體力低於 30% 時不得使用。",italic: false}]]
+give @a breeze_rod[custom_data= {adrenaline: true}, item_name= [{translate:jd.game.function.join.7_1,italic: false}], lore= [{translate:jd.game.function.join.7_2,italic: false},{translate:jd.game.function.join.7_3,italic: false}]]
 
 execute if entity @s[scores = {join = 1}] run team join red @s
 execute if entity @s[scores = {join = 2}] run team join blue @s

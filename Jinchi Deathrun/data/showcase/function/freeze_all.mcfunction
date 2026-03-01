@@ -1,7 +1,7 @@
 #全體凍結：藍冰
-tellraw @a[distance = ..5] ["",{text:">> ", color: gold},{text: "道具介紹："}, {text: "全體凍結", bold: true, color: light_purple}]
-tellraw @a[distance = ..5] ["",{text:">> ", color: gold},{text: "道具類型："}, {text: "全體型", bold: true, color: yellow}]
-tellraw @a[distance = ..5] ["",{text:">> ", color: gold},{text: "代表物品："}, {text: "藍冰", bold: true, color: dark_aqua}]
-tellraw @a[distance = ..5] ["",{text:">> ", color: gold},{text: "所有敵隊玩家無法移動 10 秒。"}]
-tellraw @a[distance = ..5] ["",{text:">> ", color: gold},{text: "敵隊玩家均已被凍結時不得使用。", color: red}]
+tellraw @a[distance = ..5] [{translate: jd.empty},{translate:"jd.console", color: gold},{translate:jd.showcase.function.clear_curse.2_1}, {translate:jd.items.function.freeze.all.13_2, bold: true, color: light_purple}]
+tellraw @a[distance = ..5] [{translate: jd.empty},{translate:"jd.console", color: gold},{translate:jd.showcase.function.clear_curse.3_1}, {translate:jd.showcase.function.freeze_all.3_2, bold: true, color: yellow}]
+tellraw @a[distance = ..5] [{translate: jd.empty},{translate:"jd.console", color: gold},{translate:jd.showcase.function.clear_curse.4_1}, {translate:jd.showcase.function.freeze_all.4_2, bold: true, color: dark_aqua}]
+tellraw @a[distance = ..5] [{translate: jd.empty},{translate:"jd.console", color: gold},{translate:jd.showcase.function.freeze_all.5_1}]
+tellraw @a[distance = ..5] [{translate: jd.empty},{translate:"jd.console", color: gold},{translate:jd.showcase.function.freeze_all.6_1, color: red}]
 tellraw @a[distance = ..5] ""

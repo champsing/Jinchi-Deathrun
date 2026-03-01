@@ -14,7 +14,7 @@ execute as @a[team = !spec] run function game:emerald
 
 #---準備階段---
 #---actionbar：預告進場個人分數---
-execute if score 準備階段 gamecore matches 1 as @a[team = !spec] run title @s actionbar [{text:"進場時個人分數: ",bold:true,color:aqua},{score:{name:"@s",objective:score}}]
+execute if score 準備階段 gamecore matches 1 as @a[team = !spec] run title @s actionbar [{translate:jd.tick.function.start.17_1,bold:true,color:aqua},{score:{name:"@s",objective:score}}]
 #---把跑去對方家10格內的傳回去
 execute if score 準備階段 gamecore matches 1 at @e[tag = red_base] run tp @a[team = blue,distance = ..10] @n[tag = blue_base]
 execute if score 準備階段 gamecore matches 1 at @e[tag = blue_base] run tp @a[team = red,distance = ..10] @n[tag = red_base]
