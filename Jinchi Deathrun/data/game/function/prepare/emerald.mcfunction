@@ -30,7 +30,7 @@ scoreboard players operation 最大值 y > b_pt y
 scoreboard players operation 最大值 z > b_pt z
 
 #---防呆---
-execute as @e[tag = edit_amst] run data merge entity @s {Marker: 1b, Glowing: 0b,CustomNameVisible: 0b}
+execute as @e[tag = edit_amst] run data merge entity @s {Marker: true, Glowing: false, CustomNameVisible: false, Invisible: true}
 
 #---記分板---
 scoreboard objectives setdisplay sidebar gameinfo

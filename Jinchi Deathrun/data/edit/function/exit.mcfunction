@@ -8,6 +8,6 @@ execute if score 遊戲模式 menu matches 99999 run tellraw @a [{translate: jd.
 execute if score 遊戲模式 menu matches 99998 run tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.edit.function.exit.8_1,bold:true,color:"#61ff9b"},{translate:jd.edit.function.exit.8_2}]
 tellraw @a ""
 tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.edit.function.exit.10_1, bold: true, color: light_purple, underlined: true, click_event: {action: "run_command", command: "/function edit:config"}}," ",{translate:jd.edit.function.exit.10_2, bold: true, color: dark_aqua, underlined: true, click_event: {action: "run_command", command: "/function settings:treasure/show"}}]
-execute as @e[type = armor_stand, tag = edit_amst] run data merge entity @s {Glowing:0b,CustomNameVisible:0b,Marker:1b,Invisible:1b}
+execute as @e[type = armor_stand, tag = edit_amst] run data merge entity @s {Glowing: false,CustomNameVisible: false,Marker: true,Invisible: true}
 scoreboard players set 操作模式 system 2
 function edit:actionbar

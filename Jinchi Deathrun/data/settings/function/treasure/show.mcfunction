@@ -1,2 +1,2 @@
-execute as @e[type = armor_stand, tag = treasure_point] run data merge entity @s {Marker: 0b, Glowing:1b,CustomNameVisible:1b}
+execute as @e[type = armor_stand, tag = treasure_point] run data merge entity @s {Marker:  false, Glowing: true,CustomNameVisible: true}
 tellraw @a [{translate: jd.empty},{translate:"jd.console",color:gold},{translate:jd.settings.function.treasure.show.2_1}," ",{translate:jd.settings.function.treasure.show.2_2, bold: true, color: green, underlined: true, click_event: {action: "run_command", command: "/function settings:treasure/hide"}}]
