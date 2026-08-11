@@ -114,11 +114,9 @@ scoreboard players set 遊戲時間分鐘 system 10
 scoreboard players display numberformat 遊戲模式 menu fixed {translate:jd.settings.function.mode.30_1,color:"#ac75b9",bold:true}
 scoreboard players display name 紅隊陣地 menu [{translate:jd.base.function.restore_invulnerable.red.3_1,color:red},{translate:jd.base.function.success.17_2,color:white}]
 scoreboard players display name 紅隊人數 menu [{translate:jd.base.function.restore_invulnerable.red.3_1,color:red},{translate:jd.start.function.install.116_2,color:white}]
-scoreboard players display name 紅隊分數 menu [{translate:jd.base.function.restore_invulnerable.red.3_1,color:red},{translate:jd.start.function.install.117_2,color:white}]
 scoreboard players display name 紅隊分數 gameinfo [{translate:jd.start.function.install.118_1,color:red}]
 scoreboard players display name 藍隊陣地 menu [{translate:jd.base.function.restore_invulnerable.blue.3_1,color:blue},{translate:jd.base.function.success.17_2,color:white}]
 scoreboard players display name 藍隊人數 menu [{translate:jd.base.function.restore_invulnerable.blue.3_1,color:blue},{translate:jd.start.function.install.116_2,color:white}]
-scoreboard players display name 藍隊分數 menu [{translate:jd.base.function.restore_invulnerable.blue.3_1,color:blue},{translate:jd.start.function.install.117_2,color:white}]
 scoreboard players display name 藍隊分數 gameinfo [{translate:jd.start.function.install.122_1,color:blue}]
 
 scoreboard players operation 本地 version = 包 version
